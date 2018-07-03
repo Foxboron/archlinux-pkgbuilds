@@ -1,0 +1,35 @@
+# Maintainer: Morten Linderud <foxboron@archlinux.org>
+pkgname=restic
+pkgver=0.9.1
+pkgrel=1
+pkgdesc="Fast, secure, efficient backup program"
+arch=('x86_64')
+url="https://restic.net"
+license=('BSD')
+makedepends=('go-pie')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/restic/restic/archive/v${pkgver}.tar.gz")
+sha256sums=('359d3b8e555a9952f2b98c81ee3dbec8dc441e12789c436ca564762aaacec095')
+
+prepare(){
+  export GOPATH="${srcdir}"
+  mkdir -p src
+  mv "${pkgname}-${pkgver}"/vendor/* src/
+  mkdir -p src/github.com/restic
+  ln -rTsf "${pkgname}-${pkgver}" src/github.com/restic/restic
+}
+
+build(){
+  cd "${pkgname}-${pkgver}"
+  export GOPATH="${srcdir}"
+  go build -ldflags "-X 'main.version=${pkgver}'" ./cmd/restic
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"
+  install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+  install -Dm755 restic "${pkgdir}/usr/bin/restic"
+  install -Dm644 -t "$pkgdir/usr/share/man/man1/" doc/man/*.1
+  install -Dm644 doc/zsh-completion.zsh "$pkgdir/usr/share/zsh/site-functions/_restic"
+  install -Dm644 doc/bash-completion.sh "$pkgdir/usr/share/bash-completion/completions/restic"
+
+}
