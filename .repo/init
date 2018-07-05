@@ -15,6 +15,6 @@ for pkgbase in `cat ../community.list`; do \
 		git add "../../${pkgbase}/${file}"
 	done
 	svn_log=$(svn log -l 1 "${pkgbase}/trunk"|head -n-1|tail -n-2)
-	git commit -v "../../${pkgbase}" -m "$svn_log"
+	git commit -v "../../${pkgbase}" -m "$svn_log" || true
 done
 
