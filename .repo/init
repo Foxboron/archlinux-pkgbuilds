@@ -8,13 +8,14 @@ prefix=$(dirname "${0}")
 cd "${prefix}/${1}"
 
 for pkgbase in `cat ../community.list`; do \
+    [ -d "../../${pkgbase}" ] && continue
     mkdir -p "../../${pkgbase}"
     for file in `ls $pkgbase/trunk`; do
 		echo "    ${file}"
 		cp "${pkgbase}/trunk/${file}" "../../${pkgbase}"
 		git add "../../${pkgbase}/${file}"
 	done
-	svn_log=$(svn log -l 1 "${pkgbase}/trunk"|head -n-1|tail -n-2)
-	git commit -v "../../${pkgbase}" -m "$svn_log" || true
+    svn_log=$(svn log -l 1 "${pkgbase}/trunk"|head -n-1|tail -n-2)
+    git commit -v "../../${pkgbase}" -m "$svn_log" || true
 done
 
