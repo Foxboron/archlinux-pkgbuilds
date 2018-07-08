@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 341852 2018-06-07 15:22:39Z andrewsc $
+# $Id: PKGBUILD 354835 2018-07-08 12:55:04Z foutrelis $
 # Maintainer: Andrew Crerar <crerar@archlinux.org>
 # Contributor: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Hideaki Takahashi <mymelo+aur@gmail.com>
@@ -7,7 +7,7 @@
 pkgbase=python-docker-pycreds
 pkgname=(python-docker-pycreds python2-docker-pycreds)
 pkgver=0.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Python bindings for the docker credentials store API"
 arch=('any')
 license=('Apache')
