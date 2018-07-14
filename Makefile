@@ -30,12 +30,12 @@ repo-seed:
 add-packages: repo-seed
 	@cd .repo/community; \
 		for PKG in `cat ../community.list`; do \
-			echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Checkout community/$${PKG}...$(RST)"; \
+			[ ! -d ../../$${PKG} ] && echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Checkout community/$${PKG}...$(RST)"; \
 			[ ! -d ../../$${PKG} ] && svn update $${PKG} >/dev/null || true; \
 		done
-	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Init community...$(RST)"
+	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Adding new packages community...$(RST)"
 	@.repo/init community
 
-update:
+update: add-packages
 	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Update community...$(RST)"
 	@.repo/update community

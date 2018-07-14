@@ -22,8 +22,6 @@ for path in $(git diff --name-only --cached --diff-filter=M); do
 			prefix="${epoch}:"
 		fi
 		echo "upgpkg: ${pkgbase:-$pkgname} ${prefix}${pkgver}-${pkgrel}" >> "${1}"
-		# If the pkgrel is "1", assume a new version
-		[[ "${pkgrel}" = "1" ]] && echo -e "\nupstream release" >> "${1}"
 	fi
 done
 
