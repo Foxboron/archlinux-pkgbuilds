@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 361893 2018-07-18 12:52:50Z andrewsc $
+# $Id: PKGBUILD 363043 2018-07-23 15:38:47Z felixonmars $
 # Maintainer: Andrew Crerar <crerar@archlinux.org>
 # Maintainer: Morten Linderud <foxboron@archlinux.org>
 # Contributor: Felix Yan <felixonmars@archlinux.org>
@@ -8,7 +8,7 @@
 
 pkgname=docker-compose
 pkgver=1.22.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Fast, isolated development environments using Docker"
 arch=('any')
 url="https://www.docker.com/"
@@ -39,7 +39,7 @@ check() {
 
   cd compose-$pkgver
   # python setup.py install --root="$PWD/tmp_install" --optimize=1
-  # PATH="$PWD/tmp_install/usr/bin:$PATH" PYTHONPATH="$PWD/tmp_install/usr/lib/python3.6/site-packages:$PYTHONPATH" python setup.py pytest
+  # PATH="$PWD/tmp_install/usr/bin:$PATH" PYTHONPATH="$PWD/tmp_install/usr/lib/python3.7/site-packages:$PYTHONPATH" python setup.py pytest
 }
 
 package() {
