@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 280753 2018-01-09 19:47:08Z jelle $
+# $Id: PKGBUILD 366666 2018-08-01 12:08:57Z foutrelis $
 # Maintainer: Thorsten Töpper <atsutane-tu@freethoughts.de>
 
 pkgname=perl-anyevent-i3
 pkgver=0.17
-pkgrel=3
+pkgrel=4
 pkgdesc="Communicate with the i3 window manager"
 arch=('any')
 url='http://search.cpan.org/~mstplbg/AnyEvent-I3/'
