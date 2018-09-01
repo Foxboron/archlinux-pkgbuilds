@@ -1,12 +1,16 @@
 acpid
+bolt
 containerd
 delve
 dep
 docker-compose
 fzf
 git-lfs
+go
 go-md2man
 gopass
+go
+go-tools
 hexedit
 hy
 i3-gaps
