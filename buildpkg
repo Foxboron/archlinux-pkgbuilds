@@ -221,6 +221,21 @@ fi
 
 INSTALL_PACKAGES=""
 
+if [[ -r '/etc/makepkg.conf' ]]; then
+	source '/etc/makepkg.conf'
+else
+	die '/etc/makepkg.conf not found!'
+fi
+
+# Source user-specific makepkg.conf overrides
+if [[ -r "${XDG_CONFIG_HOME:-$HOME/.config}/pacman/makepkg.conf" ]]; then
+	# shellcheck source=/dev/null
+	source "${XDG_CONFIG_HOME:-$HOME/.config}/pacman/makepkg.conf"
+elif [[ -r "$HOME/.makepkg.conf" ]]; then
+	# shellcheck source=/dev/null
+	source "$HOME/.makepkg.conf"
+fi
+
 # build packages
 for PACKAGE in ${PACKAGES}; do
 	msg "Building ${PACKAGE}..."
@@ -269,7 +284,7 @@ for PACKAGE in ${PACKAGES}; do
 				continue
 			fi
 			msg "Building via ${BUILD_MODE} ${BUILD_OPTIONS}..."
-            PKGDEST=$PWD ${BUILD_MODE} ${BUILD_OPTIONS} -- ${MAKECHROOTPKG_OPTIONS}
+            ${BUILD_MODE} ${BUILD_OPTIONS} -- ${MAKECHROOTPKG_OPTIONS}
 		done
 	fi
 
@@ -288,17 +303,13 @@ for PACKAGE in ${PACKAGES}; do
 	# create source tarball
 	if [[ -z "${SKIP_SRC}" ]]; then
 		stat_busy "Creating source tarball"
-		SRCPKGDEST=$PWD extra-x86_64-build -- -- -S -d -f &>/dev/null
+		extra-x86_64-build -- -- -S -d -f &>/dev/null
 		rm -f '*-namcap.log'
 		stat_done
 	fi
+    
 
-	tarballsrc="${pkgbase}-${pkgverfull}.src.tar.gz"
-
-    # append tarballs into build env
-	if [ -n "${INSTALL}" ]; then
-        MAKECHROOTPKG_OPTIONS+=" -I $PWD/${tarballsrc}"
-	fi
+	tarballsrc="${SRCPKGDEST:-.}/${pkgbase}-${pkgverfull}.src.tar.gz"
 
 	# signing tarballs
 	if [ -z "${SKIP_SIG}" ]; then
@@ -308,7 +319,7 @@ for PACKAGE in ${PACKAGES}; do
 		fi
 		for pkg in ${pkgname}; do
 			for arch in ${archs}; do
-				tarballpkg="${pkg}-${pkgverfull}-${arch}.pkg.tar.xz"
+				tarballpkg="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.xz"
                 [ ! -f $tarballpkg ] && continue
 				sign "${tarballpkg}"
 			done
@@ -318,9 +329,9 @@ for PACKAGE in ${PACKAGES}; do
 		rm -f "${tarballsrc}.sig"
 		for pkg in ${pkgname}; do
 			for arch in ${archs}; do
-				tarballpkg="${pkg}-${pkgverfull}-${arch}.pkg.tar.xz.sig"
-                [ ! -f $tarballpkg ] && continue
-				rm -f "${tarballpkg}"
+                tarballpkgsign="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.xz.sig"
+                [ ! -f $tarballpkgsign ] && continue
+				rm -f "${tarballpkgsign}"
 			done
 		done
 	fi
@@ -329,7 +340,7 @@ for PACKAGE in ${PACKAGES}; do
 		msg "Listing package contents..."
 		for pkg in ${pkgname}; do
 			for arch in ${archs}; do
-				tarballpkg="${pkg}-${pkgverfull}-${arch}.pkg.tar.xz"
+				tarballpkg="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.xz"
                 [ ! -f $tarballpkg ] && continue
 				msg2 "Listing ${tarballpkg}..."
 				for file in $(tar --force-local -tf "${tarballpkg}" 2>&1|grep -v 'SCHILY.fflags'|sort); do
@@ -343,19 +354,20 @@ for PACKAGE in ${PACKAGES}; do
 		msg "Running namcap..."
 		for pkg in ${pkgname}; do
 			for arch in ${archs}; do
-				tarballpkg="${pkg}-${pkgverfull}-${arch}.pkg.tar.xz"
+				tarballpkg="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.xz"
                 [ ! -f $tarballpkg ] && continue
 				run_namcap "${tarballpkg}"
 			done
 		done
 		run_namcap PKGBUILD
 		msg "Running checkpkg..."
-		PKGDESGT=$PWD checkpkg || true
+		checkpkg || true
 		if [ -z "${KEEP_CHECK_FILES}" ]; then
 			rm -rf /tmp/checkpkg-script.*
 		fi
 	fi
 	msg "Finished building ${PACKAGE} ${pkgverfull}"
+
 
 	# distribute into repo checkout
 	if [[ -d "../.repo/packages/${pkgbase}/trunk" ]]; then
@@ -376,14 +388,14 @@ for PACKAGE in ${PACKAGES}; do
 			msg2 "Extracting sources..."
 			tar --force-local --strip-components=1 -xvf "${tarballsrc}" -C "./${destdir}" &>/dev/null
 			rm "./${destdir}/.SRCINFO"
-			msg2 "Creating symlinks..."
-			for pkg in ${pkgname}; do
-				for arch in ${archs}; do
-					tarballpkg="${pkg}-${pkgverfull}-${arch}.pkg.tar.xz"
-                    [ ! -f $tarballpkg ] && continue
-					ln -rs "${tarballpkg}"{,.sig} "${destdir}"
-				done
-			done
+			# msg2 "Creating symlinks..."
+			# for pkg in ${pkgname}; do
+			# 	for arch in ${archs}; do
+			# 	    tarballpkg="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.xz"
+                    # [ ! -f $tarballpkg ] && continue
+			# 		ln -rs "${tarballpkg}"{,.sig} "${destdir}"
+			# 	done
+			# done
 
 			# publish release
 			if [[ "${PUBLISH}" -eq 1 ]]; then
@@ -392,6 +404,7 @@ for PACKAGE in ${PACKAGES}; do
 				git commit -v .
 				pushd "${destdir}" >/dev/null
 				if [[ 'packages' = "${repo}" ]]; then
+					${PUBLISH_PACKAGES}
 				elif [[ 'community' = "${repo}" ]]; then
 					${PUBLISH_COMMUNITY}
 				fi
