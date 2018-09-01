@@ -1,0 +1,22 @@
+pkgbase = udiskie
+	pkgdesc = Removable disk automounter using udisks
+	pkgver = 1.7.5
+	pkgrel = 1
+	url = https://pypi.python.org/pypi/udiskie
+	arch = any
+	license = MIT
+	makedepends = asciidoc
+	makedepends = python-setuptools
+	depends = udisks2
+	depends = python
+	depends = python-gobject
+	depends = python-yaml
+	depends = python-docopt
+	depends = gtk3
+	depends = libnotify
+	depends = python-keyutils
+	source = udiskie-1.7.5.tar.gz::https://codeload.github.com/coldfix/udiskie/tar.gz/1.7.5
+	sha256sums = 5754222ad9f0aa8bc4eb4f528caa441460ebfaef7f724ad540bdef62fb4ceb90
+
+pkgname = udiskie
+

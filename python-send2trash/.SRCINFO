@@ -1,0 +1,20 @@
+pkgbase = python-send2trash
+	pkgdesc = Send file to trash natively
+	pkgver = 1.5.0
+	pkgrel = 2
+	url = https://github.com/hsoft/send2trash
+	arch = any
+	license = BSD
+	makedepends = python
+	makedepends = python-setuptools
+	makedepends = python
+	makedepends = python2-setuptools
+	source = python-send2trash-1.5.0.tar.gz::https://github.com/hsoft/send2trash/archive/1.5.0.tar.gz
+	sha256sums = 7cebc0ffc8b6d6e553bce9c6bb915614610ba2dec17c2f0643b1b97251da2a41
+
+pkgname = python-send2trash
+	depends = python
+
+pkgname = python2-send2trash
+	depends = python2
+

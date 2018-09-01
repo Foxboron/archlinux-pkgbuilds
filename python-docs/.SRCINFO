@@ -1,0 +1,13 @@
+pkgbase = python-docs
+	pkgdesc = Set of HTML documentation for python
+	pkgver = 3.6.6
+	pkgrel = 1
+	url = http://docs.python.org/py3k/
+	arch = any
+	license = GPL
+	options = docs
+	source = https://sources.archlinux.org/other/community/python-docs/python-3.6.6-docs-html.tar.bz2
+	sha256sums = 5db928eb9d0cbdebaf11b62f3df3a8473bf7e8e9eecad92b4e4364f993502694
+
+pkgname = python-docs
+

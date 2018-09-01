@@ -1,0 +1,34 @@
+pkgbase = python-pipenv
+	pkgdesc = Sacred Marriage of Pipfile, Pip, & Virtualenv.
+	pkgver = 2018.7.1
+	pkgrel = 1
+	url = https://docs.pipenv.org
+	arch = any
+	license = MIT
+	makedepends = python-setuptools
+	makedepends = python2-setuptools
+	source = python-pipenv-2018.7.1.tar.gz::https://github.com/pypa/pipenv/archive/v2018.7.1.tar.gz
+	sha256sums = e7428c4a3ac93b8ad0a7819e043191865fc75b93a4a26a7288bf2a12883bca7a
+
+pkgname = python-pipenv
+	depends = python
+	depends = python-pip
+	depends = python-pew
+	depends = python-virtualenv
+	depends = python-setuptools
+	depends = python-virtualenv-clone
+	depends = python-certifi
+
+pkgname = python2-pipenv
+	depends = python2
+	depends = python2-pip
+	depends = python2-pew
+	depends = python2-virtualenv
+	depends = python2-virtualenv-clone
+	depends = python2-ordereddict
+	depends = python2-setuptools
+	depends = python2-certifi
+	depends = python2-pyopenssl
+	depends = python2-cryptography
+	depends = python2-idna
+

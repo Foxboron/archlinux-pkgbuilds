@@ -1,0 +1,13 @@
+pkgbase = hexedit
+	pkgdesc = View and edit files in hexadecimal or in ASCII
+	pkgver = 1.4.2
+	pkgrel = 1
+	url = http://rigaux.org/hexedit.html
+	arch = x86_64
+	license = GPL
+	depends = ncurses
+	source = hexedit-1.4.2.tar.gz::https://github.com/pixel/hexedit/archive/1.4.2.tar.gz
+	sha256sums = c81ffb36af9243aefc0887e33dd8e41c4b22d091f1f27d413cbda443b0440d66
+
+pkgname = hexedit
+

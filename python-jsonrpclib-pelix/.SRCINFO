@@ -1,0 +1,20 @@
+pkgbase = python-jsonrpclib-pelix
+	pkgdesc = A Python JSON-RPC over HTTP that mirrors xmlrpclib syntax
+	pkgver = 0.3.1
+	pkgrel = 3
+	url = https://github.com/tcalmant/jsonrpclib
+	arch = any
+	license = Apache
+	makedepends = python-setuptools
+	makedepends = python2-setuptools
+	source = https://pypi.io/packages/source/j/jsonrpclib-pelix/jsonrpclib-pelix-0.3.1.tar.gz
+	sha256sums = 5417b1508d5a50ec64f6e5b88907f111155d52607b218ff3ba9a777afb2e49e3
+
+pkgname = python-jsonrpclib-pelix
+	depends = python
+	conflicts = python-jsonrpclib
+
+pkgname = python2-jsonrpclib-pelix
+	depends = python2
+	conflicts = python2-jsonrpclib
+

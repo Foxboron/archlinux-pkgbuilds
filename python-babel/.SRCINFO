@@ -1,0 +1,33 @@
+pkgbase = python-babel
+	pkgdesc = A collection of tools for internationalizing Python applications
+	pkgver = 2.6.0
+	pkgrel = 2
+	url = http://babel.pocoo.org/
+	arch = any
+	license = BSD
+	checkdepends = python-pytest
+	checkdepends = python-pytest-runner
+	checkdepends = python-freezegun
+	checkdepends = python-pytest-runner
+	checkdepends = python2-pytest-runner
+	checkdepends = python2-freezegun
+	makedepends = python
+	makedepends = python2
+	makedepends = python-setuptools
+	makedepends = python2-setuptools
+	makedepends = python-pytz
+	makedepends = python2-pytz
+	noextract = core-33.zip
+	source = python-babel-2.6.0.tar.gz::https://github.com/python-babel/babel/archive/v2.6.0.tar.gz
+	source = core-33.zip::http://unicode.org/Public/cldr/33/core.zip
+	sha256sums = f760326e6ae6ce290520aef63c3ee416a9258d7917addb0b6e086fe0e5911432
+	sha256sums = fa3490082c086d21257153609642f54fcf788fcfda4966fe67f3f6daca0d58b9
+
+pkgname = python-babel
+	depends = python
+	depends = python-pytz
+
+pkgname = python2-babel
+	depends = python2
+	depends = python2-pytz
+

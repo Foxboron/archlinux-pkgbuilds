@@ -1,0 +1,26 @@
+pkgbase = python-pycountry
+	pkgdesc = ISO country, subdivision, language, currency and script definitions and their translations
+	pkgver = 18.5.26
+	pkgrel = 3
+	url = https://pypi.org/project/pycountry/
+	arch = any
+	license = LGPL2.1
+	checkdepends = python2-pytest
+	checkdepends = python2-pytest-runner
+	checkdepends = python-pytest
+	checkdepends = python-pytest-runner
+	makedepends = python2
+	makedepends = python2-setuptools
+	makedepends = python
+	makedepends = python-setuptools
+	source = https://pypi.io/packages/source/p/pycountry/pycountry-18.5.26.tar.gz
+	sha512sums = 9760175a7926347920542a2fd2420cc3d4f36ac11df5aa6f7aaabbd9b46dd9cb61801933133a589ed35fd2e279db2a70e98340d8cf8856987dc88d6fdb715437
+
+pkgname = python-pycountry
+	depends = python
+	depends = python-lxml
+
+pkgname = python2-pycountry
+	depends = python
+	depends = python2-lxml
+

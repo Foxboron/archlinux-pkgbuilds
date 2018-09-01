@@ -1,0 +1,22 @@
+pkgbase = python-xlib
+	pkgdesc = A fully functional X client library for Python programs
+	pkgver = 0.23
+	pkgrel = 2
+	url = https://github.com/python-xlib/python-xlib
+	arch = any
+	license = LGPL
+	makedepends = python2
+	makedepends = python2-setuptools
+	makedepends = python
+	makedepends = python-setuptools
+	source = python-xlib-0.23.tar.gz::https://github.com/python-xlib/python-xlib/archive/0.23.tar.gz
+	sha256sums = a345fad5003adf6d06c296a6fb917b6b7cc21f17135f11418bf603e15bbde118
+
+pkgname = python-xlib
+	depends = python
+	depends = python-six
+
+pkgname = python2-xlib
+	depends = python2
+	depends = python2-six
+

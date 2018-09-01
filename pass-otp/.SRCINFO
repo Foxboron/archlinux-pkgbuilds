@@ -1,0 +1,15 @@
+pkgbase = pass-otp
+	pkgdesc = A pass extension for managing one-time-password (OTP) tokens.
+	pkgver = 1.1.1
+	pkgrel = 1
+	url = https://github.com/tadfisher/pass-otp
+	arch = any
+	license = GPL3
+	depends = pass
+	depends = oath-toolkit
+	depends = qrencode
+	source = pass-otp-1.1.1.tar.gz::https://github.com/tadfisher/pass-otp/archive/v1.1.1.tar.gz
+	sha256sums = edb3142ab81d70af4e6d1c7f13abebd7c349be474a3f9293d9648ee91b75b458
+
+pkgname = pass-otp
+

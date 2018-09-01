@@ -1,0 +1,26 @@
+pkgbase = python-json-rpc
+	pkgdesc = JSON-RPC transport realisation
+	pkgver = 1.11.0
+	pkgrel = 3
+	url = https://github.com/pavlov99/json-rpc
+	arch = any
+	license = MIT
+	checkdepends = python-nose
+	checkdepends = python-mock
+	checkdepends = python-flask
+	checkdepends = python2-nose
+	checkdepends = python2-mock
+	checkdepends = python2-flask
+	makedepends = python
+	makedepends = python-setuptools
+	makedepends = python2
+	makedepends = python2-setuptools
+	source = python-json-rpc-1.11.0.tar.gz::https://github.com/pavlov99/json-rpc/archive/1.11.0.tar.gz
+	sha256sums = 20f895405eb9d1bf7c0470e8bb80c72c69d5b0389e0edfa7e20e810cf6a91f0f
+
+pkgname = python-json-rpc
+	depends = python
+
+pkgname = python2-json-rpc
+	depends = python2
+

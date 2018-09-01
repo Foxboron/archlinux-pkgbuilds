@@ -1,0 +1,27 @@
+pkgbase = python-pew
+	pkgdesc = Python Env Wrapper, a set of tools to manage multiple virtual environments
+	pkgver = 1.1.5
+	pkgrel = 2
+	url = https://github.com/berdario/pew
+	arch = any
+	license = MIT
+	makedepends = python
+	makedepends = python-setuptools
+	makedepends = python2
+	makedepends = python2-setuptools
+	source = python-pew-1.1.5.tar.gz::https://github.com/berdario/pew/archive/1.1.5.zip
+	sha256sums = 24b0fe0305a293acf4cc95136e73a313b4a749c5aa5ae2a56b4e384224b2381e
+
+pkgname = python-pew
+	depends = python
+	depends = python-virtualenv
+	depends = python-virtualenv-clone
+
+pkgname = python2-pew
+	depends = python2
+	depends = python2-virtualenv
+	depends = python2-virtualenv-clone
+	depends = python2-pathlib
+	depends = python2-backports.shutil_get_terminal_size
+	depends = python2-shutilwhich
+

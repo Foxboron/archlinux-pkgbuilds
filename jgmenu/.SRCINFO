@@ -1,0 +1,22 @@
+pkgbase = jgmenu
+	pkgdesc = Small X11 menu intended to be used with openbox and tint2
+	pkgver = 1.1
+	pkgrel = 1
+	url = http://www.github.com/johanmalm/jgmenu
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = libx11
+	depends = cairo
+	depends = pango
+	depends = libxinerama
+	depends = librsvg
+	depends = libxml2
+	depends = glib2
+	depends = menu-cache
+	depends = python
+	source = jgmenu-1.1.tar.gz::http://www.github.com/johanmalm/jgmenu/archive/v1.1.tar.gz
+	sha256sums = 1478b763832f103ff4f57562c8fd21059dd647954dd4582dcf34135a5f7fb0d1
+
+pkgname = jgmenu
+

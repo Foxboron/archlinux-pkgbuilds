@@ -1,0 +1,13 @@
+pkgbase = restic
+	pkgdesc = Fast, secure, efficient backup program
+	pkgver = 0.9.1
+	pkgrel = 1
+	url = https://restic.net
+	arch = x86_64
+	license = BSD
+	makedepends = go-pie
+	source = restic-0.9.1.tar.gz::https://github.com/restic/restic/archive/v0.9.1.tar.gz
+	sha256sums = 359d3b8e555a9952f2b98c81ee3dbec8dc441e12789c436ca564762aaacec095
+
+pkgname = restic
+

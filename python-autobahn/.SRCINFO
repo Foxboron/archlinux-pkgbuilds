@@ -1,0 +1,31 @@
+pkgbase = python-autobahn
+	pkgdesc = Real-time framework for Web, Mobile & Internet of Things
+	pkgver = 18.6.1
+	pkgrel = 1
+	url = http://autobahn.ws/python/
+	arch = any
+	license = MIT
+	checkdepends = python2-unittest2
+	makedepends = python-setuptools
+	makedepends = python2-setuptools
+	makedepends = python-twisted
+	makedepends = python-six
+	makedepends = python-txaio
+	makedepends = python2-twisted
+	makedepends = python2-six
+	makedepends = python2-txaio
+	source = https://pypi.io/packages/source/a/autobahn/autobahn-18.6.1.tar.gz
+	sha256sums = 2f41bfc512ec482044fa8cfa74182118dedd87e03b3494472d9ff1b5a1e27d24
+
+pkgname = python-autobahn
+	depends = python
+	depends = python-twisted
+	depends = python-six
+	depends = python-txaio
+
+pkgname = python2-autobahn
+	depends = python2
+	depends = python2-twisted
+	depends = python2-six
+	depends = python2-txaio
+

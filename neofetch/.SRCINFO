@@ -1,0 +1,27 @@
+pkgbase = neofetch
+	pkgdesc = A CLI system information tool written in BASH that supports displaying images.
+	pkgver = 5.0.0
+	pkgrel = 1
+	url = https://github.com/dylanaraps/neofetch
+	arch = any
+	license = MIT
+	depends = bash
+	optdepends = catimg: Display Images
+	optdepends = feh: Wallpaper Display
+	optdepends = imagemagick: Image cropping / Thumbnail creation / Take a screenshot
+	optdepends = jp2a: Display Images
+	optdepends = libcaca: Display Images
+	optdepends = nitrogen: Wallpaper Display
+	optdepends = pacman-contrib: Display package count
+	optdepends = w3m: Display Images
+	optdepends = xdotool: See https://github.com/dylanaraps/neofetch/wiki/Images-in-the-terminal
+	optdepends = xorg-xdpyinfo: Resolution detection (Single Monitor)
+	optdepends = xorg-xprop: Desktop Environment and Window Manager
+	optdepends = xorg-xrandr: Resolution detection (Multi Monitor + Refresh rates)
+	optdepends = xorg-xwininfo: See https://github.com/dylanaraps/neofetch/wiki/Images-in-the-terminal
+	backup = etc/neofetch/config.conf
+	source = neofetch-5.0.0.tar.gz::https://github.com/dylanaraps/neofetch/archive/5.0.0.tar.gz
+	sha256sums = 2a4f4853bf83b88a037994dbc53a90c8bd5708f5eeb3392f56d4e49c49d995b3
+
+pkgname = neofetch
+

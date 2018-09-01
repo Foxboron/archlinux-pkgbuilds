@@ -1,0 +1,20 @@
+pkgbase = python-rope
+	pkgdesc = Refactoring library
+	pkgver = 0.10.7
+	pkgrel = 4
+	url = https://github.com/python-rope/rope
+	arch = any
+	license = GPL
+	makedepends = python
+	makedepends = python-setuptools
+	makedepends = python2
+	makedepends = python2-setuptools
+	source = python-rope-0.10.7.tar.gz::https://github.com/python-rope/rope/archive/0.10.7.tar.gz
+	sha256sums = 4426d16686774f2b3d0431e5e54e7e261eab967e9e50e0af7fdaf95436057d74
+
+pkgname = python-rope
+	depends = python
+
+pkgname = python2-rope
+	depends = python2
+

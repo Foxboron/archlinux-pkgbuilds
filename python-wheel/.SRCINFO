@@ -1,0 +1,30 @@
+pkgbase = python-wheel
+	pkgdesc = A built-package format for Python
+	pkgver = 0.31.1
+	pkgrel = 2
+	url = https://pypi.python.org/pypi/wheel
+	arch = any
+	license = MIT
+	checkdepends = python-jsonschema
+	checkdepends = python2-jsonschema
+	checkdepends = python-pytest-cov
+	checkdepends = python2-pytest-cov
+	checkdepends = python-keyring
+	checkdepends = python-keyrings-alt
+	checkdepends = python-xdg
+	checkdepends = python2-xdg
+	makedepends = python
+	makedepends = python-setuptools
+	makedepends = python2
+	makedepends = python2-setuptools
+	source = python-wheel-0.31.1.tar.gz::https://github.com/pypa/wheel/archive/0.31.1.tar.gz
+	sha512sums = 148e8c9a050a2646f0df5ea4f69be78d6ea076eeec3d24c93a8f40a0882f843931c65b4da69a2de07abe983a345c7963d18e56100bc64f23deffc6e1db84e777
+
+pkgname = python-wheel
+	depends = python
+	optdepends = python-xdg: for wheel.signatures
+
+pkgname = python2-wheel
+	depends = python2
+	optdepends = python2-xdg: for wheel.signatures
+

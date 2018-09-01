@@ -1,0 +1,26 @@
+pkgbase = influxdb
+	pkgdesc = Scalable datastore for metrics, events, and real-time analytics
+	pkgver = 1.6.2
+	pkgrel = 1
+	url = https://github.com/InfluxData/influxdb
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = MIT
+	makedepends = go-pie
+	makedepends = git
+	makedepends = asciidoc
+	makedepends = xmlto
+	makedepends = dep
+	backup = etc/influxdb/influxdb.conf
+	source = influxdb-1.6.2.tar.gz::https://github.com/influxdata/influxdb/archive/v1.6.2.tar.gz
+	source = influxdb.sysusers
+	source = influxdb.tmpfiles
+	sha256sums = 10184f858bc2ace0f21636bf00ebe17e969e0063861c7be667647dd6410bf861
+	sha256sums = 809cca823ae3027984bc7ace70db75753d7d0d4f6658a36db9d94a33054ca5e9
+	sha256sums = e2aa59413a6204737383b86cedefd866d7073f56ace5b89aad38c530cc86e60c
+
+pkgname = influxdb
+
