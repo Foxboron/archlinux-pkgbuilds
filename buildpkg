@@ -366,6 +366,15 @@ for PACKAGE in ${PACKAGES}; do
             rm -rf /tmp/checkpkg-script.*
         fi
     fi
+
+    if [ -n "${INSTALL}" ]; then
+        msg "Adding packages to next chroot..."
+        for pkg in $(makepkg --packagelist); do
+            [ ! -f $pkg ] && continue
+            msg2 "Added $pkg..."
+            MAKECHROOTPKG_OPTIONS+=" -I $pkg"
+        done
+    fi
     msg "Finished building ${PACKAGE} ${pkgverfull}"
 
 
