@@ -1,0 +1,20 @@
+pkgbase = py3status
+	pkgdesc = An extensible i3status replacement/wrapper written in python
+	pkgver = 3.12
+	pkgrel = 2
+	url = http://www.ultrabug.fr/tag/py3status/
+	arch = any
+	license = BSD
+	depends = python
+	depends = python-setuptools
+	depends = i3status
+	optdepends = i3status: for some of the functionality
+	optdepends = acpi: for some of the battery related modules
+	optdepends = pacman-contrib: for the arch_updates module
+	source = py3status-3.12.tar.gz::https://github.com/ultrabug/py3status/archive/3.12.tar.gz
+	source = fix_to_ascii.patch
+	sha256sums = c85e10116be2c62ba0916c3cc2e2af75e7fb3c1c714f0690dbdadfcb3871c51f
+	sha256sums = bf3d79664e0f6974b52a84c386663969b6394fc1c5f4680f6eaae24a8b459de9
+
+pkgname = py3status
+
