@@ -1,4 +1,3 @@
-# $Id: PKGBUILD 309043 2018-03-18 13:16:53Z bpiotrowski $
 # Maintainer: Sébastien "Seblu" Luttringer
 
 pkgname=runc
