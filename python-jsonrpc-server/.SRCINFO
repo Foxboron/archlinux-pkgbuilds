@@ -1,0 +1,33 @@
+pkgbase = python-jsonrpc-server
+	pkgdesc = An implementation of the Language Server Protocol for Python
+	pkgver = 0.0.1
+	pkgrel = 1
+	url = https://github.com/palantir/python-jsonrpc-server
+	arch = any
+	license = MIT
+	checkdepends = python-pytest
+	checkdepends = python-pytest-runner
+	checkdepends = python-pytest-cov
+	checkdepends = python-pyflakes
+	checkdepends = python-mock
+	checkdepends = python2-pytest
+	checkdepends = python2-pytest-runner
+	checkdepends = python2-pytest-cov
+	checkdepends = python2-pyflakes
+	checkdepends = python2-mock
+	checkdepends = python2-futures
+	makedepends = python
+	makedepends = python-setuptools
+	makedepends = python2
+	makedepends = python2-setuptools
+	source = python-jsonrpc-server-0.0.1.tar.gz::https://github.com/palantir/python-jsonrpc-server/archive/0.0.1.tar.gz
+	sha256sums = cc00d8b92831f395bc423919abb46558fc1a3a4b6c63acea367dcfe85a2a107b
+
+pkgname = python-jsonrpc-server
+	depends = python
+	depends = python-future
+
+pkgname = python2-jsonrpc-server
+	depends = python2
+	depends = python2-future
+
