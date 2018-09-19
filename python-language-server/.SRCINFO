@@ -1,7 +1,7 @@
 pkgbase = python-language-server
 	pkgdesc = An implementation of the Language Server Protocol for Python
 	pkgver = 0.21.2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/palantir/python-language-server
 	arch = any
 	license = MIT
@@ -44,7 +44,7 @@ pkgbase = python-language-server
 
 pkgname = python-language-server
 	depends = python
-	depends = python-json-rpc
+	depends = python-jsonrpc-server
 	depends = python-future
 	depends = python-jedi
 	depends = python-pluggy
@@ -58,7 +58,7 @@ pkgname = python-language-server
 
 pkgname = python2-language-server
 	depends = python2
-	depends = python2-json-rpc
+	depends = python2-jsonrpc-server
 	depends = python2-future
 	depends = python2-jedi
 	depends = python2-pluggy
