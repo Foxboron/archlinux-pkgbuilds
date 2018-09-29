@@ -12,9 +12,7 @@ pkgbase = py3status
 	optdepends = acpi: for some of the battery related modules
 	optdepends = pacman-contrib: for the arch_updates module
 	source = py3status-3.13.tar.gz::https://github.com/ultrabug/py3status/archive/3.13.tar.gz
-	source = fix_to_ascii.patch
 	sha256sums = c6e1c6d1984265b705e3beac8d6b47d88432cdeca80f09d3fbc05c4c5a2a2a07
-	sha256sums = bf3d79664e0f6974b52a84c386663969b6394fc1c5f4680f6eaae24a8b459de9
 
 pkgname = py3status
 
