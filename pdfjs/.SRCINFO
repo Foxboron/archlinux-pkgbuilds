@@ -1,7 +1,7 @@
 pkgbase = pdfjs
 	pkgdesc = PDF reader in javascript
 	pkgver = 1.10.100
-	pkgrel = 1
+	pkgrel = 2
 	url = https://mozilla.github.io/pdf.js/
 	arch = any
 	license = Apache
