@@ -283,7 +283,7 @@ for PACKAGE in ${PACKAGES}; do
                     ! " ${archs[@]} " =~ " $(echo ${BUILD_MODE}|sed -r 's|.+-(.+)-.+|\1|') " ]]; then
                 continue
             fi
-            msg "Building via ${BUILD_MODE} ${BUILD_OPTIONS}..."
+            msg "Building via ${BUILD_MODE} ${BUILD_OPTIONS} -- ${MAKECHROOTPKG_OPTIONS}..."
             ${BUILD_MODE} ${BUILD_OPTIONS} -- ${MAKECHROOTPKG_OPTIONS}
         done
     fi
@@ -381,10 +381,21 @@ for PACKAGE in ${PACKAGES}; do
     # distribute into repo checkout
     if [[ -d "../.repo/packages/${pkgbase}/trunk" ]]; then
         repo='packages'
-    else
-        if [[ -d "../.repo/community/${pkgbase}/trunk" ]]; then
-            repo='community'
-        fi
+    elif [[ -d "../.repo/community/${pkgbase}/trunk" ]]; then
+        repo='community'
+    fi
+    if [[ -z "${SKIP_DIST}" && -z "${repo}" ]]; then
+        repo='community'
+        destdir="../.repo/$repo/${pkgbase}/trunk"
+        warning "${PACKAGE} is not in any repository"
+        stat_busy "Confirm ${PACKAGE} ${pkgverfull} should be uploaded to community..."
+        read
+        mkdir -p "../.repo/community/${pkgbase}/"{trunk,repos}
+        git add -f .
+        pushd "../.repo/community"
+        svn add "${pkgbase}"
+        svn commit -m "addpkg: ${pkgbase} ${pkgverfull}" "${pkgbase}"
+        popd >/dev/null
     fi
     if [[ -z "${SKIP_DIST}" && -n "${repo}" ]]; then
         destdir="../.repo/${repo}/${pkgbase}/trunk"
@@ -412,6 +423,7 @@ for PACKAGE in ${PACKAGES}; do
                 read
                 git commit -v .
                 pushd "${destdir}" >/dev/null
+                svn add --force .
                 if [[ 'packages' = "${repo}" ]]; then
                     ${PUBLISH_PACKAGES}
                 elif [[ 'community' = "${repo}" ]]; then

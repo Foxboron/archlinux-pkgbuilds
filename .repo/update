@@ -1,4 +1,5 @@
-#!/bin/bash -e
+#!/usr/bin/env bash
+
 if [[ -z "${1}" ]]; then
 	echo "Usage: ${0} [REPO]"
 	exit 1
@@ -10,16 +11,19 @@ svn info . | grep "Revision" | awk '{print $2}' > .last_revision
 svn up > .update.tmp
 cat .update.tmp
 
-updated_packages=$(grep '/trunk/' .update.tmp |sed -En 's|[AUCGER]    (.+)/trunk/.+|\1|p'|uniq)
+updated_packages=$(grep '/trunk/' .update.tmp |sed -En 's| ?[AUCGER]+ {3,4}(.+)/trunk/.+|\1|p'|uniq)
 for pkgbase in $updated_packages; do
-	files=$(grep "${pkgbase}/trunk/" .update.tmp |sed -En 's|[AUCGER]   .+/trunk/(.+)|\1|p')
+	files=$(grep "${pkgbase}/trunk/" .update.tmp |sed -En 's| ?[AUCGER]+ {3,4}.+/trunk/(.+)|\1|p')
 	echo "$pkgbase"
 	for file in $files; do
 		echo "    ${file}"
-		cp "${pkgbase}/trunk/${file}" "../../${pkgbase}"
-		git add "../../${pkgbase}/${file}"
+        cmp "${pkgbase}/trunk/${file}" "../../${pkgbase}/${file}"
+        if ! cmp "${pkgbase}/trunk/${file}" "../../${pkgbase}/${file}" ; then
+            cp "${pkgbase}/trunk/${file}" "../../${pkgbase}"
+            git add "../../${pkgbase}/${file}"
+        fi
 	done
-	deleted_files=$(grep "${pkgbase}/trunk/" .update.tmp |sed -En 's|[D]   .+/trunk/(.+)|\1|p')
+	deleted_files=$(grep "${pkgbase}/trunk/" .update.tmp |sed -En 's| ?[D]+ {3,4}.+/trunk/(.+)|\1|p')
 	for file in $deleted_files; do
 		echo "    Deleted: ${file}"
         rm "../../${pkgbase}/${file}"

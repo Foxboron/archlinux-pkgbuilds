@@ -1,4 +1,5 @@
-#!/bin/bash -e
+#!/usr/bin/env bash
+set -e
 if [[ -z "${1}" ]]; then
 	echo "Usage: ${0} [REPO]"
 	exit 1
@@ -8,6 +9,7 @@ prefix=$(dirname "${0}")
 cd "${prefix}/${1}"
 
 for pkgbase in `cat ../community.list`; do \
+    [ ! -d "${pkgbase}" ] && svn update "${pkgbase}"
     [ -d "../../${pkgbase}" ] && continue
     mkdir -p "../../${pkgbase}"
     for file in `ls $pkgbase/trunk`; do

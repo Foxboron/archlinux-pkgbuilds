@@ -1,5 +1,6 @@
 acpid
 bolt
+bucklespring
 containerd
 delve
 dep
@@ -27,6 +28,7 @@ pass-otp
 pdfjs
 perl-anyevent-i3
 protege
+py3status
 python-argparse
 python-autobahn
 python-babel
@@ -36,8 +38,8 @@ python-docker-pycreds
 python2-docs
 python2-functools32
 python-hidapi
-python-json-rpc
 python-jsonrpclib-pelix
+python-jsonrpc-server
 python-keyutils
 python-language-server
 python-ldap
@@ -65,12 +67,13 @@ python-dockerpty
 python-docker-pycreds
 python-docs
 python-hidapi
-python-json-rpc
 python-jsonrpclib-pelix
+python-jsonrpc-server
 python-keyutils
 python-language-server
 python-ldap
 python-m2crypto
+python-mypy_extensions
 python-pew
 python-pipenv
 python-psycopg2
