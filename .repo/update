@@ -11,6 +11,12 @@ svn info . | grep "Revision" | awk '{print $2}' > .last_revision
 svn up > .update.tmp
 cat .update.tmp
 
+revert(){
+    svn update -r $(cat .last_revision)
+}
+
+trap revert ERR
+
 updated_packages=$(grep '/trunk/' .update.tmp |sed -En 's| ?[AUCGER]+ {3,4}(.+)/trunk/.+|\1|p'|uniq)
 for pkgbase in $updated_packages; do
 	files=$(grep "${pkgbase}/trunk/" .update.tmp |sed -En 's| ?[AUCGER]+ {3,4}.+/trunk/(.+)|\1|p')
@@ -30,6 +36,6 @@ for pkgbase in $updated_packages; do
 		git add "../../${pkgbase}/${file}"
 	done
 	svn_log=$(svn log -l 1 "${pkgbase}/trunk"|head -n-1|tail -n-2)
-	git commit -v "../../${pkgbase}" --template <(echo "$svn_log")
+	git commit -v "../../${pkgbase}" --template <(printf "\n%s" "$svn_log")
 done
 rm .update.tmp
