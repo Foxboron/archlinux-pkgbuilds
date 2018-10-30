@@ -1,7 +1,7 @@
 pkgbase = kakoune
 	pkgdesc = Vim-inspired, selection-oriented code editor
 	pkgver = 2018.10.27
-	pkgrel = 2
+	pkgrel = 3
 	url = http://kakoune.org/
 	arch = x86_64
 	license = custom:unlicense
@@ -13,8 +13,8 @@ pkgbase = kakoune
 	optdepends = tmux: splitting and creating windows
 	optdepends = xdotool: X11 utility to focus arbitrary kakoune clients
 	optdepends = xorg-xmessage: display debug messages in a new window
-	source = kakoune-2018.10.27.tar.gz::https://github.com/mawww/kakoune/archive/v2018.10.27.tar.gz
-	sha256sums = 6b34292c46e2176fdfc3c232a0111ee58229e101f4e37aabe729a0190ddc4641
+	source = kakoune-2018.10.27.tar.bz2::https://github.com/mawww/kakoune/releases/download/v2018.10.27/kakoune-2018.10.27.tar.bz2
+	sha256sums = 687a173c8f94fb66aad899e7a3095fe8f08e1fdcab955dbc6785335427cc8a1d
 
 pkgname = kakoune
 
