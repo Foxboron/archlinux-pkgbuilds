@@ -1,8 +1,8 @@
 pkgbase = python-pydocstyle
 	pkgdesc = An implementation of the Language Server Protocol for Python
-	pkgver = 2.1.1
-	pkgrel = 3
-	url = https://github.com/palantir/python-language-server
+	pkgver = 3.0.0
+	pkgrel = 1
+	url = https://github.com/PyCQA/pydocstyle
 	arch = any
 	license = MIT
 	checkdepends = python-pytest
@@ -18,8 +18,8 @@ pkgbase = python-pydocstyle
 	makedepends = python-setuptools
 	makedepends = python2
 	makedepends = python2-setuptools
-	source = python-pydocstyle-2.1.1.tar.gz::https://github.com/PyCQA/pydocstyle/archive/2.1.1.tar.gz
-	sha256sums = e83f5644897a623aafb0c3fd9ed11fcdc70c72efff4c3ac4738b12bd8665d12f
+	source = python-pydocstyle-3.0.0.tar.gz::https://github.com/PyCQA/pydocstyle/archive/3.0.0.tar.gz
+	sha256sums = 99d4c0b584eca25a179766a1e4c7e69284bc94eb9abf6d8e010d69b5a22596ec
 
 pkgname = python-pydocstyle
 	depends = python

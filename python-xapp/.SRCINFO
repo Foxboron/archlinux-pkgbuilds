@@ -1,16 +1,14 @@
 pkgbase = python-xapp
 	pkgdesc = Python Xapp Library
-	pkgver = 1.2.0
-	pkgrel = 2
+	pkgver = 1.4.0
+	pkgrel = 1
 	url = https://github.com/linuxmint/python-xapp
 	arch = any
 	license = LGPL
 	depends = python
-	depends = python-setuptools
 	depends = python2
-	depends = python2-setuptools
-	source = python-xapp-1.2.0.tar.gz::https://github.com/linuxmint/python-xapp/archive/1.2.0.tar.gz
-	sha256sums = a81e50b1a16efcd2db0db99afbeebf56a4dfd45b008ec5bc606db0adc7cb9ac0
+	source = python-xapp-1.4.0.tar.gz::https://github.com/linuxmint/python-xapp/archive/1.4.0.tar.gz
+	sha512sums = b364135536fde6175b7a5b5002ccb3103401760a78856b665715caec3c95e544238cfb3447600a1fd729a24917a37b2aba5a13fdcb4462510b5bf7090189309f
 
 pkgname = python-xapp
 	depends = python

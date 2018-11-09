@@ -1,0 +1,19 @@
+pkgbase = yubico-c
+	pkgdesc = Yubico YubiKey C library
+	pkgver = 1.13
+	pkgrel = 4
+	url = https://github.com/Yubico/yubico-c
+	arch = x86_64
+	license = BSD
+	depends = curl
+	depends = libusb
+	provides = libyubikey
+	conflicts = libyubikey
+	source = https://developers.yubico.com/yubico-c/Releases/libyubikey-1.13.tar.gz
+	source = https://developers.yubico.com/yubico-c/Releases/libyubikey-1.13.tar.gz.sig
+	validpgpkeys = 0A3B0262BCA1705307D5FF06BCA00FD4B2168C0A
+	sha256sums = 04edd0eb09cb665a05d808c58e1985f25bb7c5254d2849f36a0658ffc51c3401
+	sha256sums = SKIP
+
+pkgname = yubico-c
+

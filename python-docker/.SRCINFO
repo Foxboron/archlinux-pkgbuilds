@@ -1,7 +1,7 @@
 pkgbase = python-docker
 	pkgdesc = A Python library for the Docker Engine API
-	pkgver = 3.4.1
-	pkgrel = 2
+	pkgver = 3.5.1
+	pkgrel = 1
 	url = https://github.com/docker/docker-py
 	arch = any
 	license = Apache
@@ -23,8 +23,8 @@ pkgbase = python-docker
 	makedepends = python2-ipaddress
 	makedepends = python-docker-pycreds
 	makedepends = python2-docker-pycreds
-	source = python-docker-3.4.1.tar.gz::https://github.com/docker/docker-py/archive/3.4.1.tar.gz
-	sha512sums = 447dccb9129d549886882e6cf0a8ac56d91f7ed57b6aa1dca1942c62d70dc78b92184cbdd9ac5f3445be04cfaadf0b4fba191fb70e223e93c6d1cfbfd334a397
+	source = python-docker-3.5.1.tar.gz::https://github.com/docker/docker-py/archive/3.5.1.tar.gz
+	sha512sums = 8e927794cd308e17fc75f3c6569026c9b9c9f44eb2aa1c191dcfc6d1aabc36bdd341795ba9a2243ae2a27c428868c9f45e8bfabd7c1c798f3f4c85b7855eda6d
 
 pkgname = python-docker
 	depends = python-requests

@@ -1,0 +1,22 @@
+pkgbase = yubico-pam
+	pkgdesc = Yubico YubiKey PAM module
+	pkgver = 2.26
+	pkgrel = 1
+	url = https://github.com/Yubico/yubico-pam
+	arch = x86_64
+	license = BSD
+	checkdepends = perl-net-ldap-server
+	depends = pam
+	depends = yubico-c-client
+	depends = yubikey-personalization
+	depends = json-c
+	provides = pam_yubico
+	conflicts = pam_yubico
+	source = https://developers.yubico.com/yubico-pam/Releases/pam_yubico-2.26.tar.gz
+	source = https://developers.yubico.com/yubico-pam/Releases/pam_yubico-2.26.tar.gz.sig
+	validpgpkeys = 0A3B0262BCA1705307D5FF06BCA00FD4B2168C0A
+	sha256sums = 2de96495963fefd72b98243952ca5d5ec513e702c596e54bc667ef6b5e252966
+	sha256sums = SKIP
+
+pkgname = yubico-pam
+
