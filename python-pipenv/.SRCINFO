@@ -1,15 +1,15 @@
 pkgbase = python-pipenv
 	pkgdesc = Sacred Marriage of Pipfile, Pip, & Virtualenv.
-	pkgver = 2018.11.14
+	pkgver = 2018.11.26
 	pkgrel = 1
 	url = https://docs.pipenv.org
 	arch = any
 	license = MIT
 	makedepends = python-setuptools
 	makedepends = python2-setuptools
-	source = python-pipenv-2018.11.14.tar.gz::https://github.com/pypa/pipenv/archive/v2018.11.14.tar.gz
+	source = python-pipenv-2018.11.26.tar.gz::https://github.com/pypa/pipenv/archive/v2018.11.26.tar.gz
 	source = 0001-setup-don-t-setup_requires-on-things-used-to-run-dev.patch
-	sha256sums = 899c7a39f7908be6e4273cbb65a28b54fd049700aaf006220fa8e0776739074c
+	sha256sums = b095395fa6763329fec54c8f6df38c35a39ec3b8b316a4418829e44d50cbc631
 	sha256sums = 878fd681571afe7e9664fcb06828f41e999d33dc31ae3b11cfbd93475fe8516d
 
 pkgname = python-pipenv
