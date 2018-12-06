@@ -1,0 +1,24 @@
+pkgbase = python-nltk
+	pkgdesc = Natural language processing in Python
+	pkgver = 3.4
+	pkgrel = 1
+	url = http://www.nltk.org/
+	arch = any
+	license = APACHE
+	makedepends = python-setuptools
+	makedepends = python2-setuptools
+	source = python-nltk-3.4.tar.gz::https://github.com/nltk/nltk/archive/3.4.tar.gz
+	md5sums = a8e1f6dcb14463eaa6b50f30a3b88c5e
+
+pkgname = python2-nltk
+	depends = python2-yaml
+	optdepends = nltk-data: test data
+	optdepends = python2-numpy: used for calculations
+	optdepends = python2-matplotlib: used for plotting
+
+pkgname = python-nltk
+	depends = python-yaml
+	optdepends = nltk-data: test data
+	optdepends = python-numpy: used for calculations
+	optdepends = python-matplotlib: used for plotting
+
