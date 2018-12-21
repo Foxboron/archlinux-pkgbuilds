@@ -1,6 +1,6 @@
 pkgbase = python-autobahn
 	pkgdesc = Real-time framework for Web, Mobile & Internet of Things
-	pkgver = 18.11.1
+	pkgver = 18.11.2
 	pkgrel = 1
 	url = http://autobahn.ws/python/
 	arch = any
@@ -14,8 +14,8 @@ pkgbase = python-autobahn
 	makedepends = python2-twisted
 	makedepends = python2-six
 	makedepends = python2-txaio
-	source = https://pypi.io/packages/source/a/autobahn/autobahn-18.11.1.tar.gz
-	sha256sums = c7e775e46fc033160fa89942de4953ca739f26167f74431dc2c8a3cd165b8755
+	source = https://pypi.io/packages/source/a/autobahn/autobahn-18.11.2.tar.gz
+	sha256sums = 43262e500aaf8b89fb5f0b60ab13163500ee877908cdd6861208546d95c6dba0
 
 pkgname = python-autobahn
 	depends = python
