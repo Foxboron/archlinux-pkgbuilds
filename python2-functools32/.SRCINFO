@@ -1,7 +1,7 @@
 pkgbase = python2-functools32
 	pkgdesc = Backport of the functools module from Python 3.2.3 for use on 2.7 and PyPy
 	pkgver = 3.2.3_2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/MiCHiLU/python-functools32
 	arch = any
 	license = CUSTOM

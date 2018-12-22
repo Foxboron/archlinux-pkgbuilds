@@ -1,0 +1,27 @@
+pkgbase = python-prompt_toolkit
+	pkgdesc = Library for building powerful interactive command lines in Python
+	pkgver = 2.0.7
+	pkgrel = 3
+	url = https://github.com/jonathanslenders/python-prompt-toolkit
+	arch = any
+	license = BSD
+	makedepends = python-setuptools
+	makedepends = python2-setuptools
+	makedepends = python2-pygments
+	makedepends = python2-six
+	makedepends = python2-wcwidth
+	depends = python-pygments
+	depends = python-six
+	depends = python-wcwidth
+	options = !emptydirs
+	source = https://files.pythonhosted.org/packages/source/p/prompt_toolkit/prompt_toolkit-2.0.7.tar.gz
+	md5sums = 5c32f640908dec950646a0460198158d
+	sha256sums = fd17048d8335c1e6d5ee403c3569953ba3eb8555d710bfc548faf0712666ea39
+
+pkgname = python-prompt_toolkit
+
+pkgname = python2-prompt_toolkit
+	depends = python2-pygments
+	depends = python2-six
+	depends = python2-wcwidth
+

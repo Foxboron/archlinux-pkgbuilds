@@ -1,7 +1,7 @@
 pkgbase = yubico-c-client
 	pkgdesc = Yubico YubiKey client C library
 	pkgver = 2.15
-	pkgrel = 3
+	pkgrel = 4
 	url = https://github.com/Yubico/yubico-c-client
 	arch = x86_64
 	license = BSD

@@ -9,7 +9,8 @@ pkgbase = git-lfs
 	makedepends = ruby-ronn
 	makedepends = go-tools
 	depends = git
-	source = git+https://github.com/git-lfs/git-lfs.git#tag=v2.6.1
+	source = git+https://github.com/git-lfs/git-lfs.git#tag=v2.6.1?signed
+	validpgpkeys = 88ACE9B29196305BA9947552F1BA225C0223B187
 	sha256sums = SKIP
 
 pkgname = git-lfs

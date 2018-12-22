@@ -1,7 +1,7 @@
 pkgbase = python-language-server
 	pkgdesc = An implementation of the Language Server Protocol for Python
-	pkgver = 0.21.2
-	pkgrel = 2
+	pkgver = 0.21.4
+	pkgrel = 1
 	url = https://github.com/palantir/python-language-server
 	arch = any
 	license = MIT
@@ -39,8 +39,8 @@ pkgbase = python-language-server
 	makedepends = python-setuptools
 	makedepends = python2
 	makedepends = python2-setuptools
-	source = python-language-server-0.21.2.tar.gz::https://github.com/palantir/python-language-server/archive/0.21.2.tar.gz
-	sha256sums = 0b81bf42200c7d11e066907040314038525fa53333ac98e7691485166db60fde
+	source = python-language-server-0.21.4.tar.gz::https://github.com/palantir/python-language-server/archive/0.21.4.tar.gz
+	sha256sums = 77869d8bbde2fdc789c2684fde490c2036009f70b95f7963ba02f51222130d31
 
 pkgname = python-language-server
 	depends = python
