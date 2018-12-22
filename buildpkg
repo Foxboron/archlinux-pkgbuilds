@@ -384,7 +384,7 @@ for PACKAGE in ${PACKAGES}; do
     elif [[ -d "../.repo/community/${pkgbase}/trunk" ]]; then
         repo='community'
     fi
-    if [[ -z "${SKIP_DIST}" && -z "${repo}" ]]; then
+    if [[ "${PUBLISH}" -eq 1 && -z "${repo}" ]]; then
         repo='community'
         destdir="../.repo/$repo/${pkgbase}/trunk"
         warning "${PACKAGE} is not in any repository"

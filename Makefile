@@ -41,7 +41,11 @@ update: add-packages
 	@.repo/update community
 
 update-version:
+	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Fetches all current package versions...$(RST)"
 	@.repo/get-current-versions.sh > .repo/old.txt
 
 check: update-version
+	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Checking for untracked packages...$(RST)"
+	@.repo/get-unwatched.sh
+	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Comparing...$(RST)"
 	@nvchecker .repo/packages.ini
