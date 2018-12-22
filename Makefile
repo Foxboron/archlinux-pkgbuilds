@@ -39,3 +39,9 @@ add-packages: repo-seed
 update: add-packages
 	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Update community...$(RST)"
 	@.repo/update community
+
+update-version:
+	@.repo/get-current-versions.sh > .repo/old.txt
+
+check: update-version
+	@nvchecker .repo/packages.ini

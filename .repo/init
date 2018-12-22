@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-set -e
+set -ex
 if [[ -z "${1}" ]]; then
 	echo "Usage: ${0} [REPO]"
 	exit 1
 fi
 
 prefix=$(dirname "${0}")
-cd "${prefix}/${1}"
+pushd "${prefix}/${1}" &> /dev/null
 
 for pkgbase in `cat ../community.list`; do \
     [ ! -d "${pkgbase}" ] && svn update "${pkgbase}"
@@ -17,6 +17,10 @@ for pkgbase in `cat ../community.list`; do \
 		cp "${pkgbase}/trunk/${file}" "../../${pkgbase}"
 		git add "../../${pkgbase}/${file}"
 	done
+    pushd "$pkgbase/trunk" &> /dev/null
+    makepkg --printsrcinfo > "../../../../${pkgbase}/.SRCINFO"
+    git add "../../../../${pkgbase}/.SRCINFO"
+    popd &> /dev/null
     svn_log=$(svn log -l 1 "${pkgbase}/trunk"|head -n-1|tail -n-2)
     git commit -v "../../${pkgbase}" -m "$svn_log" || true
 done
