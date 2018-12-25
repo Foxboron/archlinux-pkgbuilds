@@ -1,0 +1,37 @@
+pkgbase = darktable
+	pkgdesc = Utility to organize and develop raw images
+	pkgver = 2.4.4
+	pkgrel = 2
+	epoch = 2
+	url = https://darktable.org
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = intltool
+	makedepends = desktop-file-utils
+	makedepends = llvm
+	makedepends = clang
+	makedepends = python-jsonschema
+	makedepends = libwebp
+	depends = pugixml
+	depends = libjpeg-turbo
+	depends = colord-gtk
+	depends = libgphoto2
+	depends = openexr
+	depends = lensfun
+	depends = iso-codes
+	depends = exiv2
+	depends = flickcurl
+	depends = openjpeg2
+	depends = graphicsmagick
+	depends = lua
+	depends = osm-gps-map
+	depends = libsecret
+	source = https://github.com/darktable-org/darktable/releases/download/release-2.4.4/darktable-2.4.4.tar.xz
+	source = https://github.com/darktable-org/darktable/releases/download/release-2.4.4/darktable-2.4.4.tar.xz.asc
+	validpgpkeys = C4CBC150699956E2A3268EF5BB5CC8295B1779C9
+	sha256sums = 964320b8c9ffef680fa0407a6ca16ed5136ad1f449572876e262764e78acb04d
+	sha256sums = SKIP
+
+pkgname = darktable
+
