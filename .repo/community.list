@@ -2,6 +2,7 @@ acpid
 bolt
 bucklespring
 containerd
+darktable
 delve
 dep
 docker-compose
@@ -21,6 +22,7 @@ jp2a
 kakoune
 lostfiles
 minicom
+mopidy
 mypy
 neofetch
 font-awesome
@@ -44,8 +46,10 @@ python-keyutils
 python-language-server
 python-ldap
 python-m2crypto
+python-nltk
 python-pew
 python-pipenv
+python-prompt_toolkit
 python-psycopg2
 python-pyaes
 python-pycountry
@@ -74,8 +78,10 @@ python-language-server
 python-ldap
 python-m2crypto
 python-mypy_extensions
+python-nltk
 python-pew
 python-pipenv
+python-prompt_toolkit
 python-psycopg2
 python-pyaes
 python-pycountry
@@ -99,3 +105,8 @@ rofi
 runc
 font-awesome
 udiskie
+yubico-c
+yubico-c-client
+yubico-pam
+yubikey-manager
+yubikey-personalization
