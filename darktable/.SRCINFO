@@ -1,7 +1,7 @@
 pkgbase = darktable
 	pkgdesc = Utility to organize and develop raw images
-	pkgver = 2.4.4
-	pkgrel = 2
+	pkgver = 2.6.0
+	pkgrel = 1
 	epoch = 2
 	url = https://darktable.org
 	arch = x86_64
@@ -27,11 +27,8 @@ pkgbase = darktable
 	depends = lua
 	depends = osm-gps-map
 	depends = libsecret
-	source = https://github.com/darktable-org/darktable/releases/download/release-2.4.4/darktable-2.4.4.tar.xz
-	source = https://github.com/darktable-org/darktable/releases/download/release-2.4.4/darktable-2.4.4.tar.xz.asc
-	validpgpkeys = C4CBC150699956E2A3268EF5BB5CC8295B1779C9
-	sha256sums = 964320b8c9ffef680fa0407a6ca16ed5136ad1f449572876e262764e78acb04d
-	sha256sums = SKIP
+	source = https://github.com/darktable-org/darktable/releases/download/release-2.6.0/darktable-2.6.0.tar.xz
+	sha256sums = 483d7d8e4ac532d89efc2f24e169f7a7da2d3ef0c599602b658d67a040670478
 
 pkgname = darktable
 
