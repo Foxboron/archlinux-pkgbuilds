@@ -1,13 +1,11 @@
 pkgbase = tpm2-tools
 	pkgdesc = Trusted Platform Module 2.0 tools based on tpm2-tss
 	pkgver = 3.1.3
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/tpm2-software/tpm2-tools
 	arch = x86_64
 	license = BSD
 	checkdepends = cmocka
-	checkdepends = tpm2-abrmd
-	checkdepends = python-pyaml
 	depends = curl
 	depends = openssl
 	depends = tpm2-tss
