@@ -1,0 +1,24 @@
+pkgbase = tpm2-tools
+	pkgdesc = Trusted Platform Module 2.0 tools based on tpm2-tss
+	pkgver = 3.1.3
+	pkgrel = 1
+	url = https://github.com/tpm2-software/tpm2-tools
+	arch = x86_64
+	license = BSD
+	checkdepends = cmocka
+	checkdepends = tpm2-abrmd
+	checkdepends = python-pyaml
+	depends = curl
+	depends = openssl
+	depends = tpm2-tss
+	optdepends = tpm2-abrmd: user space resource manager
+	source = https://github.com/tpm2-software/tpm2-tools/releases/download/3.1.3/tpm2-tools-3.1.3.tar.gz
+	source = https://github.com/tpm2-software/tpm2-tools/releases/download/3.1.3/tpm2-tools-3.1.3.tar.gz.asc
+	validpgpkeys = 5B482B8E3E19DA7C978E1D016DE2E9078E1F50C1
+	validpgpkeys = D75ED7AA24E50CD645C6F457C751E590D63F3D69
+	validpgpkeys = 5BEC526CE3A61CAF07E7A7DA49BCAE5443FFFC34
+	sha256sums = cc95576f49cf9bacf75772fd98dcb7edc5172a6a8dfa20c215fe3cc69b0a3a16
+	sha256sums = SKIP
+
+pkgname = tpm2-tools
+
