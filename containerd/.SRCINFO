@@ -1,13 +1,14 @@
 pkgbase = containerd
 	pkgdesc = An open and reliable container runtime
 	pkgver = 1.2.0
-	pkgrel = 1
+	pkgrel = 3
 	url = https://containerd.io/
 	arch = x86_64
 	license = APACHE
-	makedepends = go-pie
+	makedepends = go
 	makedepends = git
 	makedepends = btrfs-progs
+	makedepends = libseccomp
 	depends = runc
 	source = containerd-1.2.0.tar.gz::https://github.com/containerd/containerd/archive/v1.2.0.tar.gz
 	sha256sums = 8565a655345f3db2f7b78b77a2cd3103895229aa44cd0e4c710ba3559e344b5a
