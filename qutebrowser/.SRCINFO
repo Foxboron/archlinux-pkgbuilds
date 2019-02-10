@@ -1,8 +1,8 @@
 pkgbase = qutebrowser
 	pkgdesc = A keyboard-driven, vim-like browser based on PyQt5
 	pkgver = 1.5.2
-	pkgrel = 1
-	url = http://www.qutebrowser.org/
+	pkgrel = 2
+	url = https://www.qutebrowser.org/
 	arch = any
 	license = GPL
 	makedepends = asciidoc
@@ -11,10 +11,10 @@ pkgbase = qutebrowser
 	depends = python-jinja
 	depends = python-pygments
 	depends = python-pypeg2
-	depends = python-pyqt5>=5.7
+	depends = python-pyqt5
 	depends = python-yaml
-	depends = qt5-base>=5.7.1
-	depends = qt5-webengine
+	depends = qt5-base
+	depends = python-pyqtwebengine
 	optdepends = gst-libav: media playback
 	optdepends = gst-plugins-base: media playback
 	optdepends = gst-plugins-good: media playback
