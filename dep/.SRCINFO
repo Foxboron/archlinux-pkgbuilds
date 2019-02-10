@@ -1,7 +1,7 @@
 pkgbase = dep
 	pkgdesc = Go dependency management tool
 	pkgver = 0.5.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://golang.github.io/dep/
 	arch = x86_64
 	license = BSD
