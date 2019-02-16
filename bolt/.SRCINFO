@@ -1,7 +1,7 @@
 pkgbase = bolt
 	pkgdesc = Thunderbolt 3 device manager
 	pkgver = 0.7
-	pkgrel = 1
+	pkgrel = 2
 	url = https://gitlab.freedesktop.org/bolt/bolt
 	arch = x86_64
 	license = LGPL
