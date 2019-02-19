@@ -1,7 +1,7 @@
 pkgbase = yubikey-personalization
 	pkgdesc = Yubico YubiKey Personalization library and tool
-	pkgver = 1.19.0
-	pkgrel = 2
+	pkgver = 1.19.1
+	pkgrel = 1
 	url = https://github.com/Yubico/yubikey-personalization
 	arch = x86_64
 	license = BSD
@@ -11,11 +11,11 @@ pkgbase = yubikey-personalization
 	depends = yubico-c-client
 	provides = ykpers
 	conflicts = ykpers
-	source = https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.19.0.tar.gz
-	source = https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.19.0.tar.gz.sig
+	source = https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.19.1.tar.gz
+	source = https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.19.1.tar.gz.sig
 	validpgpkeys = 0A3B0262BCA1705307D5FF06BCA00FD4B2168C0A
-	sha512sums = 05e3447656d52a2cd4092f1df2e99e1289414515644ae10daaa1be851811996904188039e3c8362059b56a43df37cba4396928dc5c546d4506f796b20e4ceabe
-	sha512sums = SKIP
+	sha256sums = 4f9f94f4f3c6257c26e140d383e12477d29894b93d4487663645b4785e06cbb6
+	sha256sums = SKIP
 
 pkgname = yubikey-personalization
 
