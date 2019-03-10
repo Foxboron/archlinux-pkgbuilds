@@ -1,6 +1,6 @@
 pkgbase = go-tools
 	pkgdesc = Developer tools for the Go programming language
-	pkgver = 1.11+2495+9e9bf16a4
+	pkgver = 1.12+2915+49d818b07
 	pkgrel = 1
 	epoch = 2
 	url = http://golang.org/
@@ -9,8 +9,8 @@ pkgbase = go-tools
 	makedepends = git
 	makedepends = go-pie
 	depends = glibc
-	source = git+https://go.googlesource.com/tools#commit=9e9bf16a4efe175e2867e1661feefa6278e4e14e
-	source = git+https://github.com/golang/net#commit=c39426892332e1bb5ec0a434a079bf82f5d30c54
+	source = go-tools::git+https://go.googlesource.com/tools#commit=49d818b07734fb3230f2d00bc5d4453348348d24
+	source = golang-net::git+https://github.com/golang/net#commit=16b79f2e4e95ea23b2bf9903c9809ff7b013ce85
 	md5sums = SKIP
 	md5sums = SKIP
 
