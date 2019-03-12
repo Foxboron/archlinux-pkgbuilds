@@ -1,6 +1,6 @@
 pkgbase = yubikey-manager
 	pkgdesc = Python library and command line tool for configuring a YubiKey
-	pkgver = 2.0.0
+	pkgver = 2.1.0
 	pkgrel = 1
 	url = https://developers.yubico.com/yubikey-manager/
 	arch = any
@@ -17,11 +17,11 @@ pkgbase = yubikey-manager
 	depends = ccid
 	depends = libu2f-host
 	depends = yubikey-personalization
-	source = https://developers.yubico.com/yubikey-manager/Releases/yubikey-manager-2.0.0.tar.gz
-	source = https://developers.yubico.com/yubikey-manager/Releases/yubikey-manager-2.0.0.tar.gz.sig
+	source = https://developers.yubico.com/yubikey-manager/Releases/yubikey-manager-2.1.0.tar.gz
+	source = https://developers.yubico.com/yubikey-manager/Releases/yubikey-manager-2.1.0.tar.gz.sig
 	validpgpkeys = 8D0B4EBA9345254BCEC0E843514F078FF4AB24C3
 	validpgpkeys = 57A9DEED4C6D962A923BB691816F3ED99921835E
-	sha256sums = e95b4c4e956e105780e59ca2e4f159b4e974da38cdc810d4157e8d979ebf66f4
+	sha256sums = d59d5cd9b5b040077ef7741250476d8583bf961519b6576af163022315ab3a87
 	sha256sums = SKIP
 
 pkgname = yubikey-manager
