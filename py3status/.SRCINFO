@@ -1,13 +1,15 @@
 pkgbase = py3status
 	pkgdesc = An extensible i3status replacement/wrapper written in python
 	pkgver = 3.17
-	pkgrel = 1
+	pkgrel = 2
 	url = https://www.ultrabug.fr/tag/py3status/
 	arch = any
 	license = BSD
+	checkdepends = python-pytest-runner
 	depends = python
 	depends = python-setuptools
-	depends = i3status
+	optdepends = i3status: for i3status modules
+	optdepends = i3blocks: for i3blocks modules
 	optdepends = python-pyudev: for udev event monitoring
 	optdepends = python-pydbus: for modules that rely on D-Bus
 	optdepends = python-tzlocal: for modules that need time zone info
