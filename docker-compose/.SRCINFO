@@ -1,6 +1,6 @@
 pkgbase = docker-compose
 	pkgdesc = Fast, isolated development environments using Docker
-	pkgver = 1.23.2
+	pkgver = 1.24.0
 	pkgrel = 1
 	url = https://www.docker.com/
 	arch = any
@@ -19,8 +19,9 @@ pkgbase = docker-compose
 	depends = python-jsonschema
 	depends = python-setuptools
 	depends = docker
-	source = docker-compose-1.23.2.tar.gz::https://github.com/docker/compose/archive/1.23.2.tar.gz
-	sha512sums = baa233c84ac770798ba3d8d256687630b331d774a8d60f3c0d5046aa0a74c8c3b8b0b8bc4431f3bc7d5b7a54f0646f5e2fd14d5af31db37cb546e86c96c8c1db
+	depends = python-paramiko
+	source = docker-compose-1.24.0.tar.gz::https://github.com/docker/compose/archive/1.24.0.tar.gz
+	sha512sums = 318c6bf9877147de09526b4d49c3fd86012d85626e7a9a15863ca55a60e10fa85b27429605045d0aaa993dddd3bc2e5f23cbb76856276a874e84793b878a3e86
 
 pkgname = docker-compose
 
