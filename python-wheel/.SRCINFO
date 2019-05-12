@@ -1,6 +1,6 @@
 pkgbase = python-wheel
 	pkgdesc = A built-package format for Python
-	pkgver = 0.33.1
+	pkgver = 0.33.4
 	pkgrel = 1
 	url = https://pypi.python.org/pypi/wheel
 	arch = any
@@ -17,8 +17,8 @@ pkgbase = python-wheel
 	makedepends = python-setuptools
 	makedepends = python2
 	makedepends = python2-setuptools
-	source = python-wheel-0.33.1.tar.gz::https://github.com/pypa/wheel/archive/0.33.1.tar.gz
-	sha512sums = d275715ebd4fa81ac02a3b0d33144348c47a4cb84b58ad0c0e0f120900c6696c81f750a5c8835519189dec08aa58f78394f26c5c379ab03ffdb7eaa73097f928
+	source = python-wheel-0.33.4.tar.gz::https://github.com/pypa/wheel/archive/0.33.4.tar.gz
+	sha512sums = 00c2994fd4688d5f93634d27e2d1838034b8bc56ae2075e9500eae1babd8bd837272941834e376c7a7afef47655fb9828c12f0ccbe62d0397f8482fe876e6f8b
 
 pkgname = python-wheel
 	depends = python
