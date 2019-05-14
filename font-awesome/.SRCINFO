@@ -1,13 +1,13 @@
 pkgbase = font-awesome
 	pkgdesc = Iconic font designed for Bootstrap
-	pkgver = 5.8.1
+	pkgver = 5.8.2
 	pkgrel = 1
 	url = http://fontawesome.com
 	arch = any
 	license = custom:OFL
 	depends = fontconfig
-	source = ttf-font-awesome-5.8.1.tar.gz::https://github.com/FortAwesome/Font-Awesome/archive/5.8.1.tar.gz
-	sha256sums = b0ef5da4323d277695a1335f0fbaf9aa84ff782380082179c0ad37565e110bd8
+	source = ttf-font-awesome-5.8.2.tar.gz::https://github.com/FortAwesome/Font-Awesome/archive/5.8.2.tar.gz
+	sha256sums = 2af21ae0de9b7232b28f1ba6fd1006f17ea2240d2e85127359ccfa0c1024f7d9
 
 pkgname = ttf-font-awesome
 
