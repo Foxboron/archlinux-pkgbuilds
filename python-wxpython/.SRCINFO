@@ -1,7 +1,7 @@
 pkgbase = python-wxpython
-	pkgdesc = Phoenix wxWidgets GUI toolkit for Python
+	pkgdesc = Cross-platform GUI toolkit
 	pkgver = 4.0.5
-	pkgrel = 1
+	pkgrel = 3
 	url = https://www.wxpython.org
 	arch = x86_64
 	license = custom:wxWindows
@@ -16,7 +16,6 @@ pkgbase = python-wxpython
 	makedepends = python-setuptools
 	depends = wxgtk3
 	depends = python-six
-	depends = python-sphinx
 	optdepends = python-pypubsub: Alternative to the deprecated wx.lib.pubsub API
 	source = https://files.pythonhosted.org/packages/source/w/wxPython/wxPython-4.0.5.tar.gz
 	sha512sums = 9ae419b243da061b467428872d36d6e996c23844ffd040b525014dae0821b8507911854af89056680aaf7207755ded79ce51322a4582c14e11aff5fbdf2f8ed8
