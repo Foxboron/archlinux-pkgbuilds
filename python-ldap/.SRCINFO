@@ -1,7 +1,7 @@
 pkgbase = python-ldap
 	pkgdesc = LDAP client API for Python
-	pkgver = 3.1.0
-	pkgrel = 2
+	pkgver = 3.2.0
+	pkgrel = 1
 	url = http://python-ldap.readthedocs.io/
 	arch = x86_64
 	license = MIT
@@ -16,8 +16,8 @@ pkgbase = python-ldap
 	makedepends = python2-setuptools
 	makedepends = python-coverage
 	makedepends = python2-coverage
-	source = python-ldap-3.1.0.tar.gz::https://github.com/python-ldap/python-ldap/archive/python-ldap-3.1.0.tar.gz
-	sha256sums = 11a20a0bdb4661d5463e7d288ef1f46a2345d1ecdfd433a21aef7ff7e8263b41
+	source = python-ldap-3.2.0.tar.gz::https://github.com/python-ldap/python-ldap/archive/python-ldap-3.2.0.tar.gz
+	sha256sums = ac6736345f5cdcd76fe54ac3ec6182b222c59c68d04c57690e44e449871e5730
 
 pkgname = python-ldap
 	depends = python
