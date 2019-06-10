@@ -1,0 +1,31 @@
+pkgbase = podman
+	pkgdesc = Tool and library for running OCI-based containers in pods
+	pkgver = 1.4.0
+	pkgrel = 1
+	url = https://github.com/containers/libpod
+	arch = x86_64
+	license = Apache
+	makedepends = go-pie
+	makedepends = go-md2man
+	makedepends = git
+	depends = cni-plugins
+	depends = conmon
+	depends = device-mapper
+	depends = iptables
+	depends = libseccomp
+	depends = ostree
+	depends = runc
+	depends = skopeo
+	depends = btrfs-progs
+	depends = slirp4netns
+	source = libpod-1.4.0.tar.gz::https://github.com/containers/libpod/archive/v1.4.0.tar.gz
+	sha256sums = 17fdf68e85106d0848e89825e191198a4079bb6d9ca6dd3e415e5c010192db9e
+
+pkgname = podman
+	optdepends = podman-docker: for Docker-compatible CLI
+
+pkgname = podman-docker
+	pkgdesc = Emulate Docker CLI using podman
+	depends = podman
+	conflicts = docker
+
