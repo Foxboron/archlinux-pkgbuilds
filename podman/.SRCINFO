@@ -1,6 +1,6 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
-	pkgver = 1.4.0
+	pkgver = 1.4.1
 	pkgrel = 1
 	url = https://github.com/containers/libpod
 	arch = x86_64
@@ -18,8 +18,8 @@ pkgbase = podman
 	depends = skopeo
 	depends = btrfs-progs
 	depends = slirp4netns
-	source = libpod-1.4.0.tar.gz::https://github.com/containers/libpod/archive/v1.4.0.tar.gz
-	sha256sums = 17fdf68e85106d0848e89825e191198a4079bb6d9ca6dd3e415e5c010192db9e
+	source = libpod-1.4.1.tar.gz::https://github.com/containers/libpod/archive/v1.4.1.tar.gz
+	sha256sums = 45eb7bccd81a1431b0c7a0697829c0bcc397048595d143fd91179b31d22a3c63
 
 pkgname = podman
 	optdepends = podman-docker: for Docker-compatible CLI
