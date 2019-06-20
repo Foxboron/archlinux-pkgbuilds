@@ -1,0 +1,13 @@
+pkgbase = bmusb
+	pkgdesc = a free driver for BlackMagic's Intensity Shuttle andUltraStudio SDI USB3 cards
+	pkgver = 0.7.4
+	pkgrel = 1
+	url = https://git.sesse.net/?p=bmusb;a=summary
+	arch = x86_64
+	license = GPL2
+	depends = libusb
+	source = bmusb-0.7.4.tar.gz::https://git.sesse.net/?p=bmusb;a=snapshot;h=0c0182f453e8bc26e630615ea6d2a2f05e868fde;sf=tgz
+	sha256sums = 70c294a8905f2cdc4141049cf9a9888c38616c06cd0babb3dfc7e05064374dd3
+
+pkgname = bmusb
+
