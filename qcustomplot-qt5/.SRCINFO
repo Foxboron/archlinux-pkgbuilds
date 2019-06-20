@@ -1,0 +1,16 @@
+pkgbase = qcustomplot-qt5
+	pkgdesc = Plotting library for Qt5
+	pkgver = 2.0.1
+	pkgrel = 2
+	url = http://www.qcustomplot.com
+	arch = x86_64
+	arch = i686
+	license = GPL
+	depends = qt5-base
+	source = QCustomPlot-2.0.1.tar.gz::http://www.qcustomplot.com/release/2.0.1/QCustomPlot.tar.gz
+	source = QCustomPlot-sharedlib-2.0.1.tar.gz::http://www.qcustomplot.com/release/2.0.1/QCustomPlot-sharedlib.tar.gz
+	sha256sums = f23f08b1294fea4c99b90afbd30fef6a85c294e5a6269164e1ee9f57dca9edfd
+	sha256sums = cca0847dad29beff57b36e21efd1a0c40f74781f4648fb0921fb269d4f61d583
+
+pkgname = qcustomplot-qt5
+
