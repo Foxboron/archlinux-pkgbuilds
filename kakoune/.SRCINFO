@@ -1,6 +1,6 @@
 pkgbase = kakoune
 	pkgdesc = Multiple-selection, UNIX-flavored modal editor
-	pkgver = 2019.01.20
+	pkgver = 2019.07.01
 	pkgrel = 1
 	url = https://kakoune.org/
 	arch = x86_64
@@ -13,8 +13,8 @@ pkgbase = kakoune
 	optdepends = tmux: splitting and creating windows
 	optdepends = xdotool: X11 utility to focus arbitrary kakoune clients
 	optdepends = xorg-xmessage: display debug messages in a new window
-	source = https://github.com/mawww/kakoune/releases/download/v2019.01.20/kakoune-2019.01.20.tar.bz2
-	sha256sums = 991103a227be00ca1b10ad575fd6c749fa4c99eb19763971c7b1e113e299b995
+	source = https://github.com/mawww/kakoune/releases/download/v2019.07.01/kakoune-2019.07.01.tar.bz2
+	sha256sums = 8cf978499000bd71a78736eaee5663bd996f53c4e610c62a9bd97502a3ed6fd3
 
 pkgname = kakoune
 
