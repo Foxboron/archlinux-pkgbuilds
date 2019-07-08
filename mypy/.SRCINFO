@@ -1,6 +1,6 @@
 pkgbase = mypy
 	pkgdesc = Optional static typing for Python 2 and 3 (PEP484)
-	pkgver = 0.701
+	pkgver = 0.711
 	pkgrel = 1
 	url = http://www.mypy-lang.org/
 	arch = any
@@ -11,8 +11,8 @@ pkgbase = mypy
 	depends = python-psutil
 	depends = python-typed-ast
 	depends = python-mypy_extensions
-	source = mypy-0.701.tar.gz::https://pypi.org/packages/source/m/mypy/mypy-0.701.tar.gz
-	sha256sums = 5764f10d27b2e93c84f70af5778941b8f4aa1379b2430f85c827e0f5464e8714
+	source = mypy-0.711.tar.gz::https://pypi.org/packages/source/m/mypy/mypy-0.711.tar.gz
+	sha256sums = bbed4a593d87476b592d52867ef86da2155ccd0becf0c4c02e6567d842e43368
 
 pkgname = mypy
 
