@@ -1,0 +1,28 @@
+pkgbase = nageru
+	pkgdesc = live video mixer, based around the standard M/E workflow.
+	pkgver = 1.8.6
+	pkgrel = 1
+	url = https://nageru.sesse.net/
+	arch = x86_64
+	license = GPL3
+	makedepends = meson
+	makedepends = eigen
+	depends = libmicrohttpd
+	depends = ffmpeg
+	depends = libx264
+	depends = protobuf
+	depends = movit
+	depends = bmusb
+	depends = qcustomplot
+	depends = pciutils
+	depends = zita-resampler
+	depends = sqlite3
+	depends = luajit
+	depends = cmake
+	source = https://nageru.sesse.net/nageru-1.8.6.tar.gz
+	source = luajit-patch.patch
+	sha256sums = 67dcb070a23589f624d7067c4b09fe11faa9b1c756b884c50473545fdf7817b3
+	sha256sums = 480c4de61188684fc8d1727a2e3ec615d33892234e8466db8011589e9277bdf7
+
+pkgname = nageru
+
