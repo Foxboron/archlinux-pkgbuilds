@@ -1,5 +1,4 @@
-for srcinfo in $(ls */.SRCINFO); do
-    pkgname=$(cat $srcinfo | grep pkgbase | awk '{print $3}')
-    pkgver=$(cat $srcinfo | grep pkgver | awk '{print $3}')
-    printf "%s %s\n" $pkgname $pkgver
-done
+#!/bin/bash
+while IFS= read -r -d '' srcinfo; do
+	printf "%s %s\n" "$(awk '/pkgbase/ {print $3}' "$srcinfo")" "$(awk '/pkgver/ {print $3}' "$srcinfo")"
+done < <(find . -maxdepth 2 -name ".SRCINFO" -print0)
