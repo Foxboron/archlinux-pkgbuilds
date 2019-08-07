@@ -1,6 +1,6 @@
 pkgbase = python-pydocstyle
 	pkgdesc = Docstring style checker
-	pkgver = 3.0.0
+	pkgver = 4.0.0
 	pkgrel = 1
 	url = http://www.pydocstyle.org/
 	arch = any
@@ -10,25 +10,10 @@ pkgbase = python-pydocstyle
 	checkdepends = python-mock
 	checkdepends = python-pip
 	checkdepends = python-snowballstemmer
-	checkdepends = python2-pytest
-	checkdepends = python2-pytest-runner
-	checkdepends = python2-mock
-	checkdepends = python2-pip
-	checkdepends = python2-pathlib
-	checkdepends = python2-snowballstemmer
-	makedepends = python
 	makedepends = python-setuptools
-	makedepends = python2
-	makedepends = python2-setuptools
-	source = python-pydocstyle-3.0.0.tar.gz::https://github.com/PyCQA/pydocstyle/archive/3.0.0.tar.gz
-	sha256sums = 99d4c0b584eca25a179766a1e4c7e69284bc94eb9abf6d8e010d69b5a22596ec
+	depends = python-snowballstemmer
+	source = python-pydocstyle-4.0.0.tar.gz::https://github.com/PyCQA/pydocstyle/archive/4.0.0.tar.gz
+	sha256sums = f5096e8003f97b4520137ee5f84945517003a68e58bdfbf13b91ea9073434a42
 
 pkgname = python-pydocstyle
-	depends = python
-	depends = python-snowballstemmer
-
-pkgname = python2-pydocstyle
-	depends = python2
-	depends = python2-snowballstemmer
-	depends = python2-configparser
 
