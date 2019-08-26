@@ -1,7 +1,7 @@
 pkgbase = python-autobahn
 	pkgdesc = Real-time framework for Web, Mobile & Internet of Things
 	pkgver = 19.8.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://crossbar.io/autobahn/
 	arch = x86_64
 	license = MIT
@@ -14,6 +14,7 @@ pkgbase = python-autobahn
 	makedepends = python-msgpack
 	makedepends = python-passlib
 	makedepends = python-pynacl
+	makedepends = python-pytrie
 	makedepends = python-ubjson
 	depends = python-cffi
 	depends = python-twisted
@@ -28,7 +29,8 @@ pkgbase = python-autobahn
 	optdepends = python-ubjson: UBJSON serializer support
 	optdepends = python-argon2_cffi: WAMP-SCRAM authentication support
 	optdepends = python-passlib: WAMP-SCRAM authentication support
-	optdepends = python-pynacl: WAMP-cryptosign support
+	optdepends = python-pynacl: WAMP-cryptosign and WAMP-cryptobox support
+	optdepends = python-pytrie: WAMP-cryptobox support
 	source = https://files.pythonhosted.org/packages/source/a/autobahn/autobahn-19.8.1.tar.gz
 	sha256sums = 294e7381dd54e73834354832604ae85567caf391c39363fed0ea2bfa86aa4304
 
