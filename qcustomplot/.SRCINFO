@@ -1,15 +1,15 @@
 pkgbase = qcustomplot
 	pkgdesc = Qt C++ widget for plotting and data visualization
 	pkgver = 2.0.1
-	pkgrel = 3
+	pkgrel = 4
 	url = https://www.qcustomplot.com/
 	arch = x86_64
 	license = GPL3
 	makedepends = doxygen
 	makedepends = graphviz
-	makedepends = python
 	makedepends = qt5-tools
 	depends = qt5-base
+	provides = libqcustomplot.so
 	replaces = qcustomplot-qt5
 	source = https://gitlab.com/DerManu/QCustomPlot/-/archive/v2.0.1/QCustomPlot-v2.0.1.tar.bz2
 	sha512sums = fb9184d517007b7c280e7122b3c14b6e49bf6b550bf41b95fe6808cc1c66c66dd82383796bfa4f43ce1ff0406e4c53e579ecc0aa2992741c5a45e5469f4bf5e8
