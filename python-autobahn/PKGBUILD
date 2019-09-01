@@ -3,8 +3,8 @@
 # Maintainer: Anatol Pomozov
 
 pkgname=python-autobahn
-pkgver=19.8.1
-pkgrel=2
+pkgver=19.9.2
+pkgrel=1
 pkgdesc='Real-time framework for Web, Mobile & Internet of Things'
 arch=(x86_64)
 url='https://crossbar.io/autobahn/'
@@ -27,7 +27,7 @@ optdepends=(
 )
 
 source=(https://files.pythonhosted.org/packages/source/a/autobahn/autobahn-$pkgver.tar.gz)
-sha256sums=('294e7381dd54e73834354832604ae85567caf391c39363fed0ea2bfa86aa4304')
+sha256sums=('985401e0af1c5f3fb59a209681ee878194c23fe88f865f6157679aa1db386724')
 
 prepare() {
   cd "$srcdir/autobahn-$pkgver"
