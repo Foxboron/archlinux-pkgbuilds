@@ -6,13 +6,13 @@ pkgbase = python-keyutils
 	arch = x86_64
 	license = Apache
 	checkdepends = python-pytest
-	checkdepends = python-pytest-runner
 	checkdepends = python2-pytest
-	checkdepends = python2-pytest-runner
 	makedepends = python
 	makedepends = python-setuptools
+	makedepends = python-pytest-runner
 	makedepends = python2
 	makedepends = python2-setuptools
+	makedepends = python2-pytest-runner
 	source = python-keyutils-0.5.tar.gz::https://github.com/sassoftware/python-keyutils/archive/v0.5.tar.gz
 	sha256sums = a1a12891e618f1568d9a873c0990e17ff39abf11ba81b65e5dae3cd7ced63441
 
