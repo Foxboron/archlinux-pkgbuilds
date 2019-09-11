@@ -1,0 +1,17 @@
+pkgbase = archlinux-contrib
+	pkgdesc = Collection of contrib scripts used in Arch Linux
+	pkgver = 20190911
+	pkgrel = 1
+	url = https://github.com/archlinux/contrib
+	arch = any
+	license = GPL
+	depends = python
+	optdepends = python-requests: for security tracker
+	source = https://github.com/archlinux/contrib/releases/download/20190911/contrib-20190911.tar.gz
+	source = https://github.com/archlinux/contrib/releases/download/20190911/contrib-20190911.tar.gz.sig
+	validpgpkeys = C100346676634E80C940FB9E9C02FF419FECBE16
+	sha256sums = 4a34be1916695cf7756ad2662a8404f9a416e258598c042d1984ba6833f4ebb8
+	sha256sums = SKIP
+
+pkgname = archlinux-contrib
+
