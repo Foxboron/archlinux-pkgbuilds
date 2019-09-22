@@ -1,6 +1,6 @@
 pkgbase = influxdb
 	pkgdesc = Scalable datastore for metrics, events, and real-time analytics
-	pkgver = 1.7.7
+	pkgver = 1.7.8
 	pkgrel = 1
 	url = https://github.com/InfluxData/influxdb
 	arch = x86_64
@@ -11,10 +11,10 @@ pkgbase = influxdb
 	makedepends = xmlto
 	makedepends = dep
 	backup = etc/influxdb/influxdb.conf
-	source = influxdb-1.7.7.tar.gz::https://github.com/influxdata/influxdb/archive/v1.7.7.tar.gz
+	source = influxdb-1.7.8.tar.gz::https://github.com/influxdata/influxdb/archive/v1.7.8.tar.gz
 	source = influxdb.sysusers
 	source = influxdb.tmpfiles
-	sha256sums = 2ac8d6edb7eb736ba1a7c2c3fc3d529c6685a27d0a0c11ef51b02f4561e44166
+	sha256sums = ed52925bb71ca8912e4daecce66a4c32935f396cf3f021464aab99934b41db51
 	sha256sums = 809cca823ae3027984bc7ace70db75753d7d0d4f6658a36db9d94a33054ca5e9
 	sha256sums = e2aa59413a6204737383b86cedefd866d7073f56ace5b89aad38c530cc86e60c
 
