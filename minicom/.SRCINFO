@@ -1,7 +1,7 @@
 pkgbase = minicom
 	pkgdesc = A serial communication program
 	pkgver = 2.7.1
-	pkgrel = 2
+	pkgrel = 3
 	url = http://alioth.debian.org/projects/minicom/
 	arch = x86_64
 	license = GPL
