@@ -1,36 +1,21 @@
 pkgbase = python-pipenv
 	pkgdesc = Sacred Marriage of Pipfile, Pip, & Virtualenv.
 	pkgver = 2018.11.26
-	pkgrel = 1
+	pkgrel = 2
 	url = https://docs.pipenv.org
 	arch = any
 	license = MIT
 	makedepends = python-setuptools
-	makedepends = python2-setuptools
+	depends = python
+	depends = python-pip
+	depends = python-pew
+	depends = python-virtualenv
+	depends = python-virtualenv-clone
+	depends = python-certifi
 	source = python-pipenv-2018.11.26.tar.gz::https://github.com/pypa/pipenv/archive/v2018.11.26.tar.gz
 	source = 0001-setup-don-t-setup_requires-on-things-used-to-run-dev.patch
 	sha256sums = b095395fa6763329fec54c8f6df38c35a39ec3b8b316a4418829e44d50cbc631
 	sha256sums = 878fd681571afe7e9664fcb06828f41e999d33dc31ae3b11cfbd93475fe8516d
 
 pkgname = python-pipenv
-	depends = python
-	depends = python-pip
-	depends = python-pew
-	depends = python-virtualenv
-	depends = python-setuptools
-	depends = python-virtualenv-clone
-	depends = python-certifi
-
-pkgname = python2-pipenv
-	depends = python2
-	depends = python2-pip
-	depends = python2-pew
-	depends = python2-virtualenv
-	depends = python2-virtualenv-clone
-	depends = python2-ordereddict
-	depends = python2-setuptools
-	depends = python2-certifi
-	depends = python2-pyopenssl
-	depends = python2-cryptography
-	depends = python2-idna
 
