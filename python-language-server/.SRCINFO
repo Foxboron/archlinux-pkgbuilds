@@ -1,6 +1,6 @@
 pkgbase = python-language-server
 	pkgdesc = An implementation of the Language Server Protocol for Python
-	pkgver = 0.28.3
+	pkgver = 0.29.0
 	pkgrel = 1
 	url = https://github.com/palantir/python-language-server
 	arch = any
@@ -9,6 +9,7 @@ pkgbase = python-language-server
 	checkdepends = python-pytest-runner
 	checkdepends = python-pytest-cov
 	checkdepends = python-pyflakes
+	checkdepends = flake8
 	checkdepends = python-mock
 	checkdepends = python-jedi
 	checkdepends = python-future
@@ -30,15 +31,14 @@ pkgbase = python-language-server
 	optdepends = python-mccabe: for complexity checking
 	optdepends = python-rope: for completions and renaming
 	optdepends = python-pyflakes: for linter to detect various errors
+	optdepends = flake8: for code linting
 	optdepends = python-pycodestyle: for style checking
 	optdepends = python-pylint: for code linting
 	optdepends = autopep8: for code formatting
 	optdepends = yapf: for code formatting (preferred over autopep8)
 	optdepends = python-pydocstyle: for docstring style checking
-	source = https://files.pythonhosted.org/packages/source/p/python-language-server/python-language-server-0.28.3.tar.gz
-	source = jedi15.patch
-	sha256sums = bf172c9c21fc5c2baa293155ddcb27712905f1ea1ebc0ba90985f7fd13039550
-	sha256sums = eaf656ed8400e0ebd8a2cc52311be018029f9c46b5dc23c4bb1a0a5067da7356
+	source = https://files.pythonhosted.org/packages/source/p/python-language-server/python-language-server-0.29.0.tar.gz
+	sha256sums = 008a1d4eac857f1b01cea3224503b6656d10833d2e08d6a9da7bde43c55ee33d
 
 pkgname = python-language-server
 
