@@ -1,7 +1,7 @@
 pkgbase = gopass
 	pkgdesc = The slightly more awesome standard unix password manager for teams.
 	pkgver = 1.8.6
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/gopasspw/gopass
 	arch = x86_64
 	license = MIT
