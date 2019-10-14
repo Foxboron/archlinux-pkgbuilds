@@ -1,6 +1,6 @@
 pkgbase = py3status
 	pkgdesc = An extensible i3status replacement/wrapper written in python
-	pkgver = 3.20
+	pkgver = 3.21
 	pkgrel = 1
 	url = https://www.ultrabug.fr/tag/py3status/
 	arch = any
@@ -14,8 +14,8 @@ pkgbase = py3status
 	optdepends = python-pydbus: for modules that rely on D-Bus
 	optdepends = python-tzlocal: for modules that need time zone info
 	optdepends = pacman-contrib: for the arch_updates module
-	source = py3status-3.20.tar.gz::https://github.com/ultrabug/py3status/archive/3.20.tar.gz
-	sha256sums = 136d3033f6945b522d02f43754b265d7f451694fa57577d923071de1831101f1
+	source = py3status-3.21.tar.gz::https://github.com/ultrabug/py3status/archive/3.21.tar.gz
+	sha256sums = 81a5e9a2cae77e148fd3ef1647426136e9b001c1fb8d8e9c7ade9fb5e6a0ae1b
 
 pkgname = py3status
 
