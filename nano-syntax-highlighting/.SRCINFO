@@ -1,0 +1,13 @@
+pkgbase = nano-syntax-highlighting
+	pkgdesc = Nano editor syntax highlighting enhancements
+	pkgver = 2019.10.17
+	pkgrel = 1
+	url = https://github.com/scopatz/nanorc
+	arch = any
+	license = GPL3
+	depends = nano
+	source = https://github.com/scopatz/nanorc/releases/download/2019.10.17/nanorc-2019.10.17.tar.gz
+	md5sums = 7f3d6e76dd9959849e67c16e51090928
+
+pkgname = nano-syntax-highlighting
+
