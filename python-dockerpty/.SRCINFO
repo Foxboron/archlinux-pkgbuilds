@@ -1,7 +1,7 @@
 pkgbase = python-dockerpty
 	pkgdesc = Python library to use the pseudo-tty of a docker container
 	pkgver = 0.4.1
-	pkgrel = 4
+	pkgrel = 5
 	url = https://github.com/d11wtq/dockerpty
 	arch = any
 	license = Apache
