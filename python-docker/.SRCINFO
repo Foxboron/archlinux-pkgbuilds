@@ -1,7 +1,7 @@
 pkgbase = python-docker
 	pkgdesc = A Python library for the Docker Engine API
 	pkgver = 4.1.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/docker/docker-py
 	arch = any
 	license = Apache
