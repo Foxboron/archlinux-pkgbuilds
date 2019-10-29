@@ -1,7 +1,7 @@
 pkgbase = python-send2trash
 	pkgdesc = Send file to trash natively
 	pkgver = 1.5.0
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/hsoft/send2trash
 	arch = any
 	license = BSD
