@@ -1,7 +1,7 @@
 pkgbase = python-jsonrpc-server
 	pkgdesc = An implementation of the Language Server Protocol for Python
 	pkgver = 0.2.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/palantir/python-jsonrpc-server
 	arch = any
 	license = MIT
