@@ -1,7 +1,7 @@
 pkgbase = python-rope
 	pkgdesc = Refactoring library
 	pkgver = 0.14.0
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/python-rope/rope
 	arch = any
 	license = GPL
