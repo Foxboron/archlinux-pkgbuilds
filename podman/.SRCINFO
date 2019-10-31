@@ -1,6 +1,6 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
-	pkgver = 1.6.1
+	pkgver = 1.6.2
 	pkgrel = 1
 	url = https://github.com/containers/libpod
 	arch = x86_64
@@ -19,8 +19,8 @@ pkgbase = podman
 	depends = btrfs-progs
 	depends = slirp4netns
 	depends = libsystemd
-	source = libpod-1.6.1.tar.gz::https://github.com/containers/libpod/archive/v1.6.1.tar.gz
-	sha256sums = 4593916eabbc83f978f0e668fbaa64dd44b8cacc85c6e2ab66c2d782af50dec9
+	source = git+https://github.com/containers/libpod#commit=f3ffda1e08f19e9a6a88484136b5eed76533f21a
+	sha256sums = SKIP
 
 pkgname = podman
 	optdepends = podman-docker: for Docker-compatible CLI
