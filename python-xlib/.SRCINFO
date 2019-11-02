@@ -1,7 +1,7 @@
 pkgbase = python-xlib
 	pkgdesc = A fully functional X client library for Python programs
 	pkgver = 0.25
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/python-xlib/python-xlib
 	arch = any
 	license = LGPL
