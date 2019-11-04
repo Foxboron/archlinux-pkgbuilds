@@ -1,7 +1,7 @@
 pkgbase = qutebrowser
 	pkgdesc = A keyboard-driven, vim-like browser based on PyQt5
 	pkgver = 1.8.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://www.qutebrowser.org/
 	arch = any
 	license = GPL
