@@ -1,7 +1,7 @@
 pkgbase = python-nltk
 	pkgdesc = Natural language processing in Python
 	pkgver = 3.4.5
-	pkgrel = 1
+	pkgrel = 2
 	url = https://www.nltk.org/
 	arch = any
 	license = APACHE
