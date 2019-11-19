@@ -1,7 +1,7 @@
 pkgbase = python-jsonrpc-server
 	pkgdesc = An implementation of the Language Server Protocol for Python
-	pkgver = 0.2.0
-	pkgrel = 3
+	pkgver = 0.3.0
+	pkgrel = 1
 	url = https://github.com/palantir/python-jsonrpc-server
 	arch = any
 	license = MIT
@@ -14,9 +14,10 @@ pkgbase = python-jsonrpc-server
 	makedepends = python-setuptools
 	depends = python
 	depends = python-future
-	source = https://files.pythonhosted.org/packages/source/p/python-jsonrpc-server/python-jsonrpc-server-0.2.0.tar.gz
-	source = python-3.8,patch
-	sha256sums = 59ce9c9523c14c493a327b3a27ee37464a36dc2b9d8ab485ecbcedd38840380a
+	depends = python-ujson
+	source = https://files.pythonhosted.org/packages/source/p/python-jsonrpc-server/python-jsonrpc-server-0.3.0.tar.gz
+	source = python-3.8.patch
+	sha256sums = fed74a453124616c41f74d326164ba7d6dcb5a2a231e04f0f3f050daeca6c37e
 	sha256sums = 718d791bd233eeb9c3876f5e18d32e28e75d919375c4c2dd511f8a4e1023b479
 
 pkgname = python-jsonrpc-server
