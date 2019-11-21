@@ -1,14 +1,14 @@
 pkgbase = python-mypy_extensions
 	pkgdesc = Experimental type system extensions for programs checked with the mypy typechecker
-	pkgver = 0.4.1
-	pkgrel = 3
+	pkgver = 0.4.3
+	pkgrel = 1
 	url = http://www.mypy-lang.org/
 	arch = any
 	license = MIT
 	makedepends = python-setuptools
 	depends = python
-	source = python-mypy_extensions-0.4.1.tar.gz::https://pypi.org/packages/source/m/mypy_extensions/mypy_extensions-0.4.1.tar.gz
-	sha256sums = 37e0e956f41369209a3d5f34580150bcacfabaa57b33a15c0b25f4b5725e0812
+	source = python-mypy_extensions-0.4.3.tar.gz::https://pypi.org/packages/source/m/mypy_extensions/mypy_extensions-0.4.3.tar.gz
+	sha256sums = 2d82818f5bb3e369420cb3c4060a7970edba416647068eb4c5343488a6c604a8
 
 pkgname = python-mypy_extensions
 
