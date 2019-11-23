@@ -1,22 +1,22 @@
 #!/usr/bin/env bash
-set -ex
+set -e
 if [[ -z "${1}" ]]; then
-	echo "Usage: ${0} [REPO]"
-	exit 1
+    echo "Usage: ${0} [REPO]"
+    exit 1
 fi
 
 prefix=$(dirname "${0}")
 pushd "${prefix}/${1}" &> /dev/null
 
-for pkgbase in `cat ../community.list`; do \
+for pkgbase in $(cat ../community.list); do \
     [ ! -d "${pkgbase}" ] && svn update "${pkgbase}"
     [ -d "../../${pkgbase}" ] && continue
     mkdir -p "../../${pkgbase}"
-    for file in `ls $pkgbase/trunk`; do
-		echo "    ${file}"
-		cp "${pkgbase}/trunk/${file}" "../../${pkgbase}"
-		git add "../../${pkgbase}/${file}"
-	done
+    for file in $(ls $pkgbase/trunk); do
+        echo "    ${file}"
+        cp "${pkgbase}/trunk/${file}" "../../${pkgbase}"
+        git add "../../${pkgbase}/${file}"
+    done
     pushd "$pkgbase/trunk" &> /dev/null
     makepkg --printsrcinfo > "../../../../${pkgbase}/.SRCINFO"
     git add "../../../../${pkgbase}/.SRCINFO"

@@ -1,8 +1,10 @@
 acpid
 archlinux-contrib
+archlinux-repro
 bmusb
 bolt
 bucklespring
+buildah
 containerd
 darktable
 delve
@@ -27,6 +29,7 @@ minicom
 mopidy
 mypy
 nageru
+nano-syntax-highlighting
 neofetch
 nvme-cli
 font-awesome
@@ -45,6 +48,7 @@ python-ldap
 python-m2crypto
 python-pew
 python-prompt_toolkit
+python-psycopg2
 python-pyserial
 python-rope
 python-shutilwhich
