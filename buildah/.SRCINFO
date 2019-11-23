@@ -1,0 +1,27 @@
+pkgbase = buildah
+	pkgdesc = A tool which facilitates building OCI images
+	pkgver = 1.11.4
+	pkgrel = 1
+	url = https://github.com/containers/buildah
+	arch = x86_64
+	license = Apache
+	makedepends = go-pie
+	makedepends = git
+	makedepends = bash-bats
+	makedepends = btrfs-progs
+	makedepends = device-mapper
+	makedepends = gpgme
+	makedepends = libassuan
+	makedepends = bzip2
+	makedepends = go-md2man
+	makedepends = runc
+	makedepends = skopeo
+	depends = ostree
+	depends = runc
+	depends = skopeo
+	depends = slirp4netns
+	source = git://github.com/containers/buildah.git#commit=21b4778b359ef7d6efe877c2f90f3df67ad93609
+	md5sums = SKIP
+
+pkgname = buildah
+
