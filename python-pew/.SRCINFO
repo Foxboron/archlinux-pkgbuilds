@@ -7,21 +7,11 @@ pkgbase = python-pew
 	license = MIT
 	makedepends = python
 	makedepends = python-setuptools
-	makedepends = python2
-	makedepends = python2-setuptools
+	depends = python
+	depends = python-virtualenv
+	depends = python-virtualenv-clone
 	source = python-pew-1.2.0.tar.gz::https://github.com/berdario/pew/archive/1.2.0.zip
 	sha256sums = 58e4f04ba644080ef820c2e07d1704112727e392c2fd1d42cdc31e112ffc2345
 
 pkgname = python-pew
-	depends = python
-	depends = python-virtualenv
-	depends = python-virtualenv-clone
-
-pkgname = python2-pew
-	depends = python2
-	depends = python2-virtualenv
-	depends = python2-virtualenv-clone
-	depends = python2-pathlib
-	depends = python2-backports.shutil_get_terminal_size
-	depends = python2-shutilwhich
 
