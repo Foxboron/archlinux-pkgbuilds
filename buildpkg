@@ -402,7 +402,6 @@ for PACKAGE in ${PACKAGES}; do
         if [[ ! -f "${tarballsrc}" ]]; then
             warning "Skipping distribution: missing ${tarballsrc}"
         else
-            msg "Distributing ${PACKAGE} ${pkgverfull} into ${repo}..."
             msg2 "Cleaning target..."
             rm -f "./${destdir}/"*
             msg2 "Extracting sources..."
@@ -419,6 +418,7 @@ for PACKAGE in ${PACKAGES}; do
 
             # publish release
             if [[ "${PUBLISH}" -eq 1 ]]; then
+                msg "Distributing ${PACKAGE} ${pkgverfull} into ${repo}..."
                 stat_busy "Confirm ${PACKAGE} ${pkgverfull} to publish"
                 read
                 git commit -v .

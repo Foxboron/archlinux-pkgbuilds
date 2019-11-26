@@ -46,12 +46,10 @@ python2-functools32
 python-hidapi
 python-ldap
 python-m2crypto
-python-pew
 python-prompt_toolkit
 python-psycopg2
 python-pyserial
 python-rope
-python-shutilwhich
 python-sqlobject
 python-sqlparse
 python2-typing
