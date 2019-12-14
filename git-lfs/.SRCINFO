@@ -1,6 +1,6 @@
 pkgbase = git-lfs
 	pkgdesc = Git extension for versioning large files
-	pkgver = 2.9.1
+	pkgver = 2.9.2
 	pkgrel = 1
 	url = https://git-lfs.github.com
 	arch = x86_64
@@ -9,7 +9,7 @@ pkgbase = git-lfs
 	makedepends = ruby-ronn
 	makedepends = go-tools
 	depends = git
-	source = git+https://github.com/git-lfs/git-lfs.git#tag=v2.9.1?signed
+	source = git+https://github.com/git-lfs/git-lfs.git#tag=v2.9.2?signed
 	validpgpkeys = 88ACE9B29196305BA9947552F1BA225C0223B187
 	sha256sums = SKIP
 
