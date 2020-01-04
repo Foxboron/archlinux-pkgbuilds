@@ -1,7 +1,7 @@
 pkgbase = hexedit
 	pkgdesc = View and edit files in hexadecimal or in ASCII
 	pkgver = 1.4.2
-	pkgrel = 1
+	pkgrel = 2
 	url = http://rigaux.org/hexedit.html
 	arch = x86_64
 	license = GPL
