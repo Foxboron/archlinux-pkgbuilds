@@ -1,6 +1,6 @@
 pkgbase = go
 	pkgver = 1.13.5
-	pkgrel = 1
+	pkgrel = 2
 	epoch = 2
 	url = https://golang.org/
 	arch = x86_64
@@ -17,6 +17,6 @@ pkgname = go
 
 pkgname = go-pie
 	pkgdesc = Core compiler tools for the Go programming language (with PIE enabled by default)
-	provides = go=2:1.13.5-1
+	provides = go=2:1.13.5-2
 	conflicts = go
 
