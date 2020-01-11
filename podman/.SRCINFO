@@ -1,6 +1,6 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
-	pkgver = 1.6.3
+	pkgver = 1.7.0
 	pkgrel = 1
 	url = https://github.com/containers/libpod
 	arch = x86_64
@@ -13,16 +13,17 @@ pkgbase = podman
 	depends = device-mapper
 	depends = iptables
 	depends = libseccomp
-	depends = ostree
 	depends = runc
 	depends = skopeo
 	depends = btrfs-progs
 	depends = slirp4netns
 	depends = libsystemd
-	source = git+https://github.com/containers/libpod#commit=9d087f6a766259ba53b224944f1b7b778035c370
-	source = fix-makefile.patch::https://github.com/containers/libpod/commit/ca4c24cce1345ab8757cd9a590a0f099207150fa.patch
+	optdepends = catatonit: --init flag support
+	source = git+https://github.com/containers/libpod#tag=v1.7.0?signed
+	source = fix-makefile.patch
+	validpgpkeys = B7DBDCA456F7335E91F1C25CD3624C551D0515C4
 	sha256sums = SKIP
-	sha256sums = b94b7b07320e95e068972d697ae36a027bc48d173e1f52b96f7817e63e77f92f
+	sha256sums = 7dc9b1bb6b134196ca5125ba40c1f6d82c260a42bc929d9fb6142a5ac61a1c6a
 
 pkgname = podman
 	optdepends = podman-docker: for Docker-compatible CLI
