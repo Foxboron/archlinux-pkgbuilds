@@ -1,6 +1,6 @@
 pkgbase = python-jsonrpc-server
 	pkgdesc = Python library implementing asynchronous JSON RPC server
-	pkgver = 0.3.2
+	pkgver = 0.3.3
 	pkgrel = 1
 	url = https://github.com/palantir/python-jsonrpc-server
 	arch = any
@@ -15,9 +15,9 @@ pkgbase = python-jsonrpc-server
 	depends = python
 	depends = python-future
 	depends = python-ujson
-	source = https://files.pythonhosted.org/packages/source/p/python-jsonrpc-server/python-jsonrpc-server-0.3.2.tar.gz
+	source = https://files.pythonhosted.org/packages/source/p/python-jsonrpc-server/python-jsonrpc-server-0.3.3.tar.gz
 	source = python-3.8.patch
-	sha256sums = 05bcf26eac4c98c96afec266acdf563d8f454e12612da9a3f9aabb66c46daf35
+	sha256sums = 61510d617e4678b656f6bb7f9f1866d3804a6a7cd6968fa11c6db164fca80c4b
 	sha256sums = 718d791bd233eeb9c3876f5e18d32e28e75d919375c4c2dd511f8a4e1023b479
 
 pkgname = python-jsonrpc-server
