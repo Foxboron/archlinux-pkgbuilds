@@ -1,7 +1,7 @@
 pkgbase = sqlite-replication
 	pkgdesc = Replication Enabled SQL Database Engine in a C Library
-	pkgver = 3.30.1
-	pkgrel = 2
+	pkgver = 3.30.1.4
+	pkgrel = 1
 	url = https://github.com/canonical/sqlite
 	arch = x86_64
 	license = custom:Public Domain
