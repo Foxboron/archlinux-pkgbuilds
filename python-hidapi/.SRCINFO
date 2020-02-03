@@ -1,7 +1,7 @@
 pkgbase = python-hidapi
 	pkgdesc = A Cython interface to the hidapi from signal11/hidapi
-	pkgver = 0.7.99.21
-	pkgrel = 4
+	pkgver = 0.9.0.1
+	pkgrel = 1
 	url = https://github.com/trezor/cython-hidapi
 	arch = x86_64
 	license = custom
@@ -10,8 +10,8 @@ pkgbase = python-hidapi
 	makedepends = udev
 	depends = libusb
 	depends = python
-	source = https://pypi.org/packages/source/h/hidapi/hidapi-0.7.99.post21.tar.gz
-	sha512sums = 40efcbbb1d30c1413a5bc764e9bcef8b798f194456b35c83ea4f46c2eacf3eccfca5bb482602892ba8f24ed8085eb6e21e1fb94f7f12a7abb22bd2c571b21008
+	source = https://pypi.org/packages/source/h/hidapi/hidapi-0.9.0.post1.tar.gz
+	sha512sums = 2fd6526406ebb787cacf09fac84e4660c61024ba9e3f9d277067ce016873e497ae79755d5f7fc699d32212c333e228095488ce25d526db93746aa00333ff5303
 
 pkgname = python-hidapi
 
