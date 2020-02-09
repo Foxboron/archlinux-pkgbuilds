@@ -1,6 +1,6 @@
 pkgbase = python-autobahn
 	pkgdesc = Real-time framework for Web, Mobile & Internet of Things
-	pkgver = 20.1.3
+	pkgver = 20.2.1
 	pkgrel = 1
 	url = https://crossbar.io/autobahn/
 	arch = x86_64
@@ -18,7 +18,6 @@ pkgbase = python-autobahn
 	makedepends = python-ubjson
 	depends = python-cffi
 	depends = python-twisted
-	depends = python-six
 	depends = python-txaio
 	depends = python-wsaccel
 	depends = python-setuptools
@@ -26,13 +25,17 @@ pkgbase = python-autobahn
 	optdepends = python-cbor: CBOR serializer support
 	optdepends = python-flatbuffers: FlatBuffers serializer support
 	optdepends = python-msgpack: MsgPack serializer support
+	optdepends = python-u-msgpack: pure-python alternative to python-msgpack for MsgPack serializer support
 	optdepends = python-ubjson: UBJSON serializer support
+	optdepends = python-ujson: accelerated JSON serializer support
 	optdepends = python-argon2_cffi: WAMP-SCRAM authentication support
 	optdepends = python-passlib: WAMP-SCRAM authentication support
 	optdepends = python-pynacl: WAMP-cryptosign and WAMP-cryptobox support
 	optdepends = python-pytrie: WAMP-cryptobox support
-	source = https://files.pythonhosted.org/packages/source/a/autobahn/autobahn-20.1.3.tar.gz
-	sha256sums = a428b43f13116e212cb98ba646697021ed52f65d50373fee0886dfa484769b2b
+	optdepends = python-pyopenssl: SSL/TLS support
+	optdepends = python-snappy: snappy compression suppport for WebSocket messages
+	source = https://files.pythonhosted.org/packages/source/a/autobahn/autobahn-20.2.1.tar.gz
+	sha256sums = 1ec603ea374a3b9d85540c499709c41f35f7c6e288b571d12da14aba6c381211
 
 pkgname = python-autobahn
 
