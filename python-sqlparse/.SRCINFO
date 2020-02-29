@@ -1,14 +1,14 @@
 pkgbase = python-sqlparse
 	pkgdesc = Non-validating SQL parser for Python
-	pkgver = 0.3.0
-	pkgrel = 4
+	pkgver = 0.3.1
+	pkgrel = 1
 	url = https://github.com/andialbrecht/sqlparse
 	arch = any
 	license = BSD
 	makedepends = python-setuptools
 	depends = python
-	source = python-sqlparse-0.3.0.tar.gz::https://github.com/andialbrecht/sqlparse/archive/0.3.0.tar.gz
-	sha256sums = a75fddae009fba1d66786203c9dd3a842aa4415475c466d15484139117108474
+	source = python-sqlparse-0.3.1.tar.gz::https://github.com/andialbrecht/sqlparse/archive/0.3.1.tar.gz
+	sha256sums = 344b539482b75c244ac69fbb160d0f4d63a288a392475c8418ca692c594561f9
 
 pkgname = python-sqlparse
 
