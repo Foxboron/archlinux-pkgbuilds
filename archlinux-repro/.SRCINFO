@@ -1,6 +1,6 @@
 pkgbase = archlinux-repro
 	pkgdesc = Tools to reproduce Arch Linux packages
-	pkgver = 20200112
+	pkgver = 20200229
 	pkgrel = 1
 	url = http://github.com/archlinux/archlinux-repro
 	arch = any
@@ -12,10 +12,10 @@ pkgbase = archlinux-repro
 	depends = gnupg
 	depends = git
 	depends = diffutils
-	source = https://github.com/archlinux/archlinux-repro/releases/download/20200112/archlinux-repro-20200112.tar.gz
-	source = https://github.com/archlinux/archlinux-repro/releases/download/20200112/archlinux-repro-20200112.tar.gz.sig
+	source = https://github.com/archlinux/archlinux-repro/releases/download/20200229/archlinux-repro-20200229.tar.gz
+	source = https://github.com/archlinux/archlinux-repro/releases/download/20200229/archlinux-repro-20200229.tar.gz.sig
 	validpgpkeys = C100346676634E80C940FB9E9C02FF419FECBE16
-	sha256sums = e332263001cd74682ba600ab3c846ad8401e07015748c7fbff678ba8c85ac60d
+	sha256sums = bab727fa5e82a9ce8990f8e6ca0ec52ea0156eea2f11b5eac9f7a1d24f1ccdbe
 	sha256sums = SKIP
 
 pkgname = archlinux-repro
