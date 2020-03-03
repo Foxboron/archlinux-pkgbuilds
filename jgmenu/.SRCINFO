@@ -1,6 +1,6 @@
 pkgbase = jgmenu
-	pkgdesc = Small X11 menu intended to be used with openbox and tint2
-	pkgver = 4.0.2
+	pkgdesc = Simple, independent, contemporary-looking X11 menu, designed for scripting, ricing and tweaking
+	pkgver = 4.1.0
 	pkgrel = 1
 	url = https://www.github.com/johanmalm/jgmenu
 	arch = i686
@@ -15,8 +15,8 @@ pkgbase = jgmenu
 	depends = glib2
 	depends = menu-cache
 	depends = python
-	source = jgmenu-4.0.2.tar.gz::https://www.github.com/johanmalm/jgmenu/archive/v4.0.2.tar.gz
-	sha256sums = 9c488514a4cc5d5406c8480325e532b65e69af23b31226dfcbb6cca3ae0fac86
+	source = jgmenu-4.1.0.tar.gz::https://www.github.com/johanmalm/jgmenu/archive/v4.1.0.tar.gz
+	sha256sums = 0a693db7295200b22f24e0d8ab3986353911aa214cd8199f3ec583710dc72a92
 
 pkgname = jgmenu
 
