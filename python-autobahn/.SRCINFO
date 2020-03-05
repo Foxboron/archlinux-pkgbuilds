@@ -1,11 +1,10 @@
 pkgbase = python-autobahn
 	pkgdesc = Real-time framework for Web, Mobile & Internet of Things
-	pkgver = 20.2.2
+	pkgver = 20.3.1
 	pkgrel = 1
 	url = https://crossbar.io/autobahn/
 	arch = x86_64
 	license = MIT
-	checkdepends = python-mock
 	checkdepends = python-pytest
 	checkdepends = python-pytest-asyncio
 	makedepends = python-argon2_cffi
@@ -34,8 +33,8 @@ pkgbase = python-autobahn
 	optdepends = python-pytrie: WAMP-cryptobox support
 	optdepends = python-pyopenssl: SSL/TLS support
 	optdepends = python-snappy: snappy compression suppport for WebSocket messages
-	source = https://files.pythonhosted.org/packages/source/a/autobahn/autobahn-20.2.2.tar.gz
-	sha256sums = 8fb9f3e7f6de5b7ee5479a56582873b927cc25d72319d0a86f43d992048d8171
+	source = https://files.pythonhosted.org/packages/source/a/autobahn/autobahn-20.3.1.tar.gz
+	sha256sums = 88e150e4b3d284b83daafd8e0b289a5625ee00c633a2c580055bf1be2d391002
 
 pkgname = python-autobahn
 
