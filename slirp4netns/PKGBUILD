@@ -1,0 +1,35 @@
+# Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
+
+pkgname=slirp4netns
+pkgdesc='User-mode networking for unprivileged network namespaces'
+pkgver=0.4.3
+pkgrel=1
+arch=(x86_64)
+url="https://github.com/rootless-containers/slirp4netns"
+license=(GPL2)
+depends=(glibc glib2 libcap libseccomp)
+makedepends=(git)
+_commit=2244b9b6461afeccad1678fac3d6e478c28b4ad6  # tags/v0.4.3
+source=("git+$url#commit=$_commit")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd $pkgname
+  git describe --tags | sed 's/^v//;s/-/+/g'
+}
+
+prepare() {
+  cd $pkgname
+  autoreconf -fi
+}
+
+build() {
+  cd $pkgname
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $pkgname
+  make DESTDIR="$pkgdir" install
+}
