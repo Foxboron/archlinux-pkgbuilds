@@ -23,21 +23,21 @@ for pkgbase in $updated_packages; do
 	echo "$pkgbase"
 	for file in $files; do
 		echo "    ${file}"
-        if ! cmp "${pkgbase}/trunk/${file}" "../../${pkgbase}/${file}" &>/dev/null ; then
-            cp "${pkgbase}/trunk/${file}" "../../${pkgbase}"
-            git add "../../${pkgbase}/${file}"
-        fi
+		if ! cmp "${pkgbase}/trunk/${file}" "../../${pkgbase}/${file}" &>/dev/null ; then
+			cp "${pkgbase}/trunk/${file}" "../../${pkgbase}"
+			git add "../../${pkgbase}/${file}"
+		fi
 	done
 	deleted_files=$(grep "${pkgbase}/trunk/" .update.tmp |sed -En 's| ?[D]+ {3,4}.+/trunk/(.+)|\1|p')
 	for file in $deleted_files; do
 		echo "    Deleted: ${file}"
-        rm "../../${pkgbase}/${file}"
+		rm "../../${pkgbase}/${file}"
 		git add "../../${pkgbase}/${file}"
 	done
-    pushd "$pkgbase/trunk" &> /dev/null
-    makepkg --printsrcinfo > "../../../../${pkgbase}/.SRCINFO"
-    git add "../../../../${pkgbase}/.SRCINFO"
-    popd &> /dev/null
+	pushd "$pkgbase/trunk" &> /dev/null
+	makepkg --printsrcinfo > "../../../../${pkgbase}/.SRCINFO"
+	git add "../../../../${pkgbase}/.SRCINFO"
+	popd &> /dev/null
 	svn_log=$(svn log -l 1 "${pkgbase}/trunk"|head -n-1|tail -n-2)
 	git commit -v "../../${pkgbase}" --template <(printf "\n%s" "$svn_log")
 done
