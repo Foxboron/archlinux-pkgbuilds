@@ -1,0 +1,29 @@
+# Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
+
+pkgname=conmon
+pkgver=2.0.9
+pkgrel=1
+epoch=1
+pkgdesc='OCI container runtime monitor'
+arch=(x86_64)
+url='https://github.com/containers/conmon'
+license=(APACHE)
+depends=(glibc glib2 systemd-libs)
+makedepends=(git)
+_commit=60b42f20f222df9da07a01ee444327348b9f54ee  # tags/v2.0.9
+source=("git+https://github.com/containers/conmon#commit=${_commit}")
+md5sums=('SKIP')
+
+pkgver() {
+  cd $pkgname
+  git describe --tags | sed 's/^v//;s/-/+/g'
+}
+
+build() {
+  cd conmon
+  make PREFIX=/usr LIBEXECDIR=/usr/lib DESTDIR="$pkgdir"
+}
+
+package() {
+  install -Dm755 conmon/bin/conmon "$pkgdir/usr/bin/conmon"
+}
