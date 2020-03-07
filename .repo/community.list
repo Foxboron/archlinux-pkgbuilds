@@ -6,6 +6,7 @@ bolt
 bucklespring
 buildah
 catatonit
+conmon
 containerd
 crun
 darktable
@@ -97,7 +98,9 @@ restic
 rofi
 runc
 skopeo
+slirp4netns
 sqlite-replication
+toolbox
 font-awesome
 udiskie
 vim-ultisnips

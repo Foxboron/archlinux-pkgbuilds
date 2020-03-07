@@ -14,7 +14,7 @@ hy 0.18.0
 i3-gaps 4.18
 influxdb 1.7.10
 jgmenu 4.1.0
-jp2a 1.0.7
+jp2a 1.0.9
 kakoune 2020.01.16
 lostfiles 4.03
 minicom 2.7.1
@@ -62,7 +62,7 @@ runc 1.0.0rc10
 udiskie 2.1.0
 bolt 0.8
 go 1.14
-go-tools 1.13+3523+65e3620a7
+go-tools 1.14+3922+575de4798
 python-jsonrpc-server 0.3.4
 py3status 3.27
 bucklespring 1.4.0
@@ -101,3 +101,6 @@ crun 0.13
 vim-ultisnips 3.2
 python-typed-ast 1.4.1
 k9s 0.17.5
+conmon 2.0.11
+slirp4netns 0.4.3
+toolbox 0.0.18
