@@ -1,7 +1,7 @@
 pkgbase = vim-ultisnips
 	pkgdesc = TextMate-style snippets for Vim.
-	pkgver = 3.1
-	pkgrel = 4
+	pkgver = 3.2
+	pkgrel = 1
 	url = https://github.com/SirVer/ultisnips
 	arch = any
 	groups = vim-plugins
@@ -10,10 +10,10 @@ pkgbase = vim-ultisnips
 	depends = vim
 	depends = python2
 	replaces = vim-snipmate
-	source = vim-ultisnips-3.1.tar.gz::https://github.com/SirVer/ultisnips/archive/3.1.tar.gz
+	source = vim-ultisnips-3.2.tar.gz::https://github.com/SirVer/ultisnips/archive/3.2.tar.gz
 	source = git+https://github.com/honza/vim-snippets.git
-	md5sums = bafd0738b618cc609606d0eba756d41c
-	md5sums = SKIP
+	sha256sums = 550365cdf6bf030b9e5b77e511b4e6b1427660ea6a117c4b6bb77afcb950c4ce
+	sha256sums = SKIP
 
 pkgname = vim-ultisnips
 
