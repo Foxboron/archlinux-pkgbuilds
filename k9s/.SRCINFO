@@ -1,7 +1,7 @@
 pkgbase = k9s
 	pkgdesc = TUI for managing Kubernetes clusters and pods
 	pkgver = 0.18.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/derailed/k9s
 	arch = x86_64
 	license = APACHE
