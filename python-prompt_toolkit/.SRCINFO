@@ -1,6 +1,6 @@
 pkgbase = python-prompt_toolkit
 	pkgdesc = Library for building powerful interactive command lines in Python
-	pkgver = 3.0.4
+	pkgver = 3.0.5
 	pkgrel = 1
 	url = https://github.com/jonathanslenders/python-prompt-toolkit
 	arch = any
@@ -11,8 +11,8 @@ pkgbase = python-prompt_toolkit
 	depends = python-six
 	depends = python-wcwidth
 	options = !emptydirs
-	source = https://files.pythonhosted.org/packages/source/p/prompt_toolkit/prompt_toolkit-3.0.4.tar.gz
-	sha256sums = ebe6b1b08c888b84c50d7f93dee21a09af39860144ff6130aadbd61ae8d29783
+	source = https://files.pythonhosted.org/packages/source/p/prompt_toolkit/prompt_toolkit-3.0.5.tar.gz
+	sha256sums = 563d1a4140b63ff9dd587bda9557cffb2fe73650205ab6f4383092fb882e7dc8
 
 pkgname = python-prompt_toolkit
 
