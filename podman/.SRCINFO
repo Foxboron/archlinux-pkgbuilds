@@ -1,25 +1,28 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
-	pkgver = 1.8.2
+	pkgver = 1.9.0
 	pkgrel = 1
 	url = https://github.com/containers/libpod
 	arch = x86_64
 	license = Apache
-	makedepends = go-pie
+	makedepends = go
 	makedepends = go-md2man
 	makedepends = git
+	makedepends = btrfs-progs
 	depends = cni-plugins
 	depends = conmon
 	depends = device-mapper
 	depends = iptables
 	depends = libseccomp
 	depends = runc
-	depends = skopeo
-	depends = btrfs-progs
 	depends = slirp4netns
 	depends = libsystemd
+	depends = fuse-overlayfs
+	depends = skopeo
 	optdepends = catatonit: --init flag support
-	source = git+https://github.com/containers/libpod#tag=v1.8.2?signed
+	optdepends = crun: support for unified cgroupsv2
+	optdepends = btrfs-progs: support btrfs backend devices
+	source = git+https://github.com/containers/libpod#tag=v1.9.0?signed
 	validpgpkeys = B7DBDCA456F7335E91F1C25CD3624C551D0515C4
 	sha256sums = SKIP
 
