@@ -1,11 +1,11 @@
 pkgbase = baidupcs-go
 	pkgdesc = Terminal utility for Baidu Network Disk
 	pkgver = 3.6.2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/iikira/BaiduPCS-Go
 	arch = x86_64
 	license = Apache
-	makedepends = go-pie
+	makedepends = go
 	makedepends = git
 	depends = glibc
 	provides = baidupcs
