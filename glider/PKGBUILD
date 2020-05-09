@@ -1,0 +1,38 @@
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+
+pkgname=glider
+pkgver=0.10.0
+pkgrel=1
+pkgdesc="A forward proxy with multiple protocols support"
+arch=('x86_64')
+url="https://github.com/nadoo/glider"
+license=('GPL')
+depends=('glibc')
+makedepends=('go-pie' 'git')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/nadoo/glider/archive/v$pkgver.tar.gz")
+sha512sums=('cd2f1dcec0f4b9d4836e766ecd406cd94cbe26ccaaf42834f5c322815967a1ad1e6fc85fe4e07fdcd7591ef513b1d672bd09ba69f3efe14f97417d577a772c05')
+
+prepare() {
+  mkdir .gopath
+  export GOPATH="$srcdir"/.gopath
+  mkdir -p "$GOPATH"/src/github.com/nadoo
+  ln -sf "$srcdir"/glider-$pkgver "$GOPATH"/src/github.com/nadoo/glider
+
+  go get github.com/nadoo/conflag github.com/nadoo/go-shadowsocks2
+}
+
+build() {
+  cd glider-$pkgver
+  go build \
+    -gcflags "all=-trimpath=${PWD}" \
+    -asmflags "all=-trimpath=${PWD}" \
+    -ldflags "-extldflags ${LDFLAGS}"
+
+}
+
+package() {
+  cd glider-$pkgver
+  install -Dm755 glider "$pkgdir"/usr/bin/glider
+  install -Dm644 config/glider.conf.example "$pkgdir"/etc/glider/glider.conf.example
+  install -Dm644 systemd/glider@.service "$pkgdir"/usr/lib/systemd/system/glider@.service
+}
