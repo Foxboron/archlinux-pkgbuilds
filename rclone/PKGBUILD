@@ -1,0 +1,54 @@
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+
+pkgname=rclone
+pkgver=1.51.0
+pkgrel=3
+pkgdesc="Sync files to and from Google Drive, S3, Swift, Cloudfiles, Dropbox and Google Cloud Storage"
+arch=('x86_64')
+url="https://rclone.org/"
+license=('MIT')
+depends=('glibc')
+optdepends=('fuse2: for rclone mount')
+makedepends=('python' 'pandoc' 'go-pie' 'git')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/rclone/rclone/archive/v$pkgver.tar.gz")
+sha512sums=('b0881e09b75093abe4d31e95425a90513aed4a16d9e2dbf79023c9dc68875b90a1332204879530c450a16ab9cac475d967f7657d6f810a1e0f0d84b88d7de916')
+
+prepare() {
+  cd rclone-$pkgver
+
+  sed -i "1s/python$/&2/" bin/make_manual.py bin/make_backend_docs.py
+
+  mkdir -p .gopath/src/github.com/rclone
+  ln -sf "$PWD" .gopath/src/github.com/rclone/rclone
+  export GOPATH="$PWD/.gopath"
+
+  go get github.com/rclone/rclone
+}
+
+build() {
+  cd rclone-$pkgver/.gopath/src/github.com/rclone/rclone
+
+  PATH="$GOPATH/bin:$PATH" make TAG=v$pkgver rclone rclone.1 MANUAL.html MANUAL.txt
+
+  ./rclone genautocomplete bash rclone.bash_completion
+  ./rclone genautocomplete zsh rclone.zsh_completion
+}
+
+check() {
+  cd rclone-$pkgver/.gopath/src/github.com/rclone/rclone
+  make TAG=v$pkgver test || warning "Tests failed"
+}
+
+package() {
+  cd rclone-$pkgver/.gopath/src/github.com/rclone/rclone
+  make TAG=v$pkgver DESTDIR="$pkgdir" install
+
+  install -Dm644 rclone.bash_completion "$pkgdir"/usr/share/bash-completion/completions/rclone
+  install -Dm644 rclone.zsh_completion "$pkgdir"/usr/share/zsh/site-functions/_rclone
+
+  install -Dm644 COPYING "$pkgdir"/usr/share/licenses/$pkgname/COPYING
+
+  install -Dm644 rclone.1 "$pkgdir"/usr/share/man/man1/rclone.1
+  install -d "$pkgdir"/usr/share/doc/$pkgname
+  install -t "$pkgdir"/usr/share/doc/$pkgname -m644 MANUAL.html MANUAL.txt
+}
