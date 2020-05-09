@@ -1,14 +1,11 @@
 pkgbase = dns-over-https
 	pkgdesc = Client and server software to query DNS over HTTPS, using Google DNS-over-HTTPS protocol
 	pkgver = 2.2.1
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/m13253/dns-over-https
 	arch = x86_64
 	license = MIT
-	makedepends = go-pie
-	makedepends = golang-golang-x-crypto
-	makedepends = golang-golang-x-net
-	makedepends = golang-golang-x-sys
+	makedepends = go
 	makedepends = git
 	provides = dns-over-https-client
 	provides = dns-over-https-server
