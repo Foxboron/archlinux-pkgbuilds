@@ -1,6 +1,6 @@
 pkgbase = udiskie
 	pkgdesc = Removable disk automounter using udisks
-	pkgver = 2.1.1
+	pkgver = 2.2.0
 	pkgrel = 1
 	url = https://pypi.python.org/pypi/udiskie
 	arch = any
@@ -16,8 +16,8 @@ pkgbase = udiskie
 	depends = libnotify
 	depends = python-keyutils
 	optdepends = libappindicator-gtk3: --appindicator support
-	source = udiskie-2.1.1.tar.gz::https://codeload.github.com/coldfix/udiskie/tar.gz/2.1.1
-	sha256sums = 7e022523a2b7a769acb07c9d582ae7d7013143cfc986e03d63df0e7197cbffbf
+	source = udiskie-2.2.0.tar.gz::https://codeload.github.com/coldfix/udiskie/tar.gz/2.2.0
+	sha256sums = 1041bdf33e64371a68fe40ff242a7010244f4e90021cdd1435fd62ad1c5fcc50
 
 pkgname = udiskie
 
