@@ -1,5 +1,6 @@
 pkgbase = go
-	pkgver = 1.14.2
+	pkgdesc = Core compiler tools for the Go programming language
+	pkgver = 1.14.3
 	pkgrel = 1
 	epoch = 2
 	url = https://golang.org/
@@ -8,16 +9,15 @@ pkgbase = go
 	makedepends = git
 	makedepends = go
 	makedepends = perl
-	source = https://storage.googleapis.com/golang/go1.14.2.src.tar.gz
-	source = default-buildmode-pie.patch
-	sha256sums = 98de84e69726a66da7b4e58eac41b99cbe274d7e8906eeb8a5b7eb0aadee7f7c
-	sha256sums = be1269689de3cf5c926cf7de07f88d2a6d1ecbfc86694baaf5baee3bdcfdd79a
+	provides = go-pie
+	replaces = go-pie
+	options = !strip
+	options = staticlibs
+	source = https://storage.googleapis.com/golang/go1.14.3.src.tar.gz
+	source = https://storage.googleapis.com/golang/go1.14.3.src.tar.gz.asc
+	validpgpkeys = EB4C1BFD4F042F6DDDCCEC917721F63BD38B4796
+	sha256sums = 93023778d4d1797b7bc6a53e86c3a9b150c923953225f8a48a2d5fabc971af56
+	sha256sums = SKIP
 
 pkgname = go
-	pkgdesc = Core compiler tools for the Go programming language
-
-pkgname = go-pie
-	pkgdesc = Core compiler tools for the Go programming language (with PIE enabled by default)
-	provides = go=2:1.14.2-1
-	conflicts = go
 
