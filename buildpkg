@@ -319,7 +319,7 @@ for PACKAGE in ${PACKAGES}; do
         fi
         for pkg in ${pkgname}; do
             for arch in ${archs}; do
-                tarballpkg="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.xz"
+                tarballpkg="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.zst"
                 [ ! -f $tarballpkg ] && continue
                 sign "${tarballpkg}"
             done
@@ -329,7 +329,7 @@ for PACKAGE in ${PACKAGES}; do
         rm -f "${tarballsrc}.sig"
         for pkg in ${pkgname}; do
             for arch in ${archs}; do
-                tarballpkgsign="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.xz.sig"
+                tarballpkgsign="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.zst.sig"
                 [ ! -f $tarballpkgsign ] && continue
                 rm -f "${tarballpkgsign}"
             done
@@ -340,7 +340,7 @@ for PACKAGE in ${PACKAGES}; do
         msg "Listing package contents..."
         for pkg in ${pkgname}; do
             for arch in ${archs}; do
-                tarballpkg="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.xz"
+                tarballpkg="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.zst"
                 [ ! -f $tarballpkg ] && continue
                 msg2 "Listing ${tarballpkg}..."
                 for file in $(tar --force-local -tf "${tarballpkg}" 2>&1|grep -v 'SCHILY.fflags'|sort); do
@@ -354,7 +354,7 @@ for PACKAGE in ${PACKAGES}; do
         msg "Running namcap..."
         for pkg in ${pkgname}; do
             for arch in ${archs}; do
-                tarballpkg="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.xz"
+                tarballpkg="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.zst"
                 [ ! -f $tarballpkg ] && continue
                 run_namcap "${tarballpkg}"
             done
@@ -391,10 +391,10 @@ for PACKAGE in ${PACKAGES}; do
         stat_busy "Confirm ${PACKAGE} ${pkgverfull} should be uploaded to community..."
         read
         mkdir -p "../.repo/community/${pkgbase}/"{trunk,repos}
-        git add -f .
+        git add -f . || true
         pushd "../.repo/community"
-        svn add "${pkgbase}"
-        svn commit -m "addpkg: ${pkgbase} ${pkgverfull}" "${pkgbase}"
+        svn add "${pkgbase}" || true
+        svn commit -m "addpkg: ${pkgbase} ${pkgverfull}" "${pkgbase}" || true
         popd >/dev/null
     fi
     if [[ -z "${SKIP_DIST}" && -n "${repo}" ]]; then
@@ -421,9 +421,9 @@ for PACKAGE in ${PACKAGES}; do
                 msg "Distributing ${PACKAGE} ${pkgverfull} into ${repo}..."
                 stat_busy "Confirm ${PACKAGE} ${pkgverfull} to publish"
                 read
-                git commit -v .
+                git commit -v . || true
                 pushd "${destdir}" >/dev/null
-                svn add --force .
+                svn add --force . || true
                 if [[ 'packages' = "${repo}" ]]; then
                     ${PUBLISH_PACKAGES}
                 elif [[ 'community' = "${repo}" ]]; then

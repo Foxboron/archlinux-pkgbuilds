@@ -40,6 +40,10 @@ update: add-packages
 	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Update community...$(RST)"
 	@.repo/update community
 
+sync:
+	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Syncing community...$(RST)"
+	@.repo/sync community
+
 update-version:
 	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Fetches all current package versions...$(RST)"
 	@.repo/get-current-versions.sh > .repo/old.txt
