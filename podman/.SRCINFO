@@ -1,7 +1,7 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
 	pkgver = 1.9.3
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/containers/libpod
 	arch = x86_64
 	license = Apache
@@ -19,15 +19,15 @@ pkgbase = podman
 	depends = libsystemd
 	depends = fuse-overlayfs
 	depends = skopeo
-	optdepends = catatonit: --init flag support
-	optdepends = crun: support for unified cgroupsv2
-	optdepends = btrfs-progs: support btrfs backend devices
 	source = git+https://github.com/containers/libpod#tag=v1.9.3?signed
 	validpgpkeys = B7DBDCA456F7335E91F1C25CD3624C551D0515C4
 	sha256sums = SKIP
 
 pkgname = podman
 	optdepends = podman-docker: for Docker-compatible CLI
+	optdepends = btrfs-progs: support btrfs backend devices
+	optdepends = catatonit: --init flag support
+	optdepends = crun: support for unified cgroupsv2
 
 pkgname = podman-docker
 	pkgdesc = Emulate Docker CLI using podman
