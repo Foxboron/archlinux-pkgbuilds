@@ -1,7 +1,7 @@
 pkgbase = python2-docs
 	pkgdesc = Set of HTML documentation for python.
 	pkgver = 2.7.15
-	pkgrel = 1
+	pkgrel = 2
 	url = https://docs.python.org/
 	install = python2-docs.install
 	arch = any
