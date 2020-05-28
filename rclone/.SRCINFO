@@ -1,7 +1,7 @@
 pkgbase = rclone
 	pkgdesc = Sync files to and from Google Drive, S3, Swift, Cloudfiles, Dropbox and Google Cloud Storage
-	pkgver = 1.51.0
-	pkgrel = 4
+	pkgver = 1.52.0
+	pkgrel = 1
 	url = https://rclone.org/
 	arch = x86_64
 	license = MIT
@@ -11,8 +11,8 @@ pkgbase = rclone
 	makedepends = git
 	depends = glibc
 	optdepends = fuse2: for rclone mount
-	source = rclone-1.51.0.tar.gz::https://github.com/rclone/rclone/archive/v1.51.0.tar.gz
-	sha512sums = b0881e09b75093abe4d31e95425a90513aed4a16d9e2dbf79023c9dc68875b90a1332204879530c450a16ab9cac475d967f7657d6f810a1e0f0d84b88d7de916
+	source = rclone-1.52.0.tar.gz::https://github.com/rclone/rclone/archive/v1.52.0.tar.gz
+	sha512sums = 827f60c5742738b94e6137893bb9862ca860adb0bc182dd3b746615b7e5ab130fb6bf7ecba6abec0d618d319ce990307ce5a16d9b0e9092a04943d7ea650fcb9
 
 pkgname = rclone
 
