@@ -1,14 +1,14 @@
 pkgbase = python2-docs
 	pkgdesc = Set of HTML documentation for python.
-	pkgver = 2.7.15
-	pkgrel = 2
+	pkgver = 2.7.16
+	pkgrel = 1
 	url = https://docs.python.org/
 	install = python2-docs.install
 	arch = any
 	license = GPL
 	options = docs
-	source = https://docs.python.org/ftp/python/doc/2.7.15/python-2.7.15-docs-html.tar.bz2
-	sha256sums = 5582aa8f59c2d5457ae87e266000f9ef75ed041a02fa72bd988a5169aae8ebde
+	source = https://docs.python.org/ftp/python/doc/2.7.16/python-2.7.16-docs-html.tar.bz2
+	sha512sums = 477b2c2225cdc687e5ff68e5df529309d8ee8d7075f3643af730f7aa51e060460a03d1b0a5bf2d05aa2115368ddc33709a45b19972a729575d9070af78360c80
 
 pkgname = python2-docs
 
