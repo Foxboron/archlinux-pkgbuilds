@@ -1,0 +1,21 @@
+pkgbase = screenkey
+	pkgdesc = A screencast tool to display your keys inspired by Screenflick
+	pkgver = 1.1
+	pkgrel = 1
+	url = https://www.thregr.org/~wavexx/software/screenkey/
+	arch = any
+	license = GPL3
+	makedepends = python-setuptools
+	makedepends = python-distutils-extra
+	depends = python-gobject
+	depends = gtk3
+	depends = python-cairo
+	depends = libx11
+	optdepends = slop
+	optdepends = ttf-font-awesome
+	optdepends = libappindicator-gtk3
+	source = https://gitlab.com/screenkey/screenkey/-/archive/v1.1/screenkey-v1.1.tar.gz
+	sha256sums = 305db12333f45f318152bb808bd032a6becf5233fa1a0ee019c9ae1ed4ca6be0
+
+pkgname = screenkey
+
