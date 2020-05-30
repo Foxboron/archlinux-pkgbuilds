@@ -1,6 +1,6 @@
 pkgbase = dqlite
 	pkgdesc = Distributed SQLite
-	pkgver = 1.4.2
+	pkgver = 1.4.3
 	pkgrel = 1
 	url = https://github.com/CanonicalLtd/dqlite
 	arch = x86_64
@@ -12,8 +12,8 @@ pkgbase = dqlite
 	depends = raft
 	depends = libco
 	depends = sqlite-replication
-	source = dqlite-1.4.2.tar.gz::https://github.com/canonical/dqlite/archive/v1.4.2.tar.gz
-	sha256sums = acc7b9937cca16394725bdb48379f2364d7a3c640d1a5c27600f191e7cc9cf56
+	source = dqlite-1.4.3.tar.gz::https://github.com/canonical/dqlite/archive/v1.4.3.tar.gz
+	sha256sums = 60627f3b51594c953e2420f0de52d02a73768968ddd5650f3b95e5a045909d19
 
 pkgname = dqlite
 
