@@ -1,6 +1,6 @@
 pkgbase = go
 	pkgdesc = Core compiler tools for the Go programming language
-	pkgver = 1.14.3
+	pkgver = 1.14.4
 	pkgrel = 1
 	epoch = 2
 	url = https://golang.org/
@@ -13,10 +13,10 @@ pkgbase = go
 	replaces = go-pie
 	options = !strip
 	options = staticlibs
-	source = https://storage.googleapis.com/golang/go1.14.3.src.tar.gz
-	source = https://storage.googleapis.com/golang/go1.14.3.src.tar.gz.asc
+	source = https://storage.googleapis.com/golang/go1.14.4.src.tar.gz
+	source = https://storage.googleapis.com/golang/go1.14.4.src.tar.gz.asc
 	validpgpkeys = EB4C1BFD4F042F6DDDCCEC917721F63BD38B4796
-	sha256sums = 93023778d4d1797b7bc6a53e86c3a9b150c923953225f8a48a2d5fabc971af56
+	sha256sums = 7011af3bbc2ac108d1b82ea8abb87b2e63f78844f0259be20cde4d42c5c40584
 	sha256sums = SKIP
 
 pkgname = go
