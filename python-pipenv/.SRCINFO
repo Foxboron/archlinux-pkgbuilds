@@ -1,21 +1,18 @@
 pkgbase = python-pipenv
 	pkgdesc = Sacred Marriage of Pipfile, Pip, & Virtualenv.
-	pkgver = 2018.11.26
-	pkgrel = 3
+	pkgver = 2020.6.2
+	pkgrel = 1
 	url = https://pipenv.pypa.io
 	arch = any
 	license = MIT
 	makedepends = python-setuptools
 	depends = python
 	depends = python-pip
-	depends = python-pew
-	depends = python-virtualenv
-	depends = python-virtualenv-clone
 	depends = python-certifi
-	source = python-pipenv-2018.11.26.tar.gz::https://github.com/pypa/pipenv/archive/v2018.11.26.tar.gz
-	source = 0001-setup-don-t-setup_requires-on-things-used-to-run-dev.patch
-	sha256sums = b095395fa6763329fec54c8f6df38c35a39ec3b8b316a4418829e44d50cbc631
-	sha256sums = 878fd681571afe7e9664fcb06828f41e999d33dc31ae3b11cfbd93475fe8516d
+	depends = python-virtualenv-clone
+	depends = python-virtualenv
+	source = python-pipenv-2020.6.2.tar.gz::https://github.com/pypa/pipenv/archive/v2020.6.2.tar.gz
+	sha512sums = 671765b9e77a18039668eb500989de45c8bd4f15948ee914eb241985098562ebd382168a535a449ac5d216f07327b6787eb8f828b5a6499ef6e77fe5a036441e
 
 pkgname = python-pipenv
 
