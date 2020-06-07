@@ -1,27 +1,26 @@
 pkgbase = docker-compose
 	pkgdesc = Fast, isolated development environments using Docker
-	pkgver = 1.25.5
+	pkgver = 1.26.0
 	pkgrel = 1
 	url = https://www.docker.com/
 	arch = any
 	license = Apache
-	checkdepends = python-pytest-runner
-	checkdepends = python-mock
+	makedepends = python-setuptools
 	depends = python-cached-property
 	depends = python-docopt
 	depends = python-yaml
 	depends = python-requests
 	depends = python-texttable
 	depends = python-websocket-client
+	depends = python-distro
 	depends = python-docker
 	depends = python-dockerpty
 	depends = python-six
 	depends = python-jsonschema
-	depends = python-setuptools
+	depends = python-dotenv
 	depends = docker
-	depends = python-paramiko
-	source = docker-compose-1.25.5.tar.gz::https://github.com/docker/compose/archive/1.25.5.tar.gz
-	sha512sums = efe59bd5e82e12e63c82341ccf5ca11eaebd47c8154a50b40d39bc98ec48c37532919335172a5667f036bab4e884df950ebc4b4ccab8174200cc7ea6683bbbd7
+	source = docker-compose-1.26.0.tar.gz::https://github.com/docker/compose/archive/1.26.0.tar.gz
+	sha512sums = b388f8041b921a0d53d15a8fffb9a1f4d79f40e3eaae073fc043ae74189256a5a24eee9a3c63641e3bfbf43d484da806c2a7d732aad38966ba9fb60d8990f512
 
 pkgname = docker-compose
 
