@@ -1,0 +1,15 @@
+pkgbase = python-dotenv
+	pkgdesc = Get and set values in your .env file in local and production servers
+	pkgver = 0.13.0
+	pkgrel = 2
+	url = https://github.com/theskumar/python-dotenv/
+	arch = any
+	license = BSD
+	makedepends = python-setuptools
+	depends = python-click
+	optdepends = ipython: ipython support
+	source = python-dotenv-0.13.0.tar.gz::https://github.com/theskumar/python-dotenv/archive/v0.13.0.tar.gz
+	sha512sums = da1fc6f513ab7492a73bf6c4548ccc2d804c82e08d44e719d37cd4fc24078f7864f17ca5413156369a804deaaf76be0b579c31a4827db4756279b5b0627cea9d
+
+pkgname = python-dotenv
+
