@@ -1,12 +1,12 @@
 pkgbase = restic
 	pkgdesc = Fast, secure, efficient backup program
 	pkgver = 0.9.6
-	pkgrel = 2
+	pkgrel = 3
 	url = https://restic.net
 	arch = x86_64
 	license = BSD
 	checkdepends = fuse2
-	makedepends = go-pie
+	makedepends = go
 	makedepends = git
 	depends = glibc
 	optdepends = fuse2: mount archive
