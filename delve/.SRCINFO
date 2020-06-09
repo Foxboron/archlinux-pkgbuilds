@@ -1,11 +1,11 @@
 pkgbase = delve
 	pkgdesc = A debugger for the Go programming language.
 	pkgver = 1.4.0
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/derekparker/delve
 	arch = x86_64
 	license = MIT
-	makedepends = go-pie
+	makedepends = go
 	makedepends = git
 	source = delve-1.4.0.tar.gz::https://github.com/derekparker/delve/archive/v1.4.0.tar.gz
 	sha256sums = 56f5e208a6d72e3fb00ba65fbd4255c41904c37169892478011ed24df034667c
