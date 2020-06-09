@@ -1,15 +1,15 @@
 pkgbase = go-tools
 	pkgdesc = Developer tools for the Go programming language
-	pkgver = 1.14+3922+575de4798
+	pkgver = 1.14+3923+c00d67ef2
 	pkgrel = 1
 	epoch = 2
 	url = https://golang.org/
 	arch = x86_64
 	license = BSD
 	makedepends = git
-	makedepends = go-pie
+	makedepends = go
 	depends = glibc
-	source = go-tools::git+https://go.googlesource.com/tools#commit=575de47986ce07f39826bf8d5e365d5ebf51ee63
+	source = go-tools::git+https://go.googlesource.com/tools#commit=c00d67ef29d03e4dd86a6fb6a75dba1b71a5e294
 	source = golang-net::git+https://github.com/golang/net#commit=ef20fe5d793301b553005db740f730d87993f778
 	md5sums = SKIP
 	md5sums = SKIP
