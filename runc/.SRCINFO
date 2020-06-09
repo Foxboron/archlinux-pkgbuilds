@@ -1,12 +1,12 @@
 pkgbase = runc
 	pkgdesc = CLI tool for managing OCI compliant containers
-	pkgver = 1.0.0rc10
-	pkgrel = 2
+	pkgver = 1.0.0rc90
+	pkgrel = 1
 	url = https://runc.io/
 	arch = x86_64
 	license = Apache
 	makedepends = git
-	makedepends = go-pie
+	makedepends = go
 	makedepends = go-md2man
 	depends = libseccomp
 	source = git+https://github.com/opencontainers/runc.git#commit=dc9208a3303feef5b3839f4323d9beb36df0a9dd?signed
