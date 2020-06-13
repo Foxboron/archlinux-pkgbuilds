@@ -1,6 +1,6 @@
 pkgbase = helm
 	pkgdesc = The Kubernetes Package Manager
-	pkgver = 3.2.2
+	pkgver = 3.2.3
 	pkgrel = 1
 	url = https://helm.sh/
 	arch = x86_64
@@ -8,7 +8,7 @@ pkgbase = helm
 	makedepends = go
 	makedepends = git
 	depends = glibc
-	source = git+https://github.com/helm/helm.git#commit=a6ea66349ae3015618da4f547677a14b9ecc09b3?signed
+	source = git+https://github.com/helm/helm.git#commit=8f832046e258e2cb800894579b1b3b50c2d83492?signed
 	validpgpkeys = 672C657BE06B4B30969C4A57461449C25E36B98E
 	sha256sums = SKIP
 
