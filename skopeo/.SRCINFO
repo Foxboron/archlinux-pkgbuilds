@@ -1,6 +1,6 @@
 pkgbase = skopeo
 	pkgdesc = A command line utility for various operations on container images and image repositories.
-	pkgver = 1.0.0
+	pkgver = 1.1.0
 	pkgrel = 1
 	url = https://github.com/projectatomic/skopeo
 	arch = x86_64
@@ -9,6 +9,7 @@ pkgbase = skopeo
 	makedepends = go-md2man
 	makedepends = btrfs-progs
 	makedepends = git
+	makedepends = systemd
 	depends = gpgme
 	depends = device-mapper
 	backup = etc/containers/policy.json
@@ -16,7 +17,7 @@ pkgbase = skopeo
 	backup = etc/containers/registries.d/default.yaml
 	backup = etc/containers/seccomp.json
 	backup = etc/containers/storage.conf
-	source = git+https://github.com/projectatomic/skopeo#commit=bd162028cd83ceecd8915736f2d66d5ca73ee54a
+	source = git+https://github.com/projectatomic/skopeo#commit=63085f5bef1131aa9ec0907a5c8d66b67de7c4b2
 	source = containers-storage.conf.5.md
 	source = policy.json.5.md
 	source = registries.conf
