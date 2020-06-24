@@ -1,6 +1,6 @@
 pkgbase = python-language-server
 	pkgdesc = An implementation of the Language Server Protocol for Python
-	pkgver = 0.33.2
+	pkgver = 0.33.3
 	pkgrel = 1
 	url = https://github.com/palantir/python-language-server
 	arch = any
@@ -40,8 +40,8 @@ pkgbase = python-language-server
 	optdepends = autopep8: for code formatting
 	optdepends = yapf: for code formatting (preferred over autopep8)
 	optdepends = python-pydocstyle: for docstring style checking
-	source = https://files.pythonhosted.org/packages/source/p/python-language-server/python-language-server-0.33.2.tar.gz
-	sha256sums = f5fe9a21bf7c0b0fc0d205a1c2f1bec776a59d0e11b0e39c49803044799669fd
+	source = https://files.pythonhosted.org/packages/source/p/python-language-server/python-language-server-0.33.3.tar.gz
+	sha256sums = 36ffde2c514d418c1227ba1c8034f362339fa38128fe819e838c9bd95ac69f05
 
 pkgname = python-language-server
 
