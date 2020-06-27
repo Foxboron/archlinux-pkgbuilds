@@ -1,7 +1,7 @@
 pkgbase = todoman
 	pkgdesc = A simple, standards-based, cli todo (aka: task) manager
 	pkgver = 3.8.0
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/pimutils/todoman
 	arch = any
 	license = ISC
@@ -9,6 +9,8 @@ pkgbase = todoman
 	checkdepends = python-hypothesis
 	checkdepends = python-pytest
 	checkdepends = python-pytest-runner
+	makedepends = python-sphinx
+	makedepends = python-sphinx-autorun
 	depends = python-atomicwrites
 	depends = python-click
 	depends = python-click-log
