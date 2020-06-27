@@ -1,0 +1,15 @@
+pkgbase = python-sphinx-autorun
+	pkgdesc = Sphinx extension to execute the code output it into a document.
+	pkgver = 1.1.1
+	pkgrel = 1
+	url = https://github.com/WhyNotHugo/sphinx-autorun
+	arch = any
+	license = BSD
+	makedepends = git
+	makedepends = python-setuptools-scm
+	depends = python
+	source = git+https://github.com/WhyNotHugo/sphinx-autorun#commit=7a4c2c99a29e5e9e9b0838fac0419d00c5675f8b
+	sha512sums = SKIP
+
+pkgname = python-sphinx-autorun
+
