@@ -1,7 +1,7 @@
 pkgbase = lostfiles
 	pkgdesc = Find orphaned files not owned by any Arch packages
 	pkgver = 4.03
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/graysky2/lostfiles
 	arch = any
 	license = GPL2
