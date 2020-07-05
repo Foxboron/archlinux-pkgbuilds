@@ -1,7 +1,7 @@
 pkgbase = archlinux-contrib
 	pkgdesc = Collection of contrib scripts used in Arch Linux
 	pkgver = 20190911
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/archlinux/contrib
 	arch = any
 	license = GPL
