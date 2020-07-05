@@ -1,7 +1,7 @@
 pkgbase = minicom
 	pkgdesc = A serial communication program
 	pkgver = 2.7.1
-	pkgrel = 3
+	pkgrel = 4
 	url = http://alioth.debian.org/projects/minicom/
 	arch = x86_64
 	license = GPL
@@ -9,7 +9,9 @@ pkgbase = minicom
 	optdepends = lrzsz: for xmodem, ymodem and zmodem file transfer protocols
 	backup = etc/minirc.dfl
 	source = minicom-2.7.1.tar.gz::http://ftp.debian.org/debian/pool/main/m/minicom/minicom_2.7.1.orig.tar.gz
+	source = minicom-2.7.1-gcc-10.patch
 	sha256sums = 532f836b7a677eb0cb1dca8d70302b73729c3d30df26d58368d712e5cca041f1
+	sha256sums = b7d8eab87a919feb6d519c06c70145624a6560208e8c79da3a2ed2c2e086def3
 
 pkgname = minicom
 
