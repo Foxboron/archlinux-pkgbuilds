@@ -1,7 +1,7 @@
 pkgbase = acpid
 	pkgdesc = A daemon for delivering ACPI power management events with netlink support
 	pkgver = 2.0.32
-	pkgrel = 1
+	pkgrel = 2
 	url = https://sourceforge.net/projects/acpid2/
 	arch = x86_64
 	license = GPL
