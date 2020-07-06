@@ -1,0 +1,28 @@
+# Maintainer:
+# Contributor: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
+# Contributor: William Rea <sillywilly@gmail.com>
+
+_origname=reportlab
+pkgname=python-reportlab
+pkgver=3.5.42
+pkgrel=1
+pkgdesc="A proven industry-strength PDF generating solution"
+arch=('x86_64')
+url="https://bitbucket.org/rptlab/reportlab"
+depends=('freetype2')
+depends=('python' 'python-pip' 'python-pillow')
+makedepends=('freetype2' 'python-pillow' 'mercurial')
+license=('BSD')
+source=(https://files.pythonhosted.org/packages/source/${_origname::1}/${_origname}/${_origname}-${pkgver}.tar.gz)
+sha256sums=('9c21f202697a6cea57b9d716288fc919d99cbabeb30222eebfc7ff77eac32744')
+
+package() {
+    cd ${_origname}-${pkgver}
+    python setup.py install --root="$pkgdir" --optimize=1
+    install -D -m644 LICENSE.txt "$pkgdir"/usr/share/licenses/$pkgname/license.txt
+}
+
+check() {
+    cd ${_origname}-${pkgver}
+    python setup.py tests
+}
