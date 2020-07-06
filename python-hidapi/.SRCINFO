@@ -1,7 +1,7 @@
 pkgbase = python-hidapi
 	pkgdesc = A Cython interface to the hidapi from signal11/hidapi
 	pkgver = 0.9.0.3
-	pkgrel = 4
+	pkgrel = 5
 	url = https://github.com/trezor/cython-hidapi
 	arch = x86_64
 	license = custom
@@ -11,7 +11,9 @@ pkgbase = python-hidapi
 	depends = python
 	depends = hidapi
 	source = https://pypi.org/packages/source/h/hidapi/hidapi-0.9.0.post3.tar.gz
+	source = revert-hid_get_input_report.patch
 	sha512sums = 606540833459e615a8e50ff3a2c59362dab7d19d42d5e9dc2288c8c8d32e3df7214e758a9814e7de6d26bbdccd76ccf6c652b0bf8ac5b3f46124a9a7b007b971
+	sha512sums = 717bf0a24196b1c2da90a7928ac7707ff9cdb6010e1998b3bc8129c8ca9233058b6f9197bcf35504d4b0d67b4288f6500dfe805acae48bd9b53c24b6da946d4a
 
 pkgname = python-hidapi
 
