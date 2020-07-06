@@ -1,0 +1,14 @@
+pkgbase = python-speaklater
+	pkgdesc = Implements a lazy string for python useful for use with gettext.
+	pkgver = 1.3
+	pkgrel = 7
+	url = https://pypi.python.org/pypi/speaklater
+	arch = any
+	license = BSD
+	makedepends = python-setuptools
+	depends = python
+	source = https://pypi.io/packages/source/s/speaklater/speaklater-1.3.tar.gz
+	md5sums = e8d5dbe36e53d5a35cff227e795e8bbf
+
+pkgname = python-speaklater
+
