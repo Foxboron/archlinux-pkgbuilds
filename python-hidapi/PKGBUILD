@@ -7,7 +7,7 @@ pkgname=python-hidapi
 _pipname=hidapi
 pkgver=0.9.0.3
 _pkgver=${pkgver%.*}.post${pkgver##*.}
-pkgrel=4
+pkgrel=5
 arch=('x86_64')
 pkgdesc="A Cython interface to the hidapi from signal11/hidapi"
 url="https://github.com/trezor/cython-hidapi"
@@ -33,7 +33,7 @@ build() {
 }
 
 package_python-hidapi() {
-  cd $_pipname-$_pkgver
+  cd "$_pipname-$_pkgver"
 
   python setup.py install --root="$pkgdir" --optimize=1 --skip-build \
         --without-libusb --with-system-hidapi
@@ -44,3 +44,9 @@ package_python-hidapi() {
   install -Dm 755 LICENSE-orig.txt "$pkgdir"/usr/share/licenses/$pkgname/LICENSE-orig.txt
 }
 
+check() {
+  cd "$_pipname-$_pkgver"
+
+  local python_version=$(python -c 'import sys; print(".".join(map(str, sys.version_info[:2])))')
+  PYTHONPATH="$PWD/build/lib.linux-$CARCH-${python_version}" python tests.py
+}
