@@ -1,0 +1,23 @@
+# Maintainer: Antonio Rojas <arojas@archlinux.org>
+# Contributor: djanku <djanku (at) email (dot) cz>
+
+_pipname=Flask-Babel
+pkgname=python-flask-babel
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Adds i18n/l10n support to Flask applications with the help of the Babel library."
+arch=(any)
+url="https://pypi.python.org/pypi/Flask-Babel"
+license=(BSD)
+depends=(python-flask python-babel python-pytz python-speaklater python-jinja)
+makedepends=(python-setuptools)
+source=("https://pypi.io/packages/source/${_pipname:0:1}/$_pipname/$_pipname-$pkgver.tar.gz")
+sha256sums=('d6a70468f9a8919d59fba2a291a003da3a05ff884275dddbd965f3b98b09ab3e')
+
+package() {
+  cd $_pipname-$pkgver 
+  python setup.py install --root="$pkgdir/" --optimize=1
+
+  mkdir -p "$pkgdir"/usr/share/licenses/$pkgname
+  install -m644 LICENSE "$pkgdir"/usr/share/licenses/$pkgname
+}
