@@ -1,7 +1,7 @@
 pkgbase = python-autobahn
 	pkgdesc = Real-time framework for Web, Mobile & Internet of Things
 	pkgver = 20.6.2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://crossbar.io/autobahn/
 	arch = x86_64
 	license = MIT
