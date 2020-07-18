@@ -3,6 +3,7 @@ archlinux-contrib
 archlinux-repro
 baidupcs-go
 barrier
+barrier
 bmusb
 bolt
 bucklespring
@@ -45,6 +46,7 @@ mypy
 nageru
 nano-syntax-highlighting
 neofetch
+ntop
 nvme-cli
 font-awesome
 pass-otp
@@ -69,6 +71,9 @@ python-docker
 python-dockerpty
 python-docker-pycreds
 python-docs
+python-dotenv
+python-flask-babel
+python-guzzle-sphinx-theme
 python-hidapi
 python-jsonrpclib-pelix
 python-jsonrpc-server
@@ -77,6 +82,7 @@ python-language-server
 python-ldap
 python-m2crypto
 python-mypy_extensions
+python-nbxmpp
 python-nltk
 python-pew
 python-pipenv
@@ -84,14 +90,20 @@ python-prompt_toolkit
 python-psycopg2
 python-pyaes
 python-pycountry
+python-pydbus
 python-pydocstyle
+python-pydrive
+python-pygame
 python-pykka
 python-pypeg2
 python-pyserial
 python-pywal
+python-reportlab
 python-rope
 python-send2trash
 python-shutilwhich
+python-speaklater
+python-sphinx-autorun
 python-sqlobject
 python-sqlparse
 python-typed-ast
@@ -105,10 +117,12 @@ rclone
 restic
 rofi
 runc
+screenkey
 skopeo
 slirp4netns
 sqlite-replication
 staticcheck
+todoman
 toolbox
 font-awesome
 udiskie
