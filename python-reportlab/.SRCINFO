@@ -1,7 +1,7 @@
 pkgbase = python-reportlab
 	pkgdesc = A proven industry-strength PDF generating solution
-	pkgver = 3.5.42
-	pkgrel = 3
+	pkgver = 3.5.44
+	pkgrel = 1
 	url = https://bitbucket.org/rptlab/reportlab
 	arch = x86_64
 	license = BSD
@@ -11,8 +11,8 @@ pkgbase = python-reportlab
 	depends = python
 	depends = python-pip
 	depends = python-pillow
-	source = https://files.pythonhosted.org/packages/source/r/reportlab/reportlab-3.5.42.tar.gz
-	sha256sums = 9c21f202697a6cea57b9d716288fc919d99cbabeb30222eebfc7ff77eac32744
+	source = https://files.pythonhosted.org/packages/source/r/reportlab/reportlab-3.5.44.tar.gz
+	sha256sums = 670650970c7ba7164cf6340bcd182e7e933eff5d65183af98ee77b40cc25a438
 
 pkgname = python-reportlab
 
