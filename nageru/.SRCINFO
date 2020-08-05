@@ -1,7 +1,7 @@
 pkgbase = nageru
 	pkgdesc = live video mixer, based around the standard M/E workflow.
 	pkgver = 1.8.6
-	pkgrel = 6
+	pkgrel = 7
 	url = https://nageru.sesse.net/
 	arch = x86_64
 	license = GPL3
