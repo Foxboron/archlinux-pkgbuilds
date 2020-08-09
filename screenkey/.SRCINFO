@@ -1,7 +1,7 @@
 pkgbase = screenkey
 	pkgdesc = A screencast tool to display your keys inspired by Screenflick
-	pkgver = 1.1
-	pkgrel = 2
+	pkgver = 1.2
+	pkgrel = 1
 	url = https://www.thregr.org/~wavexx/software/screenkey/
 	arch = any
 	license = GPL3
@@ -14,10 +14,10 @@ pkgbase = screenkey
 	optdepends = slop
 	optdepends = ttf-font-awesome
 	optdepends = libappindicator-gtk3
-	source = https://www.thregr.org/~wavexx/software/screenkey/releases/screenkey-1.1.tar.gz
-	source = https://www.thregr.org/~wavexx/software/screenkey/releases/screenkey-1.1.tar.gz.asc
+	source = https://www.thregr.org/~wavexx/software/screenkey/releases/screenkey-1.2.tar.gz
+	source = https://www.thregr.org/~wavexx/software/screenkey/releases/screenkey-1.2.tar.gz.asc
 	validpgpkeys = 41958F4116FDD1B43DEE754A2BB7D6F2153410EC
-	sha256sums = 0f382e485bf185d9f4f549eab9cfe1a48c53d66dc9c362e6ab433e51c6842ed7
+	sha256sums = 6ef4dd759724bd498c9b193099e5650375810e209638e5f0d778dfb746ac5b73
 	sha256sums = SKIP
 
 pkgname = screenkey
