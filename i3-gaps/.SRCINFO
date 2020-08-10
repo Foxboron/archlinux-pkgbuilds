@@ -1,7 +1,7 @@
 pkgbase = i3-gaps
 	pkgdesc = A fork of i3wm tiling window manager with more features, including gaps
 	pkgver = 4.18.2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Airblader/i3
 	arch = i686
 	arch = x86_64
@@ -32,7 +32,9 @@ pkgbase = i3-gaps
 	options = docs
 	backup = etc/i3/config
 	source = i3-gaps-4.18.2.tar.gz::https://github.com/Airblader/i3/archive/4.18.2.tar.gz
+	source = fix-tray.patch::https://github.com/i3/i3/commit/838b600fead202416013db5c1b57f7031f06bed6.diff
 	sha256sums = cc03cc008f51792b3c2fd5c8815ec213f8040385865fa558b0c78d5dc5f7150d
+	sha256sums = bade69559a83187375dbe12a23079225ad443fb90d23383647cdc7998e617d0c
 
 pkgname = i3-gaps
 
