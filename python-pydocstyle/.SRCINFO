@@ -1,6 +1,6 @@
 pkgbase = python-pydocstyle
 	pkgdesc = Docstring style checker
-	pkgver = 5.0.2
+	pkgver = 5.1.0
 	pkgrel = 1
 	url = http://www.pydocstyle.org/
 	arch = any
@@ -12,8 +12,8 @@ pkgbase = python-pydocstyle
 	checkdepends = python-snowballstemmer
 	makedepends = python-setuptools
 	depends = python-snowballstemmer
-	source = python-pydocstyle-5.0.2.tar.gz::https://github.com/PyCQA/pydocstyle/archive/5.0.2.tar.gz
-	sha256sums = 51543d61812f1b3a7195c122de4db2102b4cce07fe48cdac0eb59edf5b2cd8e0
+	source = python-pydocstyle-5.1.0.tar.gz::https://github.com/PyCQA/pydocstyle/archive/5.1.0.tar.gz
+	sha256sums = 4c7fd351ad4526e6db45d3058d2c35b0cb22577b13d7ff64806c0da8fb03d371
 
 pkgname = python-pydocstyle
 
