@@ -1,0 +1,16 @@
+pkgbase = zsh-syntax-highlighting
+	pkgdesc = Fish shell like syntax highlighting for Zsh
+	pkgver = 0.7.1
+	pkgrel = 1
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+	install = zsh-syntax-highlighting.install
+	changelog = ChangeLog
+	arch = any
+	license = BSD
+	checkdepends = procps-ng
+	depends = zsh>=4.3.9
+	source = zsh-syntax-highlighting-0.7.1.tar.gz::https://github.com/zsh-users/zsh-syntax-highlighting/tarball/0.7.1
+	sha512sums = b2594e265c6ff2b6efcdb92ff604ffb45b670c0f1a99c04fda3d7061154173e1bbaffe89f0665b9dd6e171027b15068e131d01baaf470fea624cd590e3986be4
+
+pkgname = zsh-syntax-highlighting
+
