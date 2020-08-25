@@ -1,7 +1,7 @@
 pkgbase = gopass
 	pkgdesc = The slightly more awesome standard unix password manager for teams.
-	pkgver = 1.10.0
-	pkgrel = 2
+	pkgver = 1.10.1
+	pkgrel = 1
 	url = https://github.com/gopasspw/gopass
 	arch = x86_64
 	license = MIT
@@ -9,8 +9,8 @@ pkgbase = gopass
 	optdepends = xdotool: for typing passwords selected by dmenu
 	optdepends = xsel: clipboard support
 	optdepends = xclip: clipboard support
-	source = https://github.com/gopasspw/gopass/releases/download/v1.10.0/gopass-1.10.0.tar.gz
-	sha512sums = 36ac3ffb4855a3e2f6ed292e1e37ab3d8c25284948f95d7acef312bc7db864c776115f4231b0485c3926f9990de131c62da9d13bdd91a8525e22dd42ffae0e39
+	source = https://github.com/gopasspw/gopass/releases/download/v1.10.1/gopass-1.10.1.tar.gz
+	sha512sums = d175c1cfb996b56d3291e20c093093d4b7e35d91100d42059ad847dc5b61367861c81c3c92fcc689f9f59ea07998e607a9a3141fe57bbcb522ee2c9bba46218f
 
 pkgname = gopass
 
