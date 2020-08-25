@@ -1,0 +1,20 @@
+pkgbase = jq
+	pkgdesc = Command-line JSON processor
+	pkgver = 1.6
+	pkgrel = 3
+	url = https://stedolan.github.io/jq/
+	changelog = ChangeLog
+	arch = x86_64
+	license = MIT
+	makedepends = autoconf
+	makedepends = automake
+	makedepends = bison
+	makedepends = flex
+	makedepends = python2
+	depends = glibc
+	depends = oniguruma
+	source = https://github.com/stedolan/jq/releases/download/jq-1.6/jq-1.6.tar.gz
+	sha512sums = 5da71f53c325257f1f546a2520fe47828b495c953270df25ea0e37741463fdda72f0ba4d5b05b25114ec30f27a559344c2b024bacabf610759f4e3e9efadb480
+
+pkgname = jq
+
