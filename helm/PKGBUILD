@@ -3,10 +3,11 @@
 # Contributor: Ivan Shapovalov <intelfx@intelfx.name>
 # Contributor: Wayne Cheng <waynethecheng@gmail.com>
 # Contributor: Matthias Lisin <ml@visu.li>
+# Contributor: Boris Dudelsack <bdudelsack@gmail.com>
 
 pkgname=helm
 pkgver=3.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="The Kubernetes Package Manager"
 arch=("x86_64")
 url="https://helm.sh/"
@@ -37,7 +38,7 @@ build() {
     export CGO_CFLAGS="$CFLAGS"
     export CGO_CXXFLAGS="$CXXFLAGS"
     export CGO_CPPFLAGS="$CPPFLAGS"
-    make LDFLAGS="-s -w -linkmode external" GOFLAGS="-buildmode=pie -trimpath"
+    GOFLAGS="-linkmode external" make
 }
 
 check(){
@@ -46,7 +47,7 @@ check(){
     export CGO_CFLAGS="$CFLAGS"
     export CGO_CXXFLAGS="$CXXFLAGS"
     export CGO_CPPFLAGS="$CPPFLAGS"
-    make LDFLAGS="-s -w -linkmode external" GOFLAGS="-buildmode=pie -trimpath" test-unit
+    GOFLAGS="-linkmode external" make test-unit
 }
 
 package(){
