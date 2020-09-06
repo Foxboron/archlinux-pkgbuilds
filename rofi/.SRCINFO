@@ -1,7 +1,7 @@
 pkgbase = rofi
 	pkgdesc = A window switcher, application launcher and dmenu replacement
-	pkgver = 1.5.4
-	pkgrel = 2
+	pkgver = 1.6.0
+	pkgrel = 1
 	url = https://github.com/DaveDavenport/rofi
 	arch = x86_64
 	license = MIT
@@ -13,8 +13,8 @@ pkgbase = rofi
 	depends = xcb-util-xrm
 	depends = librsvg
 	optdepends = i3-wm: use as a window switcher
-	source = https://github.com/DaveDavenport/rofi/releases/download/1.5.4/rofi-1.5.4.tar.xz
-	sha256sums = 91a502cc29f964b529cd6228dbe655e82ab4e69c9852d23a24d9c1efb1af54db
+	source = https://github.com/DaveDavenport/rofi/releases/download/1.6.0/rofi-1.6.0.tar.xz
+	sha256sums = c487a8a010345bd596c433702e054db3728f0e8f275c325f58ee2e9a1259c614
 
 pkgname = rofi
 
