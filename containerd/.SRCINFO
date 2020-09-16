@@ -1,7 +1,7 @@
 pkgbase = containerd
 	pkgdesc = An open and reliable container runtime
-	pkgver = 1.4.0
-	pkgrel = 3
+	pkgver = 1.4.1
+	pkgrel = 1
 	url = https://containerd.io/
 	arch = x86_64
 	license = Apache
@@ -10,12 +10,8 @@ pkgbase = containerd
 	makedepends = btrfs-progs
 	makedepends = libseccomp
 	depends = runc
-	source = containerd-1.4.0.tar.gz::https://github.com/containerd/containerd/archive/v1.4.0.tar.gz
-	source = consume-fifo.patch::https://github.com/containerd/containerd/commit/9efd7381811e46b78f5b1f7bb2119ceb02eb5a82.patch
-	source = fix-health.patch::https://github.com/containerd/containerd/commit/5f9d15eaac5d20b252f956bd80da94ec1b8244f5.patch
-	sha256sums = d6284c69e1933e4c05fe285feebef461efe8cd2030634dcf1cbdcde46abe86be
-	sha256sums = a1f044e05b411a7f48de5ba7c572dfa45e075b1ecf521129f2b3319bb6aae3b1
-	sha256sums = 432be5cb48649a35c456676119a3ec86ac51cbc2d8fed7e41033de1c8e019d8b
+	source = containerd-1.4.1.tar.gz::https://github.com/containerd/containerd/archive/v1.4.1.tar.gz
+	sha256sums = d410b8efc94e4124990f01de7107223971be8c9258fc651decf9e0ba648485b5
 
 pkgname = containerd
 
