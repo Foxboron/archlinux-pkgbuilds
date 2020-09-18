@@ -1,13 +1,13 @@
 pkgbase = k9s
 	pkgdesc = TUI for managing Kubernetes clusters and pods
-	pkgver = 0.22.0
+	pkgver = 0.22.1
 	pkgrel = 1
 	url = https://github.com/derailed/k9s
 	arch = x86_64
 	license = APACHE
 	makedepends = git
 	makedepends = go
-	source = git+https://github.com/derailed/k9s#commit=58d2bfe9e36286bd20fc7c8ab5c8353524a71642
+	source = git+https://github.com/derailed/k9s#commit=2e04a846e668f67af207a1030a310b5e2c864231
 	sha256sums = SKIP
 
 pkgname = k9s
