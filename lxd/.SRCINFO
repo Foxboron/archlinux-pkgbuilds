@@ -1,7 +1,7 @@
 pkgbase = lxd
 	pkgdesc = Daemon based on liblxc offering a REST API to manage containers
 	pkgver = 4.6
-	pkgrel = 1
+	pkgrel = 2
 	url = https://linuxcontainers.org/lxd
 	arch = x86_64
 	license = APACHE
@@ -17,7 +17,6 @@ pkgbase = lxd
 	depends = dnsmasq
 	depends = dqlite
 	depends = libuv
-	depends = sqlite-replication
 	depends = ebtables
 	optdepends = lvm2: for lvm2 support
 	optdepends = thin-provisioning-tools: for thin provisioning support
