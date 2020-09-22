@@ -14,11 +14,9 @@ depends=('python-appdirs' 'python-argcomplete' 'python-colorama'
          'dfu-util' 'avrdude')
 makedepends=('python-setuptools')
 optdepends=('arm-none-eabi-binutils'
-            'arm-none-eabi-gcc'
             'arm-none-eabi-newlib'
             'avr-binutils'
             'avr-libc'
-            'dfu-programmer'
             'gcc'
             'libffi'
             'libusb-compat'
