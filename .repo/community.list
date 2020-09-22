@@ -27,6 +27,7 @@ glider
 go
 go-md2man
 gopass
+gopls
 go-tools
 helm
 hexedit
@@ -77,6 +78,7 @@ python-dotenv
 python-flask-babel
 python-guzzle-sphinx-theme
 python-hidapi
+python-hjson
 python-jsonrpclib-pelix
 python-jsonrpc-server
 python-keyutils
