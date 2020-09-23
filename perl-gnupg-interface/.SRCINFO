@@ -1,0 +1,20 @@
+pkgbase = perl-gnupg-interface
+	pkgdesc = Object-oriented methods for interacting with GnuPG
+	pkgver = 0.52
+	pkgrel = 7
+	url = https://metacpan.org/release/GnuPG-Interface
+	arch = any
+	license = PerlArtistic
+	license = GPL
+	makedepends = perl-module-install
+	depends = gnupg
+	depends = perl-math-bigint
+	depends = perl-moo
+	depends = perl-moox-handlesvia
+	depends = perl-moox-late
+	options = !emptydirs
+	source = https://cpan.metacpan.org/authors/id/A/AL/ALEXMV/GnuPG-Interface-0.52.tar.gz
+	sha512sums = 911f47a3b52249e8b39133d4040b86147793d9dd6a78d2b279674d6bba0cd38de5c919bf12b241b0e977790575502531afab6b1d2c05739d050c16d05d52fc49
+
+pkgname = perl-gnupg-interface
+
