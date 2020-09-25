@@ -1,0 +1,24 @@
+pkgbase = perl-data-perl
+	pkgdesc = Base classes wrapping fundamental Perl data types
+	pkgver = 0.002009
+	pkgrel = 7
+	url = https://metacpan.org/release/Data-Perl
+	arch = any
+	license = PerlArtistic
+	license = GPL
+	checkdepends = perl-test-deep
+	checkdepends = perl-test-fatal
+	checkdepends = perl-test-output
+	depends = perl-class-method-modifiers
+	depends = perl-list-moreutils
+	depends = perl-module-runtime
+	depends = perl-role-tiny
+	depends = perl-scalar-list-utils
+	depends = perl-parent
+	depends = perl-strictures
+	options = !emptydirs
+	source = https://cpan.metacpan.org/authors/id/M/MA/MATTP/Data-Perl-0.002009.tar.gz
+	sha512sums = 872eae53641b7ac19a8bcd4a6522475bf042463fbb8380a45481289c6792fa17cf4d52d146228acf089b9cff091413684fa5b39f67bc28f362a5d2eb85d1d01a
+
+pkgname = perl-data-perl
+
