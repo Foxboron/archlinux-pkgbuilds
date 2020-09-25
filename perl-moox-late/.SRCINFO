@@ -1,0 +1,19 @@
+pkgbase = perl-moox-late
+	pkgdesc = Easily translate Moose code to Moo
+	pkgver = 0.015
+	pkgrel = 9
+	url = https://metacpan.org/release/MooX-late
+	arch = any
+	license = PerlArtistic
+	license = GPL
+	checkdepends = perl-test-fatal
+	checkdepends = perl-test-simple
+	checkdepends = perl-test-requires
+	depends = perl-moo
+	depends = perl-type-tiny
+	options = !emptydirs
+	source = https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/MooX-late-0.015.tar.gz
+	sha512sums = 4d685f4e68abe10487a98def8f0e7b0bafbd9928af27e61a5ac410bcafa9833a4aebdc8cd5bdbebd1a6ee53b4b0d5ae9bfa3864cae428b21c926730365fefb6d
+
+pkgname = perl-moox-late
+
