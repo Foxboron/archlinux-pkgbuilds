@@ -1,0 +1,19 @@
+pkgbase = python-irc
+	pkgdesc = IRC (Internet Relay Chat) protocol client library for Python
+	pkgver = 19.0.0
+	pkgrel = 1
+	url = https://pypi.python.org/pypi/irc
+	arch = any
+	license = LGPL
+	checkdepends = python-pytest
+	makedepends = python-setuptools-scm
+	depends = python-six
+	depends = python-pytz
+	depends = python-more-itertools
+	depends = python-jaraco
+	depends = python-tempora
+	source = https://files.pythonhosted.org/packages/source/i/irc/irc-19.0.0.tar.gz
+	md5sums = efa8cbcf8e577e7f15552622a2ae280a
+
+pkgname = python-irc
+

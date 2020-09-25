@@ -1,0 +1,38 @@
+# Maintainer: Kyle Keen <keenerd@gmail.com>
+# Contributor: Jelle van der Waa <jelle@vdwaa.nl>
+# Contributor: Pierre Chapuis <catwell@archlinux.us>
+# Contributor: Stefano Esposito <ragnarok@email.it>
+
+pkgname=python-irc
+pkgver=19.0.0
+pkgrel=1
+pkgdesc="IRC (Internet Relay Chat) protocol client library for Python"
+depends=('python-six' 'python-pytz' 'python-more-itertools' 'python-jaraco'
+         'python-tempora')
+makedepends=('python-setuptools-scm')
+checkdepends=('python-pytest')
+arch=('any')
+url="https://pypi.python.org/pypi/irc"
+license=('LGPL')
+source=("https://files.pythonhosted.org/packages/source/i/irc/irc-$pkgver.tar.gz")
+md5sums=('efa8cbcf8e577e7f15552622a2ae280a')
+
+build() {
+  cd "$srcdir/irc-$pkgver"
+  export LC_ALL=en_US.UTF-8
+  python3 setup.py build
+}
+
+check() {
+  cd "$srcdir/irc-$pkgver"
+  export LC_ALL=en_US.UTF-8
+  #python3 setup.py test
+  # all 19.0.0 did was remove the explicit VERSION string
+  # in his typical style, this part of the API is still required for tests
+}
+
+package() {
+  cd "$srcdir/irc-$pkgver"
+  export LC_ALL=en_US.UTF-8
+  python3 setup.py install --root="$pkgdir" --optimize=0
+}
