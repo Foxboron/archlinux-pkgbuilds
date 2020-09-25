@@ -1,0 +1,13 @@
+pkgbase = qprint
+	pkgdesc = Encoder and decoder for quoted-printable (RFC1521) encoding
+	pkgver = 1.1
+	pkgrel = 2
+	url = https://www.fourmilab.ch/webtools/qprint/
+	arch = x86_64
+	license = custom:Public Domain
+	depends = glibc
+	source = https://www.fourmilab.ch/webtools/qprint/qprint-1.1.tar.gz
+	sha256sums = ffa9ca1d51c871fb3b56a4bf0165418348cf080f01ff7e59cd04511b9665019c
+
+pkgname = qprint
+
