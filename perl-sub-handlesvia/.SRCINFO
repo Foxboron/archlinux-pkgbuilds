@@ -1,0 +1,22 @@
+pkgbase = perl-sub-handlesvia
+	pkgdesc = Perl extension for easily overriding subroutines
+	pkgver = 0.016
+	pkgrel = 1
+	url = https://metacpan.org/release/Sub-HandlesVia
+	arch = any
+	license = PerlArtistic
+	license = GPL
+	checkdepends = perl-test-requires
+	checkdepends = perl-test-fatal
+	depends = perl
+	depends = perl-moo
+	depends = perl-mouse
+	depends = perl-exporter-tiny
+	depends = perl-type-tiny
+	depends = perl-class-tiny
+	options = !emptydirs
+	source = https://search.cpan.org/CPAN/authors/id/T/TO/TOBYINK/Sub-HandlesVia-0.016.tar.gz
+	sha512sums = 91932d7c56e4fc1bb9e737282ee45ffdcc6d4143ee0307cbcbee9fb3b3953bd955b62bc20809cef61d4e643a4d246dbab062a636a46f951a93bdf2f22a1b04d2
+
+pkgname = perl-sub-handlesvia
+
