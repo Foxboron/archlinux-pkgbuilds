@@ -6,7 +6,7 @@ set -x
 git config --local url."https://".insteadOf "git+https://" 
 
 pkg="$1"
-
+set -x
 UPSTREAM=$(cat $pkg/.SRCINFO | grep source | grep git | head | awk '{print $3}')
 
-git ls-remote --tags $(awk -F\# '{print $1}' <(echo $UPSTREAM)) | awk '{print $1 "\t" $2}' | uniq
+git ls-remote --tags $(awk -F\# '{print $1}' <(echo $UPSTREAM)) | awk '{print "_commit=" $1 "\t#" $2}' | uniq
