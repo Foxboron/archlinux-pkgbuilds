@@ -40,6 +40,7 @@ jq
 k9s
 kakoune
 libco
+libmd
 libslirp
 lostfiles
 lxd
@@ -55,6 +56,13 @@ font-awesome
 pass-otp
 pdfjs
 perl-anyevent-i3
+perl-data-perl
+perl-gnupg-interface
+perl-moox-handlesvia
+perl-moox-late
+perl-strictures
+perl-sub-handlesvia
+perl-type-tiny
 podman
 podman
 protege
@@ -79,6 +87,7 @@ python-flask-babel
 python-guzzle-sphinx-theme
 python-hidapi
 python-hjson
+python-irc
 python-jsonrpclib-pelix
 python-jsonrpc-server
 python-keyutils
@@ -115,6 +124,8 @@ python-wheel
 python-wxpython
 python-xlib
 qcustomplot
+qmk
+qprint
 qutebrowser
 raft
 rclone
@@ -122,6 +133,7 @@ restic
 rofi
 runc
 screenkey
+signing-party
 skopeo
 slirp4netns
 sqlite-replication
