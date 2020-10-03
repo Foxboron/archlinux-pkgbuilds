@@ -39,6 +39,7 @@ for pkgbase in $updated_packages; do
 	git add "../../../../${pkgbase}/.SRCINFO"
 	popd &> /dev/null
 	svn_log=$(svn log -l 1 "${pkgbase}/trunk"|head -n-1|tail -n-2)
-	git commit -v "../../${pkgbase}" --template <(printf "\n%s" "$svn_log")
+	author=$(svn info --show-item last-changed-author "${pkgbase}/trunk")
+	GIT_AUTHOR_NAME="$author" GIT_AUTHOR_EMAIL="$author@archlinux.org" git commit -v "../../${pkgbase}" --template <(printf "\n%s" "$svn_log")
 done
 rm .update.tmp
