@@ -1,0 +1,743 @@
+[__config__]
+oldver = "old.txt"
+newver = "new.txt"
+keyfile = "apikeys.ini"
+
+[acpid]
+source = "git"
+git = "git+https://git.code.sf.net/p/acpid2/code"
+use_max_tag = true
+
+[bolt]
+source = "git"
+git = "git+https://gitlab.freedesktop.org/bolt/bolt"
+use_max_tag = true
+
+[bucklespring]
+source = "github"
+github = "zevv/bucklespring"
+prefix = "v"
+use_max_tag = true
+
+[containerd]
+source = "github"
+github = "containerd/containerd"
+prefix = "v"
+use_max_tag = true
+exclude_regex = "v.*(pre|rc|alpha|beta).*"
+
+[darktable]
+source = "github"
+github = "darktable-org/darktable"
+prefix = "release-"
+use_max_tag = true
+ignored = "release0.4 0.4 0.3 release-3.3.0"
+exclude_regex = ".*(rc).*"
+
+[delve]
+source = "github"
+github = "go-delve/delve"
+prefix = "v"
+use_max_tag = true
+
+[dep]
+source = "github"
+github = "golang/dep"
+prefix = "v"
+use_max_tag = true
+
+[docker-compose]
+source = "github"
+github = "docker/compose"
+use_max_tag = true
+prefix = "v"
+exclude_regex = ".*(rc).*"
+
+[font-awesome]
+source = "github"
+github = "FortAwesome/Font-Awesome"
+use_max_tag = true
+
+[fzf]
+source = "github"
+github = "junegunn/fzf"
+use_max_tag = true
+from_pattern = "(\\d+)\\.(\\d+)\\.(\\d+)\\-(\\d+)"
+to_pattern = "\\1.\\2.\\3.\\4"
+
+[git-lfs]
+source = "github"
+github = "git-lfs/git-lfs"
+prefix = "v"
+use_max_tag = true
+
+[go]
+source = "github"
+github = "golang/go"
+prefix = "go"
+use_max_tag = true
+exclude_regex = ".*(release|weekly|rc|alpha|beta).*"
+
+[go-md2man]
+source = "github"
+github = "cpuguy83/go-md2man"
+prefix = "v"
+use_max_tag = true
+
+[gopass]
+source = "github"
+github = "gopasspw/gopass"
+prefix = "v"
+use_max_tag = true
+exclude_regex = ".*(rc).*"
+
+[hexedit]
+source = "github"
+github = "pixel/hexedit"
+use_max_tag = true
+
+[hy]
+source = "github"
+github = "hylang/hy"
+use_max_tag = true
+
+[i3-gaps]
+source = "github"
+github = "Airblader/i3"
+use_max_tag = true
+
+[influxdb]
+source = "github"
+github = "influxdata/influxdb"
+prefix = "v"
+use_max_tag = true
+ignored = "v9.9.9"
+exclude_regex = "v.*(rc|alpha|beta).*"
+
+[jgmenu]
+source = "github"
+github = "johanmalm/jgmenu"
+prefix = "v"
+use_max_tag = true
+
+[jp2a]
+source = "github"
+github = "Talinx/jp2a"
+prefix = "v"
+use_max_tag = true
+
+[kakoune]
+source = "github"
+github = "mawww/kakoune"
+prefix = "v"
+use_latest_release = true
+
+[lostfiles]
+source = "github"
+github = "graysky2/lostfiles"
+prefix = "v"
+use_max_tag = true
+
+[mopidy]
+source = "github"
+github = "mopidy/mopidy"
+prefix = "v"
+use_max_tag = true
+exclude_regex = "v\\d\\.\\d\\.\\d(a|b).*"
+
+[mypy]
+source = "pypi"
+pypi = "mypy"
+
+[neofetch]
+source = "github"
+github = "dylanaraps/neofetch"
+use_max_tag = true
+
+[pass-otp]
+source = "github"
+github = "tadfisher/pass-otp"
+prefix = "v"
+use_max_tag = true
+
+[pdfjs]
+source = "github"
+github = "mozilla/pdf.js"
+prefix = "v"
+use_max_tag = true
+
+[protege]
+source = "github"
+github = "protegeproject/protege"
+prefix = "v"
+use_max_tag = true
+exclude_regex = "v.*(rc|alpha|beta).*"
+
+[py3status]
+source = "github"
+github = "ultrabug/py3status"
+use_max_tag = true
+
+[python-argparse]
+source = "pypi"
+pypi = "argparse"
+
+[python-pykka]
+source = "pypi"
+pypi = "pykka"
+
+[python-autobahn]
+source = "pypi"
+pypi = "autobahn"
+
+[python-babel]
+source = "pypi"
+pypi = "babel"
+prefix = "v"
+
+[python-docker]
+source = "pypi"
+pypi = "docker"
+
+[python-docker-pycreds]
+source = "pypi"
+pypi = "docker-pycreds"
+
+[python-dockerpty]
+source = "pypi"
+pypi = "dockerpty"
+
+[python-docs]
+source = "github"
+github = "python/cpython"
+prefix = "v"
+use_max_tag = true
+exclude_regex = ".*(a|b|rc).*"
+
+[python-hidapi]
+source = "pypi"
+pypi = "hidapi"
+from_pattern = "(\\d+)\\.(\\d+)\\.(\\d+)\\.post(\\d+)"
+to_pattern = "\\1.\\2.\\3.\\4"
+
+[python-jsonrpclib-pelix]
+source = "pypi"
+pypi = "jsonrpclib-pelix"
+
+[python-jsonrpc-server]
+source = "pypi"
+pypi = "python-jsonrpc-server"
+
+[python-keyutils]
+source = "pypi"
+pypi = "keyutils"
+
+[python-language-server]
+source = "pypi"
+pypi = "python-language-server"
+
+[python-ldap]
+source = "pypi"
+pypi = "python-ldap"
+
+[python-m2crypto]
+source = "pypi"
+pypi = "M2Crypto"
+
+[python-mypy_extensions]
+source = "pypi"
+pypi = "mypy_extensions"
+
+[python-pew]
+source = "pypi"
+pypi = "pew"
+
+[python-pipenv]
+source = "pypi"
+pypi = "pipenv"
+
+[python-psycopg2]
+source = "pypi"
+pypi = "psycopg2"
+
+[python-pyaes]
+source = "pypi"
+pypi = "pyaes"
+
+[python-pycountry]
+source = "pypi"
+pypi = "pycountry"
+
+[python-pydocstyle]
+source = "pypi"
+pypi = "pydocstyle"
+
+[python-pypeg2]
+source = "pypi"
+pypi = "pypeg2"
+
+[python-pyserial]
+source = "pypi"
+pypi = "pyserial"
+
+[python-pywal]
+source = "pypi"
+pypi = "pywal"
+
+[python-rope]
+source = "pypi"
+pypi = "rope"
+
+[python-send2trash]
+source = "pypi"
+pypi = "send2trash"
+
+[python-shutilwhich]
+source = "pypi"
+pypi = "shutilwhich"
+
+[python-sqlobject]
+source = "pypi"
+pypi = "sqlobject"
+
+[python-sqlparse]
+source = "pypi"
+pypi = "sqlparse"
+
+[python-wheel]
+source = "pypi"
+pypi = "wheel"
+
+[python-wxpython]
+source = "pypi"
+pypi = "wxpython"
+from_pattern = "(\\d+)\\.(\\d+)\\.(\\d+)\\.post(\\d+)"
+to_pattern = "\\1.\\2.\\3.\\4"
+
+[python-xlib]
+source = "pypi"
+pypi = "python-xlib"
+
+[python2-functools32]
+source = "pypi"
+pypi = "functools32"
+from_pattern = "(\\d+)\\.(\\d+)\\.(\\d+)\\-(\\d+)"
+to_pattern = "\\1.\\2.\\3_\\4"
+
+[qutebrowser]
+source = "github"
+github = "qutebrowser/qutebrowser"
+prefix = "v"
+use_max_tag = true
+
+[restic]
+source = "github"
+github = "restic/restic"
+prefix = "v"
+use_max_tag = true
+
+[rofi]
+source = "github"
+github = "DaveDavenport/rofi"
+use_max_tag = true
+
+[runc]
+source = "github"
+github = "opencontainers/runc"
+use_max_tag = true
+from_pattern = "v(\\d+)\\.(\\d+)\\.(\\d+)\\-rc(\\d+)"
+to_pattern = "\\1.\\2.\\3rc\\4"
+
+[udiskie]
+source = "github"
+github = "coldfix/udiskie"
+use_max_tag = true
+
+[podman]
+source = "github"
+github = "containers/libpod"
+use_max_tag = true
+prefix = "v"
+exclude_regex = ".*rc.$"
+
+[catatonit]
+source = "github"
+github = "openSUSE/catatonit"
+use_max_tag = true
+prefix = "v"
+
+[python-prompt_toolkit]
+source = "github"
+github = "prompt-toolkit/python-prompt-toolkit"
+use_max_tag = true
+
+[buildah]
+source = "github"
+github = "containers/buildah"
+use_max_tag = true
+prefix = "v"
+
+[skopeo]
+source = "github"
+github = "containers/skopeo"
+use_max_tag = true
+prefix = "v"
+
+[yubico-c]
+source = "github"
+github = "Yubico/yubico-c"
+prefix = "libyubikey-"
+use_max_tag = true
+ignored = "0.3.0 libyubikey-0.3.0"
+
+[yubico-c-client]
+source = "github"
+github = "Yubico/yubico-c-client"
+prefix = "ykclient-"
+use_max_tag = true
+exclude_regex = ".*(pre|rc|alpha|beta).*"
+
+[yubico-pam]
+source = "github"
+github = "Yubico/yubico-pam"
+use_max_tag = true
+
+[yubikey-manager]
+source = "github"
+github = "Yubico/yubikey-manager"
+prefix = "yubikey-manager-"
+use_max_tag = true
+exclude_regex = ".*rc.$"
+
+[yubikey-personalization]
+source = "github"
+github = "Yubico/yubikey-personalization"
+prefix = "v"
+use_max_tag = true
+
+[yubikey-manager-qt]
+source = "github"
+github = "Yubico/yubikey-manager-qt"
+prefix = "yubikey-manager-qt-"
+use_max_tag = true
+ignored = "0.3.0"
+exclude_regex = ".*rc.$"
+
+[qcustomplot]
+source = "regex"
+regex = "tags/v([\\d.]+)?"
+url = "https://gitlab.com/DerManu/QCustomPlot/-/tags"
+
+[nvme-cli]
+source = "git"
+git = "git://github.com/linux-nvme/nvme-cli"
+prefix = "v"
+use_max_tag = true
+
+[nano-syntax-highlighting]
+source = "github"
+github = "scopatz/nanorc"
+use_max_tag = true
+
+[python-nltk]
+source = "github"
+github = "nltk/nltk"
+use_max_tag = true
+exclude_regex = ".*(b).*"
+
+[python2-typing]
+source = "github"
+github = "python/typing"
+use_max_tag = true
+
+[archlinux-contrib]
+source = "github"
+github = "archlinux/contrib"
+use_max_tag = true
+
+[archlinux-repro]
+source = "github"
+github = "archlinux/archlinux-repro"
+use_max_tag = true
+
+[nageru]
+source = "git"
+git = "http://git.sesse.net/nageru"
+use_max_tag = true
+
+[bmusb]
+source = "git"
+git = "http://git.sesse.net/bmusb"
+use_max_tag = true
+
+[dqlite]
+source = "github"
+github = "canonical/dqlite"
+prefix = "v"
+use_max_tag = true
+
+[lxd]
+source = "github"
+github = "lxc/lxd"
+prefix = "lxd-"
+use_max_tag = true
+
+[libco]
+source = "github"
+github = "canonical/libco"
+prefix = "v"
+use_max_tag = true
+
+[raft]
+source = "github"
+github = "canonical/raft"
+prefix = "v"
+use_max_tag = true
+
+[sqlite-replication]
+source = "github"
+github = "canonical/sqlite"
+use_max_tag = true
+include_regex = ".*replication.*"
+from_pattern = ".*(\\d+)\\.(\\d+)\\.(\\d+)\\+replication(\\d+)"
+to_pattern = "\\1.\\2.\\3.\\4"
+
+[crun]
+source = "github"
+github = "containers/crun"
+use_max_tag = true
+
+[k9s]
+source = "github"
+github = "derailed/k9s"
+prefix = "v"
+use_max_tag = true
+
+[python-typed-ast]
+source = "github"
+github = "python/typed_ast"
+use_max_tag = true
+
+[vim-ultisnips]
+source = "github"
+github = "SirVer/ultisnips"
+use_max_tag = true
+
+[conmon]
+source = "github"
+github = "containers/conmon"
+prefix = "v"
+use_max_tag = true
+
+[slirp4netns]
+source = "github"
+github = "rootless-containers/slirp4netns"
+prefix = "v"
+use_max_tag = true
+exclude_regex = ".*(beta).*"
+
+[toolbox]
+source = "github"
+github = "containers/toolbox"
+prefix = "v"
+use_max_tag = true
+
+[cni-plugins]
+source = "github"
+github = "containernetworking/plugins"
+prefix = "v"
+use_max_tag = true
+
+[libslirp]
+source = "git"
+git = "git+https://gitlab.freedesktop.org/slirp/libslirp.git"
+prefix = "v"
+use_max_tag = true
+
+[helm]
+source = "github"
+github = "helm/helm"
+prefix = "v"
+use_max_tag = true
+exclude_regex = ".*(rc).*"
+
+[fuse-overlayfs]
+source = "github"
+github = "containers/fuse-overlayfs"
+prefix = "v"
+use_max_tag = true
+
+[staticcheck]
+source = "github"
+github = "dominikh/go-tools"
+use_max_tag = true
+
+[rclone]
+source = "github"
+github = "rclone/rclone"
+prefix = "v"
+use_max_tag = true
+
+[v2ray]
+source = "github"
+github = "v2fly/v2ray-core"
+prefix = "v"
+use_max_tag = true
+
+[glider]
+source = "github"
+github = "nadoo/glider"
+prefix = "v"
+use_max_tag = true
+
+[dns-over-https]
+source = "github"
+github = "m13253/dns-over-https"
+prefix = "v"
+use_max_tag = true
+
+[barrier]
+source = "github"
+github = "debauchee/barrier"
+prefix = "v"
+use_max_tag = true
+
+[screenkey]
+source = "git"
+git = "git+https://gitlab.com/screenkey/screenkey"
+prefix = "v"
+use_max_tag = true
+
+[python-dotenv]
+source = "github"
+github = "theskumar/python-dotenv"
+prefix = "v"
+use_max_tag = true
+
+[todoman]
+source = "github"
+github = "pimutils/todoman"
+prefix = "v"
+use_max_tag = true
+
+[python-flask-babel]
+source = "pypi"
+pypi = "Flask-Babel"
+
+[python-guzzle-sphinx-theme]
+source = "pypi"
+pypi = "guzzle_sphinx_theme"
+
+[python-nbxmpp]
+source = "pypi"
+pypi = "nbxmpp"
+
+[python-pydbus]
+source = "pypi"
+pypi = "pydbus"
+
+[python-pydrive]
+source = "pypi"
+pypi = "PyDrive"
+
+[python-pygame]
+source = "pypi"
+pypi = "pygame"
+
+[python-reportlab]
+source = "pypi"
+pypi = "reportlab"
+
+[python-speaklater]
+source = "pypi"
+pypi = "speaklater"
+
+[python-sphinx-autorun]
+source = "pypi"
+pypi = "sphinx-autorun"
+
+[github-cli]
+source = "github"
+github = "cli/cli"
+prefix = "v"
+exclude_regex = ".*(pre).*"
+use_max_tag = true
+
+[jq]
+source = "github"
+github = "stedolan/jq"
+prefix = "jq-"
+use_max_tag = true
+exclude_regex = ".*(rc).*"
+
+[zsh-completions]
+source = "github"
+github = "zsh-users/zsh-completions"
+use_max_tag = true
+
+[zsh-syntax-highlighting]
+source = "github"
+github = "zsh-users/zsh-syntax-highlighting"
+use_max_tag = true
+exclude_regex = ".*(alpha|beta).*"
+
+[gopls]
+source = "github"
+github = "golang/tools"
+prefix = "gopls/v"
+use_max_tag = true
+exclude_regex = ".*(pre).*"
+
+[python-hjson]
+source = "github"
+github = "hjson/hjson-py"
+prefix = "v"
+use_max_tag = true
+
+[qmk]
+source = "github"
+github = "qmk/qmk_cli"
+prefix = "v"
+use_max_tag = true
+
+[python-irc]
+source = "github"
+github = "jaraco/irc"
+prefix = "v"
+use_max_tag = true
+
+[libmd]
+source = "git"
+git = "git+https://git.hadrons.org/git/libmd.git"
+use_max_tag = true
+
+[signing-party]
+source = "gitlab"
+gitlab = "signing-party-team/signing-party"
+host = "salsa.debian.org"
+use_max_tag = true
+prefix = "v"
+
+[perl-data-perl]
+source = "cpan"
+cpan = "Data-Perl"
+
+[perl-type-tiny]
+source = "cpan"
+cpan = "Type-Tiny"
+
+[perl-strictures]
+source = "cpan"
+cpan = "strictures"
+
+[perl-gnupg-interface]
+source = "cpan"
+cpan = "GnuPG-Interface"
+
+[perl-moox-handlesvia]
+source = "cpan"
+cpan = "MooX-HandlesVia"
+
+[perl-moox-late]
+source = "cpan"
+cpan = "MooX-late"
