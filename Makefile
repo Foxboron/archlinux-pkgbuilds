@@ -52,4 +52,4 @@ check: update-version
 	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Checking for untracked packages...$(RST)"
 	@.repo/get-unwatched.sh
 	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Comparing...$(RST)"
-	@nvchecker .repo/packages.ini
+	@nvchecker -c .repo/packages.toml
