@@ -3,7 +3,7 @@ containerd 1.4.1
 delve 1.5.0
 dep 0.5.4
 docker-compose 1.27.4
-font-awesome 5.15.0
+font-awesome 5.15.1
 funcparserlib 0.3.6
 fzf 0.22.0
 git-lfs 2.12.0
@@ -110,7 +110,7 @@ helm 3.3.4
 fuse-overlayfs 1.1.2
 baidupcs-go 3.6.2
 dns-over-https 2.2.2
-glider 0.11.0
+glider 0.11.1
 rclone 1.53.1
 v2ray 4.30.0
 staticcheck 2020.1.5
@@ -135,7 +135,7 @@ zsh-syntax-highlighting 0.7.1
 qmk 0.0.35
 python-hjson 3.0.2
 python-formencode 1.3.1
-gopls 0.5.0
+gopls 0.5.1
 perl-gnupg-interface 1.00
 signing-party 2.11
 libmd 1.0.1
