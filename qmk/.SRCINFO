@@ -9,6 +9,7 @@ pkgbase = qmk
 	depends = python-appdirs
 	depends = python-argcomplete
 	depends = python-colorama
+	depends = python-milc
 	depends = git
 	depends = avr-gcc
 	depends = arm-none-eabi-gcc
