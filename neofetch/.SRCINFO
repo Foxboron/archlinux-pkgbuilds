@@ -5,6 +5,7 @@ pkgbase = neofetch
 	url = https://github.com/dylanaraps/neofetch
 	arch = any
 	license = MIT
+	makedepends = git
 	depends = bash
 	optdepends = catimg: Display Images
 	optdepends = chafa: Image to text support
@@ -20,8 +21,9 @@ pkgbase = neofetch
 	optdepends = xorg-xrandr: Resolution detection (Multi Monitor + Refresh rates)
 	optdepends = xorg-xwininfo: See https://github.com/dylanaraps/neofetch/wiki/Images-in-the-terminal
 	backup = etc/neofetch/config.conf
-	source = neofetch-7.1.0.tar.gz::https://github.com/dylanaraps/neofetch/archive/7.1.0.tar.gz
-	sha256sums = 58a95e6b714e41efc804eca389a223309169b2def35e57fa934482a6b47c27e7
+	source = git+https://github.com/dylanaraps/neofetch.git#commit=60d07dee6b76769d8c487a40639fb7b5a1a7bc85?signed
+	validpgpkeys = 7C20ADCD35D9797789B6BCC046D62DD9F1DE636E
+	sha256sums = SKIP
 
 pkgname = neofetch
 
