@@ -1,7 +1,7 @@
 pkgbase = perl-moox-handlesvia
 	pkgdesc = NativeTrait-like behavior for Moo
-	pkgver = 0.001008
-	pkgrel = 8
+	pkgver = 0.001009
+	pkgrel = 1
 	url = https://metacpan.org/release/MooX-HandlesVia
 	arch = any
 	license = PerlArtistic
@@ -16,8 +16,8 @@ pkgbase = perl-moox-handlesvia
 	depends = perl-moo
 	depends = perl-role-tiny
 	options = !emptydirs
-	source = https://cpan.metacpan.org/authors/id/M/MA/MATTP/MooX-HandlesVia-0.001008.tar.gz
-	sha512sums = ad5dd6c5a05d6f44788e31a74d595c3a6c1b8bf62f51d59bab2d65f6963c2995205ad64f6930b103026d3497d3d2a83bd192b7566228c31bf944265e060703c0
+	source = https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/MooX-HandlesVia-0.001009.tar.gz
+	sha512sums = ea3521bf04c52db09068d4fa7cedd3642fd54fc40b5c88cde9340f0a3bb0da03f2aabbe22788a4f33ffedc628fc510c4fb57bdf3f7c9ce1b9316dd1408c2dd40
 
 pkgname = perl-moox-handlesvia
 
