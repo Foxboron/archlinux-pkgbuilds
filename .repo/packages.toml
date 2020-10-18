@@ -738,6 +738,14 @@ cpan = "GnuPG-Interface"
 source = "cpan"
 cpan = "MooX-HandlesVia"
 
+[perl-sub-handlesvia]
+source = "cpan"
+cpan = "Sub-HandlesVia"
+
 [perl-moox-late]
 source = "cpan"
 cpan = "MooX-late"
+
+[python-milc]
+source = "pypi"
+pypi = "milc"

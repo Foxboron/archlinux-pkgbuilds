@@ -94,6 +94,7 @@ python-keyutils
 python-language-server
 python-ldap
 python-m2crypto
+python-milc
 python-mypy_extensions
 python-nbxmpp
 python-nltk
