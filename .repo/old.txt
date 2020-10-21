@@ -147,3 +147,4 @@ python-irc 19.0.1
 qprint 1.1
 perl-sub-handlesvia 0.016
 python-milc 1.0.8
+plocate 1.0.5
