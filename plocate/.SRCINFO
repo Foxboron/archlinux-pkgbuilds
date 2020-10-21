@@ -1,0 +1,19 @@
+pkgbase = plocate
+	pkgdesc = Alternative to locate, faster and compatible with mlocate's database.
+	pkgver = 1.0.5
+	pkgrel = 1
+	url = https://plocate.sesse.net
+	arch = x86_64
+	arch = i686
+	license = GPL2
+	makedepends = meson
+	depends = zstd
+	depends = liburing
+	depends = mlocate
+	source = https://plocate.sesse.net/download/plocate-1.0.5.tar.gz
+	source = plocate-build.service
+	sha256sums = afb62d4ff85bdef51f5daa143e15889718d272cef9e9e43d1149ca36584fa6cd
+	sha256sums = 1aacfdfb905d78eaa207f6cf295b0993c0863d27445eb02d7236bc8075b22e7e
+
+pkgname = plocate
+
