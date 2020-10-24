@@ -1,12 +1,13 @@
 pkgbase = lostfiles
 	pkgdesc = Find orphaned files not owned by any Arch packages
-	pkgver = 4.05
+	pkgver = 4.07
 	pkgrel = 1
 	url = https://github.com/graysky2/lostfiles
 	arch = any
 	license = GPL2
-	source = lostfiles-4.05.tar.xz::https://github.com/graysky2/lostfiles/archive/v4.05.tar.gz
-	sha256sums = 7dc70a08570ac32abe02c0640beb167465304052945c063d463b268cd06a5951
+	backup = etc/lostfiles.conf
+	source = https://github.com/graysky2/lostfiles/archive/v4.07/lostfiles-4.07.tar.gz
+	sha256sums = b31980bc92841314a208c89b02b9241a097af157514e6f6b97089dddeff3e1b8
 
 pkgname = lostfiles
 
