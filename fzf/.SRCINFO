@@ -1,6 +1,6 @@
 pkgbase = fzf
 	pkgdesc = Command-line fuzzy finder
-	pkgver = 0.24.0
+	pkgver = 0.24.0.1
 	pkgrel = 1
 	url = https://github.com/junegunn/fzf
 	arch = x86_64
@@ -12,8 +12,9 @@ pkgbase = fzf
 	optdepends = tmux: fzf-tmux script for launching fzf in a tmux pane
 	optdepends = vim: plugin
 	optdepends = zsh: zsh keybindings
-	source = fzf-0.24.0.tar.gz::https://github.com/junegunn/fzf/archive/0.24.0.tar.gz
-	sha512sums = 0746aee0542574488ee17dbc86618a74a01aa2d7e9042219db37112584f74be7e1686494bd7e3307f161b480053496a58cac18c67a6eec7e2a992f5dea2569a0
+	source = git+https://github.com/junegunn/fzf.git#tag=0.24.0-1?signed
+	validpgpkeys = B5FB4AB5F32EC1A0C9DE9637254BC280FEF9C627
+	sha512sums = SKIP
 
 pkgname = fzf
 
