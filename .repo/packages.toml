@@ -367,9 +367,8 @@ use_max_tag = true
 prefix = "v"
 
 [python-prompt_toolkit]
-source = "github"
-github = "prompt-toolkit/python-prompt-toolkit"
-use_max_tag = true
+source = "pypi"
+pypi = "prompt-toolkit"
 
 [buildah]
 source = "github"
