@@ -63,6 +63,7 @@ perl-moox-late
 perl-strictures
 perl-sub-handlesvia
 perl-type-tiny
+plocate
 podman
 podman
 protege
