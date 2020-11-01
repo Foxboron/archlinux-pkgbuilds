@@ -1,6 +1,6 @@
 pkgbase = v2ray
 	pkgdesc = A platform for building proxies to bypass network restrictions
-	pkgver = 4.31.3
+	pkgver = 4.32.0
 	pkgrel = 1
 	url = https://github.com/v2fly/v2ray-core
 	arch = x86_64
@@ -11,8 +11,8 @@ pkgbase = v2ray
 	depends = v2ray-domain-list-community
 	depends = v2ray-geoip
 	backup = etc/v2ray/config.json
-	source = v2ray-4.31.3.tar.gz::https://github.com/v2fly/v2ray-core/archive/v4.31.3.tar.gz
-	sha512sums = ddb7d362d1290dacc251c55f7f6787056888beb61b121f9fb2335d798874d002cca223c514bdb40184d8288ba511aa7ad9f795e52e7fdddf4a7c46aac25d2857
+	source = v2ray-4.32.0.tar.gz::https://github.com/v2fly/v2ray-core/archive/v4.32.0.tar.gz
+	sha512sums = ff93545d9610f4ced8c4a6b0fc0d436b5bc4348ec774589396ec30619362108df45de64f024f8811f9805f32db93ca957e7b8d79e58074f866062b270e5e76b0
 
 pkgname = v2ray
 
