@@ -1,6 +1,6 @@
 pkgbase = slirp4netns
 	pkgdesc = User-mode networking for unprivileged network namespaces
-	pkgver = 1.1.4
+	pkgver = 1.1.6
 	pkgrel = 1
 	url = https://github.com/rootless-containers/slirp4netns
 	arch = x86_64
@@ -11,7 +11,7 @@ pkgbase = slirp4netns
 	depends = libcap
 	depends = libseccomp
 	depends = libslirp
-	source = git+https://github.com/rootless-containers/slirp4netns#commit=b66ffa8e262507e37fca689822d23430f3357fe8
+	source = git+https://github.com/rootless-containers/slirp4netns#commit=a995c1642ee9a59607dccf87758de586b501a800
 	sha256sums = SKIP
 
 pkgname = slirp4netns
