@@ -1,0 +1,16 @@
+pkgbase = python-pandas-datareader
+	pkgdesc = Data readers extracted from the pandas codebase
+	pkgver = 0.9.0
+	pkgrel = 1
+	url = https://github.com/pydata/pandas-datareader
+	arch = any
+	license = BSD
+	makedepends = python-setuptools
+	depends = python-pandas
+	depends = python-lxml
+	depends = python-requests
+	source = python-pandas-datareader-0.9.0.tar.gz::https://github.com/pydata/pandas-datareader/archive/v0.9.0.tar.gz
+	sha256sums = f7de31b193fcf16bf4ec794beba28f371b8423a0edeef4433ec8a29c9eb028ca
+
+pkgname = python-pandas-datareader
+
