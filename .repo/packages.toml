@@ -753,3 +753,19 @@ pypi = "milc"
 source = "git"
 git = "http://git.sesse.net/plocate"
 use_max_tag = true
+
+[python-google-api-core]
+source = "pypi"
+pypi = "google-api-core"
+
+[python-google-api-python-client]
+source = "pypi"
+pypi = "google-api-python-client"
+
+[python-pandas]
+source = "pypi"
+pypi = "pandas"
+
+[python-pandas-datareader]
+source = "pypi"
+pypi = "pandas-datareader"

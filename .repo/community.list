@@ -85,7 +85,10 @@ python-docker-pycreds
 python-docs
 python-dotenv
 python-flask-babel
+python-google-api-core
+python-google-api-python-client
 python-guzzle-sphinx-theme
+python-hidapi
 python-hidapi
 python-hjson
 python-irc
@@ -99,6 +102,8 @@ python-milc
 python-mypy_extensions
 python-nbxmpp
 python-nltk
+python-pandas
+python-pandas-datareader
 python-pew
 python-pipenv
 python-prompt_toolkit
