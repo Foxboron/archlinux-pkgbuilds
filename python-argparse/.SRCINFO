@@ -1,6 +1,6 @@
 pkgbase = python-argparse
 	pkgver = 1.4.0
-	pkgrel = 7
+	pkgrel = 8
 	url = https://pypi.python.org/pypi/argparse
 	arch = any
 	license = Python
