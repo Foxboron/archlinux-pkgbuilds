@@ -1,7 +1,7 @@
 pkgbase = python-jsonrpc-server
 	pkgdesc = Python library implementing asynchronous JSON RPC server
 	pkgver = 0.4.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/palantir/python-jsonrpc-server
 	arch = any
 	license = MIT
