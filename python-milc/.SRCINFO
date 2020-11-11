@@ -1,7 +1,7 @@
 pkgbase = python-milc
 	pkgdesc = Opinionated Batteries-Included Python 3 CLI Framework.
 	pkgver = 1.0.10
-	pkgrel = 1
+	pkgrel = 3
 	url = https://milc.clueboard.co/#/
 	arch = any
 	license = MIT
