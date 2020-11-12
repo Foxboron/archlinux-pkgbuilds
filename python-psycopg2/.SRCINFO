@@ -1,7 +1,7 @@
 pkgbase = python-psycopg2
 	pkgdesc = A PostgreSQL database adapter for the Python programming language.
 	pkgver = 2.8.6
-	pkgrel = 2
+	pkgrel = 3
 	url = http://initd.org/psycopg/
 	arch = x86_64
 	license = LGPL3
