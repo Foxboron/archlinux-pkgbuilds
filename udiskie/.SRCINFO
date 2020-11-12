@@ -1,7 +1,7 @@
 pkgbase = udiskie
 	pkgdesc = Removable disk automounter using udisks
 	pkgver = 2.2.0
-	pkgrel = 2
+	pkgrel = 3
 	url = https://pypi.python.org/pypi/udiskie
 	arch = any
 	license = MIT
