@@ -1,7 +1,7 @@
 pkgbase = python-irc
 	pkgdesc = IRC (Internet Relay Chat) protocol client library for Python
 	pkgver = 19.0.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://pypi.python.org/pypi/irc
 	arch = any
 	license = LGPL
