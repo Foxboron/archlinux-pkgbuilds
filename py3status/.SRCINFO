@@ -1,7 +1,7 @@
 pkgbase = py3status
 	pkgdesc = An extensible i3status replacement/wrapper written in python
 	pkgver = 3.30
-	pkgrel = 1
+	pkgrel = 2
 	url = https://www.ultrabug.fr/tag/py3status/
 	arch = any
 	license = BSD
