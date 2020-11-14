@@ -1,7 +1,7 @@
 pkgbase = go
 	pkgdesc = Core compiler tools for the Go programming language
 	pkgver = 1.15.5
-	pkgrel = 1
+	pkgrel = 2
 	epoch = 2
 	url = https://golang.org/
 	arch = x86_64
@@ -16,10 +16,12 @@ pkgbase = go
 	source = https://storage.googleapis.com/golang/go1.15.5.src.tar.gz
 	source = https://storage.googleapis.com/golang/go1.15.5.src.tar.gz.asc
 	source = fix-color.patch::https://github.com/golang/go/commit/29634436fd741a7c685bf8f242b6fd62f093d1ad.patch
+	source = fix-ldflags.patch
 	validpgpkeys = EB4C1BFD4F042F6DDDCCEC917721F63BD38B4796
 	sha256sums = c1076b90cf94b73ebed62a81d802cd84d43d02dea8c07abdc922c57a071c84f1
 	sha256sums = SKIP
 	sha256sums = f6bf4c18e4395bdd4925b1f15a713fa3daca0a28123d6c20d51234d7ce2d3357
+	sha256sums = 57793df3095606f930b95c8b40deca6a0c9dbc3b3fcc491ad77a91c01f67c12e
 
 pkgname = go
 
