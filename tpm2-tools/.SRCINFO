@@ -25,10 +25,12 @@ pkgbase = tpm2-tools
 	optdepends = tpm2-abrmd: user space resource manager
 	source = https://github.com/tpm2-software/tpm2-tools/releases/download/5.0/tpm2-tools-5.0.tar.gz
 	source = https://github.com/tpm2-software/tpm2-tools/releases/download/5.0/tpm2-tools-5.0.tar.gz.asc
+	source = tpm2-tools-5.0_fix_tests_with_tpm2-tss-3.0.2.patch::https://github.com/tpm2-software/tpm2-tools/commit/0db78069d9a384b33fd4c412f852a85ccf0c3733.patch
 	validpgpkeys = 5B482B8E3E19DA7C978E1D016DE2E9078E1F50C1
 	validpgpkeys = 6313E6DC41AAFC315A8760A414986F6944B1F72B
 	sha512sums = ea57a28a61e28b78cae7067ff58facd8754fafab7a2689fd93f8b3374073b6ac30301a75f8ff5c654800ab469ee6604d0b8a86c310631b9545b816ecaa05968e
 	sha512sums = SKIP
+	sha512sums = 8b73e3d568485efb96900f6a5a7e36c950a9e18a8131f7a5c46ed6031f9c177062b6e7126a6bdc6ca63f9dc8a4bc2207439b114dec11b9f52d105fc62ad6c2bc
 
 pkgname = tpm2-tools
 
