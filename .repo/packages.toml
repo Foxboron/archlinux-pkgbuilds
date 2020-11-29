@@ -769,3 +769,17 @@ pypi = "pandas"
 [python-pandas-datareader]
 source = "pypi"
 pypi = "pandas-datareader"
+
+[kubernetes]
+source = "github"
+github = "kubernetes/kubernetes"
+prefix = "v"
+use_max_tag = true
+exclude_regex = ".*(rc|alpha|beta).*"
+
+[docker]
+source = "github"
+github = "moby/moby"
+prefix = "v"
+use_max_tag = true
+exclude_regex = ".*(rc|alpha|beta).*"
