@@ -1,0 +1,46 @@
+pkgbase = docker
+	pkgdesc = Pack, ship and run any application as a lightweight container
+	pkgver = 19.03.13
+	pkgrel = 1
+	epoch = 1
+	url = https://www.docker.com/
+	arch = x86_64
+	license = Apache
+	makedepends = git
+	makedepends = go
+	makedepends = btrfs-progs
+	makedepends = cmake
+	makedepends = systemd
+	makedepends = go-md2man
+	makedepends = sed
+	depends = glibc
+	depends = bridge-utils
+	depends = iproute2
+	depends = device-mapper
+	depends = sqlite
+	depends = systemd-libs
+	depends = libseccomp
+	depends = libtool
+	depends = runc
+	depends = containerd
+	optdepends = btrfs-progs: btrfs backend support
+	optdepends = pigz: parallel gzip compressor support
+	options = !strip
+	options = !buildflags
+	source = git+https://github.com/docker/docker-ce.git#tag=v19.03.13
+	source = git+https://github.com/docker/libnetwork.git#commit=026aabaa659832804b01754aaadd2c0f420c68b6
+	source = git+https://github.com/krallin/tini.git#commit=fec3683b971d9c3ef73f284f176672c44b448662
+	source = git+https://github.com/spf13/cobra.git
+	source = git+https://github.com/docker/buildx.git
+	source = git+https://github.com/docker/app.git#tag=v0.9.1-beta3
+	source = docker.sysusers
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = 541826011a9836d05a2f42293d5f1beadf2ca8d89fb604487d61a013505678eb
+
+pkgname = docker
+
