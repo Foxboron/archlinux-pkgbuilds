@@ -1,7 +1,7 @@
 pkgbase = python-pipenv
 	pkgdesc = Sacred Marriage of Pipfile, Pip, & Virtualenv.
-	pkgver = 2020.11.4
-	pkgrel = 3
+	pkgver = 2020.11.15
+	pkgrel = 1
 	url = https://pipenv.pypa.io
 	arch = any
 	license = MIT
@@ -11,8 +11,8 @@ pkgbase = python-pipenv
 	depends = python-certifi
 	depends = python-virtualenv-clone
 	depends = python-virtualenv
-	source = python-pipenv-2020.11.4.tar.gz::https://github.com/pypa/pipenv/archive/v2020.11.4.tar.gz
-	sha512sums = c9015eb9a449fa517f31619d1fec5d99882da915a50e189ba6ab9c7c147862f9734f0df200330d666380afe5d2cf52d18015c539635ca6459042ab50d3ccd059
+	source = python-pipenv-2020.11.15.tar.gz::https://github.com/pypa/pipenv/archive/v2020.11.15.tar.gz
+	sha512sums = d312059b3fefc97d4cd79bf2b75d6bde1d117d92c0a299c30181a60ebea662a6c3dff0ca7b92c610dd8eb0c873509dd23c9a891761d0d47d0bba2cab738c830d
 
 pkgname = python-pipenv
 
