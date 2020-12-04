@@ -1,6 +1,6 @@
 pkgbase = glider
 	pkgdesc = A forward proxy with multiple protocols support
-	pkgver = 0.12.3
+	pkgver = 0.13.0
 	pkgrel = 1
 	url = https://github.com/nadoo/glider
 	arch = x86_64
@@ -8,8 +8,8 @@ pkgbase = glider
 	makedepends = go
 	makedepends = git
 	depends = glibc
-	source = glider-0.12.3.tar.gz::https://github.com/nadoo/glider/archive/v0.12.3.tar.gz
-	sha512sums = 529b87cb7cd2eb9a26e8a5ac94a9f9be5ec378f0db034f1e86ac0173e90935b60a827e93b86c2a4d0d35b6ea6625a54173a4a47afe9eddd02d3e8e77339c1cd0
+	source = glider-0.13.0.tar.gz::https://github.com/nadoo/glider/archive/v0.13.0.tar.gz
+	sha512sums = 5d9c086b674ebf003fbabc48cb2fe5b312fb54955f716df28c14d09b502aedc8a40fde56c34e857f5b25b69bd0d15ae7a8f78f57cd09933359a0fe56c637fa94
 
 pkgname = glider
 
