@@ -1,7 +1,7 @@
 pkgbase = docker
 	pkgdesc = Pack, ship and run any application as a lightweight container
 	pkgver = 19.03.14
-	pkgrel = 1
+	pkgrel = 2
 	epoch = 1
 	url = https://www.docker.com/
 	arch = x86_64
@@ -43,4 +43,3 @@ pkgbase = docker
 	sha256sums = 541826011a9836d05a2f42293d5f1beadf2ca8d89fb604487d61a013505678eb
 
 pkgname = docker
-
