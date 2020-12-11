@@ -1,7 +1,7 @@
 pkgbase = cri-o
 	pkgdesc = Open Container Initiative-based implementation of Kubernetes Container Runtime Interface
 	pkgver = 1.19.0
-	pkgrel = 6
+	pkgrel = 7
 	url = https://github.com/cri-o/cri-o
 	install = cri-o.install
 	arch = x86_64
@@ -28,6 +28,8 @@ pkgbase = cri-o
 	provides = container-runtime
 	options = emptydirs
 	backup = etc/crio/crio.conf
+	backup = etc/cni/net.d/100-crio-bridge.conf
+	backup = etc/cni/net.d/199-crio-loopback.conf
 	source = cri-o-1.19.0.tar.gz::https://github.com/cri-o/cri-o/archive/v1.19.0.tar.gz
 	source = modules-cri-o.conf
 	source = sysctl-cri-o.conf
