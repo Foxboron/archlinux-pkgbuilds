@@ -1,13 +1,12 @@
 pkgbase = python-docs
 	pkgdesc = Set of HTML documentation for python
-	pkgver = 3.9.0
+	pkgver = 3.9.1
 	pkgrel = 1
 	url = https://docs.python.org/py3k/
 	arch = any
 	license = GPL
 	options = docs
-	source = https://sources.archlinux.org/other/community/python-docs/python-3.9.0-docs-html.tar.bz2
-	sha256sums = 276c558f6763f52297dee92fb8e3f36edc538d395ecbbd419ae61bbe224a3647
+	source = https://sources.archlinux.org/other/community/python-docs/python-3.9.1-docs-html.tar.bz2
+	sha256sums = 2b909713db4d73d5046aa56283d905e7c3c3d1f189ff95f3bd3f1cf5def39a74
 
 pkgname = python-docs
-
