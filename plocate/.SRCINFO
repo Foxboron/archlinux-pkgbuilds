@@ -1,6 +1,6 @@
 pkgbase = plocate
 	pkgdesc = Alternative to locate, faster and compatible with mlocate's database.
-	pkgver = 1.1.2
+	pkgver = 1.1.3
 	pkgrel = 1
 	url = https://plocate.sesse.net
 	install = plocate.install
@@ -11,10 +11,10 @@ pkgbase = plocate
 	depends = zstd
 	depends = liburing
 	depends = systemd
-	source = https://plocate.sesse.net/download/plocate-1.1.2.tar.gz
+	source = https://plocate.sesse.net/download/plocate-1.1.3.tar.gz
 	source = plocate.sysusers
 	source = plocate.tmpfiles
-	sha256sums = d59dc67f8621f702507601cef5cd548e227e800e6d2a032fa83a2cdcd2e38cf7
+	sha256sums = 5e6174838e53b1d63852215b02bededcb9878d8fc7f375e3b33afd59121811fa
 	sha256sums = 1713a8fc8b81f4a390bf8597c4c0e917474379002dcc984aad2f44218d10c82a
 	sha256sums = adda399ac42f0faa002caab5bf932777c0006ae7c4387add859c9f77321b4202
 
