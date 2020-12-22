@@ -1,0 +1,15 @@
+pkgbase = python-adblock
+	pkgdesc = Brave's adblock library in Python
+	pkgver = 0.4.0
+	pkgrel = 1
+	url = https://github.com/ArniDagur/python-adblock
+	arch = x86_64
+	license = MIT
+	checkdepends = python-pytest
+	makedepends = python-setuptools
+	makedepends = python-dephell
+	makedepends = rust
+	source = python-adblock-0.4.0.tar.gz::https://github.com/ArniDagur/python-adblock/archive/0.4.0.tar.gz
+	sha256sums = 49cf5bef7a637b9c08ddf6d2f68d11b522f341d2667ea9eb9ef584a59d130a92
+
+pkgname = python-adblock
