@@ -9,6 +9,7 @@ pkgbase = python-adblock
 	makedepends = python-setuptools
 	makedepends = python-dephell
 	makedepends = rust
+	makedepends = maturin
 	source = python-adblock-0.4.0.tar.gz::https://github.com/ArniDagur/python-adblock/archive/0.4.0.tar.gz
 	sha256sums = 49cf5bef7a637b9c08ddf6d2f68d11b522f341d2667ea9eb9ef584a59d130a92
 
