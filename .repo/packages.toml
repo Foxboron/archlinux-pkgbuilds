@@ -31,7 +31,7 @@ source = "github"
 github = "darktable-org/darktable"
 prefix = "release-"
 use_max_tag = true
-ignored = "release0.4 0.4 0.3 release-3.3.0"
+ignored = "release0.4 0.4 0.3 release-3.5.0"
 exclude_regex = ".*(rc).*"
 
 [delve]
@@ -481,25 +481,11 @@ github = "lxc/lxd"
 prefix = "lxd-"
 use_max_tag = true
 
-[libco]
-source = "github"
-github = "canonical/libco"
-prefix = "v"
-use_max_tag = true
-
 [raft]
 source = "github"
 github = "canonical/raft"
 prefix = "v"
 use_max_tag = true
-
-[sqlite-replication]
-source = "github"
-github = "canonical/sqlite"
-use_max_tag = true
-include_regex = ".*replication.*"
-from_pattern = ".*(\\d+)\\.(\\d+)\\.(\\d+)\\+replication(\\d+)"
-to_pattern = "\\1.\\2.\\3.\\4"
 
 [crun]
 source = "github"
@@ -721,6 +707,10 @@ prefix = "v"
 source = "cpan"
 cpan = "Data-Perl"
 
+[perl-anyevent-i3]
+source = "manual"
+manual = "0.17"
+
 [perl-type-tiny]
 source = "cpan"
 cpan = "Type-Tiny"
@@ -783,3 +773,42 @@ github = "moby/moby"
 prefix = "v"
 use_max_tag = true
 exclude_regex = ".*(rc|alpha|beta).*"
+
+[python-adblock]
+source = "github"
+github = "ArniDagur/python-adblock"
+use_max_tag = true
+
+[tailscale]
+source = "github"
+github = "tailscale/tailscale"
+prefix = "v"
+use_max_tag = true
+
+[minicom]
+source = "gitlab"
+gitlab = "minicom-team/minicom"
+host = "salsa.debian.org"
+use_max_tag = true
+prefix = "v"
+
+[go-tools]
+source = "github"
+github = "golang/go"
+use_max_tag = true
+exclude_regex = ".*(release|weekly|rc|alpha|beta).*"
+from_pattern = "go(\\d+)\\.(\\d+)\\.(\\d+)"
+to_pattern = "\\1.\\2+4895+c1934b75d"
+
+[python2-docs]
+source = "github"
+github = "python/cpython"
+prefix = "v"
+use_max_tag = true
+exclude_regex = "(v)?3.*(rc|a|beta)?.*"
+
+[cri-o]
+source = "github"
+github = "cri-o/cri-o"
+prefix = "v"
+use_max_tag = true
