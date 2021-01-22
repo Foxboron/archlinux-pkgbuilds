@@ -1,6 +1,6 @@
 pkgbase = crun
 	pkgdesc = A fast and lightweight fully featured OCI runtime and C library for running containers
-	pkgver = 0.16
+	pkgver = 0.17
 	pkgrel = 1
 	url = https://github.com/containers/crun
 	arch = x86_64
@@ -13,11 +13,10 @@ pkgbase = crun
 	depends = systemd-libs
 	depends = libcap
 	depends = libseccomp
-	source = https://github.com/containers/crun/releases/download/0.16/crun-0.16.tar.xz
-	source = https://github.com/containers/crun/releases/download/0.16/crun-0.16.tar.xz.asc
+	source = https://github.com/containers/crun/releases/download/0.17/crun-0.17.tar.xz
+	source = https://github.com/containers/crun/releases/download/0.17/crun-0.17.tar.xz.asc
 	validpgpkeys = AC404C1C0BF735C63FF4D562263D6DF2E163E1EA
-	sha256sums = 0c2d1af85d27bd1e7263e8be1384643629e3cbacc598437a811587db8e86027d
+	sha256sums = d421730ade42af490e0f629c6a67f895941f1da07709d8ea370d5586b2915131
 	sha256sums = SKIP
 
 pkgname = crun
-
