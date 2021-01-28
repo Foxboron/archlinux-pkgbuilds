@@ -1,7 +1,7 @@
 pkgbase = tailscale
 	pkgdesc = A mesh VPN that makes it easy to connect your devices, wherever they are.
-	pkgver = 1.2.10
-	pkgrel = 2
+	pkgver = 1.4.0
+	pkgrel = 1
 	url = https://tailscale.com
 	install = tailscale.install
 	arch = x86_64
@@ -10,7 +10,7 @@ pkgbase = tailscale
 	makedepends = go
 	depends = glibc
 	backup = etc/default/tailscaled
-	source = git+https://github.com/tailscale/tailscale.git#commit=e480f8ddf6f7334fda1b3d0dd1b500f2f01f961b
+	source = git+https://github.com/tailscale/tailscale.git#commit=3d7cff91b36ceeba4f3457ccef006fe75f4d42c4
 	sha256sums = SKIP
 
 pkgname = tailscale
