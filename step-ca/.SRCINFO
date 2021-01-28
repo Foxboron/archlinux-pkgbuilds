@@ -1,0 +1,14 @@
+pkgbase = step-ca
+	pkgdesc = A private certificate authority (X.509 & SSH) & ACME server for secure automated certificate management, so you can use TLS everywhere & SSO for SSH.
+	pkgver = 0.15.6
+	pkgrel = 1
+	url = https://github.com/smallstep/certificates
+	arch = x86_64
+	license = Apache
+	makedepends = go
+	depends = glibc
+	depends = pcsclite
+	source = https://github.com/smallstep/certificates/releases/download/v0.15.6/step-certificates_0.15.6.tar.gz
+	sha512sums = 61450abdc62402d04f0e8344b1477d9236f764f693ee64653c52dee5fe939a71149cb7af06bcafdc9af251f3668cde22fe9da2d87672de28b603d1edb2ca6922
+
+pkgname = step-ca
