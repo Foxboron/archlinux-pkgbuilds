@@ -1,6 +1,6 @@
 pkgbase = python-autobahn
 	pkgdesc = Real-time framework for Web, Mobile & Internet of Things
-	pkgver = 21.1.1
+	pkgver = 21.2.1
 	pkgrel = 1
 	url = https://crossbar.io/autobahn/
 	arch = x86_64
@@ -33,7 +33,7 @@ pkgbase = python-autobahn
 	optdepends = python-pytrie: WAMP-cryptobox support
 	optdepends = python-pyopenssl: SSL/TLS support
 	optdepends = python-snappy: snappy compression suppport for WebSocket messages
-	source = https://files.pythonhosted.org/packages/source/a/autobahn/autobahn-21.1.1.tar.gz
-	sha256sums = 93df8fc9d1821c9dabff9fed52181a9ad6eea5e9989d53102c391607d7c1666e
+	source = https://files.pythonhosted.org/packages/source/a/autobahn/autobahn-21.2.1.tar.gz
+	sha256sums = 7e6b1bf95196b733978bab2d54a7ab8899c16ce11be369dc58422c07b7eea726
 
 pkgname = python-autobahn
