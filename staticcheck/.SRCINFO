@@ -1,6 +1,6 @@
 pkgbase = staticcheck
 	pkgdesc = The advanced Go linter
-	pkgver = 2020.2.1
+	pkgver = 2020.2.2
 	pkgrel = 1
 	url = https://staticcheck.io
 	arch = x86_64
@@ -8,7 +8,8 @@ pkgbase = staticcheck
 	makedepends = go
 	makedepends = git
 	depends = glibc
-	source = staticcheck-2020.2.1.tar.gz::https://github.com/dominikh/go-tools/archive/2020.2.1.tar.gz
-	sha256sums = 3603c8e640cac8c4537c6748025db12f154f844091d1b47a3fe303a83da31029
+	source = staticcheck-2020.2.2.tar.gz::https://github.com/dominikh/go-tools/archive/2020.2.2.tar.gz
+	sha256sums = 6f68bc529f730cf2e79e4430c690f8ba24d596c5d63a5b0557dec463306efbfa
 
 pkgname = staticcheck
+
