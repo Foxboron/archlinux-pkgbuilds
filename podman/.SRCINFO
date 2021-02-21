@@ -1,7 +1,7 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
 	pkgver = 3.0.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/containers/libpod
 	arch = x86_64
 	license = Apache
@@ -45,5 +45,6 @@ pkgname = podman
 pkgname = podman-docker
 	pkgdesc = Emulate Docker CLI using podman
 	depends = podman
+	provides = docker
 	conflicts = docker
 
