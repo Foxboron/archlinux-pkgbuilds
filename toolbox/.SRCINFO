@@ -1,7 +1,7 @@
 pkgbase = toolbox
 	pkgdesc = Unprivileged development environment
 	pkgver = 0.0.99
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/containers/toolbox
 	arch = x86_64
 	license = APACHE
@@ -19,3 +19,4 @@ pkgbase = toolbox
 	sha256sums = SKIP
 
 pkgname = toolbox
+
