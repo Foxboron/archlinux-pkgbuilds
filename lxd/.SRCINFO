@@ -1,7 +1,7 @@
 pkgbase = lxd
 	pkgdesc = Daemon based on liblxc offering a REST API to manage containers
 	pkgver = 4.11
-	pkgrel = 1
+	pkgrel = 2
 	url = https://linuxcontainers.org/lxd
 	arch = x86_64
 	license = APACHE
@@ -40,3 +40,4 @@ pkgbase = lxd
 	sha256sums = d0184d9c4bb485e3aad0d4ac25ea7e85ac0f7ed6ddc96333e74fcd393a5b5ec4
 
 pkgname = lxd
+
