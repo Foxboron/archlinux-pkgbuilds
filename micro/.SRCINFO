@@ -1,7 +1,7 @@
 pkgbase = micro
 	pkgdesc = A modern and intuitive terminal-based text editor
 	pkgver = 2.0.8
-	pkgrel = 3
+	pkgrel = 4
 	url = https://micro-editor.github.io/
 	arch = aarch64
 	arch = armv6h
