@@ -1,7 +1,7 @@
 pkgbase = staticcheck
 	pkgdesc = The advanced Go linter
 	pkgver = 2020.2.2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://staticcheck.io
 	arch = x86_64
 	license = MIT
