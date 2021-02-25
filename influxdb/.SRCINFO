@@ -1,22 +1,23 @@
 pkgbase = influxdb
 	pkgdesc = Scalable datastore for metrics, events, and real-time analytics
-	pkgver = 2.0.1
+	pkgver = 2.0.4
 	pkgrel = 1
 	url = https://github.com/InfluxData/influxdb
 	arch = x86_64
 	license = MIT
 	makedepends = go
 	makedepends = git
-	makedepends = asciidoc
-	makedepends = xmlto
-	makedepends = dep
+	makedepends = bzr
+	makedepends = protobuf
+	makedepends = yarn
+	makedepends = cargo
+	makedepends = clang
+	makedepends = llvm
 	backup = etc/influxdb/influxdb.conf
-	source = influxdb-2.0.1.tar.gz::https://github.com/influxdata/influxdb/archive/v2.0.1.tar.gz
-	source = influxdb.sysusers
-	source = influxdb.tmpfiles
-	sha256sums = 4ba400e00be3846a9bcba0e20ddb4a344449ae084b04e97e7fec15d63073c476
-	sha256sums = 809cca823ae3027984bc7ace70db75753d7d0d4f6658a36db9d94a33054ca5e9
-	sha256sums = e2aa59413a6204737383b86cedefd866d7073f56ace5b89aad38c530cc86e60c
+	source = git+https://github.com/influxdata/influxdb.git#tag=v2.0.4
+	source = influxdb.service
+	sha256sums = SKIP
+	sha256sums = a22ba54f10fa98ec4e81e864c0c3181e53dedd9e23e1d112ac4ad22c4fa4d9ee
 
 pkgname = influxdb
 

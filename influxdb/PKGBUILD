@@ -6,9 +6,8 @@
 # Contributor: Ben Alex <ben.alex@acegi.com.au>
 
 pkgname=influxdb
-pkgver=2.0.3
-_commit_sha=fe04d34
-_testdata_ver=2020.07.20.1
+pkgver=2.0.4
+_commit_sha=4e7a59b
 pkgrel=1
 pkgdesc='Scalable datastore for metrics, events, and real-time analytics'
 arch=('x86_64')
@@ -17,17 +16,9 @@ license=('MIT')
 makedepends=('go' 'git' 'bzr' 'protobuf' 'yarn' 'cargo' 'clang' 'llvm')
 backup=('etc/influxdb/influxdb.conf')
 source=("git+https://github.com/influxdata/influxdb.git#tag=v${pkgver}"
-        "${pkgname}-testdata-${_testdata_ver}.tar.gz::https://github.com/influxdata/testdata/archive/${_testdata_ver}.tar.gz"
-        "influxdb.sysusers"
-        "influxdb.tmpfiles")
+        "influxdb.service")
 sha256sums=('SKIP'
-            '3b3e0ba5b86717439d65c5c25a0b753e48ef9afad87bce27f085b4f7934d533c'
-            '809cca823ae3027984bc7ace70db75753d7d0d4f6658a36db9d94a33054ca5e9'
-            'e2aa59413a6204737383b86cedefd866d7073f56ace5b89aad38c530cc86e60c')
-
-prepare(){
-  mv "testdata-${_testdata_ver}" influxdb/testdata
-}
+            'a22ba54f10fa98ec4e81e864c0c3181e53dedd9e23e1d112ac4ad22c4fa4d9ee')
 
 build(){
   cd "$pkgname"
@@ -42,22 +33,11 @@ build(){
 
 check(){
   cd "$pkgname"
-  export CGO_CPPFLAGS="${CPPFLAGS}"
-  export CGO_CFLAGS="${CFLAGS}"
-  export CGO_CXXFLAGS="${CXXFLAGS}"
-  export CGO_LDFLAGS="${LDFLAGS}"
-  export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
-  export LDFLAGS="-linkmode external"
   make test
 }
 
 package(){
   cd "$pkgname"
-
-  install -Dm644 ../influxdb.sysusers "$pkgdir/usr/lib/sysusers.d/influxdb.conf"
-  install -Dm644 ../influxdb.tmpfiles "$pkgdir/usr/lib/tmpfiles.d/influxdb.conf"
-
-
   install -Dm644 ../influxdb.service "$pkgdir/usr/lib/systemd/system/influxdb.service"
 
   install -d "$pkgdir/usr/bin/"
