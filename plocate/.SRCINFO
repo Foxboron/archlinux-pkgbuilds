@@ -1,7 +1,7 @@
 pkgbase = plocate
 	pkgdesc = Alternative to locate, faster and compatible with mlocate's database.
 	pkgver = 1.1.5
-	pkgrel = 1
+	pkgrel = 2
 	url = https://plocate.sesse.net
 	install = plocate.install
 	arch = x86_64
@@ -12,6 +12,7 @@ pkgbase = plocate
 	depends = liburing
 	depends = systemd
 	conflicts = mlocate
+	backup = etc/updatedb.conf
 	source = https://plocate.sesse.net/download/plocate-1.1.5.tar.gz
 	source = plocate.sysusers
 	source = plocate.tmpfiles
