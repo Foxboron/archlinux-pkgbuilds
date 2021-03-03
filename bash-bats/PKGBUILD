@@ -16,7 +16,7 @@ sha256sums=('91c49b1fe6f0656c46491929ed728f8dfa9a96df0cce294963e8c6082bff87a2')
 
 check() {
   cd "bats-core-${pkgver}"
-  bin/bats --tap test
+  TERM=linux bin/bats --tap test
 }
 
 package() {
@@ -28,17 +28,17 @@ package() {
   # Rename the bats-core/ folder to bats/
   sed -i 's/BATS_ROOT\/lib\/bats-core\//BATS_ROOT\/lib\/bats\//g' libexec/bats-core/*
 
-  for fn in libexec/*; do
+  for fn in libexec/bats-core/*; do
     install -Dm755 ${fn} \
       "${pkgdir}"/usr/lib/bats/$(basename ${fn})
   done
 
   install -Dm755 bin/bats "${pkgdir}/usr/bin/bats"
 
-  install -Dm755 lib/bats-core/* -t "${pkgdir}/lib/bats"
+  install -Dm755 lib/bats-core/* -t "${pkgdir}/usr/lib/bats"
 
   install -Dm644 man/bats.1 "${pkgdir}/usr/share/man/man1/bats.1"
   install -Dm644 man/bats.7 "${pkgdir}/usr/share/man/man7/bats.7"
-  install -Dm644 LICENSE "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
+  install -Dm644 LICENSE.md "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
 
 }
