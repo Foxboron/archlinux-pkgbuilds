@@ -1,6 +1,6 @@
 pkgbase = github-cli
 	pkgdesc = The GitHub CLI
-	pkgver = 1.6.2
+	pkgver = 1.7.0
 	pkgrel = 1
 	url = https://github.com/cli/cli
 	arch = x86_64
@@ -10,8 +10,8 @@ pkgbase = github-cli
 	depends = glibc
 	depends = mailcap
 	optdepends = git: To interact with repositories
-	source = github-cli-1.6.2.tar.gz::https://github.com/cli/cli/archive/v1.6.2.tar.gz
-	sha256sums = 8cc3cafb85e1234f61ef5c4468d07307142fa0cc99bdc7452251cf1cac9b38ae
+	source = github-cli-1.7.0.tar.gz::https://github.com/cli/cli/archive/v1.7.0.tar.gz
+	sha256sums = 8d737d4e4a2943ca6e08c030c0992468162de0fc1366862d101b8e1389bdc36a
 
 pkgname = github-cli
 
