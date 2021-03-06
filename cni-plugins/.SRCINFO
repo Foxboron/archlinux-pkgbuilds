@@ -1,7 +1,7 @@
 pkgbase = cni-plugins
 	pkgdesc = Some standard networking plugins, maintained by the CNI team
 	pkgver = 0.9.1
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/containernetworking/plugins
 	arch = x86_64
 	license = Apache
