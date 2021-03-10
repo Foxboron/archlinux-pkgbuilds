@@ -1,6 +1,6 @@
 pkgbase = python-pandas
 	pkgdesc = High-performance, easy-to-use data structures and data analysis tools for Python
-	pkgver = 1.2.2
+	pkgver = 1.2.3
 	pkgrel = 1
 	url = https://pandas.pydata.org/
 	arch = x86_64
@@ -35,8 +35,8 @@ pkgbase = python-pandas
 	optdepends = python-xlwt: needed for Excel XLS output
 	optdepends = xsel: needed for read_clipboard function (only one needed)
 	optdepends = zlib: needed for compression for msgpack
-	source = https://github.com/pandas-dev/pandas/releases/download/v1.2.2/pandas-1.2.2.tar.gz
-	sha256sums = 14ed84b463e9b84c8ff9308a79b04bf591ae3122a376ee0f62c68a1bd917a773
+	source = https://github.com/pandas-dev/pandas/releases/download/v1.2.3/pandas-1.2.3.tar.gz
+	sha256sums = df6f10b85aef7a5bb25259ad651ad1cc1d6bb09000595cab47e718cbac250b1d
 
 pkgname = python-pandas
 
