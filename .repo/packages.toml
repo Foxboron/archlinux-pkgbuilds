@@ -31,18 +31,12 @@ source = "github"
 github = "darktable-org/darktable"
 prefix = "release-"
 use_max_tag = true
-ignored = "release0.4 0.4 0.3 release-3.5.0"
+ignored = "release0.4 0.4 0.3 release-3.5.0 release-3.4.1.1"
 exclude_regex = ".*(rc).*"
 
 [delve]
 source = "github"
 github = "go-delve/delve"
-prefix = "v"
-use_max_tag = true
-
-[dep]
-source = "github"
-github = "golang/dep"
 prefix = "v"
 use_max_tag = true
 
@@ -318,12 +312,6 @@ to_pattern = "\\1.\\2.\\3.\\4"
 source = "pypi"
 pypi = "python-xlib"
 
-[python2-functools32]
-source = "pypi"
-pypi = "functools32"
-from_pattern = "(\\d+)\\.(\\d+)\\.(\\d+)\\-(\\d+)"
-to_pattern = "\\1.\\2.\\3_\\4"
-
 [qutebrowser]
 source = "github"
 github = "qutebrowser/qutebrowser"
@@ -350,6 +338,7 @@ to_pattern = "\\1.\\2.\\3rc\\4"
 
 [udiskie]
 source = "github"
+prefix = "v"
 github = "coldfix/udiskie"
 use_max_tag = true
 
@@ -406,7 +395,7 @@ source = "github"
 github = "Yubico/yubikey-manager"
 prefix = "yubikey-manager-"
 use_max_tag = true
-exclude_regex = ".*rc.$"
+exclude_regex = ".*(a|b|rc).$"
 
 [yubikey-personalization]
 source = "github"
@@ -671,7 +660,7 @@ source = "github"
 github = "golang/tools"
 prefix = "gopls/v"
 use_max_tag = true
-exclude_regex = ".*(pre).*"
+exclude_regex = "^(v)?.*(pre)?.*"
 
 [python-hjson]
 source = "github"
@@ -811,4 +800,73 @@ exclude_regex = "(v)?3.*(rc|a|beta)?.*"
 source = "github"
 github = "cri-o/cri-o"
 prefix = "v"
+use_max_tag = true
+
+[step-ca]
+source = "github"
+github = "smallstep/certificates"
+prefix = "v"
+use_max_tag = true
+exclude_regex = "v.*(pre|rc|alpha|beta).*"
+
+[step-cli]
+source = "github"
+github = "smallstep/cli"
+prefix = "v"
+use_max_tag = true
+exclude_regex = "v.*(pre|rc|alpha|beta).*"
+
+[salt]
+source = "github"
+github = "saltstack/salt"
+prefix = "v"
+use_max_tag = true
+exclude_regex = "v.*(pre|rc|alpha|beta).*"
+
+[micro]
+source = "github"
+github = "zyedidia/micro"
+prefix = "v"
+use_max_tag = true
+exclude_regex = "v.*(pre|rc|alpha|beta).*"
+
+[b4]
+source = "git"
+git = "https://git.kernel.org/pub/scm/utils/b4/b4.git/"
+prefix = "v"
+use_max_tag = true
+
+[poke]
+source = "git"
+git = "https://git.savannah.gnu.org/git/poke.git"
+prefix = "releases/poke-"
+use_max_tag = true
+
+[bash-bats]
+source = "github"
+github = "bats-core/bats-core"
+prefix = "v"
+use_max_tag = true
+exclude_regex = "v.*(pre|rc|alpha|beta).*"
+
+[sbctl]
+source = "github"
+github = "foxboron/sbctl"
+use_max_tag = true
+
+[borg]
+source = "github"
+github = "borgbackup/borg"
+use_max_tag = true
+exclude_regex = ".*(a|b|dev).*"
+
+[podman-dnsname]
+source = "github"
+github = "containers/dnsname"
+prefix = "v"
+use_max_tag = true
+
+[python-fido2]
+source = "github"
+github = "Yubico/python-fido2"
 use_max_tag = true
