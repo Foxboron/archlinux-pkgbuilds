@@ -1,13 +1,13 @@
 pkgbase = podman-dnsname
 	pkgdesc = name resolution for containers
-	pkgver = 1.1.1
+	pkgver = 1.2.0
 	pkgrel = 1
 	url = https://github.com/containers/dnsname
 	arch = x86_64
 	license = APACHE
 	makedepends = git
 	makedepends = go
-	source = git+https://github.com/containers/dnsname.git#commit=c654c95366ac5f309ca3e5727c9b858864247328
+	source = git+https://github.com/containers/dnsname.git#commit=3b29247c46d2811610ad57dd9fdae61157532a5b
 	validpgpkeys = B7DBDCA456F7335E91F1C25CD3624C551D0515C4
 	sha256sums = SKIP
 
