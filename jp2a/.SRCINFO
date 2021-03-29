@@ -1,19 +1,19 @@
 pkgbase = jp2a
 	pkgdesc = A small utility for converting JPG images to ASCII
 	pkgver = 1.1.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Talinx/jp2a/
-	arch = i686
 	arch = x86_64
-	arch = armv7h
-	license = GPL
+	license = GPL2
 	makedepends = doxygen
 	makedepends = autoconf-archive
+	makedepends = git
 	depends = curl
 	depends = libjpeg
 	depends = libpng
-	source = jp2a-1.1.0.tar.gz::https://github.com/Talinx/jp2a/archive/v1.1.0.tar.gz
-	sha256sums = feedb8e49b34a24dd518b53d70c06ab2ce2fa6c2d3adb92caa9db61631dd9856
+	source = git+https://github.com/Talinx/jp2a.git#commit=9ed01d6aa57c5b63657abe5c76cd28935206084c?signed
+	validpgpkeys = 5FCAE86E581E73AD91CB3235E7DBBCF6B02920CC
+	sha256sums = SKIP
 
 pkgname = jp2a
 
