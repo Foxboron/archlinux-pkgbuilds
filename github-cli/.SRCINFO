@@ -1,7 +1,7 @@
 pkgbase = github-cli
 	pkgdesc = The GitHub CLI
-	pkgver = 1.7.0
-	pkgrel = 2
+	pkgver = 1.8.0
+	pkgrel = 1
 	url = https://github.com/cli/cli
 	arch = x86_64
 	license = MIT
@@ -10,8 +10,8 @@ pkgbase = github-cli
 	depends = glibc
 	depends = mailcap
 	optdepends = git: To interact with repositories
-	source = github-cli-1.7.0.tar.gz::https://github.com/cli/cli/archive/v1.7.0.tar.gz
-	sha256sums = 8d737d4e4a2943ca6e08c030c0992468162de0fc1366862d101b8e1389bdc36a
+	source = github-cli-1.8.0.tar.gz::https://github.com/cli/cli/archive/v1.8.0.tar.gz
+	sha256sums = 13576c42a0cb1486370b876eccebe498c1ef84868893ae41a1f717229be4d6bb
 
 pkgname = github-cli
 
