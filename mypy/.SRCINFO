@@ -1,12 +1,12 @@
 pkgbase = mypy
 	pkgdesc = Optional static typing for Python 2 and 3 (PEP484)
 	pkgver = 0.812
-	pkgrel = 1
+	pkgrel = 2
 	url = http://www.mypy-lang.org/
 	arch = any
 	license = MIT
 	makedepends = git
-	depends = python-setuptools
+	makedepends = python-setuptools
 	depends = python-psutil
 	depends = python-typed-ast
 	depends = python-mypy_extensions
