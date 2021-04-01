@@ -1,7 +1,7 @@
 pkgbase = mopidy
 	pkgdesc = An extensible music server written in Python
 	pkgver = 3.1.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://www.mopidy.com
 	arch = any
 	license = APACHE
@@ -10,9 +10,9 @@ pkgbase = mopidy
 	checkdepends = python-responses
 	makedepends = python-sphinx
 	makedepends = python-sphinx_rtd_theme
+	makedepends = python-setuptools
 	depends = python
 	depends = python-pykka
-	depends = python-setuptools
 	depends = python-requests
 	depends = gstreamer
 	depends = gst-python
@@ -32,3 +32,4 @@ pkgbase = mopidy
 	sha512sums = ff6c9f0406dfc1cc01ac6edcc6bae429342437397321ab9205ca273a63b28611d08005a0a5dba639b5ae2157a4f03a1d58c2199f7dbc6965864685b4b71f0b6f
 
 pkgname = mopidy
+
