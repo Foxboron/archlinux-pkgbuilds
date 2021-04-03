@@ -1,0 +1,34 @@
+# Maintainer: Sergej Pupykin <arch+pub@sergej.pp.ru>
+# Maintainer: Christian Brauner <christianvanbrauner@gmail.com>
+
+pkgname=lxcfs
+pkgver=4.0.7
+pkgrel=2
+pkgdesc="FUSE filesystem for LXC"
+arch=(x86_64)
+url="https://linuxcontainers.org/"
+license=('GPL')
+depends=('lxc' 'libnih' 'fuse3' 'dbus-glib')
+makedepends=('help2man')
+options=('emptydirs')
+source=("https://linuxcontainers.org/downloads/lxcfs/lxcfs-$pkgver.tar.gz"
+	"lxcfs.service")
+sha256sums=('3f28e2f4b04c0090aaf88b72666505f0313768a5254dd48a14c43cf78c543ec8'
+            '3549e83ebbd6ec5934be0c3137b0dbb1101cec098bc49d135fea29f733b9e2a1')
+
+build() {
+    cd "$srcdir/$pkgname-$pkgver"
+    ./configure \
+        --prefix=/usr \
+        --sbindir=/usr/bin \
+        --with-pamdir=/usr/lib/security \
+        --localstatedir=/var
+    make
+}
+
+package() {
+    cd "$srcdir/$pkgname-$pkgver"
+    make DESTDIR="$pkgdir/" install
+    install -dm0755 "$pkgdir"/var/lib/lxcfs
+    install -Dm0644 "$srcdir"/lxcfs.service "$pkgdir"/usr/lib/systemd/system/lxcfs.service
+}
