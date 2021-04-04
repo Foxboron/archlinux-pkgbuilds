@@ -1,6 +1,6 @@
 pkgbase = qutebrowser
 	pkgdesc = A keyboard-driven, vim-like browser based on PyQt5
-	pkgver = 2.1.0
+	pkgver = 2.1.1
 	pkgrel = 1
 	url = https://www.qutebrowser.org/
 	arch = any
@@ -22,10 +22,10 @@ pkgbase = qutebrowser
 	optdepends = pdfjs: displaying PDF in-browser
 	optdepends = qt5-webkit: alternative backend
 	options = !emptydirs
-	source = https://github.com/qutebrowser/qutebrowser/releases/download/v2.1.0/qutebrowser-2.1.0.tar.gz
-	source = https://github.com/qutebrowser/qutebrowser/releases/download/v2.1.0/qutebrowser-2.1.0.tar.gz.asc
+	source = https://github.com/qutebrowser/qutebrowser/releases/download/v2.1.1/qutebrowser-2.1.1.tar.gz
+	source = https://github.com/qutebrowser/qutebrowser/releases/download/v2.1.1/qutebrowser-2.1.1.tar.gz.asc
 	validpgpkeys = E04E560002401B8EF0E76F0A916EB0C8FD55A072
-	sha256sums = 1ddd373a4f31f16ba809870779918a8920b13dcb936f2d41ff4b27cfd4cae63b
+	sha256sums = b71b00ad7d498911978e5bbd153a6dd0450ac6ade3e5bf398fc96e15328342ce
 	sha256sums = SKIP
 
 pkgname = qutebrowser
