@@ -1,7 +1,7 @@
 pkgbase = python-language-server
 	pkgdesc = An implementation of the Language Server Protocol for Python
 	pkgver = 0.36.2
-	pkgrel = 3
+	pkgrel = 4
 	url = https://github.com/palantir/python-language-server
 	arch = any
 	license = MIT
