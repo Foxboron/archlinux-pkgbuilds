@@ -1,7 +1,7 @@
 pkgbase = darktable
 	pkgdesc = Utility to organize and develop raw images
 	pkgver = 3.4.1
-	pkgrel = 2
+	pkgrel = 3
 	epoch = 2
 	url = https://darktable.org
 	arch = x86_64
@@ -38,10 +38,12 @@ pkgbase = darktable
 	optdepends = gnuplot: noise profile script
 	source = https://github.com/darktable-org/darktable/releases/download/release-3.4.1/darktable-3.4.1.tar.xz
 	source = https://github.com/darktable-org/darktable/releases/download/release-3.4.1/darktable-3.4.1.tar.xz.asc
+	source = darktable-openexr3.patch
 	validpgpkeys = C4CBC150699956E2A3268EF5BB5CC8295B1779C9
 	validpgpkeys = F10F9686652B0E949FCD94C318DCA123F949BD3B
 	sha256sums = 7fc3f851da9bcd7c5053ecd09f21aa3eb6103be98a6c58f52010b6f22174941e
 	sha256sums = SKIP
+	sha256sums = 534e7e82adb5cf3c9eda81bbdf3e373879bfa72bb6cd5f865750f6c589d57f51
 
 pkgname = darktable
 
