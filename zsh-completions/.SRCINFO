@@ -1,14 +1,15 @@
 pkgbase = zsh-completions
 	pkgdesc = Additional completion definitions for Zsh
-	pkgver = 0.32.0
+	pkgver = 0.33.0
 	pkgrel = 1
 	url = https://github.com/zsh-users/zsh-completions
 	changelog = ChangeLog
 	arch = any
 	license = BSD
 	depends = zsh
-	source = zsh-completions-0.32.0.tar.gz::https://github.com/zsh-users/zsh-completions/tarball/0.32.0
-	sha512sums = ca0889674e448f48da14cd612e3e6753e18041c5647eee847596303b5180872385d1e9428f34afd76e379a0ec10c5f491731fe38793c8a7f1d50b482595734f7
+	source = zsh-completions-0.33.0.tar.gz::https://github.com/zsh-users/zsh-completions/archive/refs/tags/0.33.0.tar.gz
+	sha512sums = 8eaa7d9d2a58e8e2daa6ba7d9a8498e607b271bfd0484184482ec610e7f647ca72ba945f6897b2d619918304a18d048c4b079dae0993dc660cba61d4bce1e0a3
+	b2sums = bcbbb2966a48f1b8c06e14f14432e147b4a4ca28c7d9769b4a108e3d4e005c37874c93c836c8636dabb860780077ccc5d9ebbd339f63c34fd16975ec5486a5c4
 
 pkgname = zsh-completions
 
