@@ -1,6 +1,6 @@
 pkgbase = v2ray
 	pkgdesc = A platform for building proxies to bypass network restrictions
-	pkgver = 4.37.3
+	pkgver = 4.38.3
 	pkgrel = 1
 	url = https://github.com/v2fly/v2ray-core
 	arch = x86_64
@@ -11,10 +11,8 @@ pkgbase = v2ray
 	depends = v2ray-domain-list-community
 	depends = v2ray-geoip
 	backup = etc/v2ray/config.json
-	source = https://github.com/v2fly/v2ray-core/archive/v4.37.3/v2ray-4.37.3.tar.gz
-	source = 0001-fix-not-creating-test-dir-in-some-environment.patch
-	sha512sums = 303df7373811a613a962358a080f6de3d661401b8eaf9c8c7b665e540938655dd01c6b134cb127be0d183f800b7cb992c22d571aac2e580fefedeb68cd871eae
-	sha512sums = 7de6f9a970b44fec59655365bd3ec367b0fe9598be443d3dcb98941a86d91a7d88f33717eaa20183b9a8210b4b0af9852dae3c404b270b803cdcf6703dba9872
+	source = https://github.com/v2fly/v2ray-core/archive/v4.38.3/v2ray-4.38.3.tar.gz
+	sha512sums = e6089b346850fc61a4a135a2f86c4966ebf472737422676a9c40151323e2df9619e5fcea9e9ea345a8735bdba53e212cb502d7c76c2d359284624962b560ee1d
 
 pkgname = v2ray
 
