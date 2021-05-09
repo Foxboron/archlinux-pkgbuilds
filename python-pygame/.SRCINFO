@@ -1,7 +1,7 @@
 pkgbase = python-pygame
 	pkgdesc = Python game library
 	pkgver = 2.0.1
-	pkgrel = 1
+	pkgrel = 2
 	url = http://www.pygame.org
 	arch = x86_64
 	license = LGPL
@@ -16,3 +16,4 @@ pkgbase = python-pygame
 	sha256sums = 8b1e7b63f47aafcdd8849933b206778747ef1802bd3d526aca45ed77141e4001
 
 pkgname = python-pygame
+
