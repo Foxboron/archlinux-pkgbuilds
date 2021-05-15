@@ -1,14 +1,14 @@
 pkgbase = python-rope
 	pkgdesc = Refactoring library
-	pkgver = 0.18.0
-	pkgrel = 3
+	pkgver = 0.19.0
+	pkgrel = 1
 	url = https://github.com/python-rope/rope
 	arch = any
 	license = GPL
 	makedepends = python
 	makedepends = python-setuptools
-	source = python-rope-0.18.0.tar.gz::https://github.com/python-rope/rope/archive/0.18.0.tar.gz
-	sha256sums = a8938e7e5fa60fc567d854762e3d0309bd355186d4ff3e5d39811e8df2f6a7ac
+	source = python-rope-0.19.0.tar.gz::https://github.com/python-rope/rope/archive/0.19.0.tar.gz
+	sha256sums = e74e4eb623f5d0a5b3e6eea20297e71d10e3170b630fe0b8c4963d98d99a63e5
 
 pkgname = python-rope
 
