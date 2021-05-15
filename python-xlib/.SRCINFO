@@ -1,6 +1,6 @@
 pkgbase = python-xlib
 	pkgdesc = A fully functional X client library for Python programs
-	pkgver = 0.29
+	pkgver = 0.30
 	pkgrel = 1
 	url = https://github.com/python-xlib/python-xlib
 	arch = any
@@ -11,8 +11,8 @@ pkgbase = python-xlib
 	checkdepends = python-nose
 	makedepends = python-setuptools-scm
 	depends = python-six
-	source = python-xlib-0.29.tar.gz::https://github.com/python-xlib/python-xlib/archive/0.29.tar.gz
-	sha256sums = ae59dc56ead2f7280fc0f24310409e8250a79e930e06c703f8dd7b080cd4b4b6
+	source = python-xlib-0.30.tar.gz::https://github.com/python-xlib/python-xlib/archive/0.30.tar.gz
+	sha256sums = bd92c6687768d4b3547399ebdf967ff40e9d1e9cfd2e365ec627a66ddcc60c22
 
 pkgname = python-xlib
 
