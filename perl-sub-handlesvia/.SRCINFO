@@ -1,7 +1,7 @@
 pkgbase = perl-sub-handlesvia
 	pkgdesc = Perl extension for easily overriding subroutines
 	pkgver = 0.016
-	pkgrel = 1
+	pkgrel = 2
 	url = https://metacpan.org/release/Sub-HandlesVia
 	arch = any
 	license = PerlArtistic
