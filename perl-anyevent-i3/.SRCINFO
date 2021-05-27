@@ -1,7 +1,7 @@
 pkgbase = perl-anyevent-i3
 	pkgdesc = Communicate with the i3 window manager
 	pkgver = 0.17
-	pkgrel = 6
+	pkgrel = 7
 	url = https://search.cpan.org/~mstplbg/AnyEvent-I3/
 	arch = any
 	license = GPL
