@@ -1,7 +1,7 @@
 pkgbase = perl-moox-handlesvia
 	pkgdesc = NativeTrait-like behavior for Moo
 	pkgver = 0.001009
-	pkgrel = 1
+	pkgrel = 2
 	url = https://metacpan.org/release/MooX-HandlesVia
 	arch = any
 	license = PerlArtistic
