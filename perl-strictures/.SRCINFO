@@ -1,7 +1,7 @@
 pkgbase = perl-strictures
 	pkgdesc = Turn on strict and make most warnings fatal
 	pkgver = 2.000006
-	pkgrel = 3
+	pkgrel = 4
 	url = https://metacpan.org/release/strictures
 	arch = any
 	license = PerlArtistic
