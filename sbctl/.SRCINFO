@@ -1,7 +1,7 @@
 pkgbase = sbctl
 	pkgdesc = Secure Boot key manager
-	pkgver = 0.4
-	pkgrel = 2
+	pkgver = 0.5
+	pkgrel = 1
 	url = https://github.com/Foxboron/sbctl
 	arch = x86_64
 	license = MIT
@@ -10,10 +10,10 @@ pkgbase = sbctl
 	makedepends = asciidoc
 	depends = sbsigntools
 	depends = binutils
-	source = https://github.com/Foxboron/sbctl/releases/download/0.4/sbctl-0.4.tar.gz
-	source = https://github.com/Foxboron/sbctl/releases/download/0.4/sbctl-0.4.tar.gz.sig
+	source = https://github.com/Foxboron/sbctl/releases/download/0.5/sbctl-0.5.tar.gz
+	source = https://github.com/Foxboron/sbctl/releases/download/0.5/sbctl-0.5.tar.gz.sig
 	validpgpkeys = C100346676634E80C940FB9E9C02FF419FECBE16
-	sha256sums = fdcee9f6f4c7cd1e558d0c3eced9d0686307c528d7eb16ec6fe0cec4a3c3674a
+	sha256sums = ea1c74badbcb1be2e9c4b6f1c66089acee10202821ce32be442d951215de861e
 	sha256sums = SKIP
 
 pkgname = sbctl
