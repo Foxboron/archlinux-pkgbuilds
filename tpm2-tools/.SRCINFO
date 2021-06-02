@@ -7,9 +7,9 @@ pkgbase = tpm2-tools
 	license = BSD
 	checkdepends = cmocka
 	checkdepends = expect
-	checkdepends = ibm-sw-tpm2
 	checkdepends = iproute2
 	checkdepends = python-yaml
+	checkdepends = swtpm
 	checkdepends = tpm2-abrmd
 	checkdepends = xxd
 	depends = curl
@@ -31,4 +31,3 @@ pkgbase = tpm2-tools
 	sha512sums = SKIP
 
 pkgname = tpm2-tools
-
