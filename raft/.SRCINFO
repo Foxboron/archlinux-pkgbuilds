@@ -1,13 +1,12 @@
 pkgbase = raft
 	pkgdesc = C implementation of the Raft consensus protocol
-	pkgver = 0.10.1
+	pkgver = 0.11.0
 	pkgrel = 1
 	url = https://github.com/canonical/raft
 	arch = x86_64
 	license = LGPL3
 	depends = libuv
-	source = raft-0.10.1.tar.gz::https://github.com/canonical/raft/archive/v0.10.1.tar.gz
-	sha256sums = a5fb276d562bbaec792b3728fbb20c768907cc5927a55ee86d04d24216cde381
+	source = raft-0.11.0.tar.gz::https://github.com/canonical/raft/archive/v0.11.0.tar.gz
+	sha256sums = 119f2987d5e41db877bc48f91251e4ce4b31b9e611322d192ea494300290afbd
 
 pkgname = raft
-
