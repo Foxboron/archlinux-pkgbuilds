@@ -1,18 +1,24 @@
 pkgbase = qcustomplot
 	pkgdesc = Qt C++ widget for plotting and data visualization
-	pkgver = 2.0.1
-	pkgrel = 5
+	pkgver = 2.1.0
+	pkgrel = 1
 	url = https://www.qcustomplot.com/
 	arch = x86_64
 	license = GPL3
 	makedepends = doxygen
 	makedepends = graphviz
 	makedepends = qt5-tools
+	source = qcustomplot-2.1.0.tar.bz2::https://gitlab.com/DerManu/QCustomPlot/-/archive/v2.1.0/QCustomPlot-v2.1.0.tar.bz2
+	source = qcustomplot-2.1.0-source.tar.gz::https://www.qcustomplot.com/release/2.1.0fixed/QCustomPlot-source.tar.gz
+	sha512sums = 90dabc3fd6473be59f06dd8ca46d213d12945e1c79c55333e44f3e97ae39b4c359e192d6b52e3d81e90d667702ea6a1dcf49326e5b134d9623a91aa6356b780a
+	sha512sums = 8b209d386393b616cc99e47f99f5a5bcd2c4923e827d948461bd6cfd15e110f2dfa5981abfed35d65a9cf5aa9e09c8820d038c8c10bcfc6585af61a4ba558c2d
+	b2sums = 1af3a4833a82a01ff2552aaa0cd2f27c52144f375267747d9621219fc80fb2d638000bdf5797d3e561da670c29eccb9aa039dd605ff42f1447d801b2b1408acc
+	b2sums = cdb6b64e53c26b9ea156329c46fb215048f0076784ab301e39a7e42c2191d459339cbf3ea5e24c517aed9a47d5fda68b401221aaeec072bbf97fd2bf72a0861f
+
+pkgname = qcustomplot
 	depends = qt5-base
 	provides = libqcustomplot.so
 	replaces = qcustomplot-qt5
-	source = https://gitlab.com/DerManu/QCustomPlot/-/archive/v2.0.1/QCustomPlot-v2.0.1.tar.bz2
-	sha512sums = fb9184d517007b7c280e7122b3c14b6e49bf6b550bf41b95fe6808cc1c66c66dd82383796bfa4f43ce1ff0406e4c53e579ecc0aa2992741c5a45e5469f4bf5e8
 
-pkgname = qcustomplot
-
+pkgname = qcustomplot-doc
+	pkgdesc = Qt C++ widget for plotting and data visualization (docs)
