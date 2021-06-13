@@ -1,6 +1,6 @@
 pkgbase = go-tools
 	pkgdesc = Developer tools for the Go programming language
-	pkgver = 0.1.2
+	pkgver = 0.1.3
 	pkgrel = 1
 	epoch = 4
 	url = https://golang.org/
@@ -13,4 +13,3 @@ pkgbase = go-tools
 	md5sums = SKIP
 
 pkgname = go-tools
-
