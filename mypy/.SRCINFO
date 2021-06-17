@@ -1,7 +1,7 @@
 pkgbase = mypy
 	pkgdesc = Optional static typing for Python 2 and 3 (PEP484)
-	pkgver = 0.812
-	pkgrel = 2
+	pkgver = 0.902
+	pkgrel = 1
 	url = http://www.mypy-lang.org/
 	arch = any
 	license = MIT
@@ -11,8 +11,7 @@ pkgbase = mypy
 	depends = python-typed-ast
 	depends = python-mypy_extensions
 	depends = python-typing_extensions
-	source = mypy-0.812.tar.gz::https://pypi.org/packages/source/m/mypy/mypy-0.812.tar.gz
-	sha256sums = cd07039aa5df222037005b08fbbfd69b3ab0b0bd7a07d7906de75ae52c4e3119
+	source = mypy-0.902.tar.gz::https://pypi.org/packages/source/m/mypy/mypy-0.902.tar.gz
+	sha256sums = 9236c21194fde5df1b4d8ebc2ef2c1f2a5dc7f18bcbea54274937cae2e20a01c
 
 pkgname = mypy
-
