@@ -1,15 +1,16 @@
 pkgbase = libslirp
 	pkgdesc = General purpose TCP-IP emulator
-	pkgver = 4.6.0
+	pkgver = 4.6.1
 	pkgrel = 1
 	url = https://gitlab.freedesktop.org/slirp/libslirp
 	arch = x86_64
 	license = BSD
 	license = MIT
-	makedepends = git
 	makedepends = meson
 	depends = glib2
-	source = git+https://gitlab.freedesktop.org/slirp/libslirp#commit=6ef66db79938d763212320c1b64bc562c23d25a8
-	md5sums = SKIP
+	provides = libslirp.so
+	source = https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.6.1/libslirp-v4.6.1.tar.gz
+	sha512sums = 04a9dd88cd58c849a24b9cff405d951952760d99ea2bef0b070463dff088d79f44557a13c9427ba0043f58d4b9e06b68ff64a4f23a7b0d66df594e32e1521cae
+	b2sums = 7a890912f2a8ce9d6820870e2d29b9c7a2253c403c2bcb127a38e02b2b81d1e262f34571c8a4c05fbf46874b9b2967cb5597cabe169ad54f12702fdd8b90bb3c
 
 pkgname = libslirp
