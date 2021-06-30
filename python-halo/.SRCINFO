@@ -1,0 +1,17 @@
+pkgbase = python-halo
+	pkgdesc = Beautiful terminal spinners in Python
+	pkgver = 0.0.31
+	pkgrel = 2
+	url = https://github.com/manrajgrover/halo
+	arch = any
+	license = MIT
+	makedepends = python-setuptools
+	depends = python
+	depends = python-log_symbols
+	depends = python-spinners
+	depends = python-termcolor
+	depends = python-six
+	source = python-halo-0.0.31.tar.gz::https://files.pythonhosted.org/packages/source/h/halo/halo-0.0.31.tar.gz
+	sha256sums = 7b67a3521ee91d53b7152d4ee3452811e1d2a6321975137762eb3d70063cc9d6
+
+pkgname = python-halo
