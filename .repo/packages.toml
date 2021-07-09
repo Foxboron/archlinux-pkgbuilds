@@ -873,3 +873,80 @@ use_max_tag = true
 source = "github"
 github = "Yubico/python-fido2"
 use_max_tag = true
+
+[lxc]
+source = "github"
+github = "lxc/lxc"
+prefix = "lxc-"
+use_max_tag = true
+ignored = "start"
+
+[lxcfs]
+source = "github"
+github = "lxc/lxcfs"
+prefix = "lxcfs-"
+use_max_tag = true
+
+[dunst]
+source = "github"
+github = "dunst-project/dunst"
+prefix = "v"
+use_max_tag = true
+
+[python-dotty-dict]
+source = "github"
+github = "pawelzny/dotty_dict"
+prefix = "v"
+use_max_tag = true
+
+[qprint]
+source = "repology"
+repology = "qprint"
+
+[python-halo]
+source = "pypi"
+pypi = "halo"
+
+[python-log_symbols]
+source = "pypi"
+pypi = "log-symbols"
+
+[python-spinners]
+source = "pypi"
+pypi = "spinners"
+
+[python-hid]
+source = "github"
+github = "apmorton/pyhidapi"
+prefix = "v"
+use_max_tag = true
+
+[nomad]
+source = "github"
+github = "hashicorp/nomad"
+prefix = "v"
+use_max_tag = true
+
+[nomad-driver-podman]
+source = "github"
+github = "hashicorp/nomad-driver-podman"
+prefix = "v"
+use_max_tag = true
+
+[nomad-driver-containerd]
+source = "github"
+github = "Roblox/nomad-driver-containerd"
+prefix = "v"
+use_max_tag = true
+
+[nomad-driver-nspawn]
+source = "github"
+github = "JanMa/nomad-driver-nspawn"
+prefix = "v"
+use_max_tag = true
+
+[nomad-driver-lxc]
+source = "github"
+github = "hashicorp/nomad-driver-lxc"
+prefix = "v"
+use_max_tag = true
