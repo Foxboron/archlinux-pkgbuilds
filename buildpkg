@@ -7,7 +7,8 @@ export LANG=en_US.UTF-8
 PACKAGES=""
 BUILD_MODES=""
 BUILD_OPTIONS=""
-MAKECHROOTPKG_OPTIONS="-c"
+MAKECHROOTPKG_OPTIONS=""
+OFFLOAD=0
 
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
@@ -75,63 +76,63 @@ mksrcinfo() {
 while [[ ${#} -gt 0 ]]; do
     key="${1}"
     case ${key} in
+        -o|--offload)
+            OFFLOAD=1
+        ;;
         --testing)
             TESTING_x86_64=1
-            BUILD_MODES="${BUILD_MODES} testing-x86_64-build"
+            BUILD_MODES="testing-x86_64-build"
             PUBLISH_PACKAGES="testingpkg"
             PUBLISH_COMMUNITY="community-testingpkg"
         ;;
         --testing-x86_64)
             TESTING_x86_64=1
-            BUILD_MODES="${BUILD_MODES} testing-x86_64-build"
+            BUILD_MODES="testing-x86_64-build"
             PUBLISH_PACKAGES="testingpkg -a x86_64"
             PUBLISH_COMMUNITY="community-testingpkg -a x86_64"
         ;;
         --staging)
             STAGING_x86_64=1
-            BUILD_MODES="${BUILD_MODES} staging-x86_64-build"
+            BUILD_MODES="staging-x86_64-build"
             PUBLISH_PACKAGES="stagingpkg"
             PUBLISH_COMMUNITY="community-stagingpkg"
         ;;
         --staging-x86_64)
             STAGING_x86_64=1
-            BUILD_MODES="${BUILD_MODES} staging-x86_64-build"
+            BUILD_MODES="staging-x86_64-build"
             PUBLISH_PACKAGES="stagingpkg -a x86_64"
             PUBLISH_COMMUNITY="community-stagingpkg -a x86_64"
         ;;
         --core)
-            EXTRA_x86_64=1
-            BUILD_MODES="${BUILD_MODES} extra-x86_64-build"
+            BUILD_MODES="extra-x86_64-build"
             PUBLISH_PACKAGES="corepkg"
             PUBLISH_COMMUNITY="communitypkg"
         ;;
         --extra)
-            EXTRA_x86_64=1
-            BUILD_MODES="${BUILD_MODES} extra-x86_64-build"
+            BUILD_MODES="extra-x86_64-build"
             PUBLISH_PACKAGES="extrapkg"
             PUBLISH_COMMUNITY="communitypkg"
         ;;
         --extra-x86_64)
-            EXTRA_x86_64=1
-            BUILD_MODES="${BUILD_MODES} extra-x86_64-build"
+            BUILD_MODES="extra-x86_64-build"
             PUBLISH_PACKAGES="extrapkg -a x86_64"
             PUBLISH_COMMUNITY="communitypkg -a x86_64"
         ;;
         --multilib)
             MULTILIB=1
-            BUILD_MODES="${BUILD_MODES} multilib-build"
+            BUILD_MODES="multilib-build"
             PUBLISH_PACKAGES="multilibpkg"
             PUBLISH_COMMUNITY="${PUBLISH_PACKAGES}"
         ;;
         --multilib-staging)
             MULTILIB_STAGING=1
-            BUILD_MODES="${BUILD_MODES} multilib-staging-build"
+            BUILD_MODES="multilib-staging-build"
             PUBLISH_PACKAGES="multilib-stagingpkg"
             PUBLISH_COMMUNITY="${PUBLISH_PACKAGES}"
         ;;
         --multilib-testing)
             MULTILIB_TESTING=1
-            BUILD_MODES="${BUILD_MODES} multilib-testing-build"
+            BUILD_MODES="multilib-testing-build"
             PUBLISH_PACKAGES="multilib-testingpkg"
             PUBLISH_COMMUNITY="${PUBLISH_PACKAGES}"
         ;;
@@ -169,7 +170,7 @@ while [[ ${#} -gt 0 ]]; do
             BUMP_PKGREL=1
             REBUILD=1
             STAGING_x86_64=1
-            BUILD_MODES="${BUILD_MODES} staging-x86_64-build"
+            BUILD_MODES="staging-x86_64-build"
             PUBLISH_PACKAGES="stagingpkg"
             PUBLISH_COMMUNITY="community-stagingpkg"
         ;;
@@ -177,7 +178,7 @@ while [[ ${#} -gt 0 ]]; do
             BUMP_PKGREL=1
             REBUILD_COMMUNITY=1
             STAGING_x86_64=1
-            BUILD_MODES="${BUILD_MODES} staging-x86_64-build"
+            BUILD_MODES="staging-x86_64-build"
             PUBLISH_PACKAGES="stagingpkg"
             PUBLISH_COMMUNITY="community-stagingpkg"
         ;;
@@ -186,7 +187,7 @@ while [[ ${#} -gt 0 ]]; do
             REBUILD_MULTILIB=1
             REBUILD_COMMUNITY=1
             MULTILIB_STAGING=1
-            BUILD_MODES="${BUILD_MODES} multilib-staging-build"
+            BUILD_MODES="multilib-staging-build"
             PUBLISH_PACKAGES="multilibpkg"
             PUBLISH_COMMUNITY="${PUBLISH_PACKAGES}"
         ;;
@@ -213,10 +214,14 @@ done
 
 # default build mode settings
 if [ -z "${BUILD_MODES}" ]; then
-    EXTRA_x86_64=1
     BUILD_MODES="extra-x86_64-build"
     PUBLISH_PACKAGES="extrapkg"
     PUBLISH_COMMUNITY="communitypkg"
+fi
+
+# default build mode settings
+if ((OFFLOAD)); then
+    BUILD_MODES="offload-build -r ${BUILD_MODES/-x86*/}"
 fi
 
 INSTALL_PACKAGES=""
@@ -270,22 +275,20 @@ for PACKAGE in ${PACKAGES}; do
     # import all needed gpg keys
     for validpgpkey in ${validpgpkeys}; do
         msg2 "Importing PGP key: ${validpgpkey}"
-        gpg --recv-keys "${validpgpkey}" &>/dev/null
+        gpg --recv-keys "${validpgpkey}" &>/dev/null || true
     done
 
     # build selected modes
     if [[ -z "${SKIP_BUILD}" ]]; then
-        for BUILD_MODE in ${BUILD_MODES}; do
-            # skip mode if not valid
-            arch=$(echo ${BUILD_MODE}|sed -r 's|.+-(.+)-.+|\1|')
-            if [[ ! "${BUILD_MODE}" == *"multilib"* && \
-                    ! " ${archs[@]} " =~ ' any ' && \
-                    ! " ${archs[@]} " =~ " $(echo ${BUILD_MODE}|sed -r 's|.+-(.+)-.+|\1|') " ]]; then
-                continue
-            fi
-            msg "Building via ${BUILD_MODE} ${BUILD_OPTIONS} -- ${MAKECHROOTPKG_OPTIONS}..."
-            ${BUILD_MODE} ${BUILD_OPTIONS} -- ${MAKECHROOTPKG_OPTIONS}
-        done
+        # skip mode if not valid
+        # arch=$(echo ${BUILD_MODE}|sed -r 's|.+-(.+)-.+|\1|')
+        # if [[ ! "${BUILD_MODE}" == *"multilib"* && \
+        #         ! " ${archs[@]} " =~ ' any ' && \
+        #         ! " ${archs[@]} " =~ " $(echo ${BUILD_MODE}|sed -r 's|.+-(.+)-.+|\1|') " ]]; then
+        #     continue
+        # fi
+        msg "Building via ${BUILD_MODES} ${BUILD_OPTIONS} -- ${MAKECHROOTPKG_OPTIONS}..."
+        ${BUILD_MODES} ${BUILD_OPTIONS}
     fi
 
     # post build .SRCINFO for updated pkgver
@@ -301,15 +304,17 @@ for PACKAGE in ${PACKAGES}; do
     pkgverfull="${epoch}${pkgver}-${pkgrel}"
 
     # create source tarball
+    tarballsrc="${SRCPKGDEST:-.}/${pkgbase}-${pkgverfull}.src.tar.gz"
+
     if [[ -z "${SKIP_SRC}" ]]; then
         stat_busy "Creating source tarball"
-        extra-x86_64-build -- -- -S -d -f &>/dev/null
-        rm -f '*-namcap.log'
+        if [[ ! -f "$tarballsrc" ]]; then 
+            extra-x86_64-build -- -- -S -d -f &>/dev/null
+            rm -f '*-namcap.log'
+        fi
         stat_done
     fi
     
-
-    tarballsrc="${SRCPKGDEST:-.}/${pkgbase}-${pkgverfull}.src.tar.gz"
 
     # signing tarballs
     if [ -z "${SKIP_SIG}" ]; then
