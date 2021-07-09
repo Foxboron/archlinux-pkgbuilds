@@ -1,7 +1,7 @@
 pkgbase = python-nltk
 	pkgdesc = Natural language processing in Python
 	pkgver = 3.6.2
-	pkgrel = 2
+	pkgrel = 4
 	url = https://www.nltk.org/
 	arch = any
 	license = APACHE
@@ -12,6 +12,7 @@ pkgbase = python-nltk
 	makedepends = python-setuptools
 	depends = python-yaml
 	depends = python-click
+	depends = python-regex
 	optdepends = nltk-data: test data
 	optdepends = python-numpy: used for calculations
 	optdepends = python-matplotlib: used for plotting
