@@ -25,7 +25,7 @@ repo-checkout:
 repo-seed:
 	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Seed community package list...$(RST)"
 	@cd .repo; \
-		curl -s "https://www.archlinux.org/packages/search/json/?sort=&q=&maintainer=Foxboron&flagged=" | jq -r '.results[].pkgbase' > community.list
+		curl -s "https://archlinux.org/packages/search/json/?sort=&q=&maintainer=Foxboron&flagged=" | jq -r '.results[].pkgbase' > community.list
 
 add-packages: repo-seed
 	@cd .repo/community; \
