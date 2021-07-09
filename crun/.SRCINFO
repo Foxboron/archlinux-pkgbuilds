@@ -1,7 +1,7 @@
 pkgbase = crun
 	pkgdesc = A fast and lightweight fully featured OCI runtime and C library for running containers
 	pkgver = 0.20.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/containers/crun
 	arch = x86_64
 	license = LGPL
@@ -13,6 +13,7 @@ pkgbase = crun
 	depends = systemd-libs
 	depends = libcap
 	depends = libseccomp
+	optdepends = criu: checkpoint support
 	source = https://github.com/containers/crun/releases/download/0.20.1/crun-0.20.1.tar.xz
 	source = https://github.com/containers/crun/releases/download/0.20.1/crun-0.20.1.tar.xz.asc
 	validpgpkeys = AC404C1C0BF735C63FF4D562263D6DF2E163E1EA
