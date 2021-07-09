@@ -94,6 +94,7 @@ use_max_tag = true
 source = "github"
 github = "hylang/hy"
 use_max_tag = true
+exclude_regex = ".*(a).*"
 
 [i3-gaps]
 source = "github"
@@ -333,6 +334,7 @@ use_max_tag = true
 source = "github"
 github = "opencontainers/runc"
 use_max_tag = true
+prefix = "v"
 from_pattern = "v(\\d+)\\.(\\d+)\\.(\\d+)\\-rc(\\d+)"
 to_pattern = "\\1.\\2.\\3rc\\4"
 
@@ -521,6 +523,7 @@ source = "github"
 github = "containernetworking/plugins"
 prefix = "v"
 use_max_tag = true
+exclude_regex = "v.*(pre|rc|alpha|beta).*"
 
 [libslirp]
 source = "git"
@@ -660,7 +663,8 @@ source = "github"
 github = "golang/tools"
 prefix = "gopls/v"
 use_max_tag = true
-exclude_regex = "^(v)?.*(pre)?.*"
+include_regex = "gopls/v.*"
+exclude_regex = ".*(pre).*"
 
 [python-hjson]
 source = "github"
@@ -783,11 +787,9 @@ prefix = "v"
 
 [go-tools]
 source = "github"
-github = "golang/go"
+github = "golang/tools"
+prefix = "v"
 use_max_tag = true
-exclude_regex = ".*(release|weekly|rc|alpha|beta).*"
-from_pattern = "go(\\d+)\\.(\\d+)\\.(\\d+)"
-to_pattern = "\\1.\\2+4895+c1934b75d"
 
 [python2-docs]
 source = "github"
@@ -814,7 +816,7 @@ source = "github"
 github = "smallstep/cli"
 prefix = "v"
 use_max_tag = true
-exclude_regex = "v.*(pre|rc|alpha|beta).*"
+exclude_regex = ".*(pre|rc|alpha|beta).*"
 
 [salt]
 source = "github"
@@ -841,6 +843,7 @@ source = "git"
 git = "https://git.savannah.gnu.org/git/poke.git"
 prefix = "releases/poke-"
 use_max_tag = true
+include_regex = "releases/.*"
 
 [bash-bats]
 source = "github"
