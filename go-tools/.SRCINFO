@@ -1,6 +1,6 @@
 pkgbase = go-tools
 	pkgdesc = Developer tools for the Go programming language
-	pkgver = 0.1.4
+	pkgver = 0.1.5
 	pkgrel = 1
 	epoch = 4
 	url = https://golang.org/
