@@ -1,13 +1,12 @@
 pkgbase = go-md2man
 	pkgdesc = A markdown to manpage generator
-	pkgver = 2.0.0
-	pkgrel = 4
+	pkgver = 2.0.1
+	pkgrel = 1
 	url = https://github.com/cpuguy83/go-md2man
 	arch = x86_64
 	license = MIT
 	makedepends = go
-	source = go-md2man-2.0.0.tar.gz::https://github.com/cpuguy83/go-md2man/archive/v2.0.0.tar.gz
-	sha256sums = 50537880d42fc28b9c2e9aaa36b137349d43cc73d46436a499f8c928cd2fc576
+	source = go-md2man-2.0.1.tar.gz::https://github.com/cpuguy83/go-md2man/archive/v2.0.1.tar.gz
+	sha256sums = 889309ecf43e40d3a76d666b0259dcd71b340ea0fad003784ff3fe0b6c21990e
 
 pkgname = go-md2man
-
