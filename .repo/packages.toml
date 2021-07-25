@@ -950,3 +950,9 @@ source = "github"
 github = "hashicorp/nomad-driver-lxc"
 prefix = "v"
 use_max_tag = true
+
+[flatpak-xdg-utils]
+source = "github"
+github = "flatpak/flatpak-xdg-utils"
+prefix = "v"
+use_max_tag = true

@@ -23,6 +23,7 @@ docker
 docker-compose
 dqlite
 dunst
+flatpak-xdg-utils
 fuse-overlayfs
 fzf
 github-cli
