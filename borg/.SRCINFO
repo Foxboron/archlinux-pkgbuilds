@@ -1,7 +1,7 @@
 pkgbase = borg
 	pkgdesc = Deduplicating backup program with compression and authenticated encryption
 	pkgver = 1.1.17
-	pkgrel = 1
+	pkgrel = 2
 	url = https://borgbackup.github.io/
 	arch = x86_64
 	license = BSD
@@ -20,6 +20,7 @@ pkgbase = borg
 	depends = xz
 	depends = zstd
 	depends = python
+	depends = python-packaging
 	optdepends = openssh: repositories on remote hosts
 	optdepends = python-llfuse: mounting backups as a FUSE file system
 	provides = borgbackup
