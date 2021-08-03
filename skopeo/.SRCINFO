@@ -1,8 +1,8 @@
 pkgbase = skopeo
 	pkgdesc = A command line utility for various operations on container images and image repositories.
-	pkgver = 1.3.1
+	pkgver = 1.4.0
 	pkgrel = 1
-	url = https://github.com/projectatomic/skopeo
+	url = https://github.com/containers/skopeo
 	arch = x86_64
 	license = APACHE
 	makedepends = go
@@ -13,7 +13,7 @@ pkgbase = skopeo
 	depends = gpgme
 	depends = device-mapper
 	depends = containers-common
-	source = git+https://github.com/projectatomic/skopeo#commit=e9207c4564dc5ff4c870762c981eca430c203fb7
+	source = git+https://github.com/containers/skopeo#commit=a44da449d35e4621e9993f406d5a4f98dd89965e
 	sha256sums = SKIP
 
 pkgname = skopeo
