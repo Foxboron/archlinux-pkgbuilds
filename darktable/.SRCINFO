@@ -1,7 +1,7 @@
 pkgbase = darktable
 	pkgdesc = Utility to organize and develop raw images
 	pkgver = 3.6.0
-	pkgrel = 2
+	pkgrel = 3
 	epoch = 2
 	url = https://darktable.org
 	arch = x86_64
