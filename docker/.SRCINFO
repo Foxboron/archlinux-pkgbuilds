@@ -1,6 +1,6 @@
 pkgbase = docker
 	pkgdesc = Pack, ship and run any application as a lightweight container
-	pkgver = 20.10.7
+	pkgver = 20.10.8
 	pkgrel = 1
 	epoch = 1
 	url = https://www.docker.com/
@@ -25,14 +25,12 @@ pkgbase = docker
 	depends = containerd
 	optdepends = btrfs-progs: btrfs backend support
 	optdepends = pigz: parallel gzip compressor support
-	source = git+https://github.com/docker/cli.git#tag=v20.10.7
-	source = git+https://github.com/moby/moby.git#tag=v20.10.7
+	source = git+https://github.com/docker/cli.git#tag=v20.10.8
+	source = git+https://github.com/moby/moby.git#tag=v20.10.8
 	source = git+https://github.com/docker/libnetwork.git#commit=64b7a4574d1426139437d20e81c0b6d391130ec8
 	source = git+https://github.com/krallin/tini.git#commit=de40ad007797e0dcd8b7126f27bb87401d224240
-	source = git+https://github.com/docker/buildx.git#commit=11057da37336192bfc57d81e02359ba7ba848e4a
-	source = git+https://github.com/docker/app.git#commit=9d2c67f87b7338eb1a0fa2f18eb81af3d2aac0e1
+	source = git+https://github.com/docker/buildx.git#commit=260d07a9a19b03df969787496419a0808a27ac61
 	source = docker.sysusers
-	sha256sums = SKIP
 	sha256sums = SKIP
 	sha256sums = SKIP
 	sha256sums = SKIP
