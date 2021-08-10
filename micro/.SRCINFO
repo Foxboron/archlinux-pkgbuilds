@@ -1,19 +1,15 @@
 pkgbase = micro
 	pkgdesc = Modern and intuitive terminal-based text editor
-	pkgver = 2.0.9
-	pkgrel = 2
+	pkgver = 2.0.10
+	pkgrel = 1
 	url = https://micro-editor.github.io/
-	arch = aarch64
-	arch = armv6h
-	arch = armv7h
-	arch = i686
 	arch = x86_64
 	license = MIT
 	makedepends = git
 	makedepends = go
-	optdepends = wl-clipboard: Required for copying/pasting text - wayland
-	optdepends = xclip: Required for copying/pasting text - xorg
-	source = micro::git+https://github.com/zyedidia/micro.git#tag=v2.0.9
+	optdepends = wl-clipboard: for copying/pasting text using Wayland
+	optdepends = xclip: for copying/pasting text using X
+	source = git+https://github.com/zyedidia/micro#commit=b97638566ea8431712f0faafe23661da2db0e8ec
 	b2sums = SKIP
 
 pkgname = micro
