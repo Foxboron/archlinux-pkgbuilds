@@ -1,0 +1,19 @@
+pkgbase = i2c-tools
+	pkgdesc = Heterogeneous set of I2C tools for Linux that used to be part of lm-sensors
+	pkgver = 4.2
+	pkgrel = 1
+	url = https://i2c.wiki.kernel.org/index.php/I2C_Tools
+	arch = x86_64
+	license = GPL
+	makedepends = python
+	makedepends = git
+	depends = perl
+	optdepends = read-edid: for decode-edid script
+	optdepends = python: for smbus module
+	source = https://www.kernel.org/pub/software/utils/i2c-tools/i2c-tools-4.2.tar.xz
+	source = https://www.kernel.org/pub/software/utils/i2c-tools/i2c-tools-4.2.tar.sign
+	validpgpkeys = 7CA69F4460F1BDC41FD2C858A5526B9BB3CD4E6A
+	sha256sums = 37f2dabc7082d185903ff21d1f584b5dcb4dd2eb2c879bbd8d7c50ae900dacd6
+	sha256sums = SKIP
+
+pkgname = i2c-tools
