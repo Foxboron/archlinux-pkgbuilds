@@ -1,7 +1,7 @@
 pkgbase = salt
 	pkgdesc = Central system and configuration manager
-	pkgver = 3003.1
-	pkgrel = 2
+	pkgver = 3003.2
+	pkgrel = 1
 	url = http://saltstack.org/
 	install = salt.install
 	arch = any
@@ -25,9 +25,9 @@ pkgbase = salt
 	backup = etc/logrotate.d/salt
 	backup = etc/salt/master
 	backup = etc/salt/minion
-	source = https://pypi.io/packages/source/s/salt/salt-3003.1.tar.gz
+	source = https://pypi.io/packages/source/s/salt/salt-3003.2.tar.gz
 	source = salt.logrotate
-	sha256sums = 8a7184d3de4d1727618f0d3fbba79e54389aeff85b72f4ceb8200bcc167f6ebe
+	sha256sums = 73c86c44b176d8cfdc033bb1e42e4fdc8dd3424833faa2ea0d0938fa173856a9
 	sha256sums = abecc3c1be124c4afffaaeb3ba32b60dfee8ba6dc32189edfa2ad154ecb7a215
 
 pkgname = salt
