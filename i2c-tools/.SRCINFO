@@ -1,7 +1,7 @@
 pkgbase = i2c-tools
 	pkgdesc = Heterogeneous set of I2C tools for Linux that used to be part of lm-sensors
 	pkgver = 4.2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://i2c.wiki.kernel.org/index.php/I2C_Tools
 	arch = x86_64
 	license = GPL
@@ -12,8 +12,12 @@ pkgbase = i2c-tools
 	optdepends = python: for smbus module
 	source = https://www.kernel.org/pub/software/utils/i2c-tools/i2c-tools-4.2.tar.xz
 	source = https://www.kernel.org/pub/software/utils/i2c-tools/i2c-tools-4.2.tar.sign
+	source = i2c-tools.sysusers
+	source = 45-i2c-tools.rules
 	validpgpkeys = 7CA69F4460F1BDC41FD2C858A5526B9BB3CD4E6A
 	sha256sums = 37f2dabc7082d185903ff21d1f584b5dcb4dd2eb2c879bbd8d7c50ae900dacd6
 	sha256sums = SKIP
+	sha256sums = 4e70b549c6b66c1a213fa52eb4e6070fb9a37e7934adafd43d4feb750df34ad8
+	sha256sums = af9dbdc771023cd04f5b0c638c30356e6a824b32f0c04ea61fe929c71122bccd
 
 pkgname = i2c-tools
