@@ -1,3 +1,6 @@
+# Maintainer: Morten Linderud <foxboron@archlinux.org>
+# Contributor: Vincent Giorgi
+
 pkgname=grobi
 pkgver=0.6.0
 pkgrel=2
