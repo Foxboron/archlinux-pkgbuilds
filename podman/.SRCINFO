@@ -1,8 +1,8 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
-	pkgver = 3.2.3
+	pkgver = 3.3.0
 	pkgrel = 1
-	url = https://github.com/containers/libpod
+	url = https://github.com/containers/podman
 	arch = x86_64
 	license = Apache
 	makedepends = btrfs-progs
@@ -22,7 +22,7 @@ pkgbase = podman
 	depends = libsystemd
 	depends = fuse-overlayfs
 	backup = etc/cni/net.d/87-podman-bridge.conflist
-	source = git+https://github.com/containers/libpod#tag=v3.2.3?signed
+	source = git+https://github.com/containers/podman#tag=v3.3.0?signed
 	validpgpkeys = B7DBDCA456F7335E91F1C25CD3624C551D0515C4
 	validpgpkeys = 7CE1E6F8C90CB53E7E4D8F2D502E08DB0BBF8EEE
 	sha256sums = SKIP
