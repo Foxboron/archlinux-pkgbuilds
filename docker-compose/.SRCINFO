@@ -23,4 +23,3 @@ pkgbase = docker-compose
 	sha512sums = 09f2ae2ae7a17ab5fb3e22580f7a80f1a8253f7ad9fc8f29aca432911bcde46ed22030ff3073cdd7eff3d55aaba17f56e628a178ec05c3a9b4f28495d6045111
 
 pkgname = docker-compose
-
