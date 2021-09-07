@@ -17,4 +17,3 @@ pkgbase = python-ldap
 	sha256sums = 014681ee155a61fde50cf3f19a2f85c5c094439da695968f7fcdf75e95db84f9
 
 pkgname = python-ldap
-
