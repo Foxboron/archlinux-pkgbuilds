@@ -49,4 +49,3 @@ pkgbase = python-language-server
 	sha256sums = 84dc8c69f7bee9d60679141b25c81a849ff0b45e91f435e1aa8ae6dd6db6bb84
 
 pkgname = python-language-server
-
