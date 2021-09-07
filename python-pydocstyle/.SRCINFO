@@ -16,4 +16,3 @@ pkgbase = python-pydocstyle
 	sha256sums = 0ec238b731737da7c9ce3f7c135ee35b992b76a8bfa896007b90bf69a112927c
 
 pkgname = python-pydocstyle
-
