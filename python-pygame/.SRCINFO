@@ -16,4 +16,3 @@ pkgbase = python-pygame
 	sha256sums = 8b1e7b63f47aafcdd8849933b206778747ef1802bd3d526aca45ed77141e4001
 
 pkgname = python-pygame
-
