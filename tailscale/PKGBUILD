@@ -27,7 +27,6 @@ prepare() {
 
 build() {
     cd "${pkgname}"
-    eval "$(./version/version.sh)"
     export CGO_CPPFLAGS="${CPPFLAGS}"
     export CGO_CFLAGS="${CFLAGS}"
     export CGO_CXXFLAGS="${CXXFLAGS}"
@@ -35,9 +34,9 @@ build() {
     export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
     GO_LDFLAGS="\
         -linkmode=external \
-        -X tailscale.com/version.Long=${VERSION_LONG} \
-        -X tailscale.com/version.Short=${VERSION_SHORT} \
-        -X tailscale.com/version.GitCommit=${VERSION_GIT_HASH}"
+        -X tailscale.com/version.Long=${pkgver} \
+        -X tailscale.com/version.Short=$(cut -d+ -f1 <<< "${pkgver}") \
+        -X tailscale.com/version.GitCommit=${_commit}"
     for cmd in ./cmd/tailscale ./cmd/tailscaled; do
         go build -v -tags xversion -ldflags "$GO_LDFLAGS" "$cmd"
     done
