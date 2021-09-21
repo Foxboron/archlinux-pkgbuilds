@@ -1,7 +1,7 @@
 pkgbase = todoman
 	pkgdesc = A simple, standards-based, cli todo (aka: task) manager
 	pkgver = 4.0.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/pimutils/todoman
 	arch = any
 	license = ISC
@@ -21,7 +21,6 @@ pkgbase = todoman
 	depends = python-icalendar
 	depends = python-parsedatetime
 	depends = python-pyxdg
-	depends = python-setuptools
 	depends = python-tabulate
 	depends = python-urwid
 	optdepends = bash-completion: auto-complete in bash
@@ -32,4 +31,3 @@ pkgbase = todoman
 	b2sums = 752bbca2774c7ad6c089a68916a34ca718a644344365748b6ade6c031c4938873793270b6ed633d1477b14030c6ea739083ddaa60207127e3b7118d69ef9a16b
 
 pkgname = todoman
-
