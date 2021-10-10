@@ -1,6 +1,6 @@
 pkgbase = python-pykka
 	pkgdesc = Easy to use concurrency abstractions for Python using the actor model
-	pkgver = 3.0.1
+	pkgver = 3.0.2
 	pkgrel = 1
 	url = http://pykka.readthedocs.org/
 	arch = any
@@ -8,8 +8,7 @@ pkgbase = python-pykka
 	makedepends = python-setuptools
 	depends = python
 	optdepends = python-gevent: Use gevent based actors from pykka.gevent
-	source = https://pypi.python.org/packages/source/p/pykka/pykka-3.0.1.tar.gz
-	sha512sums = 384866f8257040f67cc65de23773bfdbedecd88961570fb579c96d8f8348546f3b7eb1e64420f68ad4623448a45556a9c1dc5f255405b8da4ed61601257540fb
+	source = https://pypi.python.org/packages/source/p/pykka/pykka-3.0.2.tar.gz
+	sha512sums = 2c84483d12bbcfba70bc306dae8c3d7390721b464a257cfd7daf5a3467c71404fa41f8f44aaf418c2b87b1534d2b2912e8124ac92b8cda1fdf6ef44d77c21535
 
 pkgname = python-pykka
-
