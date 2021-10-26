@@ -1,12 +1,12 @@
 pkgbase = bash-bats
 	pkgdesc = Bash Automated Testing System
-	pkgver = 1.4.1
+	pkgver = 1.5.0
 	pkgrel = 1
 	url = https://github.com/bats-core/bats-core
 	arch = any
 	license = MIT
 	depends = bash
-	source = bash-bats-1.4.1.tar.gz::https://github.com/bats-core/bats-core/archive/v1.4.1.tar.gz
-	sha256sums = bff517da043ae24440ec8272039f396c2a7907076ac67693c0f18d4a17c08f7d
+	source = bash-bats-1.5.0.tar.gz::https://github.com/bats-core/bats-core/archive/v1.5.0.tar.gz
+	sha256sums = 36a3fd4413899c0763158ae194329af8f48bb1ff0d1338090b80b3416d5793af
 
 pkgname = bash-bats
