@@ -1,7 +1,7 @@
 pkgbase = kakoune
 	pkgdesc = Multiple-selection, UNIX-flavored modal editor
-	pkgver = 2021.08.28
-	pkgrel = 2
+	pkgver = 2021.10.28
+	pkgrel = 1
 	url = https://kakoune.org/
 	arch = x86_64
 	license = custom:unlicense
@@ -14,7 +14,7 @@ pkgbase = kakoune
 	optdepends = tmux: split windows, spawn tabs
 	optdepends = xdotool: X11 window management
 	optdepends = xorg-xmessage: print detailed crash information in a separate window
-	source = https://github.com/mawww/kakoune/releases/download/v2021.08.28/kakoune-2021.08.28.tar.bz2
-	sha256sums = 6f6ed7dfd8c5723210dbd848708acf03af4b847016fd3ede96b2a89ad32276cb
+	source = https://github.com/mawww/kakoune/releases/download/v2021.10.28/kakoune-2021.10.28.tar.bz2
+	sha256sums = 2f4c93871dc31f6281712281a7119928b1d6d6f300dded84b2d3ce0ab27f2126
 
 pkgname = kakoune
