@@ -1,6 +1,6 @@
 pkgbase = python-milc
 	pkgdesc = Opinionated Batteries-Included Python 3 CLI Framework.
-	pkgver = 1.4.2
+	pkgver = 1.6.5
 	pkgrel = 1
 	url = https://milc.clueboard.co/#/
 	arch = any
@@ -12,7 +12,7 @@ pkgbase = python-milc
 	depends = python-argcomplete
 	depends = python-colorama
 	depends = python-halo
-	source = python-milc-1.4.2.tar.gz::https://github.com/clueboard/milc/archive/1.4.2.tar.gz
-	sha256sums = b4ba7c099aad04cf9addc12f924d8caff23039c4674b304962c59c02594eea39
+	source = python-milc-1.6.5.tar.gz::https://github.com/clueboard/milc/archive/1.6.5.tar.gz
+	sha256sums = c2ec7ca643f7bc59ed22b510cdd2ff9fb28c1778a9b98021c4386bcb6854ea08
 
 pkgname = python-milc
