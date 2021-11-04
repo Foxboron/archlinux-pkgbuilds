@@ -1,16 +1,15 @@
 pkgbase = barrier
 	pkgdesc = Open-source KVM software based on Synergy
-	pkgver = 2.3.3
+	pkgver = 2.4.0
 	pkgrel = 1
 	url = https://github.com/debauchee/barrier
 	changelog = CHANGELOG.rst
 	arch = x86_64
 	license = custom:GPL2WithOpenSSLException
 	makedepends = cmake
+	makedepends = git
 	makedepends = qt5-base
 	makedepends = hicolor-icon-theme
-	makedepends = gtest
-	makedepends = gmock
 	depends = curl
 	depends = avahi
 	depends = libx11
@@ -23,15 +22,14 @@ pkgbase = barrier
 	depends = libsm
 	depends = libice
 	depends = openssl
-	source = barrier-2.3.3.tar.gz::https://github.com/debauchee/barrier/archive/v2.3.3.tar.gz
-	sha256sums = 259e75c150ca16d9db51870b026dc7aad56c410fa3d2f5fdccc19d4b6024bdc5
+	source = git+https://github.com/debauchee/barrier.git#tag=v2.4.0
+	sha256sums = SKIP
 
 pkgname = barrier
 	pkgdesc = Open-source KVM software based on Synergy (GUI)
-	depends = barrier-headless=2.3.3-1
+	depends = barrier-headless=2.4.0-1
 	depends = qt5-base
 	depends = hicolor-icon-theme
 
 pkgname = barrier-headless
 	pkgdesc = Open-source KVM software based on Synergy (client and server CLI binaries)
-
