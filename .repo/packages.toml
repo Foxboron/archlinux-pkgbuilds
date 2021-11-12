@@ -31,7 +31,7 @@ source = "github"
 github = "darktable-org/darktable"
 prefix = "release-"
 use_max_tag = true
-ignored = "release0.4 0.4 0.3 release-3.5.0 release-3.4.1.1"
+ignored = "release0.4 0.4 0.3 release-3.7.0"
 exclude_regex = ".*(rc).*"
 
 [delve]
@@ -436,9 +436,8 @@ use_max_tag = true
 exclude_regex = ".*(b).*"
 
 [python2-typing]
-source = "github"
-github = "python/typing"
-use_max_tag = true
+source = "pypi"
+pypi = "typing"
 
 [archlinux-contrib]
 source = "github"
@@ -926,6 +925,7 @@ source = "github"
 github = "hashicorp/nomad"
 prefix = "v"
 use_max_tag = true
+exclude_regex = ".*(beta|rc).*"
 
 [nomad-driver-podman]
 source = "github"
@@ -954,5 +954,29 @@ use_max_tag = true
 [flatpak-xdg-utils]
 source = "github"
 github = "flatpak/flatpak-xdg-utils"
+prefix = "v"
+use_max_tag = true
+
+[i2c-tools]
+source = "git"
+git = "https://git.kernel.org/pub/scm/utils/i2c-tools/i2c-tools.git/"
+prefix = "v"
+use_max_tag = true
+
+[grobi]
+source = "github"
+github = "fd0/grobi"
+prefix = "v"
+use_max_tag = true
+
+[python-pyflakes]
+source = "github"
+github = "PyCQA/pyflakes"
+prefix = "v"
+use_max_tag = true
+
+[fsverity-utils]
+source = "git"
+git = "https://git.kernel.org/pub/scm/linux/kernel/git/ebiggers/fsverity-utils.git"
 prefix = "v"
 use_max_tag = true
