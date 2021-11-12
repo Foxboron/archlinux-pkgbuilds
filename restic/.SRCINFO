@@ -1,7 +1,7 @@
 pkgbase = restic
 	pkgdesc = Fast, secure, efficient backup program
 	pkgver = 0.12.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://restic.net
 	arch = x86_64
 	license = BSD
