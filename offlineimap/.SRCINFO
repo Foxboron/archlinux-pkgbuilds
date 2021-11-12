@@ -1,17 +1,18 @@
 pkgbase = offlineimap
 	pkgdesc = Synchronizes emails between two repositories
-	pkgver = 7.3.4
+	pkgver = 8.0.0
 	pkgrel = 1
 	url = http://offlineimap.org/
-	changelog = offlineimap.changelog
 	arch = any
 	license = GPL
 	makedepends = asciidoc
-	depends = python2-six
-	depends = python2-uritemplate
-	depends = python2-rfc6555
-	optdepends = python2-pysocks: for SOCKS5 proxy functionality
-	source = offlineimap-7.3.4.tar.gz::https://github.com/OfflineIMAP/offlineimap/archive/v7.3.4.tar.gz
-	sha256sums = 87bc19f8ced25e31c583fa667376a0933de4410f33105884e971a0101a81a03e
+	depends = python-imaplib2
+	depends = python-distro
+	depends = python-rfc6555
+	optdepends = python-gssapi: for Kerberos authentication
+	optdepends = python-portalocker: if you need to run offlineimap in Cygwin for Windows
+	optdepends = python-pysocks: for SOCKS5 proxy functionality
+	source = offlineimap-8.0.0.tar.gz::https://github.com/OfflineIMAP/offlineimap3/archive/v8.0.0.tar.gz
+	sha256sums = 5d40c163ca2fbf89658116e29f8fa75050d0c34c29619019eee1a84c90fcab32
 
 pkgname = offlineimap
