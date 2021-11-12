@@ -39,8 +39,6 @@ build() {
 
   cd "$pkgname/src"
   ./make.bash -v
-
-  PATH="$GOBIN:$PATH" go install -v std
 }
 
 check() {
