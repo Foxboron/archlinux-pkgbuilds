@@ -35,7 +35,6 @@ build() {
   export GOROOT_BOOTSTRAP=/usr/lib/go
   export GOPATH="$srcdir/"
   export GOROOT="$srcdir/$pkgname"
-  export GOBIN="$GOROOT/bin"
 
   cd "$pkgname/src"
   ./make.bash -v
@@ -46,8 +45,6 @@ check() {
   export GOROOT_FINAL=/usr/lib/go
   export GOROOT_BOOTSTRAP=/usr/lib/go
   export GOROOT="$srcdir/$pkgname"
-  export GOBIN="$GOROOT/bin"
-  export PATH="$srcdir/$pkgname/bin:$PATH"
   export GO_TEST_TIMEOUT_SCALE=3
 
   cd $pkgname/src
