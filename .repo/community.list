@@ -16,6 +16,7 @@ conmon
 containerd
 cri-o
 crun
+crun
 darktable
 delve
 dns-over-https
@@ -24,6 +25,7 @@ docker-compose
 dqlite
 dunst
 flatpak-xdg-utils
+fsverity-utils
 fuse-overlayfs
 fzf
 github-cli
@@ -34,9 +36,11 @@ go-md2man
 gopass
 gopls
 go-tools
+grobi
 helm
 hexedit
 hy
+i2c-tools
 i3-gaps
 influxdb
 jgmenu
@@ -70,6 +74,7 @@ nomad-driver-lxc
 nomad-driver-nspawn
 nomad-driver-podman
 nvme-cli
+offlineimap
 font-awesome
 pass-otp
 pdfjs
@@ -133,6 +138,7 @@ python-pycountry
 python-pydbus
 python-pydocstyle
 python-pydrive
+python-pyflakes
 python-pygame
 python-pykka
 python-pypeg2
