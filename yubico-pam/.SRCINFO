@@ -1,7 +1,7 @@
 pkgbase = yubico-pam
 	pkgdesc = Yubico YubiKey PAM module
 	pkgver = 2.27
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Yubico/yubico-pam
 	arch = x86_64
 	license = BSD
@@ -19,4 +19,3 @@ pkgbase = yubico-pam
 	sha256sums = SKIP
 
 pkgname = yubico-pam
-
