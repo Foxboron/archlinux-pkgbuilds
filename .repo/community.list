@@ -69,6 +69,7 @@ nageru
 nano-syntax-highlighting
 neofetch
 nomad
+nomad
 nomad-driver-containerd
 nomad-driver-lxc
 nomad-driver-nspawn
@@ -115,6 +116,7 @@ python-halo
 python-hid
 python-hidapi
 python-hjson
+python-imaplib2
 python-irc
 python-jsonrpclib-pelix
 python-jsonrpc-server

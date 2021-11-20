@@ -980,3 +980,15 @@ source = "git"
 git = "https://git.kernel.org/pub/scm/linux/kernel/git/ebiggers/fsverity-utils.git"
 prefix = "v"
 use_max_tag = true
+
+[offlineimap]
+source = "github"
+github = "OfflineIMAP/offlineimap3"
+prefix = "v"
+use_max_tag = true
+
+[python-imaplib2]
+source = "github"
+github = "jazzband/imaplib2"
+prefix = "v"
+use_max_tag = true
