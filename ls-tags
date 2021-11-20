@@ -1,12 +1,47 @@
 #!/bin/bash
-set -eou pipefail
-set -x
+set -o errexit
+shopt -s extglob
 
-# Yolo
-git config --local url."https://".insteadOf "git+https://" 
+readonly argv0="${BASH_SOURCE[0]}"
+
+git_remote= patch_pkgbuild= show_refs= diff= edit= limit_refs=10
+while ((${#})); do
+    key="${1}"
+    case ${key} in
+        -h|--help) echo "nothing"; exit 0 ;;
+        -r|--remote) git_remote=1 ;;
+        -p|--patch) patch_pkgbuild=1 ;;
+        -s|--show) show_refs=1 ;;
+        -l|--limit) shift; limit_refs=$1 ;;
+        -d|--diff) diff=1 ;;
+        -e|--edit) edit=1 ;;
+        *) set -- "${@}"; break ;;
+    esac
+    shift
+done
 
 pkg="$1"
-set -x
-UPSTREAM=$(cat $pkg/.SRCINFO | grep source | grep git | head | awk '{print $3}')
+if [[ "$pkg" == "" ]]; then
+    pkg="."
+fi
 
-git ls-remote --tags $(awk -F\# '{print $1}' <(echo $UPSTREAM)) | awk '{print "_commit=" $1 "\t#" $2}' | uniq
+if ((git_remote)); then
+    UPSTREAM=$(grep source "$pkg/.SRCINFO" | grep git | head | awk '{print $3}')
+    awk -F\# '{print $1}' <(echo "${UPSTREAM/git+/}")
+    exit 0
+fi
+
+if ((show_refs)); then
+    git ls-remote --sort=-version:refname --tags "$($argv0 -r $pkg)" | awk '{print "_commit=" $1 "\t#" $2}' | head -$limit_refs
+    exit 0
+fi
+
+if ((patch_pkgbuild)); then
+    COMMIT_REF=$($argv0 -l "$limit_refs" -s "$pkg" | fzf)
+    if ((edit)); then
+        sed -i "s|^_commit.*|$COMMIT_REF|" "$pkg/PKGBUILD"
+    else
+        sed -e "s|^_commit.*|$COMMIT_REF|" "$pkg/PKGBUILD"
+    fi
+    exit 0
+fi
