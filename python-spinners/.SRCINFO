@@ -1,7 +1,7 @@
 pkgbase = python-spinners
 	pkgdesc = Spinners for terminal, python wrapper for amazing node library cli-spinners
 	pkgver = 0.0.24
-	pkgrel = 1
+	pkgrel = 3
 	url = https://github.com/ManrajGrover/py-spinners
 	arch = any
 	license = MIT
