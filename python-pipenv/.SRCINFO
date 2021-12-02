@@ -1,7 +1,7 @@
 pkgbase = python-pipenv
 	pkgdesc = Sacred Marriage of Pipfile, Pip, & Virtualenv.
 	pkgver = 2021.11.23
-	pkgrel = 1
+	pkgrel = 2
 	url = https://pipenv.pypa.io
 	arch = any
 	license = MIT
