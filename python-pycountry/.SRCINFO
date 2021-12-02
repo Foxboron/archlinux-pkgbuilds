@@ -1,7 +1,7 @@
 pkgbase = python-pycountry
 	pkgdesc = ISO country, subdivision, language, currency and script definitions and their translations
 	pkgver = 20.7.3
-	pkgrel = 3
+	pkgrel = 4
 	url = https://pypi.org/project/pycountry/
 	arch = any
 	license = LGPL2.1
@@ -15,4 +15,3 @@ pkgbase = python-pycountry
 	sha512sums = df88a34307a4275267a7f3af282b73ca5e762c49ad158bfcd39b97c5d852bf045bcfe72351fc6f232c55003a7c4b0a04801eb562ba65ed5d599bd45b2bd3bc58
 
 pkgname = python-pycountry
-
