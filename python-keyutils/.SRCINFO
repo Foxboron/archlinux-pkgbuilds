@@ -1,7 +1,7 @@
 pkgbase = python-keyutils
 	pkgdesc = A set of python bindings for keyutils
 	pkgver = 0.6
-	pkgrel = 6
+	pkgrel = 7
 	url = https://github.com/sassoftware/python-keyutils
 	arch = x86_64
 	license = Apache
@@ -15,4 +15,3 @@ pkgbase = python-keyutils
 	sha256sums = f69e6cadc50525dcb117714e440ee6579b0e5b7f12910b2bb2e910b236a2b18b
 
 pkgname = python-keyutils
-
