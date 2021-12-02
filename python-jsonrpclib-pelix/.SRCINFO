@@ -1,7 +1,7 @@
 pkgbase = python-jsonrpclib-pelix
 	pkgdesc = A Python JSON-RPC over HTTP that mirrors xmlrpclib syntax
 	pkgver = 0.4.3.1
-	pkgrel = 1
+	pkgrel = 3
 	url = https://github.com/tcalmant/jsonrpclib
 	arch = any
 	license = Apache
