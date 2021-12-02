@@ -1,7 +1,7 @@
 pkgbase = python-pydbus
 	pkgdesc = Pythonic D-Bus library
 	pkgver = 0.6.0
-	pkgrel = 7
+	pkgrel = 8
 	url = https://github.com/LEW21/pydbus
 	arch = any
 	license = LGPL
@@ -12,4 +12,3 @@ pkgbase = python-pydbus
 	sha256sums = dacdf0498a831c8b43a4f3d985d64f99f3093a8aaf4e2ea99981c30fdf1a42da
 
 pkgname = python-pydbus
-
