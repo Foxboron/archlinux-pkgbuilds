@@ -1,7 +1,7 @@
 pkgbase = python-guzzle-sphinx-theme
 	pkgdesc = Sphinx theme used by Guzzle
 	pkgver = 0.7.11
-	pkgrel = 8
+	pkgrel = 9
 	url = https://github.com/guzzle/guzzle_sphinx_theme
 	arch = any
 	license = custom
@@ -12,4 +12,3 @@ pkgbase = python-guzzle-sphinx-theme
 	sha256sums = f5f0e3d541c09ace912e0fa75dafd46f5a54314a929913c7de9709e677d5aa09
 
 pkgname = python-guzzle-sphinx-theme
-
