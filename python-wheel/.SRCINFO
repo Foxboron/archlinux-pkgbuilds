@@ -1,7 +1,7 @@
 pkgbase = python-wheel
 	pkgdesc = A built-package format for Python
 	pkgver = 0.37.0
-	pkgrel = 2
+	pkgrel = 4
 	url = https://pypi.python.org/pypi/wheel
 	arch = any
 	license = MIT
