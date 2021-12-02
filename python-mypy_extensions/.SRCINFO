@@ -1,7 +1,7 @@
 pkgbase = python-mypy_extensions
 	pkgdesc = Experimental type system extensions for programs checked with the mypy typechecker
 	pkgver = 0.4.3
-	pkgrel = 3
+	pkgrel = 5
 	url = http://www.mypy-lang.org/
 	arch = any
 	license = MIT
@@ -11,4 +11,3 @@ pkgbase = python-mypy_extensions
 	sha256sums = 2d82818f5bb3e369420cb3c4060a7970edba416647068eb4c5343488a6c604a8
 
 pkgname = python-mypy_extensions
-
