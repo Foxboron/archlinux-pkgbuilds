@@ -1,7 +1,7 @@
 pkgbase = python-docker-pycreds
 	pkgdesc = Python bindings for the docker credentials store API
 	pkgver = 0.4.0
-	pkgrel = 7
+	pkgrel = 9
 	url = https://github.com/shin-/dockerpy-creds
 	arch = any
 	license = Apache
@@ -14,4 +14,3 @@ pkgbase = python-docker-pycreds
 	sha512sums = 5c7c75a654693c6439592201bba6082af2962fab8d25af980ebb3ad2aede42973c31dbc2693eea1212f911980725bab257f973c7498b3555f68fae1630cfc62c
 
 pkgname = python-docker-pycreds
-
