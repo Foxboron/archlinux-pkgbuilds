@@ -1,7 +1,7 @@
 pkgbase = python-pyaes
 	pkgdesc = Pure-Python Implementation of the AES block-cipher and common modes of operation
 	pkgver = 1.6.1
-	pkgrel = 7
+	pkgrel = 9
 	url = https://github.com/ricmoo/pyaes
 	arch = any
 	license = MIT
@@ -11,4 +11,3 @@ pkgbase = python-pyaes
 	sha256sums = 02c1b1405c38d3c370b085fb952dd8bea3fadcee6411ad99f312cc129c536d8f
 
 pkgname = python-pyaes
-
