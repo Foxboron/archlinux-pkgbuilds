@@ -1,7 +1,7 @@
 pkgbase = python-shutilwhich
 	pkgdesc = Backport of shutil.which
 	pkgver = 1.1.0
-	pkgrel = 6
+	pkgrel = 7
 	url = https://github.com/mbr/shutilwhich
 	arch = any
 	license = PSF
@@ -12,4 +12,3 @@ pkgbase = python-shutilwhich
 	sha256sums = 4292a973312c58ca1935ea75d7bd378b17668ef6aacfc812d00019e0726dea44
 
 pkgname = python-shutilwhich
-
