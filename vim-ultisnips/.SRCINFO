@@ -1,7 +1,7 @@
 pkgbase = vim-ultisnips
 	pkgdesc = TextMate-style snippets for Vim.
 	pkgver = 3.2
-	pkgrel = 5
+	pkgrel = 6
 	url = https://github.com/SirVer/ultisnips
 	arch = any
 	groups = vim-plugins
@@ -16,4 +16,3 @@ pkgbase = vim-ultisnips
 	sha256sums = SKIP
 
 pkgname = vim-ultisnips
-
