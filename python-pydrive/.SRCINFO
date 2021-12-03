@@ -1,7 +1,7 @@
 pkgbase = python-pydrive
 	pkgdesc = Google Drive API Python wrapper library
 	pkgver = 1.3.1
-	pkgrel = 4
+	pkgrel = 5
 	url = https://github.com/gsuitedevs/PyDrive
 	arch = any
 	license = Apache
@@ -13,4 +13,3 @@ pkgbase = python-pydrive
 	sha256sums = 75cc44c2d5936559359287bf273c0345165900f7ccf1aba86d9565e7dc6144fc
 
 pkgname = python-pydrive
-
