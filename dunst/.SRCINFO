@@ -1,6 +1,6 @@
 pkgbase = dunst
 	pkgdesc = Customizable and lightweight notification-daemon
-	pkgver = 1.7.1
+	pkgver = 1.7.2
 	pkgrel = 1
 	url = https://dunst-project.org/
 	arch = x86_64
@@ -18,7 +18,7 @@ pkgbase = dunst
 	optdepends = libnotify: dunstify
 	provides = notification-daemon
 	backup = etc/dunst/dunstrc
-	source = dunst-1.7.1.tar.gz::https://github.com/dunst-project/dunst/archive/v1.7.1.tar.gz
-	md5sums = 0a994d35635406726036270ce40ba361
+	source = dunst-1.7.2.tar.gz::https://github.com/dunst-project/dunst/archive/v1.7.2.tar.gz
+	md5sums = 92b80cd9bf4f2830500e707b13f40324
 
 pkgname = dunst
