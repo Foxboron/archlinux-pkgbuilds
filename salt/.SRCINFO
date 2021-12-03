@@ -1,7 +1,7 @@
 pkgbase = salt
 	pkgdesc = Central system and configuration manager
 	pkgver = 3004
-	pkgrel = 2
+	pkgrel = 3
 	url = http://saltstack.org/
 	install = salt.install
 	arch = any
