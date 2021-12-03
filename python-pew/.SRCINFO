@@ -1,7 +1,7 @@
 pkgbase = python-pew
 	pkgdesc = Python Env Wrapper, a set of tools to manage multiple virtual environments
 	pkgver = 1.2.0
-	pkgrel = 5
+	pkgrel = 6
 	url = https://github.com/berdario/pew
 	arch = any
 	license = MIT
@@ -14,4 +14,3 @@ pkgbase = python-pew
 	sha256sums = 58e4f04ba644080ef820c2e07d1704112727e392c2fd1d42cdc31e112ffc2345
 
 pkgname = python-pew
-
