@@ -1,7 +1,7 @@
 pkgbase = python-sqlobject
 	pkgdesc = SQLObject, an object-relational mapper for Python
 	pkgver = 3.9.1
-	pkgrel = 1
+	pkgrel = 2
 	url = http://sqlobject.org/
 	arch = any
 	license = LGPL
@@ -11,4 +11,3 @@ pkgbase = python-sqlobject
 	sha256sums = 64752d91185fc8e61aec02a2730bfbeeb7b1c554179792668d26072724d58567
 
 pkgname = python-sqlobject
-
