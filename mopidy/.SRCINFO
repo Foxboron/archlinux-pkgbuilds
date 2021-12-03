@@ -1,7 +1,7 @@
 pkgbase = mopidy
 	pkgdesc = An extensible music server written in Python
 	pkgver = 3.2.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://www.mopidy.com
 	arch = any
 	license = APACHE
