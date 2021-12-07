@@ -1,0 +1,22 @@
+pkgbase = efifs
+	pkgdesc = Standalone EFI file system drivers
+	pkgver = 1.8
+	pkgrel = 3
+	url = https://efi.akeo.ie/
+	arch = any
+	license = GPL3
+	makedepends = git
+	makedepends = mingw-w64-gcc
+	makedepends = arm-none-eabi-gcc
+	makedepends = arm-none-eabi-newlib
+	makedepends = aarch64-linux-gnu-gcc
+	makedepends = riscv64-linux-gnu-gcc
+	source = git+https://github.com/pbatard/efifs.git#commit=6de1473f8cf9ee5120f84f3c1fc61abb5b01d4bb?signed
+	source = git+https://git.savannah.gnu.org/git/grub.git
+	source = gnu-efi::git+https://git.code.sf.net/p/gnu-efi/code
+	validpgpkeys = E7CDF2A016DDDD53F0B7943838E0CF5E69EDD671
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = efifs
