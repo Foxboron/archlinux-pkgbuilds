@@ -34,18 +34,12 @@ build() {
   export GOAMD64=v1 # make sure we're building for the right x86-64 version
   export GOROOT_FINAL=/usr/lib/go
   export GOROOT_BOOTSTRAP=/usr/lib/go
-  export GOPATH="$srcdir/"
-  export GOROOT="$srcdir/$pkgname"
 
   cd "$pkgname/src"
   ./make.bash -v
 }
 
 check() {
-  export GOARCH=amd64
-  export GOROOT_FINAL=/usr/lib/go
-  export GOROOT_BOOTSTRAP=/usr/lib/go
-  export GOROOT="$srcdir/$pkgname"
   export GO_TEST_TIMEOUT_SCALE=3
 
   cd $pkgname/src
