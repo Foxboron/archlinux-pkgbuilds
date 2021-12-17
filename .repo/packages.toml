@@ -94,7 +94,7 @@ use_max_tag = true
 source = "github"
 github = "hylang/hy"
 use_max_tag = true
-exclude_regex = ".*(a).*"
+#exclude_regex = ".*(a).*"
 
 [i3-gaps]
 source = "github"
@@ -227,10 +227,6 @@ pypi = "python-jsonrpc-server"
 source = "pypi"
 pypi = "keyutils"
 
-[python-language-server]
-source = "pypi"
-pypi = "python-language-server"
-
 [python-ldap]
 source = "pypi"
 pypi = "python-ldap"
@@ -337,6 +333,7 @@ use_max_tag = true
 prefix = "v"
 from_pattern = "v(\\d+)\\.(\\d+)\\.(\\d+)\\-rc(\\d+)"
 to_pattern = "\\1.\\2.\\3rc\\4"
+exclude_regex = "v.*(rc|alpha|beta).*"
 
 [udiskie]
 source = "github"
@@ -990,5 +987,17 @@ use_max_tag = true
 [python-imaplib2]
 source = "github"
 github = "jazzband/imaplib2"
+prefix = "v"
+use_max_tag = true
+
+[docker-scan]
+source = "github"
+github = "docker/scan-cli-plugin"
+prefix = "v"
+use_max_tag = true
+
+[efifs]
+source = "github"
+github = "pbatard/efifs"
 prefix = "v"
 use_max_tag = true
