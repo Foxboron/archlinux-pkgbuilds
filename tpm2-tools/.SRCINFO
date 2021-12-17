@@ -23,6 +23,7 @@ pkgbase = tpm2-tools
 	depends = libtss2-sys.so
 	depends = libtss2-tctildr.so
 	optdepends = tpm2-abrmd: user space resource manager
+	options = !lto
 	source = https://github.com/tpm2-software/tpm2-tools/releases/download/5.2/tpm2-tools-5.2.tar.gz
 	source = https://github.com/tpm2-software/tpm2-tools/releases/download/5.2/tpm2-tools-5.2.tar.gz.asc
 	source = tpm2-tools-5.2_fix_tests_libtpms_0.9.0.patch::https://github.com/tpm2-software/tpm2-tools/commit/0789bf264a108c4718875a050d00b1fdee4478b7.patch
