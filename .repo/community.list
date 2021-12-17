@@ -16,14 +16,15 @@ conmon
 containerd
 cri-o
 crun
-crun
 darktable
 delve
 dns-over-https
 docker
 docker-compose
+docker-scan
 dqlite
 dunst
+efifs
 flatpak-xdg-utils
 fsverity-utils
 fuse-overlayfs
@@ -55,6 +56,13 @@ kubernetes
 kubernetes
 kubernetes
 kubernetes
+kubernetes
+kubernetes
+kubernetes
+kubernetes
+kubernetes
+kubernetes
+kubernetes
 libmd
 libslirp
 lostfiles
@@ -68,7 +76,6 @@ mypy
 nageru
 nano-syntax-highlighting
 neofetch
-nomad
 nomad
 nomad-driver-containerd
 nomad-driver-lxc
@@ -96,7 +103,6 @@ protege
 py3status
 python2-docs
 python2-typing
-python-wheel
 python-adblock
 python-argparse
 python-autobahn
@@ -121,7 +127,6 @@ python-irc
 python-jsonrpclib-pelix
 python-jsonrpc-server
 python-keyutils
-python-language-server
 python-ldap
 python-log_symbols
 python-m2crypto
