@@ -1,7 +1,7 @@
 pkgbase = containerd
 	pkgdesc = An open and reliable container runtime
 	pkgver = 1.5.9
-	pkgrel = 1
+	pkgrel = 2
 	url = https://containerd.io/
 	arch = x86_64
 	license = Apache
