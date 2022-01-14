@@ -1,7 +1,7 @@
 pkgbase = docker-compose
 	pkgdesc = Fast, isolated development environments using Docker
 	pkgver = 2.2.3
-	pkgrel = 1
+	pkgrel = 2
 	url = https://www.docker.com/
 	arch = x86_64
 	license = Apache
