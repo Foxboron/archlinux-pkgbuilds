@@ -1,13 +1,13 @@
 pkgbase = docker-scan
 	pkgdesc = Docker Scan is a Command Line Interface to run vulnerability detection on your Dockerfiles and Docker images
-	pkgver = 0.16.0
+	pkgver = 0.17.0
 	pkgrel = 1
 	url = https://github.com/docker/scan-cli-plugin
 	arch = x86_64
 	license = Apache
 	makedepends = go
 	makedepends = git
-	source = git+https://github.com/docker/scan-cli-plugin.git#commit=e13563704fb0e90cc0c384023c66f46b86c5cc60
+	source = git+https://github.com/docker/scan-cli-plugin.git#commit=061fe0a0c54762676295afce4ae5e31efd85b99b
 	sha512sums = SKIP
 
 pkgname = docker-scan
