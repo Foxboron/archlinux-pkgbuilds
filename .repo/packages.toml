@@ -10,7 +10,7 @@ use_max_tag = true
 
 [bolt]
 source = "git"
-git = "git+https://gitlab.freedesktop.org/bolt/bolt.git"
+git = "https://gitlab.freedesktop.org/bolt/bolt.git"
 use_max_tag = true
 
 [bucklespring]
@@ -428,6 +428,7 @@ source = "git"
 git = "git://github.com/linux-nvme/nvme-cli"
 prefix = "v"
 use_max_tag = true
+exclude_regex = ".*(rc).*"
 
 [nano-syntax-highlighting]
 source = "github"
@@ -848,6 +849,7 @@ git = "https://git.savannah.gnu.org/git/poke.git"
 prefix = "releases/poke-"
 use_max_tag = true
 include_regex = "releases/.*"
+exclude_regex = "releases/.*9."
 
 [bash-bats]
 source = "github"
@@ -865,7 +867,7 @@ use_max_tag = true
 source = "github"
 github = "borgbackup/borg"
 use_max_tag = true
-exclude_regex = ".*(a|b|dev).*"
+exclude_regex = ".*(a|b|dev|rc).*"
 
 [podman-dnsname]
 source = "github"
