@@ -1,6 +1,6 @@
 pkgbase = poke
 	pkgdesc = Interactive, extensible editor for binary data.
-	pkgver = 2.0
+	pkgver = 2.1
 	pkgrel = 1
 	url = http://www.jemarch.net/poke.html
 	arch = x86_64
@@ -12,10 +12,11 @@ pkgbase = poke
 	depends = gettext
 	depends = json-c
 	options = !lto
-	source = https://ftp.gnu.org/gnu/poke/poke-2.0.tar.gz
-	source = https://ftp.gnu.org/gnu/poke/poke-2.0.tar.gz.sig
+	options = debug
+	source = https://ftp.gnu.org/gnu/poke/poke-2.1.tar.gz
+	source = https://ftp.gnu.org/gnu/poke/poke-2.1.tar.gz.sig
 	validpgpkeys = BDFA5717FC1DD35C2C3832A23EF90523B304AF08
-	sha256sums = 5b822bf3e112c9fb5c0c9ab22a30a45a5d5e4d16e3f7436052bb720aa26b9a58
+	sha256sums = cd528e6c1bbc540c3b629c2b4f36b784b30a026b005a38b99283422599442670
 	sha256sums = SKIP
 
 pkgname = poke
