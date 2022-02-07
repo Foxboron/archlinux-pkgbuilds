@@ -9,6 +9,7 @@ BUILD_MODES=""
 BUILD_OPTIONS=""
 MAKECHROOTPKG_OPTIONS=""
 OFFLOAD=0
+NOTIFY=1
 
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
@@ -70,6 +71,12 @@ mksrcinfo() {
     stat_busy "Updating .SRCINFO"
     makepkg --printsrcinfo > .SRCINFO
     stat_done
+}
+
+notify(){
+    if ((NOTIFY)); then
+        /usr/bin/notify-send "$@"
+    fi
 }
 
 # parse options
@@ -135,6 +142,9 @@ while [[ ${#} -gt 0 ]]; do
             BUILD_MODES="multilib-testing-build"
             PUBLISH_PACKAGES="multilib-testingpkg"
             PUBLISH_COMMUNITY="${PUBLISH_PACKAGES}"
+        ;;
+        --nonotify)
+            NOTIFY=0
         ;;
         -s|--nosig|--skip-sig)
             SKIP_SIG=1
@@ -289,6 +299,7 @@ for PACKAGE in ${PACKAGES}; do
         # fi
         msg "Building via ${BUILD_MODES} ${BUILD_OPTIONS} -- ${MAKECHROOTPKG_OPTIONS}..."
         ${BUILD_MODES} ${BUILD_OPTIONS}
+        notify "Finished building ${PACKAGE}"
     fi
 
     # post build .SRCINFO for updated pkgver
@@ -305,11 +316,10 @@ for PACKAGE in ${PACKAGES}; do
 
     # create source tarball
     tarballsrc="${SRCPKGDEST:-.}/${pkgbase}-${pkgverfull}.src.tar.gz"
-
     if [[ -z "${SKIP_SRC}" ]]; then
         stat_busy "Creating source tarball"
         if [[ ! -f "$tarballsrc" ]]; then 
-            extra-x86_64-build -- -- -S -d -f &>/dev/null
+            extra-x86_64-build -- -- -S -d -f
             rm -f '*-namcap.log'
         fi
         stat_done
@@ -343,7 +353,7 @@ for PACKAGE in ${PACKAGES}; do
 
     if [ -z "${SKIP_LIST}" ]; then
         msg "Listing package contents..."
-        for pkg in ${pkgname}; do
+        for pkg in ${pkgname} ${pkgbase}-debug; do
             for arch in ${archs}; do
                 tarballpkg="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.zst"
                 [ ! -f $tarballpkg ] && continue
