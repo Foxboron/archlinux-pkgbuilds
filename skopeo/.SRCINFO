@@ -1,6 +1,6 @@
 pkgbase = skopeo
 	pkgdesc = A command line utility for various operations on container images and image repositories.
-	pkgver = 1.6.0
+	pkgver = 1.6.1
 	pkgrel = 1
 	url = https://github.com/containers/skopeo
 	arch = x86_64
@@ -13,7 +13,7 @@ pkgbase = skopeo
 	depends = gpgme
 	depends = device-mapper
 	depends = containers-common
-	source = git+https://github.com/containers/skopeo#commit=e4b79d7741c40434838ece2790be537083fc2a04
+	source = git+https://github.com/containers/skopeo#commit=49084d2cd8c9f8e7b38ba8405d61e701d5381bc0
 	sha256sums = SKIP
 
 pkgname = skopeo
