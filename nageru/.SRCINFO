@@ -1,7 +1,7 @@
 pkgbase = nageru
 	pkgdesc = live video mixer, based around the standard M/E workflow.
-	pkgver = 1.8.6
-	pkgrel = 14
+	pkgver = 2.1.0
+	pkgrel = 1
 	url = https://nageru.sesse.net/
 	arch = x86_64
 	license = GPL3
@@ -19,13 +19,7 @@ pkgbase = nageru
 	depends = sqlite3
 	depends = luajit
 	depends = cmake
-	source = https://nageru.sesse.net/nageru-1.8.6.tar.gz
-	source = meson-options.patch
-	source = luajit-patch.patch
-	source = ffmpeg5.patch
-	sha256sums = 67dcb070a23589f624d7067c4b09fe11faa9b1c756b884c50473545fdf7817b3
-	sha256sums = 1bb7d87d6d6359ffe95d605c29ff5f73728929d9393498b74fdf36c6469fdaba
-	sha256sums = 480c4de61188684fc8d1727a2e3ec615d33892234e8466db8011589e9277bdf7
-	sha256sums = dc4ff30ebe497a8d63b27023d2d3d8e9ab84b6af40949c86f33e7a0bbc4d2516
+	source = https://nageru.sesse.net/nageru-2.1.0.tar.gz
+	sha256sums = 646cc513002646540cfbff746c6fdda2ac365711ead9492a63a06d86a9034389
 
 pkgname = nageru
