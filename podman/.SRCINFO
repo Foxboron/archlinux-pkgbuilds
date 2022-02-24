@@ -1,6 +1,6 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
-	pkgver = 4.0.0
+	pkgver = 4.0.1
 	pkgrel = 1
 	url = https://github.com/containers/podman
 	arch = x86_64
@@ -15,7 +15,7 @@ pkgbase = podman
 	makedepends = libseccomp
 	makedepends = systemd
 	options = !lto
-	source = git+https://github.com/containers/podman#tag=v4.0.0?signed
+	source = git+https://github.com/containers/podman#tag=v4.0.1?signed
 	validpgpkeys = B7DBDCA456F7335E91F1C25CD3624C551D0515C4
 	validpgpkeys = 7CE1E6F8C90CB53E7E4D8F2D502E08DB0BBF8EEE
 	sha256sums = SKIP
@@ -33,6 +33,8 @@ pkgname = podman
 	optdepends = apparmor: for AppArmor support
 	optdepends = btrfs-progs: support btrfs backend devices
 	optdepends = catatonit: --init flag support
+	optdepends = netavark: for a new container-network-stack implementation
+	optdepends = podman-compose: for docker-compose compatibility
 	optdepends = podman-docker: for Docker-compatible CLI
 
 pkgname = podman-docker
