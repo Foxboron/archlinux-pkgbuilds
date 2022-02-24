@@ -1,7 +1,7 @@
 pkgbase = dunst
 	pkgdesc = Customizable and lightweight notification-daemon
-	pkgver = 1.7.3
-	pkgrel = 2
+	pkgver = 1.8.0
+	pkgrel = 1
 	url = https://dunst-project.org/
 	arch = x86_64
 	license = BSD
@@ -19,7 +19,7 @@ pkgbase = dunst
 	provides = notification-daemon
 	options = debug
 	backup = etc/dunst/dunstrc
-	source = dunst-1.7.3.tar.gz::https://github.com/dunst-project/dunst/archive/v1.7.3.tar.gz
-	md5sums = 71a900dca891c02878c691f596a7ebed
+	source = dunst-1.8.0.tar.gz::https://github.com/dunst-project/dunst/archive/v1.8.0.tar.gz
+	md5sums = 1d77c557e56e26158e5c1a5587fcea24
 
 pkgname = dunst
