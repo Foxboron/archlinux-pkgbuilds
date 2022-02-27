@@ -1,11 +1,14 @@
 pkgbase = py3status
 	pkgdesc = An extensible i3status replacement/wrapper written in python
-	pkgver = 3.40
-	pkgrel = 2
+	pkgver = 3.41
+	pkgrel = 1
 	url = https://www.ultrabug.fr/tag/py3status/
 	arch = any
 	license = BSD
 	checkdepends = python-pytest-runner
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
 	depends = python
 	depends = python-setuptools
 	optdepends = i3status: for i3status modules
@@ -15,7 +18,7 @@ pkgbase = py3status
 	optdepends = python-pytz: for the clock module
 	optdepends = python-tzlocal: for the clock module
 	optdepends = pacman-contrib: for the arch_updates module
-	source = py3status-3.40.tar.gz::https://github.com/ultrabug/py3status/archive/3.40.tar.gz
-	sha256sums = 84885ec8a43626dcd7576b9cad029406c98675ca00ba66ff124d7607290d2b66
+	source = py3status-3.41.tar.gz::https://github.com/ultrabug/py3status/archive/3.41.tar.gz
+	sha256sums = 9728ff6913a13087201c73f682f67afcd8dc73a71b044d6833737ee227ad5fba
 
 pkgname = py3status
