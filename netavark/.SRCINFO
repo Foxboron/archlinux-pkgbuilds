@@ -1,0 +1,19 @@
+pkgbase = netavark
+	pkgdesc = Container network stack
+	pkgver = 1.0.1
+	pkgrel = 1
+	url = https://github.com/containers/netavark
+	arch = x86_64
+	license = Apache
+	makedepends = cargo
+	makedepends = git
+	makedepends = libgit2
+	makedepends = mandown
+	depends = gcc-libs
+	depends = glibc
+	optdepends = aardvark-dns: for authorative DNS server
+	provides = container-network-stack
+	source = git+https://github.com/containers/netavark.git#commit=d669475a137098655257af42c814b117d6f5a4ef
+	sha256sums = SKIP
+
+pkgname = netavark
