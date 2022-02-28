@@ -1,7 +1,7 @@
 pkgbase = poke
 	pkgdesc = Interactive, extensible editor for binary data.
 	pkgver = 2.1
-	pkgrel = 1
+	pkgrel = 2
 	url = http://www.jemarch.net/poke.html
 	arch = x86_64
 	license = GPL3
