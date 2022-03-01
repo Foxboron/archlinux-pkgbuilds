@@ -1,14 +1,11 @@
 pkgbase = borg
 	pkgdesc = Deduplicating backup program with compression and authenticated encryption
 	pkgver = 1.2.0
-	pkgrel = 2
+	pkgrel = 3
 	url = https://borgbackup.github.io/
 	arch = x86_64
 	license = BSD
 	checkdepends = python-pytest
-	checkdepends = python-pytest-cov
-	checkdepends = python-pytest-benchmark
-	checkdepends = python-mock
 	checkdepends = python-dateutil
 	makedepends = python-setuptools
 	makedepends = python-setuptools-scm
