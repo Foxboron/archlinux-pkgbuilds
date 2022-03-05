@@ -1,0 +1,17 @@
+pkgbase = python-formencode
+	pkgdesc = A validation library for Python.
+	pkgver = 2.0.1
+	pkgrel = 1
+	url = http://www.formencode.org/en/latest/
+	arch = any
+	license = MIT
+	checkdepends = python-pytest
+	checkdepends = python-dnspython
+	checkdepends = python-pycountry
+	makedepends = python-setuptools
+	makedepends = python-setuptools-scm-git-archive
+	depends = python
+	source = https://files.pythonhosted.org/packages/source/f/formencode/FormEncode-2.0.1.tar.gz
+	sha256sums = 8f2974112c2557839d5bae8b76490104c03830785d923abbdef148bf3f710035
+
+pkgname = python-formencode
