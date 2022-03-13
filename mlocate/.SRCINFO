@@ -1,0 +1,25 @@
+pkgbase = mlocate
+	pkgdesc = Merging locate/updatedb implementation
+	pkgver = 0.26.git.20170220
+	pkgrel = 7
+	url = https://pagure.io/mlocate
+	install = mlocate.install
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	depends = glibc
+	backup = etc/updatedb.conf
+	source = git+https://pagure.io/mlocate.git#commit=c98bf6595703456558a6f9c163c746cdaa9e591f
+	source = git+https://git.savannah.gnu.org/git/gnulib.git#commit=5861339993f3014cfad1b94fc7fe366fc2573598
+	source = sysusers.d
+	source = updatedb.conf
+	source = updatedb.timer
+	source = updatedb.service
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = 1713a8fc8b81f4a390bf8597c4c0e917474379002dcc984aad2f44218d10c82a
+	sha256sums = d00796741e2194032d0185b40de70ff5c8a11fda416a70434eb0aa2020981f91
+	sha256sums = 94520117a4a2e16b5f2311c406904369d72690b8998c39ee4cf758009fdddbcb
+	sha256sums = af0db83e34ffd0325101042760d4a5e3bccacbc3a0ef42c997e42507bf4ba6a3
+
+pkgname = mlocate
