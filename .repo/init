@@ -7,9 +7,14 @@ fi
 
 prefix=$(dirname "${0}")
 pushd "${prefix}/${1}" &> /dev/null
+REPO="${1}"
 
-for pkgbase in $(cat ../community.list); do \
-    [ ! -d "${pkgbase}" ] && svn update "${pkgbase}"
+for pkgbase in $(cat ../$REPO.list); do \
+    if [ ! -d "${pkgbase}" ]; then
+        if ! svn update "${pkgbase}"; then
+            continue
+        fi
+    fi
     [ -d "../../${pkgbase}" ] && continue
     mkdir -p "../../${pkgbase}"
     for file in $(ls $pkgbase/trunk); do

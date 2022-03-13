@@ -21,11 +21,13 @@ update-index-file:
 repo-checkout:
 	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Initialize community repo...$(RST)"
 	${REPO_CMD} ${REPO_URL_COMMUNITY}/svn-community/svn .repo/community
+	${REPO_CMD} ${REPO_URL_COMMUNITY}/svn-packages/svn .repo/packages
 
 repo-seed:
 	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Seed community package list...$(RST)"
-	@cd .repo; \
-		curl -s "https://archlinux.org/packages/search/json/?sort=&q=&maintainer=Foxboron&flagged=" | jq -r '.results[].pkgbase' > community.list
+	@cd .repo; curl -s "https://archlinux.org/packages/search/json/?repo=Community&sort=&q=&maintainer=Foxboron&flagged=" | jq -r '.results[].pkgbase' | sort -u > community.list
+	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Seed core/extra package list...$(RST)"
+	@cd .repo; curl -s "https://archlinux.org/packages/search/json/?repo=Core&repo=Extra&sort=&q=&maintainer=Foxboron&flagged=" | jq -r '.results[].pkgbase' | sort -u > packages.list
 
 add-packages: repo-seed
 	@cd .repo/community; \
@@ -35,14 +37,25 @@ add-packages: repo-seed
 		done
 	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Adding new packages community...$(RST)"
 	@.repo/init community
+	@cd .repo/packages; \
+		for PKG in `cat ../packages.list`; do \
+			[ ! -d ../../$${PKG} ] && echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Checkout packages/$${PKG}...$(RST)"; \
+			[ ! -d ../../$${PKG} ] && svn update $${PKG} >/dev/null || true; \
+		done
+	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Adding new packages community...$(RST)"
+	@.repo/init packages
 
 update: add-packages
 	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Update community...$(RST)"
 	@.repo/update community
+	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Update packages...$(RST)"
+	@.repo/update packages
 
 sync:
 	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Syncing community...$(RST)"
 	@.repo/sync community
+	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Syncing packages...$(RST)"
+	@.repo/sync packages
 
 update-version:
 	@echo "$(BOLD)$(GREEN)[*] $(RST)$(BOLD)Fetches all current package versions...$(RST)"

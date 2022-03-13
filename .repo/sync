@@ -2,12 +2,14 @@
 
 shopt -s globstar
 
-for pkgfile in .repo/community/**/trunk/PKGBUILD; do
+REPO="${1}"
+
+for pkgfile in .repo/$REPO/**/trunk/PKGBUILD; do
 	pkgbase=$(awk -F/ '{print $3}' <<< $pkgfile)
-	if ! cmp ".repo/community/${pkgbase}/trunk/PKGBUILD" "${pkgbase}/PKGBUILD" &>/dev/null ; then
-		cp ".repo/community/${pkgbase}/trunk/"* "${pkgbase}/"
+	if ! cmp ".repo/$REPO/${pkgbase}/trunk/PKGBUILD" "${pkgbase}/PKGBUILD" &>/dev/null ; then
+		cp ".repo/$REPO/${pkgbase}/trunk/"* "${pkgbase}/"
 		git add "${pkgbase}/"*
-		svn_log=$(svn log -l 1 ".repo/community/${pkgbase}/trunk"|head -n-1|tail -n-2)
+		svn_log=$(svn log -l 1 ".repo/$REPO/${pkgbase}/trunk"|head -n-1|tail -n-2)
 		author=$(svn info --show-item last-changed-author "${pkgbase}/trunk")
 		GIT_AUTHOR_NAME="$author" GIT_AUTHOR_EMAIL="$author@archlinux.org" git commit -v "${pkgbase}" --template <(printf "\n%s" "$svn_log")
 	fi
