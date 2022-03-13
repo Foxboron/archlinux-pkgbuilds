@@ -168,6 +168,7 @@ source = "github"
 github = "mozilla/pdf.js"
 prefix = "v"
 use_max_tag = true
+exclude_regex = ".*(rc|alpha|beta).*"
 
 [protege]
 source = "github"
@@ -1016,4 +1017,24 @@ use_max_tag = true
 source = "git"
 git = "https://sourceware.org/git/debugedit.git"
 prefix = "debugedit-"
+use_max_tag = true
+
+[vim]
+source = "github"
+github = "vim/vim"
+prefix = "v"
+use_max_tag = true
+
+[asp]
+source = "github"
+github = "archlinux/asp"
+prefix = "v"
+use_max_tag = true
+
+[wpa_supplicant]
+source = "git"
+git = "https://w1.fi/hostap.git"
+from_pattern = "hostap_(\\d+)\\_(\\d+)"
+to_pattern = "\\1.\\2"
+ignored = "hostap-1-bp"
 use_max_tag = true
