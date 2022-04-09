@@ -1,7 +1,7 @@
 pkgbase = dqlite
 	pkgdesc = Distributed SQLite
 	pkgver = 1.9.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/CanonicalLtd/dqlite
 	arch = x86_64
 	license = LGPL3
@@ -11,6 +11,8 @@ pkgbase = dqlite
 	depends = libuv
 	depends = raft
 	depends = sqlite
+	options = debug
+	options = strip
 	source = dqlite-1.9.1.tar.gz::https://github.com/canonical/dqlite/archive/v1.9.1.tar.gz
 	sha256sums = fd3a50f2bc14c0a03163bbed3bc5ca6943df144c502de5b497d3b323c24a6489
 
