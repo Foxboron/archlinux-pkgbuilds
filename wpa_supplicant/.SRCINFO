@@ -1,7 +1,7 @@
 pkgbase = wpa_supplicant
 	pkgdesc = A utility providing key negotiation for WPA wireless networks
 	pkgver = 2.10
-	pkgrel = 3
+	pkgrel = 4
 	epoch = 2
 	url = https://w1.fi/wpa_supplicant/
 	install = wpa_supplicant.install
@@ -24,7 +24,7 @@ pkgbase = wpa_supplicant
 	sha256sums = 08915b040d03a3e07cdc8ea6c76b497e00059e01ce85b67413dfe41d4fc68992
 	sha256sums = 60f6a1cf2e124813dfce1da78ee1818e2ff5236aafa4113c7ae3b3f2a0b84006
 	sha256sums = d42bdbf3d4980b9f0a819612df0c39843c7e96c8afcb103aa656c824f93790b0
-	sha256sums = d99c48843bb413d7eb63e87e0bab255736712f901b515b9a625f40c8eb8e99db
+	sha256sums = 89dc439b958574e9231c58bea6c83faec469909c9f84476bfc83fa35b3e97bd1
 	sha256sums = aaedf87f1530d4e6cb00bf7981d1f868409ed892cc41b83c5613019e7b51f380
 
 pkgname = wpa_supplicant
