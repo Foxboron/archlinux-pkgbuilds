@@ -1,7 +1,7 @@
 pkgbase = micro
 	pkgdesc = Modern and intuitive terminal-based text editor
 	pkgver = 2.0.10
-	pkgrel = 2
+	pkgrel = 3
 	url = https://micro-editor.github.io/
 	arch = x86_64
 	license = MIT
