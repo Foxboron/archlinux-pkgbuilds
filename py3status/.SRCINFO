@@ -19,7 +19,7 @@ pkgbase = py3status
 	optdepends = python-pytz: for the clock module
 	optdepends = python-tzlocal: for the clock module
 	optdepends = pacman-contrib: for the arch_updates module
-	source = py3status-3.44.tar.gz::https://github.com/ultrabug/py3status/archive/3.44.tar.gz
+	source = py3status-3.44.tar.gz::https://github.com/ultrabug/py3status/archive/refs/tags/3.44.tar.gz
 	sha256sums = 3afc200780c090253987e47d9e43fede4e24ebba47192de9961f79c05cedc998
 
 pkgname = py3status
