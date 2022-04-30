@@ -1,0 +1,22 @@
+pkgbase = public-inbox
+	pkgdesc = An "archives first" approach to mailing lists
+	pkgver = 1.8.0
+	pkgrel = 1
+	url = https://public-inbox.org
+	arch = any
+	license = AGPL
+	makedepends = git
+	depends = perl
+	depends = perl-inline-c
+	depends = perl-dbd-sqlite
+	depends = perl-uri
+	depends = perl-search-xapian
+	source = https://public-inbox.org/public-inbox.git/snapshot/public-inbox-1.8.0.tar.gz
+	sha256sums = 95a24e38293935e7081967acbf80f7d1c2c67e28d01d591ea39e5e36a34acdec
+
+pkgname = lei
+	pkgdesc = The "local email interface" from public-inbox
+	depends = perl-publicinbox
+
+pkgname = perl-publicinbox
+	pkgdesc = The perl library for public-inbox
