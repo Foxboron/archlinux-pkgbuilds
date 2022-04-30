@@ -1,7 +1,7 @@
 pkgbase = nomad-driver-containerd
 	pkgdesc = A nomad taskdriver for containerd containers
 	pkgver = 0.9.3
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Roblox/nomad-driver-containerd
 	arch = x86_64
 	license = MPL2
