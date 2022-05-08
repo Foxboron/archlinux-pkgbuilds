@@ -1,13 +1,13 @@
 pkgbase = cni-plugins
 	pkgdesc = Some standard networking plugins, maintained by the CNI team
 	pkgver = 1.1.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/containernetworking/plugins
 	arch = x86_64
 	license = Apache
 	makedepends = go
 	depends = glibc
-	provides = container-network-stack
+	provides = container-network-stack=1
 	options = !lto
 	source = cni-plugins-1.1.1.tar.gz::https://github.com/containernetworking/plugins/archive/v1.1.1.tar.gz
 	sha512sums = 03da31caee5f9595abf65d4a551984b995bc18c5e97409549f08997c5a6a2b41a8950144f8a5b4f810cb401ddbe312232d2be76ec977acf8108eb490786b1817
