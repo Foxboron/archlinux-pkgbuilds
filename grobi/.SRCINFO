@@ -1,14 +1,14 @@
 pkgbase = grobi
 	pkgdesc = Automatically configure monitors/outputs for Xorg via RANDR
 	pkgver = 0.6.0
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/fd0/grobi
 	arch = x86_64
 	license = BSD
 	makedepends = go
 	source = grobi-0.6.0.tar.gz::https://github.com/fd0/grobi/archive/refs/tags/v0.6.0.tar.gz
-	source = fix-test.patch::https://github.com/fd0/grobi/commit/176988ab087ff92d1408fbc454c77263457f3d7e.patch
-	source = fix-edid-junk.patch::https://github.com/fd0/grobi/pull/33.patch
+	source = grobi-fix-test.patch::https://github.com/fd0/grobi/commit/176988ab087ff92d1408fbc454c77263457f3d7e.patch
+	source = grobi-fix-edid-junk.patch::https://github.com/fd0/grobi/pull/33.patch
 	sha256sums = 846cc199ca9e5a223b923f517e4f1c42e9f78553fe12b83788c327083b95c519
 	sha256sums = d549e83b067540d15d56d93350c3561c74f91132bdf63cde8fd8aeab5bcb8176
 	sha256sums = d34f78816fa0a5b48fc0e5fe68d27087311768f9759dfdd7af82ff23b31acf7e
