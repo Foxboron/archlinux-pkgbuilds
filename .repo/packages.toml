@@ -426,7 +426,7 @@ url = "https://gitlab.com/DerManu/QCustomPlot/-/tags"
 
 [nvme-cli]
 source = "git"
-git = "git://github.com/linux-nvme/nvme-cli"
+git = "https://github.com/linux-nvme/nvme-cli.git"
 prefix = "v"
 use_max_tag = true
 exclude_regex = ".*(rc).*"
@@ -516,7 +516,7 @@ source = "github"
 github = "rootless-containers/slirp4netns"
 prefix = "v"
 use_max_tag = true
-exclude_regex = ".*(beta).*"
+exclude_regex = ".*(beta|rc).*"
 
 [toolbox]
 source = "github"
@@ -844,6 +844,18 @@ git = "https://git.kernel.org/pub/scm/utils/b4/b4.git/"
 prefix = "v"
 use_max_tag = true
 
+[patatt]
+source = "git"
+git = "https://git.kernel.org/pub/scm/utils/patatt/patatt.git/"
+prefix = "v"
+use_max_tag = true
+
+[public-inbox]
+source = "git"
+git = "https://public-inbox.org/public-inbox.git/"
+prefix = "v"
+use_max_tag = true
+
 [poke]
 source = "git"
 git = "https://git.savannah.gnu.org/git/poke.git"
@@ -880,6 +892,7 @@ use_max_tag = true
 source = "github"
 github = "Yubico/python-fido2"
 use_max_tag = true
+exclude_regex = ".*(a|b|dev|rc).*"
 
 [lxc]
 source = "github"
@@ -1020,8 +1033,8 @@ prefix = "debugedit-"
 use_max_tag = true
 
 [vim]
-source = "github"
-github = "vim/vim"
+source = "git"
+git = "https://github.com/vim/vim.git"
 prefix = "v"
 use_max_tag = true
 
@@ -1038,3 +1051,37 @@ from_pattern = "hostap_(\\d+)\\_(\\d+)"
 to_pattern = "\\1.\\2"
 ignored = "hostap-1-bp"
 use_max_tag = true
+
+[containers-common]
+source = "github"
+github = "containers/common"
+prefix = "v"
+use_max_tag = true
+
+[netavark]
+source = "github"
+github = "containers/netavark"
+prefix = "v"
+use_max_tag = true
+
+[python-formencode]
+source = "github"
+github = "formencode/formencode"
+prefix = "v"
+use_max_tag = true
+
+[xdp-tools]
+source = "github"
+github = "xdp-project/xdp-tools"
+prefix = "v"
+use_max_tag = true
+
+[mlocate]
+source = "git"
+git = "https://pagure.io/mlocate.git"
+prefix = "mlocate-"
+use_max_tag = true
+
+[perl-search-xapian]
+source = "cpan"
+cpan = "Search-Xapian"
