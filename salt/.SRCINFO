@@ -1,7 +1,7 @@
 pkgbase = salt
 	pkgdesc = Central system and configuration manager
 	pkgver = 3004.1
-	pkgrel = 2
+	pkgrel = 3
 	url = http://saltstack.org/
 	install = salt.install
 	arch = any
@@ -27,8 +27,10 @@ pkgbase = salt
 	backup = etc/salt/master
 	backup = etc/salt/minion
 	source = https://pypi.io/packages/source/s/salt/salt-3004.1.tar.gz
+	source = jinja-3.1.patch
 	source = salt.logrotate
 	sha256sums = 7f344a2432648a4f078daa5accc68dcdffe1095cea13ec21e50413560f04c298
+	sha256sums = bfce486e45a37c6e78af545cd653f932da20c6d13c2bbbc874686924838fbcdf
 	sha256sums = abecc3c1be124c4afffaaeb3ba32b60dfee8ba6dc32189edfa2ad154ecb7a215
 
 pkgname = salt
