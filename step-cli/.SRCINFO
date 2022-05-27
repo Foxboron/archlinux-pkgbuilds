@@ -1,14 +1,14 @@
 pkgbase = step-cli
 	pkgdesc = A zero trust swiss army knife for working with X509, OAuth, JWT, OATH OTP, etc.
-	pkgver = 0.19.0
-	pkgrel = 2
+	pkgver = 0.20.0
+	pkgrel = 1
 	url = https://github.com/smallstep/cli
 	arch = x86_64
 	license = Apache
 	makedepends = go
 	depends = glibc
 	optdepends = step-ca: setup CA/SSO/ACME server
-	source = https://github.com/smallstep/cli/releases/download/v0.19.0/step_0.19.0.tar.gz
-	sha512sums = 3d7c35f851d39df67dcedc74de0707cfea0e87c1cfec52b952db121daf051cb0813eea9800e2b5b3534b1d0c107d87fa2686570b4a3f65746bf70d3191b086ff
+	source = https://github.com/smallstep/cli/releases/download/v0.20.0/step_0.20.0.tar.gz
+	sha512sums = 31352b1f835987446bf534e56f25e0af1a6ac29bc20bcccc48aa6726ea52570ed923d1bee2e9ba823cee125b33cb0a8ca001fd142affa027a9f40a245439cddc
 
 pkgname = step-cli
