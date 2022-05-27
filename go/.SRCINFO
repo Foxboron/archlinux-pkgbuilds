@@ -8,7 +8,6 @@ pkgbase = go
 	license = BSD
 	makedepends = git
 	makedepends = go
-	makedepends = perl
 	provides = go-pie
 	replaces = go-pie
 	options = !strip
