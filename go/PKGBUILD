@@ -53,6 +53,11 @@ package() {
     "$pkgdir/usr/lib/go/pkg/linux_amd64_"{dynlink,race}
 
   cp -a bin pkg src lib misc api test "$pkgdir/usr/lib/go"
+  # We can't strip all binaries and libraries,
+  # as that also strips some testdata directories and breaks the tests.
+  # Just strip the packaged binaries as a compromise.
+  strip $STRIP_BINARIES "$pkgdir/usr/lib/go"{/bin/*,/pkg/tool/*/*}
+
   cp -r doc/* "$pkgdir/usr/share/doc/go"
 
   ln -sf /usr/lib/go/bin/go "$pkgdir/usr/bin/go"
