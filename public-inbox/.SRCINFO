@@ -1,7 +1,7 @@
 pkgbase = public-inbox
 	pkgdesc = An "archives first" approach to mailing lists
 	pkgver = 1.8.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://public-inbox.org
 	arch = any
 	license = AGPL
