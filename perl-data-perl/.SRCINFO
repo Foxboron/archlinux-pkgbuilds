@@ -1,7 +1,7 @@
 pkgbase = perl-data-perl
 	pkgdesc = Base classes wrapping fundamental Perl data types
 	pkgver = 0.002011
-	pkgrel = 2
+	pkgrel = 3
 	url = https://metacpan.org/release/Data-Perl
 	arch = any
 	license = PerlArtistic
@@ -21,4 +21,3 @@ pkgbase = perl-data-perl
 	sha512sums = c55f0d5ba6141ef2a3fe02fc4258f4dbc9ae041e5b390dc626f297d68f4fafdafe5deef6ee282718927e101f7c2d93e913117fe754d5fc0c28d206b45e61b285
 
 pkgname = perl-data-perl
-
