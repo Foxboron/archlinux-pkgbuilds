@@ -1,7 +1,7 @@
 pkgbase = perl-search-xapian
 	pkgdesc = Perl XS frontend to the Xapian C++ search library.
 	pkgver = 1.2.25.5
-	pkgrel = 1
+	pkgrel = 2
 	url = https://metacpan.org/release/Search-Xapian
 	arch = x86_64
 	license = PerlArtistic
