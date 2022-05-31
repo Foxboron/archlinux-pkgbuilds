@@ -1,7 +1,7 @@
 pkgbase = perl-moox-late
 	pkgdesc = Easily translate Moose code to Moo
 	pkgver = 0.100
-	pkgrel = 2
+	pkgrel = 3
 	url = https://metacpan.org/release/MooX-late
 	arch = any
 	license = PerlArtistic
@@ -18,4 +18,3 @@ pkgbase = perl-moox-late
 	sha512sums = 69450edbe7b2192094608a3ec543348d87223c9a124b86dc04a1cdf74b697adb331e5e1498533a557e5d4eded374770086d6696bdda597afe924520cad0c229c
 
 pkgname = perl-moox-late
-
