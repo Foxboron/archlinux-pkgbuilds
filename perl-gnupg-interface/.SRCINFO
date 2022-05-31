@@ -1,7 +1,7 @@
 pkgbase = perl-gnupg-interface
 	pkgdesc = Object-oriented methods for interacting with GnuPG
 	pkgver = 1.02
-	pkgrel = 2
+	pkgrel = 3
 	url = https://metacpan.org/release/GnuPG-Interface
 	arch = any
 	license = PerlArtistic
@@ -17,4 +17,3 @@ pkgbase = perl-gnupg-interface
 	sha512sums = ff4365aa75fbcd2dc77c915ec36c0b578219ae1a2148e936b4769221f91c78a3bc3d371159b5130e7bee36ecf0e169b6a16e3a160d2598811d6f70850119f6e4
 
 pkgname = perl-gnupg-interface
-
