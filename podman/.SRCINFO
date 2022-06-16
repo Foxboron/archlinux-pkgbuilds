@@ -1,6 +1,6 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
-	pkgver = 4.1.0
+	pkgver = 4.1.1
 	pkgrel = 1
 	url = https://github.com/containers/podman
 	arch = x86_64
@@ -16,7 +16,7 @@ pkgbase = podman
 	makedepends = libseccomp
 	makedepends = systemd
 	options = !lto
-	source = git+https://github.com/containers/podman#tag=v4.1.0?signed
+	source = git+https://github.com/containers/podman#tag=v4.1.1?signed
 	validpgpkeys = B7DBDCA456F7335E91F1C25CD3624C551D0515C4
 	sha256sums = SKIP
 
