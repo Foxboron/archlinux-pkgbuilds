@@ -1,7 +1,7 @@
 pkgbase = nomad-driver-nspawn
 	pkgdesc = A nomad taskdriver for systemd-nspawn
-	pkgver = 0.9.0
-	pkgrel = 2
+	pkgver = 0.9.1
+	pkgrel = 1
 	url = https://github.com/JanMa/nomad-driver-nspawn
 	arch = x86_64
 	license = MIT
@@ -11,7 +11,7 @@ pkgbase = nomad-driver-nspawn
 	depends = nomad
 	depends = systemd
 	options = !lto
-	source = nomad-driver-nspawn::git+https://github.com/JanMa/nomad-driver-nspawn#commit=0008fa3566ac0f3fc666ca5693bf5fd38d7340ed
+	source = nomad-driver-nspawn::git+https://github.com/JanMa/nomad-driver-nspawn#commit=4a438f9c20e10930acb273afc09ecb2824093b9a
 	b2sums = SKIP
 
 pkgname = nomad-driver-nspawn
