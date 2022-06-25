@@ -1,7 +1,7 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
 	pkgver = 4.1.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/containers/podman
 	arch = x86_64
 	license = Apache
@@ -21,6 +21,7 @@ pkgbase = podman
 	sha256sums = SKIP
 
 pkgname = podman
+	depends = catatonit
 	depends = conmon
 	depends = containers-common
 	depends = crun
