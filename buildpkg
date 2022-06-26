@@ -53,14 +53,6 @@ stat_done() {
     printf "${BOLD}done${ALL_OFF}\n" >&2
 }
 
-run_namcap() {
-    local file=$1; shift
-    msg2 "Linting ${file}..."
-    namcap "${file}" \
-        |sed -r "s|(.+) (W: .+)|     ${BOLD}${BLUE}\\1 ${YELLOW}\\2 ${ALL_OFF}|g" \
-        |sed -r "s|(.+) (E: .+)|     ${BOLD}${BLUE}\\1 ${RED}\\2 ${ALL_OFF}|g"
-}
-
 sign() {
     local file=$1; shift
     msg2 "Signing ${file}..."
@@ -231,7 +223,9 @@ fi
 
 # default build mode settings
 if ((OFFLOAD)); then
-    BUILD_MODES="offload-build -r ${BUILD_MODES/-x86*/}"
+    BUILD_MODES="${BUILD_MODES/-x86*/}"
+    BUILD_MODES="${BUILD_MODES/-build/}"
+    BUILD_MODES="offload-build -r ${BUILD_MODES}"
 fi
 
 INSTALL_PACKAGES=""
@@ -290,13 +284,6 @@ for PACKAGE in ${PACKAGES}; do
 
     # build selected modes
     if [[ -z "${SKIP_BUILD}" ]]; then
-        # skip mode if not valid
-        # arch=$(echo ${BUILD_MODE}|sed -r 's|.+-(.+)-.+|\1|')
-        # if [[ ! "${BUILD_MODE}" == *"multilib"* && \
-        #         ! " ${archs[@]} " =~ ' any ' && \
-        #         ! " ${archs[@]} " =~ " $(echo ${BUILD_MODE}|sed -r 's|.+-(.+)-.+|\1|') " ]]; then
-        #     continue
-        # fi
         msg "Building via ${BUILD_MODES} ${BUILD_OPTIONS} -- ${MAKECHROOTPKG_OPTIONS}..."
         ${BUILD_MODES} ${BUILD_OPTIONS}
         notify "Finished building ${PACKAGE}"
@@ -318,10 +305,7 @@ for PACKAGE in ${PACKAGES}; do
     tarballsrc="${SRCPKGDEST:-.}/${pkgbase}-${pkgverfull}.src.tar.gz"
     if [[ -z "${SKIP_SRC}" ]]; then
         stat_busy "Creating source tarball"
-        if [[ ! -f "$tarballsrc" ]]; then 
-            extra-x86_64-build -- -- -S -d -f
-            rm -f '*-namcap.log'
-        fi
+        extra-x86_64-build -- -- -S -d -f
         stat_done
     fi
     
@@ -365,22 +349,6 @@ for PACKAGE in ${PACKAGES}; do
         done
     fi
 
-    if [ -z "${SKIP_CHECK}" ]; then
-        msg "Running namcap..."
-        for pkg in ${pkgname}; do
-            for arch in ${archs}; do
-                tarballpkg="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.zst"
-                [ ! -f $tarballpkg ] && continue
-                run_namcap "${tarballpkg}"
-            done
-        done
-        run_namcap PKGBUILD
-        msg "Running checkpkg..."
-        checkpkg || true
-        if [ -z "${KEEP_CHECK_FILES}" ]; then
-            rm -rf /tmp/checkpkg-script.*
-        fi
-    fi
 
     if [ -n "${INSTALL}" ]; then
         msg "Adding packages to next chroot..."
@@ -403,11 +371,11 @@ for PACKAGE in ${PACKAGES}; do
         repo='community'
         destdir="../.repo/$repo/${pkgbase}/trunk"
         warning "${PACKAGE} is not in any repository"
-        stat_busy "Confirm ${PACKAGE} ${pkgverfull} should be uploaded to community..."
+        stat_busy "Confirm ${PACKAGE} ${pkgverfull} should be uploaded to $repo..."
         read
-        mkdir -p "../.repo/community/${pkgbase}/"{trunk,repos}
+        mkdir -p "../.repo/$repo/${pkgbase}/"{trunk,repos}
         git add -f . || true
-        pushd "../.repo/community"
+        pushd "../.repo/$repo"
         svn add "${pkgbase}" || true
         svn commit -m "addpkg: ${pkgbase} ${pkgverfull}" "${pkgbase}" || true
         popd >/dev/null
@@ -421,15 +389,8 @@ for PACKAGE in ${PACKAGES}; do
             rm -f "./${destdir}/"*
             msg2 "Extracting sources..."
             tar --force-local --strip-components=1 -xvf "${tarballsrc}" -C "./${destdir}" &>/dev/null
+            cp -rf keys "./${destdir}"
             rm "./${destdir}/.SRCINFO"
-            # msg2 "Creating symlinks..."
-            # for pkg in ${pkgname}; do
-            #   for arch in ${archs}; do
-            #       tarballpkg="${PKGDEST:-.}/${pkg}-${pkgverfull}-${arch}.pkg.tar.xz"
-                    # [ ! -f $tarballpkg ] && continue
-            #       ln -rs "${tarballpkg}"{,.sig} "${destdir}"
-            #   done
-            # done
 
             # publish release
             if [[ "${PUBLISH}" -eq 1 ]]; then
@@ -437,12 +398,14 @@ for PACKAGE in ${PACKAGES}; do
                 stat_busy "Confirm ${PACKAGE} ${pkgverfull} to publish"
                 read
                 git commit -v . || true
+                git_msg="$(git log --format=%B -n 1 | cut -d' ' -f4-)" 
                 pushd "${destdir}" >/dev/null
                 svn add --force . || true
+                svn status | grep '^!' | awk '{print $2}' | xargs svn delete || true
                 if [[ 'packages' = "${repo}" ]]; then
-                    ${PUBLISH_PACKAGES}
+                    ${PUBLISH_PACKAGES} "${git_msg}"
                 elif [[ 'community' = "${repo}" ]]; then
-                    ${PUBLISH_COMMUNITY}
+                    ${PUBLISH_COMMUNITY} "${git_msg}"
                 fi
                 popd >/dev/null
             fi
