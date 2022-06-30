@@ -1,6 +1,6 @@
 pkgbase = python-pandas
 	pkgdesc = High-performance, easy-to-use data structures and data analysis tools for Python
-	pkgver = 1.4.2
+	pkgver = 1.4.3
 	pkgrel = 1
 	url = https://pandas.pydata.org/
 	arch = x86_64
@@ -72,7 +72,7 @@ pkgbase = python-pandas
 	optdepends = python-brotli: Brotli compression
 	optdepends = python-snappy: Snappy compression
 	optdepends = python-zstandard: Zstandard (zstd) compression
-	source = https://github.com/pandas-dev/pandas/archive/refs/tags/v1.4.2/python-pandas-1.4.2.tar.gz
-	sha256sums = e2d97255e7cd13b3d3931b49f7be50055e02ca6dff60a68e403b125f8f85c4d2
+	source = https://github.com/pandas-dev/pandas/archive/refs/tags/v1.4.3/python-pandas-1.4.3.tar.gz
+	sha256sums = 8e9d21e75b7df9934f0f61801a11ff548459a8cb3fe7ada366f2a797e0d651aa
 
 pkgname = python-pandas
