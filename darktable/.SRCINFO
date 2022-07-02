@@ -1,7 +1,7 @@
 pkgbase = darktable
 	pkgdesc = Utility to organize and develop raw images
 	pkgver = 3.8.1
-	pkgrel = 4
+	pkgrel = 5
 	epoch = 2
 	url = https://darktable.org
 	arch = x86_64
@@ -38,6 +38,7 @@ pkgbase = darktable
 	optdepends = ghostscript: noise profile script
 	optdepends = portmidi: game and midi controller input devices
 	optdepends = gnuplot: noise profile script
+	options = debug
 	source = https://github.com/darktable-org/darktable/releases/download/release-3.8.1/darktable-3.8.1.tar.xz
 	source = https://github.com/darktable-org/darktable/releases/download/release-3.8.1/darktable-3.8.1.tar.xz.asc
 	validpgpkeys = C4CBC150699956E2A3268EF5BB5CC8295B1779C9
