@@ -1,7 +1,7 @@
 pkgbase = arch-install-scripts
 	pkgdesc = Scripts to aid in installing Arch Linux
 	pkgver = 25
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/archlinux/arch-install-scripts
 	arch = any
 	license = GPL2
@@ -10,6 +10,7 @@ pkgbase = arch-install-scripts
 	depends = awk
 	depends = bash
 	depends = coreutils
+	depends = grep
 	depends = pacman
 	depends = util-linux
 	source = git+https://github.com/archlinux/arch-install-scripts#tag=v25?signed
