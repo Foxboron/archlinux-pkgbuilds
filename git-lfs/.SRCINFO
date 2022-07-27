@@ -4,6 +4,7 @@ pkgbase = git-lfs
 	pkgrel = 1
 	url = https://git-lfs.github.com
 	arch = x86_64
+	arch = aarch64
 	license = MIT
 	makedepends = go
 	makedepends = ruby-ronn

@@ -4,6 +4,7 @@ pkgbase = bolt
 	pkgrel = 1
 	url = https://gitlab.freedesktop.org/bolt/bolt
 	arch = x86_64
+	arch = aarch64
 	license = LGPL
 	checkdepends = umockdev
 	makedepends = asciidoc

@@ -5,6 +5,7 @@ pkgbase = conmon
 	epoch = 1
 	url = https://github.com/containers/conmon
 	arch = x86_64
+	arch = aarch64
 	license = APACHE
 	makedepends = git
 	depends = glibc

@@ -4,6 +4,7 @@ pkgbase = slirp4netns
 	pkgrel = 1
 	url = https://github.com/rootless-containers/slirp4netns
 	arch = x86_64
+	arch = aarch64
 	license = GPL2
 	makedepends = git
 	depends = glibc

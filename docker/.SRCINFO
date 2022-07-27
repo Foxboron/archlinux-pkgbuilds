@@ -5,6 +5,7 @@ pkgbase = docker
 	epoch = 1
 	url = https://www.docker.com/
 	arch = x86_64
+	arch = aarch64
 	license = Apache
 	makedepends = git
 	makedepends = go
