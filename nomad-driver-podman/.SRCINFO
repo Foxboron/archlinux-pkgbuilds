@@ -1,7 +1,7 @@
 pkgbase = nomad-driver-podman
 	pkgdesc = A nomad taskdriver for podman containers
-	pkgver = 0.3.0
-	pkgrel = 2
+	pkgver = 0.4.0
+	pkgrel = 1
 	url = https://github.com/hashicorp/nomad-driver-podman
 	arch = x86_64
 	license = MPL2
@@ -10,7 +10,7 @@ pkgbase = nomad-driver-podman
 	depends = nomad
 	depends = podman
 	options = !lto
-	source = nomad-driver-podman::git+https://github.com/hashicorp/nomad-driver-podman#commit=ec01bb2b87216219da064359ef95dd3f7f226457
+	source = nomad-driver-podman::git+https://github.com/hashicorp/nomad-driver-podman#commit=50007e0c40702d24c9710a8030a72a875826e743
 	b2sums = SKIP
 
 pkgname = nomad-driver-podman
