@@ -1,6 +1,6 @@
 pkgbase = gopls
 	pkgdesc = Language server for Go programming language
-	pkgver = 0.9.0
+	pkgver = 0.9.1
 	pkgrel = 1
 	url = https://github.com/golang/tools/tree/master/gopls
 	arch = x86_64
@@ -11,7 +11,7 @@ pkgbase = gopls
 	makedepends = git
 	makedepends = go
 	depends = glibc
-	source = gopls-0.9.0.tar.gz::https://github.com/golang/tools/archive/gopls/v0.9.0.tar.gz
-	sha256sums = cf11df0a96fea0056cd7f914dcae0017448b85bdac0638c0497cb7054a027517
+	source = gopls-0.9.1.tar.gz::https://github.com/golang/tools/archive/gopls/v0.9.1.tar.gz
+	sha256sums = 420fd56ed614fc8a56547ad7737c2d0f163255a6a2953f1e57d854eeb5cb1b7b
 
 pkgname = gopls
