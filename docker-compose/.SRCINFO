@@ -1,13 +1,13 @@
 pkgbase = docker-compose
 	pkgdesc = Fast, isolated development environments using Docker
-	pkgver = 2.6.1
+	pkgver = 2.9.0
 	pkgrel = 1
 	url = https://www.docker.com/
 	arch = x86_64
 	license = Apache
 	checkdepends = docker
 	makedepends = go
-	source = docker-compose-2.6.1.tar.gz::https://github.com/docker/compose/archive/v2.6.1.tar.gz
-	sha512sums = 7ed708f48eb2be60d756b0e1b67be5a2baeb83699fe86a06ecaf734e63f67119e03e4609a148253a60c3aafbe78e31215fb7d0005e505ff3d91a9baa09556edb
+	source = docker-compose-2.9.0.tar.gz::https://github.com/docker/compose/archive/v2.9.0.tar.gz
+	sha512sums = b5359f8767fb9478762b7084ed9322ad5a80f2ef4d7584525cc67fba58b1116f707438d1dc92557b4e47a7320c3f1bd9f2bf850a787c9d46ee1180f1f5e937cf
 
 pkgname = docker-compose
