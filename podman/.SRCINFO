@@ -1,7 +1,7 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
 	pkgver = 4.1.1
-	pkgrel = 2
+	pkgrel = 4
 	url = https://github.com/containers/podman
 	arch = x86_64
 	license = Apache
@@ -16,9 +16,11 @@ pkgbase = podman
 	makedepends = libseccomp
 	makedepends = systemd
 	options = !lto
-	source = git+https://github.com/containers/podman#tag=v4.1.1?signed
+	source = git+https://github.com/containers/podman#tag=2ab593258b45c8071f8407ef2403227503fc4534?signed
+	source = podman-4.1.1-defaultinitpath.patch
 	validpgpkeys = B7DBDCA456F7335E91F1C25CD3624C551D0515C4
 	sha256sums = SKIP
+	sha256sums = 58c830aea7fc11abd69170f7e305763e16d8bad69f49632601dc1544d47fdbc0
 
 pkgname = podman
 	depends = catatonit
