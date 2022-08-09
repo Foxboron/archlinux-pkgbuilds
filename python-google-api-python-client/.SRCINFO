@@ -1,6 +1,6 @@
 pkgbase = python-google-api-python-client
 	pkgdesc = Google API Client Library for Python
-	pkgver = 2.55.0
+	pkgver = 2.56.0
 	pkgrel = 1
 	url = https://github.com/google/google-api-python-client
 	arch = any
@@ -10,7 +10,7 @@ pkgbase = python-google-api-python-client
 	depends = python-uritemplate
 	depends = python-google-api-core
 	optdepends = python-oauth2client: optional backend
-	source = google-api-python-client-2.55.0.tar.gz::https://github.com/google/google-api-python-client/archive/v2.55.0.tar.gz
-	sha256sums = 2640655fcd95c09d9cdca70fbbb7f3d0dacbb01a0eb30bd9b4178fde54c4cdbf
+	source = google-api-python-client-2.56.0.tar.gz::https://github.com/google/google-api-python-client/archive/v2.56.0.tar.gz
+	sha256sums = ecf73b2d287781ef3f4847b01bb456d992e733dfe08dd44f5c131d3644eaa3df
 
 pkgname = python-google-api-python-client
