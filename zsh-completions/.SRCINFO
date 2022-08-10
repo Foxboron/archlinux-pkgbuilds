@@ -1,7 +1,7 @@
 pkgbase = zsh-completions
 	pkgdesc = Additional completion definitions for Zsh
 	pkgver = 0.34.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/zsh-users/zsh-completions
 	changelog = ChangeLog
 	arch = any
