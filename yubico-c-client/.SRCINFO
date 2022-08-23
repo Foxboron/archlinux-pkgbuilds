@@ -19,4 +19,3 @@ pkgbase = yubico-c-client
 	sha256sums = a1df5f6134b03bd2cd62c68815b424797980c1a7cefdf1a72f87b9b41d6dc525
 
 pkgname = yubico-c-client
-
