@@ -26,4 +26,3 @@ pkgbase = neofetch
 	sha256sums = SKIP
 
 pkgname = neofetch
-
