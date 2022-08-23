@@ -1,6 +1,6 @@
 pkgbase = nvme-cli
 	pkgdesc = NVM-Express user space tooling for Linux
-	pkgver = 2.1.1
+	pkgver = 2.1.2
 	pkgrel = 1
 	url = https://github.com/linux-nvme/nvme-cli
 	install = nvme-cli.install
@@ -11,11 +11,12 @@ pkgbase = nvme-cli
 	makedepends = meson
 	makedepends = git
 	makedepends = asciidoc
+	makedepends = xmlto
 	depends = util-linux
 	depends = libsystemd
 	options = debug
 	options = strip
-	source = nvme-cli-2.1.1.tar.gz::https://github.com/linux-nvme/nvme-cli/archive/v2.1.1.tar.gz
-	sha256sums = cc8bd36b9aa71243e2bace238aa5505244fef3fef5418b0c61f75d1988458272
+	source = nvme-cli-2.1.2.tar.gz::https://github.com/linux-nvme/nvme-cli/archive/v2.1.2.tar.gz
+	sha256sums = b39811fd2ab8005d515f2f539984cc08f9ab1fe34e5359da10091fdf153df231
 
 pkgname = nvme-cli
