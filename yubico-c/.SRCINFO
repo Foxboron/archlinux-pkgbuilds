@@ -16,4 +16,3 @@ pkgbase = yubico-c
 	sha256sums = SKIP
 
 pkgname = yubico-c
-
