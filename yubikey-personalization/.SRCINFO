@@ -20,4 +20,3 @@ pkgbase = yubikey-personalization
 	sha256sums = f9b434e9570ce7d0192182aab979f767238b704f12645546e567db841bb7b5e2
 
 pkgname = yubikey-personalization
-
