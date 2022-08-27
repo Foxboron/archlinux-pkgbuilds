@@ -386,10 +386,10 @@ for PACKAGE in ${PACKAGES}; do
             warning "Skipping distribution: missing ${tarballsrc}"
         else
             msg2 "Cleaning target..."
-            rm -f "./${destdir}/"*
+            rm -rf "./${destdir}/"*
             msg2 "Extracting sources..."
             tar --force-local --strip-components=1 -xvf "${tarballsrc}" -C "./${destdir}" &>/dev/null
-            cp -rf keys "./${destdir}"
+            cp -rf keys "./${destdir}" || true
             rm "./${destdir}/.SRCINFO"
 
             # publish release
