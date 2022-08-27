@@ -561,12 +561,6 @@ github = "rclone/rclone"
 prefix = "v"
 use_max_tag = true
 
-[v2ray]
-source = "github"
-github = "v2fly/v2ray-core"
-prefix = "v"
-use_max_tag = true
-
 [glider]
 source = "github"
 github = "nadoo/glider"
@@ -1085,3 +1079,16 @@ use_max_tag = true
 [perl-search-xapian]
 source = "cpan"
 cpan = "Search-Xapian"
+prefix = "v"
+
+[cri-tools]
+source = "github"
+github = "kubernetes-sigs/cri-tools"
+prefix = "v"
+use_max_tag = true
+
+[arch-install-scripts]
+source = "github"
+github = "archlinux/arch-install-scripts"
+prefix = "v"
+use_max_tag = true
