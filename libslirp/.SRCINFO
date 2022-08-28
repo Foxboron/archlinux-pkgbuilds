@@ -4,6 +4,7 @@ pkgbase = libslirp
 	pkgrel = 1
 	url = https://gitlab.freedesktop.org/slirp/libslirp
 	arch = x86_64
+	arch = aarch64
 	license = BSD
 	license = MIT
 	makedepends = meson

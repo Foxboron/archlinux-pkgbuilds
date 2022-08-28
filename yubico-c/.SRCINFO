@@ -4,6 +4,7 @@ pkgbase = yubico-c
 	pkgrel = 6
 	url = https://github.com/Yubico/yubico-c
 	arch = x86_64
+	arch = aarch64
 	license = BSD
 	depends = curl
 	depends = libusb

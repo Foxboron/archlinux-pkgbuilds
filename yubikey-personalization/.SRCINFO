@@ -4,6 +4,7 @@ pkgbase = yubikey-personalization
 	pkgrel = 3
 	url = https://github.com/Yubico/yubikey-personalization
 	arch = x86_64
+	arch = aarch64
 	license = BSD
 	makedepends = systemd
 	depends = libusb

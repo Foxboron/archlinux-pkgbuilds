@@ -4,6 +4,7 @@ pkgbase = podman
 	pkgrel = 1
 	url = https://github.com/containers/podman
 	arch = x86_64
+	arch = aarch64
 	license = Apache
 	makedepends = apparmor
 	makedepends = btrfs-progs

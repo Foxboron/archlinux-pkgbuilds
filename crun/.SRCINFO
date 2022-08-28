@@ -4,6 +4,7 @@ pkgbase = crun
 	pkgrel = 2
 	url = https://github.com/containers/crun
 	arch = x86_64
+	arch = aarch64
 	license = LGPL
 	makedepends = libtool
 	makedepends = python

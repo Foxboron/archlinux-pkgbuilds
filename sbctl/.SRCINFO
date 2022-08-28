@@ -4,6 +4,7 @@ pkgbase = sbctl
 	pkgrel = 1
 	url = https://github.com/Foxboron/sbctl
 	arch = x86_64
+	arch = aarch64
 	license = MIT
 	makedepends = go
 	makedepends = git
