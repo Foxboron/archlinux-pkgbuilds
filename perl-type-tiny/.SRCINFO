@@ -1,6 +1,6 @@
 pkgbase = perl-type-tiny
 	pkgdesc = Tiny, yet Moo(se)-compatible type constraint
-	pkgver = 1.016006
+	pkgver = 1.016010
 	pkgrel = 1
 	url = https://metacpan.org/release/Type-Tiny
 	arch = any
@@ -10,7 +10,7 @@ pkgbase = perl-type-tiny
 	depends = perl
 	depends = perl-exporter-tiny
 	options = !emptydirs
-	source = https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-1.016006.tar.gz
-	sha512sums = 9f91762206f54c9e22ebe161afbd7c512aef1e49535770d3af917db5705f126502b251e435bfda357ae16bfe0735b9eb04fe2c761d0e389ba36a63ae91320128
+	source = https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-1.016010.tar.gz
+	sha512sums = 49134351dfaa18b69a6bb8fa375fe35fbbaff12b2ac4f6c80fa93fbedbce9e15930a598dde4a27b7eb23d7681d27ebb2487fa7e771bc86a22ad7d90e8b23e686
 
 pkgname = perl-type-tiny
