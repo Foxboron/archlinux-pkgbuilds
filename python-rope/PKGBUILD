@@ -12,7 +12,17 @@ pkgdesc='Refactoring library'
 arch=('any')
 url='https://github.com/python-rope/rope'
 license=('GPL')
+
+#OPTION 1 depends (add pytoolconfig package as dependency, package needs to be created)
+#depends=('pytoolconfig')
+#OPTION 2 depends
+#depends=('python-pip')
+
 makedepends=('python' 'python-setuptools')
+
+#OPTION 2 (add .install file to install pytoolconfig with pip)
+#install=pkgname.install
+
 source=("https://pypi.io/packages/source/r/rope/rope-$pkgver.tar.gz")
 sha256sums=('4e8ede637d8f43eb83847ef9ea7edbf4ceb9d641deea592ed38a8875cde64265')
 
