@@ -1,0 +1,10 @@
+#Don't know if this allowed under Arch Linux ethos
+#This may need to be reformatted or changed in final implementation
+
+#post_install() {
+	#pip install pytoolconfig
+#}
+
+#post_upgrade() {
+	#pip install pytoolconfig --upgrade
+#}
