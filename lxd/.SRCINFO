@@ -1,7 +1,7 @@
 pkgbase = lxd
 	pkgdesc = Daemon based on liblxc offering a REST API to manage containers
 	pkgver = 5.5
-	pkgrel = 1
+	pkgrel = 2
 	url = https://linuxcontainers.org/lxd
 	arch = x86_64
 	license = APACHE
@@ -21,7 +21,6 @@ pkgbase = lxd
 	optdepends = lvm2: for lvm2 support
 	optdepends = thin-provisioning-tools: for thin provisioning support
 	optdepends = btrfs-progs: for btrfs storage driver support
-	optdepends = ceph: for ceph storage driver support
 	optdepends = cdrtools: VM support
 	optdepends = qemu: VM support
 	optdepends = edk2-ovmf: VM support
