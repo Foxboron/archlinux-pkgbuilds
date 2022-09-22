@@ -1,6 +1,6 @@
 pkgbase = darktable
 	pkgdesc = Utility to organize and develop raw images
-	pkgver = 4.0.0
+	pkgver = 4.0.1
 	pkgrel = 1
 	epoch = 2
 	url = https://darktable.org
@@ -40,11 +40,11 @@ pkgbase = darktable
 	optdepends = portmidi: game and midi controller input devices
 	optdepends = gnuplot: noise profile script
 	options = debug
-	source = https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
-	source = https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz.asc
+	source = https://github.com/darktable-org/darktable/releases/download/release-4.0.1/darktable-4.0.1.tar.xz
+	source = https://github.com/darktable-org/darktable/releases/download/release-4.0.1/darktable-4.0.1.tar.xz.asc
 	validpgpkeys = C4CBC150699956E2A3268EF5BB5CC8295B1779C9
 	validpgpkeys = F10F9686652B0E949FCD94C318DCA123F949BD3B
-	sha256sums = 1416f8f59717e65a6220541aaa12eacca93888ce5176f2c9ab6c17b9cc53cc2d
+	sha256sums = 5fef81e0c0079977a3cdc3627eed777280c2346d023c5d176c1f4a62cbe51d68
 	sha256sums = SKIP
 
 pkgname = darktable
