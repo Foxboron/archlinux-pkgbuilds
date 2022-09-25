@@ -1,0 +1,18 @@
+pkgbase = python-pytoolconfig
+	pkgdesc = Manage configuration for python tools, such as black and rope.
+	pkgver = 1.2.2
+	pkgrel = 3
+	url = https://pypi.org/project/pytoolconfig/
+	arch = any
+	license = LGPL3
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
+	makedepends = python-pdm
+	depends = python
+	depends = python-tomli
+	depends = python-packaging
+	source = https://files.pythonhosted.org/packages/source/p/pytoolconfig/pytoolconfig-1.2.2.tar.gz
+	sha256sums = 2512a1f261a40e73cef2e58e786184261b60c802ae7ed01249342b1949ec3aa2
+
+pkgname = python-pytoolconfig
