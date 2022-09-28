@@ -1,6 +1,6 @@
 pkgbase = arch-install-scripts
 	pkgdesc = Scripts to aid in installing Arch Linux
-	pkgver = 26
+	pkgver = 27
 	pkgrel = 1
 	url = https://github.com/archlinux/arch-install-scripts
 	arch = any
@@ -13,7 +13,7 @@ pkgbase = arch-install-scripts
 	depends = grep
 	depends = pacman
 	depends = util-linux
-	source = git+https://github.com/archlinux/arch-install-scripts#tag=v26?signed
+	source = git+https://github.com/archlinux/arch-install-scripts#tag=v27?signed
 	validpgpkeys = BD27B07A5EF45C2ADAF70E0484818A6819AF4A9B
 	validpgpkeys = C100346676634E80C940FB9E9C02FF419FECBE16
 	sha256sums = SKIP
