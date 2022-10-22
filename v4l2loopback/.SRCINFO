@@ -1,0 +1,21 @@
+pkgbase = v4l2loopback
+	pkgdesc = v4l2-loopback device
+	pkgver = 0.12.7
+	pkgrel = 2
+	url = https://github.com/umlaeute/v4l2loopback
+	arch = any
+	license = GPL2
+	makedepends = help2man
+	source = https://github.com/umlaeute/v4l2loopback/archive/v0.12.7/v4l2loopback-0.12.7.tar.gz
+	source = v4l2loopback-fix-kernel-5.18+-compat.patch::https://github.com/umlaeute/v4l2loopback/commit/e7edf2f55b7eb71b69984110f3c8e31b8ac6285e.patch
+	sha256sums = e0782b8abe8f2235e2734f725dc1533a0729e674c4b7834921ade43b9f04939b
+	sha256sums = 9c5e36952666576ca4d735537f55e5076f461c9ebe4db8bd5cbd3fee80da3389
+
+pkgname = v4l2loopback-dkms
+	pkgdesc = v4l2-loopback device – module sources
+	depends = dkms
+	provides = V4L2LOOPBACK-MODULE
+
+pkgname = v4l2loopback-utils
+	pkgdesc = v4l2-loopback device – utilities only
+	depends = V4L2LOOPBACK-MODULE
