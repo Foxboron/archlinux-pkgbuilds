@@ -26,7 +26,7 @@ pkgbase = docker
 	depends = containerd
 	optdepends = btrfs-progs: btrfs backend support
 	optdepends = pigz: parallel gzip compressor support
-	optdepends = docker-scan: vulnerability scanner,
+	optdepends = docker-scan: vulnerability scanner
 	optdepends = docker-buildx: extended build capabilities
 	source = git+https://github.com/docker/cli.git#tag=v20.10.19
 	source = git+https://github.com/moby/moby.git#tag=v20.10.19
