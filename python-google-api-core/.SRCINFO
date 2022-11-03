@@ -1,6 +1,6 @@
 pkgbase = python-google-api-core
 	pkgdesc = Google API client core library
-	pkgver = 2.10.0
+	pkgver = 2.10.2
 	pkgrel = 1
 	url = https://github.com/googleapis/googleapis
 	arch = any
@@ -11,7 +11,7 @@ pkgbase = python-google-api-core
 	depends = python-googleapis-common-protos
 	depends = python-google-auth
 	optdepends = python-grpcio: for grpc support
-	source = https://files.pythonhosted.org/packages/source/g/google-api-core/google-api-core-2.10.0.tar.gz
-	sha256sums = 1d053734f14591939e7764e99c31253fed46bf2578da0dcd82821f17a6dd991c
+	source = https://files.pythonhosted.org/packages/source/g/google-api-core/google-api-core-2.10.2.tar.gz
+	sha256sums = 10c06f7739fe57781f87523375e8e1a3a4674bf6392cd6131a3222182b971320
 
 pkgname = python-google-api-core
