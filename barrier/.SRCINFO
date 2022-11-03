@@ -1,7 +1,7 @@
 pkgbase = barrier
 	pkgdesc = Open-source KVM software based on Synergy
 	pkgver = 2.4.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/debauchee/barrier
 	changelog = CHANGELOG.rst
 	arch = x86_64
@@ -27,7 +27,7 @@ pkgbase = barrier
 
 pkgname = barrier
 	pkgdesc = Open-source KVM software based on Synergy (GUI)
-	depends = barrier-headless=2.4.0-1
+	depends = barrier-headless=2.4.0-2
 	depends = qt5-base
 	depends = hicolor-icon-theme
 
