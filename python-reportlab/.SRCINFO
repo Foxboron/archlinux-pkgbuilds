@@ -1,6 +1,6 @@
 pkgbase = python-reportlab
 	pkgdesc = A proven industry-strength PDF generating solution
-	pkgver = 3.6.11
+	pkgver = 3.6.12
 	pkgrel = 1
 	url = https://www.reportlab.com/
 	arch = x86_64
@@ -10,7 +10,7 @@ pkgbase = python-reportlab
 	makedepends = mercurial
 	depends = python
 	depends = python-pillow
-	source = https://files.pythonhosted.org/packages/source/r/reportlab/reportlab-3.6.11.tar.gz
-	sha256sums = 04fc4420f0548815d0623e031c86a1f7f3f3003e699d9af7148742e2d72b024a
+	source = https://files.pythonhosted.org/packages/source/r/reportlab/reportlab-3.6.12.tar.gz
+	sha256sums = b13cebf4e397bba14542bcd023338b6ff2c151a3a12aabca89eecbf972cb361a
 
 pkgname = python-reportlab
