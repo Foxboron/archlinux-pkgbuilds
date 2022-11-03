@@ -1,14 +1,14 @@
 pkgbase = python-sqlobject
 	pkgdesc = SQLObject, an object-relational mapper for Python
-	pkgver = 3.9.1
-	pkgrel = 3
+	pkgver = 3.10.0
+	pkgrel = 1
 	url = http://sqlobject.org/
 	arch = any
 	license = LGPL
 	makedepends = python-setuptools
 	depends = python-pydispatcher
 	depends = python-formencode
-	source = python-sqlobject-3.9.1.tar.gz::https://github.com/sqlobject/sqlobject/archive/3.9.1.tar.gz
-	sha256sums = 64752d91185fc8e61aec02a2730bfbeeb7b1c554179792668d26072724d58567
+	source = python-sqlobject-3.10.0.tar.gz::https://github.com/sqlobject/sqlobject/archive/3.10.0.tar.gz
+	sha256sums = ad839909c715d5052b32a0bb9819102f59e113a89ae9e855390044ff111db7fa
 
 pkgname = python-sqlobject
