@@ -1,6 +1,6 @@
 pkgbase = conmon
 	pkgdesc = OCI container runtime monitor
-	pkgver = 2.1.4
+	pkgver = 2.1.5
 	pkgrel = 1
 	epoch = 1
 	url = https://github.com/containers/conmon
@@ -10,7 +10,7 @@ pkgbase = conmon
 	depends = glibc
 	depends = glib2
 	depends = systemd
-	source = git+https://github.com/containers/conmon#commit=bd1459a3ffbb13eb552cc9af213e1f56f31ba2ee
+	source = git+https://github.com/containers/conmon#commit=c9f7f19eb82d5b8151fc3ba7fbbccf03fdcd0325
 	md5sums = SKIP
 
 pkgname = conmon
