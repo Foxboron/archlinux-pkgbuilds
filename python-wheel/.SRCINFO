@@ -1,6 +1,6 @@
 pkgbase = python-wheel
 	pkgdesc = A built-package format for Python
-	pkgver = 0.37.1
+	pkgver = 0.38.1
 	pkgrel = 1
 	url = https://pypi.python.org/pypi/wheel
 	arch = any
@@ -15,7 +15,7 @@ pkgbase = python-wheel
 	depends = python-packaging
 	optdepends = python-keyring: for wheel.signatures
 	optdepends = python-xdg: for wheel.signatures
-	source = python-wheel-0.37.1.tar.gz::https://github.com/pypa/wheel/archive/0.37.1.tar.gz
-	sha512sums = 9493db2f29e16d17ca06a4d47854b3df5dfd17f21c77efd42befd54470858256fd59f56aa9585cbf0a09830927b657d546324f793e1b1153665bf0b74d0c0457
+	source = python-wheel-0.38.1.tar.gz::https://github.com/pypa/wheel/archive/0.38.1.tar.gz
+	sha512sums = 1818b50a4ee50861aac3c9ac4058c5fee2de4a428ca04e7a9b1ce570dab6f1b64f4528f812aa23e87705ed15e360d0bd5b01523bd4360875c25054b1ccbf9179
 
 pkgname = python-wheel
