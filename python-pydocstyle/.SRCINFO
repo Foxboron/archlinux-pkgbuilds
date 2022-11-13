@@ -1,13 +1,12 @@
 pkgbase = python-pydocstyle
 	pkgdesc = Docstring style checker
 	pkgver = 6.1.1
-	pkgrel = 3
+	pkgrel = 4
 	url = http://www.pydocstyle.org/
 	arch = any
 	license = MIT
 	checkdepends = python-pytest
 	checkdepends = python-pytest-runner
-	checkdepends = python-mock
 	checkdepends = python-pip
 	checkdepends = python-snowballstemmer
 	makedepends = python-setuptools
