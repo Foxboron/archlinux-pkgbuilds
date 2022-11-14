@@ -19,7 +19,7 @@ for pkgbase in $(cat ../$REPO.list); do \
     mkdir -p "../../${pkgbase}"
     for file in $(ls $pkgbase/trunk); do
         echo "    ${file}"
-        cp "${pkgbase}/trunk/${file}" "../../${pkgbase}"
+        cp -r "${pkgbase}/trunk/${file}" "../../${pkgbase}"
         git add "../../${pkgbase}/${file}"
     done
     pushd "$pkgbase/trunk" &> /dev/null
