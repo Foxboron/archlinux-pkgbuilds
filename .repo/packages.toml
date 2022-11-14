@@ -47,6 +47,13 @@ use_max_tag = true
 prefix = "v"
 exclude_regex = ".*(rc).*"
 
+[docker-buildx]
+source = "github"
+github = "docker/buildx"
+use_max_tag = true
+prefix = "v"
+exclude_regex = ".*(rc).*"
+
 [font-awesome]
 source = "github"
 github = "FortAwesome/Font-Awesome"
@@ -164,6 +171,13 @@ prefix = "v"
 use_max_tag = true
 
 [pdfjs]
+source = "github"
+github = "mozilla/pdf.js"
+prefix = "v"
+use_max_tag = true
+exclude_regex = ".*(rc|alpha|beta).*"
+
+[pdfjs-legacy]
 source = "github"
 github = "mozilla/pdf.js"
 prefix = "v"
@@ -441,10 +455,6 @@ source = "github"
 github = "nltk/nltk"
 use_max_tag = true
 exclude_regex = ".*(b).*"
-
-[python2-typing]
-source = "pypi"
-pypi = "typing"
 
 [archlinux-contrib]
 source = "github"
@@ -791,13 +801,6 @@ github = "golang/tools"
 prefix = "v"
 use_max_tag = true
 
-[python2-docs]
-source = "github"
-github = "python/cpython"
-prefix = "v"
-use_max_tag = true
-exclude_regex = "(v)?3.*(rc|a|beta)?.*"
-
 [cri-o]
 source = "github"
 github = "cri-o/cri-o"
@@ -1026,6 +1029,12 @@ git = "https://sourceware.org/git/debugedit.git"
 prefix = "debugedit-"
 use_max_tag = true
 
+[elfutils]
+source = "git"
+git = "https://sourceware.org/git/elfutils.git"
+prefix = "elfutils-"
+use_max_tag = true
+
 [vim]
 source = "git"
 git = "https://github.com/vim/vim.git"
@@ -1090,5 +1099,37 @@ use_max_tag = true
 [arch-install-scripts]
 source = "github"
 github = "archlinux/arch-install-scripts"
+prefix = "v"
+use_max_tag = true
+
+[mosh]
+source = "github"
+github = "mobile-shell/mosh"
+prefix = "v"
+use_max_tag = true
+
+[pacman]
+source = "gitlab"
+gitlab = "pacman/pacman"
+host = "gitlab.archlinux.org"
+use_max_tag = true
+prefix = "v"
+
+[mkinitcpio]
+source = "gitlab"
+gitlab = "archlinux/mkinitcpio/mkinitcpio"
+host = "gitlab.archlinux.org"
+use_max_tag = true
+prefix = "v"
+
+[python-pytoolconfig]
+source = "github"
+github = "bagel897/pytoolconfig"
+prefix = "v"
+use_max_tag = true
+
+[v4l2loopback]
+source = "github"
+github = "umlaeute/v4l2loopback"
 prefix = "v"
 use_max_tag = true
