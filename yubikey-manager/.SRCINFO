@@ -1,12 +1,12 @@
 pkgbase = yubikey-manager
 	pkgdesc = Python library and command line tool for configuring a YubiKey
 	pkgver = 4.0.9
-	pkgrel = 2
+	pkgrel = 3
 	epoch = 1
 	url = https://developers.yubico.com/yubikey-manager/
 	arch = any
 	license = BSD
-	checkdepends = python-wheel
+	checkdepends = python-pytest
 	makedepends = python-setuptools
 	depends = python
 	depends = python-click
