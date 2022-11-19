@@ -1,12 +1,12 @@
 pkgbase = pdfjs
 	pkgdesc = PDF reader in javascript
-	pkgver = 2.16.105
+	pkgver = 3.0.279
 	pkgrel = 1
 	url = https://mozilla.github.io/pdf.js/
 	arch = any
 	license = Apache
 	conflicts = pdfjs-legacy
-	source = https://github.com/mozilla/pdf.js/releases/download/v2.16.105/pdfjs-2.16.105-dist.zip
-	sha256sums = 47abfa0dd7574333e801c1dc159340e0d22956edcd6d7293ed5fee54f0e07e0b
+	source = https://github.com/mozilla/pdf.js/releases/download/v3.0.279/pdfjs-3.0.279-dist.zip
+	sha256sums = b3101c7b915ac2a49598c7e1055c8424f04582e60d3b0642c106dbdcabedb03b
 
 pkgname = pdfjs
