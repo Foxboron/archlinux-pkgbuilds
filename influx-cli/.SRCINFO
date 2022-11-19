@@ -1,6 +1,6 @@
 pkgbase = influx-cli
 	pkgdesc = CLI for managing resources in InfluxDB
-	pkgver = 2.4.0
+	pkgver = 2.5.0
 	pkgrel = 1
 	url = https://github.com/InfluxData/influx-cli
 	arch = x86_64
@@ -10,7 +10,7 @@ pkgbase = influx-cli
 	makedepends = git
 	options = !lto
 	backup = etc/influxdb/influxdb.conf
-	source = git+https://github.com/influxdata/influx-cli.git#tag=v2.4.0
+	source = git+https://github.com/influxdata/influx-cli.git#tag=v2.5.0
 	sha256sums = SKIP
 
 pkgname = influx-cli
