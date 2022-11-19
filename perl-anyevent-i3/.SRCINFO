@@ -10,6 +10,6 @@ pkgbase = perl-anyevent-i3
 	depends = perl-json-xs
 	options = !emptydirs
 	source = https://search.cpan.org/CPAN/authors/id/M/MS/MSTPLBG/AnyEvent-I3-0.17.tar.gz
-	md5sums = 907b6ed7fe6bea5914b878cdd73aba3f
+	sha256sums = 5382c984c9f138395f29f0c00af81aa0c8f4b765582055c73ede4b13f04a6d63
 
 pkgname = perl-anyevent-i3
