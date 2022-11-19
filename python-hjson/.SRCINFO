@@ -8,6 +8,6 @@ pkgbase = python-hjson
 	makedepends = python-setuptools
 	depends = python
 	source = python-hjson-3.0.2.tar.gz::https://github.com/hjson/hjson-py/archive/v3.0.2.tar.gz
-	md5sums = 7b345fa11d47d9df7e952f9ce20309eb
+	sha256sums = 1c16084568a6328ba404703aad6db8ddf7e3b6afec9e141b375a40a61a209c30
 
 pkgname = python-hjson
