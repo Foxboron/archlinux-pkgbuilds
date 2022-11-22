@@ -1,7 +1,7 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
 	pkgver = 4.3.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/containers/podman
 	arch = x86_64
 	license = Apache
@@ -35,7 +35,7 @@ pkgname = podman
 	depends = slirp4netns
 	optdepends = apparmor: for AppArmor support
 	optdepends = btrfs-progs: support btrfs backend devices
-	optdepends = netavark: for a new container-network-stack implementation
+	optdepends = cni-plugins: for an alternative container-network-stack implementation
 	optdepends = podman-compose: for docker-compose compatibility
 	optdepends = podman-docker: for Docker-compatible CLI
 
