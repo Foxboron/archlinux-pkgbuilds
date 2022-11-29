@@ -1,17 +1,22 @@
 pkgbase = python-pipenv
 	pkgdesc = Sacred Marriage of Pipfile, Pip, & Virtualenv.
-	pkgver = 2022.11.11
+	pkgver = 2022.11.25
 	pkgrel = 1
 	url = https://pipenv.pypa.io
 	arch = any
 	license = MIT
+	checkdepends = python-pytest
+	checkdepends = python-pytz
+	makedepends = python-build
+	makedepends = python-installer
 	makedepends = python-setuptools
+	makedepends = python-wheel
 	depends = python
 	depends = python-pip
 	depends = python-certifi
 	depends = python-virtualenv-clone
 	depends = python-virtualenv
-	source = python-pipenv-2022.11.11.tar.gz::https://github.com/pypa/pipenv/archive/v2022.11.11.tar.gz
-	b2sums = a24392e3f23d4c47a7fa723a26b416720bc22d820abe56fc0a7e2b9fe9a67428a1bea1053b6bab79061976c1bf74f786ae0eb6465fcbf4636daacd103fe0c77f
+	source = python-pipenv-2022.11.25.tar.gz::https://github.com/pypa/pipenv/archive/v2022.11.25.tar.gz
+	b2sums = 49150e97ad0b7cddabbc2581b9d686b3713d656752fb43290ca2b525ea3d0b4237e80d441fe5d3a64701cc5264ea4566b5b9fc42bf55422f0d88d428842c96f5
 
 pkgname = python-pipenv
