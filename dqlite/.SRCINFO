@@ -1,6 +1,6 @@
 pkgbase = dqlite
 	pkgdesc = Distributed SQLite
-	pkgver = 1.12.0
+	pkgver = 1.13.0
 	pkgrel = 1
 	url = https://github.com/CanonicalLtd/dqlite
 	arch = x86_64
@@ -13,7 +13,7 @@ pkgbase = dqlite
 	depends = sqlite
 	options = debug
 	options = strip
-	source = dqlite-1.12.0.tar.gz::https://github.com/canonical/dqlite/archive/v1.12.0.tar.gz
-	sha256sums = 2d518158668859e0885596e032f2711af3e872f6260bdd8f9910540722768582
+	source = dqlite-1.13.0.tar.gz::https://github.com/canonical/dqlite/archive/v1.13.0.tar.gz
+	sha256sums = 14334a72389322d047576697f112da4cd6e1a5257d652d6162f195f2855fcd12
 
 pkgname = dqlite
