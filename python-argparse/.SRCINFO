@@ -1,14 +1,14 @@
 pkgbase = python-argparse
+	pkgdesc = Python3 command-line parsing library
 	pkgver = 1.4.0
-	pkgrel = 12
+	pkgrel = 13
 	url = https://pypi.python.org/pypi/argparse
 	arch = any
 	license = Python
 	makedepends = python
 	makedepends = python-setuptools
+	depends = python
 	source = https://pypi.python.org/packages/source/a/argparse/argparse-1.4.0.tar.gz
 	sha256sums = 62b089a55be1d8949cd2bc7e0df0bddb9e028faefc8c32038cc84862aefdd6e4
 
 pkgname = python-argparse
-	pkgdesc = Python3 command-line parsing library
-	depends = python
