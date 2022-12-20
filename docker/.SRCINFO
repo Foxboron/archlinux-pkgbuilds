@@ -1,6 +1,6 @@
 pkgbase = docker
 	pkgdesc = Pack, ship and run any application as a lightweight container
-	pkgver = 20.10.21
+	pkgver = 20.10.22
 	pkgrel = 1
 	epoch = 1
 	url = https://www.docker.com/
@@ -28,9 +28,9 @@ pkgbase = docker
 	optdepends = pigz: parallel gzip compressor support
 	optdepends = docker-scan: vulnerability scanner
 	optdepends = docker-buildx: extended build capabilities
-	source = git+https://github.com/docker/cli.git#tag=v20.10.21
-	source = git+https://github.com/moby/moby.git#tag=v20.10.21
-	source = git+https://github.com/docker/libnetwork.git#commit=0dde5c895075df6e3630e76f750a447cf63f4789
+	source = git+https://github.com/docker/cli.git#tag=v20.10.22
+	source = git+https://github.com/moby/moby.git#tag=v20.10.22
+	source = git+https://github.com/docker/libnetwork.git#commit=dcdf8f176d1e13ad719e913e796fb698d846de98
 	source = git+https://github.com/krallin/tini.git#commit=de40ad007797e0dcd8b7126f27bb87401d224240
 	source = docker.sysusers
 	sha256sums = SKIP
