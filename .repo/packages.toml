@@ -103,11 +103,6 @@ github = "hylang/hy"
 use_max_tag = true
 #exclude_regex = ".*(a).*"
 
-[i3-gaps]
-source = "github"
-github = "Airblader/i3"
-use_max_tag = true
-
 [influxdb]
 source = "github"
 github = "influxdata/influxdb"
@@ -241,10 +236,6 @@ to_pattern = "\\1.\\2.\\3.\\4"
 [python-jsonrpclib-pelix]
 source = "pypi"
 pypi = "jsonrpclib-pelix"
-
-[python-jsonrpc-server]
-source = "pypi"
-pypi = "python-jsonrpc-server"
 
 [python-keyutils]
 source = "pypi"
@@ -1105,7 +1096,7 @@ use_max_tag = true
 [mosh]
 source = "github"
 github = "mobile-shell/mosh"
-prefix = "v"
+prefix = "mosh-"
 use_max_tag = true
 
 [pacman]
