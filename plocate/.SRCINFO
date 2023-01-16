@@ -13,7 +13,6 @@ pkgbase = plocate
 	provides = mlocate
 	provides = locate
 	conflicts = mlocate
-	options = debug
 	backup = etc/updatedb.conf
 	source = https://plocate.sesse.net/download/plocate-1.1.17.tar.gz
 	source = plocate.sysusers
