@@ -26,7 +26,6 @@ pkgbase = cri-o
 	optdepends = apparmor: for apparmor integration
 	optdepends = btrfs-progs: for btrfs support
 	provides = container-runtime
-	options = debug
 	options = emptydirs
 	backup = etc/crio/crio.conf
 	source = cri-o-1.26.1.tar.gz::https://github.com/cri-o/cri-o/archive/v1.26.1.tar.gz
