@@ -14,7 +14,6 @@ pkgbase = lxcfs
 	depends = fuse3
 	depends = dbus-glib
 	options = emptydirs
-	options = debug
 	source = https://linuxcontainers.org/downloads/lxcfs/lxcfs-5.0.2.tar.gz
 	source = https://linuxcontainers.org/downloads/lxcfs/lxcfs-5.0.2.tar.gz.asc
 	source = lxcfs.service
