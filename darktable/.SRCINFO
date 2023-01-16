@@ -40,7 +40,6 @@ pkgbase = darktable
 	optdepends = ghostscript: noise profile script
 	optdepends = portmidi: game and midi controller input devices
 	optdepends = gnuplot: noise profile script
-	options = debug
 	source = https://github.com/darktable-org/darktable/releases/download/release-4.2.0/darktable-4.2.0.tar.xz
 	source = https://github.com/darktable-org/darktable/releases/download/release-4.2.0/darktable-4.2.0.tar.xz.asc
 	validpgpkeys = C4CBC150699956E2A3268EF5BB5CC8295B1779C9
