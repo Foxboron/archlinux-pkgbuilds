@@ -8,7 +8,6 @@ pkgbase = tailscale
 	makedepends = git
 	makedepends = go
 	depends = glibc
-	options = debug
 	backup = etc/default/tailscaled
 	source = git+https://github.com/tailscale/tailscale.git#commit=c5ef9103d92b9b0a2932f869db56fbd7344ad417
 	sha256sums = SKIP
