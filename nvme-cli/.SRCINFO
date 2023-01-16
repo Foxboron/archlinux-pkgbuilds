@@ -14,7 +14,6 @@ pkgbase = nvme-cli
 	makedepends = xmlto
 	depends = util-linux
 	depends = libsystemd
-	options = debug
 	options = strip
 	source = nvme-cli-2.2.1.tar.gz::https://github.com/linux-nvme/nvme-cli/archive/v2.2.1.tar.gz
 	sha256sums = 68720bc25c68adb93dafe1186de4fabbe40f8390ff1416256b52fe74f78259ae
