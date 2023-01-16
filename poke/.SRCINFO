@@ -12,7 +12,6 @@ pkgbase = poke
 	depends = gettext
 	depends = json-c
 	options = !lto
-	options = debug
 	source = https://ftp.gnu.org/gnu/poke/poke-2.4.tar.gz
 	source = https://ftp.gnu.org/gnu/poke/poke-2.4.tar.gz.sig
 	validpgpkeys = BDFA5717FC1DD35C2C3832A23EF90523B304AF08
