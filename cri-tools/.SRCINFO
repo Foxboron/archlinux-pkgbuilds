@@ -9,7 +9,6 @@ pkgbase = cri-tools
 	makedepends = git
 	makedepends = go
 	depends = glibc
-	options = debug
 	source = git+https://github.com/kubernetes-sigs/cri-tools#commit=cf1c8287fcef4444226e54482bf3827e8f804421
 	source = cri-tools-1.24.1-makefile.patch
 	sha512sums = SKIP
