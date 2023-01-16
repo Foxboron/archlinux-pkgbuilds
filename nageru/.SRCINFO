@@ -20,7 +20,6 @@ pkgbase = nageru
 	depends = sqlite3
 	depends = luajit
 	depends = cmake
-	options = debug
 	source = https://nageru.sesse.net/nageru-2.2.0.tar.gz
 	sha256sums = cbdde4d0604b5c241b5a9f876375692a57b0da4535d4b3bbd944e80bd8dcfece
 
