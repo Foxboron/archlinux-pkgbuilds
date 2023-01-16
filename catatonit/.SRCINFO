@@ -5,7 +5,6 @@ pkgbase = catatonit
 	url = https://github.com/openSUSE/catatonit/
 	arch = x86_64
 	license = GPL3
-	options = debug
 	source = catatonit-0.1.7.tar.xz::https://github.com/openSUSE/catatonit/releases/download/v0.1.7/catatonit.tar.xz
 	source = catatonit-0.1.7.tar.xz.asc::https://github.com/openSUSE/catatonit/releases/download/v0.1.7/catatonit.tar.xz.asc
 	source = catatonit-0.1.7-autoconf.patch::https://github.com/openSUSE/catatonit/commit/99bb9048f532257f3a2c3856cfa19fe957ab6cec.patch
