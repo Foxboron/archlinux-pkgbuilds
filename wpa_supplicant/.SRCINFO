@@ -12,7 +12,6 @@ pkgbase = wpa_supplicant
 	depends = readline
 	depends = libnl
 	depends = pcsclite
-	options = debug
 	source = https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
 	source = https://w1.fi/releases/wpa_supplicant-2.10.tar.gz.asc
 	source = wpa_supplicant_config
