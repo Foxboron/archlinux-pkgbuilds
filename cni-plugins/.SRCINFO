@@ -1,6 +1,6 @@
 pkgbase = cni-plugins
 	pkgdesc = Some standard networking plugins, maintained by the CNI team
-	pkgver = 1.1.1
+	pkgver = 1.2.0
 	pkgrel = 2
 	url = https://github.com/containernetworking/plugins
 	arch = x86_64
@@ -9,8 +9,9 @@ pkgbase = cni-plugins
 	depends = glibc
 	provides = container-network-stack=1
 	options = !lto
-	source = cni-plugins-1.1.1.tar.gz::https://github.com/containernetworking/plugins/archive/v1.1.1.tar.gz
-	sha512sums = 03da31caee5f9595abf65d4a551984b995bc18c5e97409549f08997c5a6a2b41a8950144f8a5b4f810cb401ddbe312232d2be76ec977acf8108eb490786b1817
-	b2sums = 2fd70260995e423d2b4ac3a8d2135074baffe5d36177d5e1e5a9ce146f6d2ecfeb3b843de62e43f863085ff965be4160cf5f4cae892d3c59070ef390409ef3c9
+	options = emptydirs
+	source = https://github.com/containernetworking/plugins/archive/v1.2.0/plugins-v1.2.0.tar.gz
+	sha512sums = fb6fb4f46ac1610b3721f5f3a6ddfb096cbf2e5d5b792306edca5351a3944d2f802170d83e5adec01420395bf64fc8a174ede61ac9b93b5ac6b938a4b48651e6
+	b2sums = 6b487a9c9b240c73510f2bc6aaa4a6c79055e43cacca8204781dbc65d231164fed9f3f68a2a0cead7a41a67bfc9d9e4480b488be26415d368da007559a721b25
 
 pkgname = cni-plugins
