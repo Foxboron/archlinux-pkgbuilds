@@ -1,6 +1,6 @@
 pkgbase = lxcfs
 	pkgdesc = FUSE filesystem for LXC
-	pkgver = 5.0.2
+	pkgver = 5.0.3
 	pkgrel = 1
 	url = https://linuxcontainers.org/
 	arch = x86_64
@@ -14,11 +14,11 @@ pkgbase = lxcfs
 	depends = fuse3
 	depends = dbus-glib
 	options = emptydirs
-	source = https://linuxcontainers.org/downloads/lxcfs/lxcfs-5.0.2.tar.gz
-	source = https://linuxcontainers.org/downloads/lxcfs/lxcfs-5.0.2.tar.gz.asc
+	source = https://linuxcontainers.org/downloads/lxcfs/lxcfs-5.0.3.tar.gz
+	source = https://linuxcontainers.org/downloads/lxcfs/lxcfs-5.0.3.tar.gz.asc
 	source = lxcfs.service
 	validpgpkeys = 602F567663E593BCBD14F338C638974D64792D67
-	sha256sums = c3df03629ee8955de60a28da7490350ad1eb7aa3134b6917d40ec68ef092d039
+	sha256sums = fa0923539c1275c000879483f727326f5d65ab548f57e501140cd3c1ea0c5395
 	sha256sums = SKIP
 	sha256sums = 3549e83ebbd6ec5934be0c3137b0dbb1101cec098bc49d135fea29f733b9e2a1
 
