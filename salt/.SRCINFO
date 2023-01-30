@@ -1,11 +1,12 @@
 pkgbase = salt
 	pkgdesc = Central system and configuration manager
 	pkgver = 3005.1
-	pkgrel = 1
+	pkgrel = 2
 	url = http://saltstack.org/
 	install = salt.install
 	arch = any
 	license = Apache
+	makedepends = python-setuptools
 	depends = python-jinja
 	depends = python-msgpack
 	depends = python-yaml
@@ -27,10 +28,10 @@ pkgbase = salt
 	backup = etc/salt/master
 	backup = etc/salt/minion
 	source = https://pypi.io/packages/source/s/salt/salt-3005.1.tar.gz
-	source = fix-entrypoint.patch::https://github.com/saltstack/salt/commit/b676e6338a7c094cb3335d11f851ac0e12222017.patch
+	source = salt-importlib.patch
 	source = salt.logrotate
 	sha256sums = fa14c5d873f863b50950121d7e23a2449502745490c7c48c0cf045406cfe57c1
-	sha256sums = 219f23ddd44003c8572201495834cf8d84967b182d29157fa3ce73270785b7ab
+	sha256sums = 10703afd392e2af87cd06bdb6bcc3322c44825ef57cdc6e67d47a53b72514623
 	sha256sums = abecc3c1be124c4afffaaeb3ba32b60dfee8ba6dc32189edfa2ad154ecb7a215
 
 pkgname = salt
