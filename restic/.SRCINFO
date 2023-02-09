@@ -1,6 +1,6 @@
 pkgbase = restic
 	pkgdesc = Fast, secure, efficient backup program
-	pkgver = 0.15.0
+	pkgver = 0.15.1
 	pkgrel = 1
 	url = https://restic.net
 	arch = x86_64
@@ -11,7 +11,7 @@ pkgbase = restic
 	makedepends = git
 	depends = glibc
 	optdepends = fuse2: mount archive
-	source = restic-0.15.0.tar.gz::https://github.com/restic/restic/archive/v0.15.0.tar.gz
-	sha256sums = 85a6408cfb0798dab52335bcb00ac32066376c32daaa75461d43081499bc7de8
+	source = restic-0.15.1.tar.gz::https://github.com/restic/restic/archive/v0.15.1.tar.gz
+	sha256sums = fce382fdcdac0158a35daa640766d5e8a6e7b342ae2b0b84f2aacdff13990c52
 
 pkgname = restic
