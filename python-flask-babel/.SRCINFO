@@ -1,8 +1,8 @@
 pkgbase = python-flask-babel
 	pkgdesc = Adds i18n/l10n support to Flask applications with the help of the Babel library.
-	pkgver = 2.0.0
-	pkgrel = 5
-	url = https://pypi.python.org/pypi/Flask-Babel
+	pkgver = 3.0.1
+	pkgrel = 1
+	url = https://pypi.python.org/pypi/flask-babel
 	arch = any
 	license = BSD
 	makedepends = python-setuptools
@@ -11,7 +11,7 @@ pkgbase = python-flask-babel
 	depends = python-pytz
 	depends = python-speaklater
 	depends = python-jinja
-	source = https://pypi.io/packages/source/F/Flask-Babel/Flask-Babel-2.0.0.tar.gz
-	sha256sums = f9faf45cdb2e1a32ea2ec14403587d4295108f35017a7821a2b1acb8cfd9257d
+	source = https://pypi.io/packages/source/f/flask-babel/flask_babel-3.0.1.tar.gz
+	sha256sums = d408cace25514bea8b92e898fd7e55877fbac79b71bc230e266ff515408eba38
 
 pkgname = python-flask-babel
