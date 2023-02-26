@@ -1,6 +1,6 @@
 pkgbase = mypy
 	pkgdesc = Optional static typing for Python 2 and 3 (PEP484)
-	pkgver = 1.0.0
+	pkgver = 1.0.1
 	pkgrel = 1
 	url = http://www.mypy-lang.org/
 	arch = any
@@ -17,7 +17,7 @@ pkgbase = mypy
 	depends = python-tomli
 	optdepends = python-lxml: for reports
 	optdepends = python-pip: for installing missing types
-	source = mypy-1.0.0.tar.gz::https://pypi.org/packages/source/m/mypy/mypy-1.0.0.tar.gz
-	sha256sums = f34495079c8d9da05b183f9f7daec2878280c2ad7cc81da686ef0b484cea2ecf
+	source = mypy-1.0.1.tar.gz::https://pypi.org/packages/source/m/mypy/mypy-1.0.1.tar.gz
+	sha256sums = 28cea5a6392bb43d266782983b5a4216c25544cd7d80be681a155ddcdafd152d
 
 pkgname = mypy
