@@ -1,16 +1,20 @@
 pkgbase = python-nbxmpp
 	pkgdesc = A Python library to use Jabber/XMPP networks in a non-blocking way
-	pkgver = 4.0.1
+	pkgver = 4.2.0
 	pkgrel = 1
 	url = https://dev.gajim.org/gajim/python-nbxmpp/
 	arch = any
 	license = GPL3
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
 	makedepends = python-setuptools
 	depends = libsoup3
 	depends = python-gobject
 	depends = python-idna
 	depends = python-precis_i18n
-	source = https://dev.gajim.org/gajim/python-nbxmpp/-/archive/4.0.1/python-nbxmpp-4.0.1.tar.gz
-	sha256sums = 45d935adc05076afead09073a2e78364397f425a40b22be4da097f988f29c0b8
+	source = https://dev.gajim.org/gajim/python-nbxmpp/-/archive/4.2.0/python-nbxmpp-4.2.0.tar.gz
+	sha256sums = b42abacdd1686800da6f3a4eb07cdccea0691f09335ac4ed32ef989031f2d4eb
+	b2sums = 5779609060b6973be229d371ffe8300662b93504c7c169eff6229cc79cf7105cb57493c078ad0f07b6575b375af24c865897586e869e351ee56e5ab7af48cbfa
 
 pkgname = python-nbxmpp
