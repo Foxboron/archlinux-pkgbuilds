@@ -1,11 +1,11 @@
 pkgbase = debugedit
 	pkgdesc = Tool to mangle source locations in .debug files
 	pkgver = 5.0
-	pkgrel = 4
+	pkgrel = 5
 	url = https://sourceware.org/debugedit/
 	arch = x86_64
-	groups = base-devel
 	license = LGPL2.1
+	depends = glibc
 	depends = libelf
 	source = https://sourceware.org/ftp/debugedit/5.0/debugedit-5.0.tar.xz
 	source = https://sourceware.org/ftp/debugedit/5.0/debugedit-5.0.tar.xz.sig
