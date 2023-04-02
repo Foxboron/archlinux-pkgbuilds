@@ -1,6 +1,6 @@
 pkgbase = python-nltk
 	pkgdesc = Natural language processing in Python
-	pkgver = 3.8
+	pkgver = 3.8.1
 	pkgrel = 1
 	url = https://www.nltk.org/
 	arch = any
@@ -16,7 +16,7 @@ pkgbase = python-nltk
 	optdepends = nltk-data: test data
 	optdepends = python-numpy: used for calculations
 	optdepends = python-matplotlib: used for plotting
-	source = python-nltk-3.8.tar.gz::https://github.com/nltk/nltk/archive/3.8.tar.gz
-	sha256sums = 1122ea7cce9ddb93b983ceeb2bfeb30d7eff4d1952911d101965838e04f276f8
+	source = python-nltk-3.8.1.tar.gz::https://github.com/nltk/nltk/archive/3.8.1.tar.gz
+	sha256sums = 676970e2b7aa0a7184e68f76e0c4f2756fd1b82559a509d5656a23117faeb658
 
 pkgname = python-nltk
