@@ -27,7 +27,7 @@ fi
 
 if ((git_remote)); then
     UPSTREAM=$(grep source "$pkg/.SRCINFO" | grep git | head | awk '{print $3}')
-    awk -F\# '{print $1}' <(echo "${UPSTREAM/git+/}")
+    awk -F\# '{print $1}' <(echo "${UPSTREAM/*git+/}")
     exit 0
 fi
 
