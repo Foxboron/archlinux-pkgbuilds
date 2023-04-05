@@ -1,6 +1,6 @@
 pkgbase = python-psycopg2
 	pkgdesc = A PostgreSQL database adapter for the Python programming language.
-	pkgver = 2.9.5
+	pkgver = 2.9.6
 	pkgrel = 1
 	url = https://www.psycopg.org/
 	arch = x86_64
@@ -9,7 +9,7 @@ pkgbase = python-psycopg2
 	makedepends = postgresql-libs
 	depends = python
 	depends = postgresql-libs
-	source = https://github.com/psycopg/psycopg2/archive/2_9_5.tar.gz
-	b2sums = 4813a18fbf2dd36be5fbb893943efc861308368c56462e5755ea5a57c6ba7ce82af24acb83c6209f2eb3935c31d1faa9d6819f7e82ba870d12406a40c04e7da1
+	source = https://github.com/psycopg/psycopg2/archive/refs/tags/2.9.6.tar.gz
+	b2sums = 9b3e1ddb6c23973e7577b27a46599c731edd77bd7017c25f3c5a1d57f89faffe066e5926b3ba4b7f1c7ab3b1ad18966b0f5ee40ceb1b358236cb85fb61d230ce
 
 pkgname = python-psycopg2
