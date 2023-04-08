@@ -1,7 +1,7 @@
 pkgbase = python-pykka
 	pkgdesc = Easy to use concurrency abstractions for Python using the actor model
 	pkgver = 3.1.1
-	pkgrel = 1
+	pkgrel = 2
 	url = http://pykka.readthedocs.org/
 	arch = any
 	license = Apache
