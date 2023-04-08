@@ -1,7 +1,7 @@
 pkgbase = patatt
 	pkgdesc = A simple library to add cryptographic attestation to patches sent via email
 	pkgver = 0.6.3
-	pkgrel = 1
+	pkgrel = 2
 	url = https://git.kernel.org/pub/scm/utils/patatt/patatt.git/about/
 	arch = any
 	license = MIT
