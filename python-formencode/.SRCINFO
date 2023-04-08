@@ -1,7 +1,7 @@
 pkgbase = python-formencode
 	pkgdesc = A validation library for Python.
 	pkgver = 2.0.1
-	pkgrel = 3
+	pkgrel = 4
 	url = http://www.formencode.org/en/latest/
 	arch = any
 	license = MIT
