@@ -1,7 +1,7 @@
 pkgbase = python-hid
 	pkgdesc = Python hidapi bindings in ctypes (aka pyhidapi)
 	pkgver = 1.0.4
-	pkgrel = 7
+	pkgrel = 8
 	url = https://github.com/apmorton/pyhidapi
 	arch = any
 	license = MIT
