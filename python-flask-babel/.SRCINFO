@@ -1,7 +1,7 @@
 pkgbase = python-flask-babel
 	pkgdesc = Adds i18n/l10n support to Flask applications with the help of the Babel library.
 	pkgver = 3.0.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://pypi.python.org/pypi/flask-babel
 	arch = any
 	license = BSD
