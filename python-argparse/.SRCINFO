@@ -1,7 +1,7 @@
 pkgbase = python-argparse
 	pkgdesc = Python3 command-line parsing library
 	pkgver = 1.4.0
-	pkgrel = 13
+	pkgrel = 14
 	url = https://pypi.python.org/pypi/argparse
 	arch = any
 	license = Python
