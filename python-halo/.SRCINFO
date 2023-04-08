@@ -1,7 +1,7 @@
 pkgbase = python-halo
 	pkgdesc = Beautiful terminal spinners in Python
 	pkgver = 0.0.31
-	pkgrel = 4
+	pkgrel = 5
 	url = https://github.com/manrajgrover/halo
 	arch = any
 	license = MIT
