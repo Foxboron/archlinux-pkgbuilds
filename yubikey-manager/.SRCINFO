@@ -1,7 +1,7 @@
 pkgbase = yubikey-manager
 	pkgdesc = Python library and command line tool for configuring a YubiKey
 	pkgver = 5.0.1
-	pkgrel = 1
+	pkgrel = 2
 	epoch = 1
 	url = https://developers.yubico.com/yubikey-manager/
 	arch = any
