@@ -1,7 +1,7 @@
 pkgbase = python-keyutils
 	pkgdesc = A set of python bindings for keyutils
 	pkgver = 0.6
-	pkgrel = 8
+	pkgrel = 9
 	url = https://github.com/sassoftware/python-keyutils
 	arch = x86_64
 	license = Apache
@@ -9,6 +9,7 @@ pkgbase = python-keyutils
 	makedepends = python
 	makedepends = python-setuptools
 	makedepends = python-pytest-runner
+	makedepends = cython
 	depends = python
 	depends = keyutils
 	source = python-keyutils-0.6.tar.gz::https://github.com/sassoftware/python-keyutils/archive/0.6.tar.gz
