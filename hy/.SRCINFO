@@ -1,18 +1,22 @@
 pkgbase = hy
 	pkgdesc = A dialect of Lisp that's embedded in Python
-	pkgver = 1.0a4
-	pkgrel = 2
+	pkgver = 0.26.0
+	pkgrel = 1
+	epoch = 1
 	url = http://hylang.org/
 	arch = any
 	license = MIT
 	checkdepends = python-pytest
 	checkdepends = python-pytest-runner
 	makedepends = python-setuptools
+	makedepends = python-build
+	makedepends = python-wheel
+	makedepends = python-installer
 	depends = python-rply
 	depends = python-astor
 	depends = python-funcparserlib
 	depends = python-colorama
-	source = hy-1.0a4.tar.gz::https://github.com/hylang/hy/archive/1.0a4.tar.gz
-	sha256sums = 3cc60daa17071027248b027de9ab47ba7ec15a1b020651fcc8362a825b52ca1b
+	source = hy-0.26.0.tar.gz::https://github.com/hylang/hy/archive/0.26.0.tar.gz
+	sha256sums = 987668a2b74d7414952ed6a7f81e574ba95691c769ed34b9144d294f1faaea5d
 
 pkgname = hy
