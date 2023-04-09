@@ -1,7 +1,7 @@
 pkgbase = python-pytoolconfig
 	pkgdesc = Manage configuration for python tools, such as black and rope.
-	pkgver = 1.2.2
-	pkgrel = 4
+	pkgver = 1.2.5
+	pkgrel = 1
 	url = https://pypi.org/project/pytoolconfig/
 	arch = any
 	license = LGPL3
@@ -20,7 +20,7 @@ pkgbase = python-pytoolconfig
 	optdepends = python-pydantic: for validation
 	optdepends = python-sphinx: for automatic documentation
 	optdepends = python-tabulate: for tables in documentation
-	source = https://files.pythonhosted.org/packages/source/p/pytoolconfig/pytoolconfig-1.2.2.tar.gz
-	sha256sums = 2512a1f261a40e73cef2e58e786184261b60c802ae7ed01249342b1949ec3aa2
+	source = https://files.pythonhosted.org/packages/source/p/pytoolconfig/pytoolconfig-1.2.5.tar.gz
+	sha256sums = a50f9dfe23b03a9d40414c1fdf902fefbeae12f2ac75a3c8f915944d6ffac279
 
 pkgname = python-pytoolconfig
