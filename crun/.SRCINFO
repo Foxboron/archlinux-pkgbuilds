@@ -1,7 +1,7 @@
 pkgbase = crun
 	pkgdesc = A fast and lightweight fully featured OCI runtime and C library for running containers
-	pkgver = 1.8.3
-	pkgrel = 2
+	pkgver = 1.8.4
+	pkgrel = 1
 	url = https://github.com/containers/crun
 	arch = x86_64
 	license = LGPL
@@ -16,10 +16,10 @@ pkgbase = crun
 	depends = libseccomp
 	depends = criu
 	provides = oci-runtime
-	source = https://github.com/containers/crun/releases/download/1.8.3/crun-1.8.3.tar.xz
-	source = https://github.com/containers/crun/releases/download/1.8.3/crun-1.8.3.tar.xz.asc
+	source = https://github.com/containers/crun/releases/download/1.8.4/crun-1.8.4.tar.xz
+	source = https://github.com/containers/crun/releases/download/1.8.4/crun-1.8.4.tar.xz.asc
 	validpgpkeys = AC404C1C0BF735C63FF4D562263D6DF2E163E1EA
-	sha256sums = 6dc9b2bc1cdcddbc45617866d673acb0a61ee25734fb92b31d6e7ec228bae09c
+	sha256sums = 0d2475d1dbcfed224f21e740782c7a7c45c53444eb7b84a493764e2a0ee36166
 	sha256sums = SKIP
 
 pkgname = crun
