@@ -1,7 +1,7 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
 	pkgver = 4.5.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/containers/podman
 	arch = x86_64
 	license = Apache
