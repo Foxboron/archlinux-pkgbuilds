@@ -1,20 +1,19 @@
 pkgbase = cri-tools
 	pkgdesc = CLI and validation tools for Kubelet Container Runtime Interface (CRI)
-	pkgver = 1.26.1
+	pkgver = 1.27.0
 	pkgrel = 1
 	url = https://github.com/kubernetes-sigs/cri-tools
 	arch = x86_64
 	groups = kubernetes-tools
 	license = Apache
-	makedepends = git
 	makedepends = go
 	depends = glibc
-	source = git+https://github.com/kubernetes-sigs/cri-tools#commit=300f0781645f12437b43fba5dd232733e0f2f82f
-	source = cri-tools-1.24.1-makefile.patch
-	sha512sums = SKIP
-	sha512sums = b3c47dfd7a624faecc94627dbcb6279af6927a5c4bd470b244619b2dc24b1afc2a3378491583686e0c763c98191d1f2122afa75cdf9c4f4a7a70e344f5c7e5a4
-	b2sums = SKIP
-	b2sums = 51e53be22879437df77507c1157a80081cfd5db12ecd3f24e3ed7d4f421e79ad8c48347ba3e2888e896b2cbb658a13f61bbbe123e4ed34ef315864e5eef9ca85
+	source = https://github.com/kubernetes-sigs/cri-tools/archive/v1.27.0/cri-tools-v1.27.0.tar.gz
+	source = cri-tools-1.27.0-makefile.patch
+	sha512sums = b94122e6401eb0c33b9c3d112274b7ab20cbbad05e76a54933e79d2e42ded2d684771cb9ed703a6c1afa381844142b6f1b4dc77d17e915f9a42c236fd8426b9b
+	sha512sums = d243325031c5abccfec7035575abeb4af87724a28f90e75b575dec01435deaf6ea157f75725b7bfe1f982b8353ebefb07e22103c9b2027b19d8c233651363f11
+	b2sums = d6c0429271ebc4085e75b54d7f3b9f75ab796e63bc9ae7562105296b13bbad8b512293a7d25abf1ab946f4bf54e672016fdb72696c12c730d21ac74724da465c
+	b2sums = 428c8f35b61ecf9e7c261903fd5dc8b15b26a6b326a510f7b888f3d6989695e6345c98832886da5dfdc15b9087302a866c272a33cdb6f45d7698c70bcfdff1ca
 
 pkgname = crictl
 	pkgdesc = A CLI for CRI-compatible container runtimes
