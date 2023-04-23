@@ -1,7 +1,7 @@
 pkgbase = nageru
 	pkgdesc = live video mixer, based around the standard M/E workflow.
-	pkgver = 2.2.0
-	pkgrel = 2
+	pkgver = 2.2.1
+	pkgrel = 1
 	url = https://nageru.sesse.net/
 	arch = x86_64
 	license = GPL3
@@ -20,7 +20,7 @@ pkgbase = nageru
 	depends = sqlite3
 	depends = luajit
 	depends = cmake
-	source = https://nageru.sesse.net/nageru-2.2.0.tar.gz
-	sha256sums = cbdde4d0604b5c241b5a9f876375692a57b0da4535d4b3bbd944e80bd8dcfece
+	source = https://nageru.sesse.net/nageru-2.2.1.tar.gz
+	sha256sums = 16cdf59d36d7500ec3d06a7b7dfd027355446e6ff9ae25f1d30e094f3dbad4b3
 
 pkgname = nageru
