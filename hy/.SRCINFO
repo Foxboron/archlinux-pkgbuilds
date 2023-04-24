@@ -1,7 +1,7 @@
 pkgbase = hy
 	pkgdesc = A dialect of Lisp that's embedded in Python
 	pkgver = 0.26.0
-	pkgrel = 1
+	pkgrel = 2
 	epoch = 1
 	url = http://hylang.org/
 	arch = any
@@ -12,7 +12,6 @@ pkgbase = hy
 	makedepends = python-build
 	makedepends = python-wheel
 	makedepends = python-installer
-	depends = python-rply
 	depends = python-astor
 	depends = python-funcparserlib
 	depends = python-colorama
