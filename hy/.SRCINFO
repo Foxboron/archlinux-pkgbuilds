@@ -1,7 +1,7 @@
 pkgbase = hy
 	pkgdesc = A dialect of Lisp that's embedded in Python
 	pkgver = 0.26.0
-	pkgrel = 2
+	pkgrel = 3
 	epoch = 1
 	url = http://hylang.org/
 	arch = any
