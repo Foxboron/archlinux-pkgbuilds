@@ -1,13 +1,13 @@
 pkgbase = cilium-cli
 	pkgdesc = install, manage & troubleshoot Kubernetes clusters running Cilium
-	pkgver = 0.14.1
+	pkgver = 0.14.2
 	pkgrel = 1
 	url = https://github.com/cilium/cilium-cli
 	arch = x86_64
 	license = APACHE
 	makedepends = go
 	depends = glibc
-	source = cilium-cli-0.14.1.tar.gz::https://github.com/cilium/cilium-cli/archive/v0.14.1.tar.gz
-	sha256sums = f9d816292ab46095e4d6eac043988d10a94d4ead7a7105c429966cdedfe6bbe4
+	source = cilium-cli-0.14.2.tar.gz::https://github.com/cilium/cilium-cli/archive/v0.14.2.tar.gz
+	sha256sums = 55121f5a074f540e96f8216f6e107499f57a11c279589400616d28971b0fe88b
 
 pkgname = cilium-cli
