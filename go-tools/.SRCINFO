@@ -1,6 +1,6 @@
 pkgbase = go-tools
 	pkgdesc = Developer tools for the Go programming language
-	pkgver = 0.8.0
+	pkgver = 0.9.1
 	pkgrel = 1
 	epoch = 4
 	url = https://golang.org/
@@ -9,7 +9,7 @@ pkgbase = go-tools
 	makedepends = git
 	makedepends = go
 	depends = glibc
-	source = go-tools::git+https://go.googlesource.com/tools#commit=f112c43328372460f7ac5bc951711609e22b01cc
+	source = go-tools::git+https://go.googlesource.com/tools#commit=4609d79b05b5ef86867bd70209b7077e22d30cb2
 	md5sums = SKIP
 
 pkgname = go-tools
