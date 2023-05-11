@@ -1,13 +1,13 @@
 pkgbase = fsverity-utils
 	pkgdesc = Userspace utilities for fs-verity
 	pkgver = 1.5
-	pkgrel = 2
-	url = https://git.kernel.org/pub/scm/linux/kernel/git/ebiggers/fsverity-utils.git
+	pkgrel = 3
+	url = https://git.kernel.org/pub/scm/fs/fsverity/fsverity-utils.git
 	arch = x86_64
 	license = MIT
 	makedepends = pandoc
 	depends = openssl
-	source = https://git.kernel.org/pub/scm/linux/kernel/git/ebiggers/fsverity-utils.git/snapshot/fsverity-utils-1.5.tar.gz
+	source = https://git.kernel.org/pub/scm/fs/fsverity/fsverity-utils.git/snapshot/fsverity-utils-1.5.tar.gz
 	sha256sums = 830e38ec081ef8171eb210461cf8bee8a707c7c60f9018a4b567af145a510884
 
 pkgname = fsverity-utils
