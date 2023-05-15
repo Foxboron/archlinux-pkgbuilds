@@ -1,7 +1,7 @@
 pkgbase = podman
 	pkgdesc = Tool and library for running OCI-based containers in pods
 	pkgver = 4.5.0
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/containers/podman
 	arch = x86_64
 	license = Apache
@@ -43,6 +43,7 @@ pkgname = podman
 	optdepends = btrfs-progs: support btrfs backend devices
 	optdepends = cni-plugins: for an alternative container-network-stack implementation
 	optdepends = fuse-overlayfs: for storage driver in rootless environment
+	optdepends = passt: for alternative rootless network support
 	optdepends = podman-compose: for docker-compose compatibility
 	optdepends = podman-docker: for Docker-compatible CLI
 
